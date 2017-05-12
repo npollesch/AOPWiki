@@ -2,9 +2,9 @@
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 ##  Set working directory and import key event relationships
 library(igraph)
-source("AOP_net_functions.R")
-workingDir <-"//AA.AD.EPA.GOV/ORD/DUL/USERS/NPollesc/Net MyDocuments/R/AOP-qAOP/"
-dataFile <- "all-KERs.txt"
+workingDir <-"C://Users/NPollesc/Desktop/GitHub/AOPwiki/"
+dataFile <- "data/all-KERs.txt"
+source("C://Users/NPollesc/Desktop/GitHub/AOPwiki/R_files/AOP_net_functions.R")
 allKERs<-read.table(paste(workingDir, dataFile, sep=""), sep="\t", stringsAsFactors=FALSE, header=TRUE)
 
 ##  Identify all unique KEs

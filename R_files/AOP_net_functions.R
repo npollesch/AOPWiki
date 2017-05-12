@@ -1,4 +1,23 @@
 
+# color.comps is a function to color all the strongly connected components in a graph.  In theory it should do the same thing as cycle.color below
+# however, I could not get cycle.color to work properly on the AOPwiki graph, so I made this one.  -Nate 5/11/17
+color.comps<-function(gr, ccmode="Strong"){ #function to color all non-trivial strongly connected components in a graph
+  V(gr)$color<-"gray"
+  E(gr)$color<-"gray"
+  comps<-components(gr, mode=ccmode)
+  ntcomps<-which(comps$csize>1) #non-trivial ccs (i.e. with more than 1 node)
+  cols=rainbow(length(ntcomps))
+  V(gr)$cc<-comps$membership
+  for(i in 1:length(ntcomps)){
+    V(gr)[which(V(gr)$cc==ntcomps[i])]$color<-cols[i]
+    edgecombcc<-expand.grid(V(gr)[which(comps$membership==ntcomps[i])],V(gr)[which(comps$membership==ntcomps[i])]) #creates a pairwise list of all nodes in the cc
+    edgecombflat<-as.vector(rbind(edgecombcc[[1]],edgecombcc[[2]])) #flattens the pairwise list to a vector where entries are read pairwise
+    edges.in.cc<-get.edge.ids(gr,edgecombflat,directed=TRUE)
+    E(gr)$color[edges.in.cc]<-cols[[i]]
+  }
+  return(list(vcol=V(gr)$color,ecol=E(gr)$color))
+}
+
 # cycle.color function can be used to color SCC edges and vertices for visualization
 # The output is a list of vertex colors[[1]] and node colors[[2]]
 
