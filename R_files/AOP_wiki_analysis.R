@@ -27,20 +27,31 @@ plot(AOPgraph, vertex.size=5, edge.arrow.size=.1, edge.width=2)
 #### CONNECTED COMPONENTS ANALYSIS ####
 V(AOPgraph)$color<-unlist(color.comps(AOPgraph,"strong")$vcol)
 E(AOPgraph)$color<-unlist(color.comps(AOPgraph,"strong")$ecol)
+
+
+## Size change to highlight strongly connected components 
+# TASK: Can consider incorporating this as an option in color.comps()
+V(AOPgraph)$size<-1
+E(AOPgraph)$width<-1
+V(AOPgraph)$size[which(V(AOPgraph)$color!="gray")]<-2
+E(AOPgraph)$width[which(E(AOPgraph)$color!="gray")]<-2
+
 set.seed(1)
-plot(AOPgraph, vertex.size=1, edge.arrow.size=.1, vertex.label=NA)#, vertex.color="orange",edge.color="gray")
+plot(AOPgraph, vertex.size=V(AOPgraph)$size, edge.arrow.size=.1, vertex.label=NA)#, vertex.color="orange",edge.color="gray")
 
-condense.map(AOPgraph)
-condense.graph(AOPgraph,condense.map(AOPgraph))
-plot(AOPgraph.cond,vertex.size=1, edge.arrow.size=.1, vertex.label=NA)
+# #### Graph condensation ####
+# 
+# condense.map(AOPgraph)
+# condense.graph(AOPgraph,condense.map(AOPgraph))
+# plot(AOPgraph.cond,vertex.size=1, edge.arrow.size=.1, vertex.label=NA)
+# 
+# is.dag(AOPgraph)
+# is.dag(AOPgraph.cond)
+# 
+# #Attempt a topological sorting of the entire AOPwiki (Hint, it is unreadable :) )
+# plot(AOPgraph.cond,vertex.size=2, edge.arrow.size=.1,layout=topo.layout(AOPgraph.cond))
 
-is.dag(AOPgraph)
-is.dag(AOPgraph.cond)
-
-#Attempt a topological sorting of the entire AOPwiki (Hint, it is unreadable :) )
-plot(AOPgraph.cond,vertex.size=2, edge.arrow.size=.1,layout=topo.layout(AOPgraph.cond))
-
-## CENTRALITY MEASURES FOR THE AOPWIKI
+#### CENTRALITY MEASURES FOR THE AOPWIKI ####
 #  Which Key Event is most represented? 
 names(which(table(KERs)==max(table(KERs))))
 V(AOPgraph)$KE_name[72]
