@@ -2,11 +2,11 @@
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 ##  Set working directory and import key event relationships
 library(igraph)
-# workingDir <-"C://Users/NPollesc/Desktop/GitHub/AOPwiki/" #EPA Dir
-workingDir<- "C://Users/Nathan Pollesch/Documents/GitHub/AOPWiki/" #Personal Dir
+workingDir <-"C://Users/NPollesc/Desktop/GitHub/AOPwiki/" #EPA Dir
+# workingDir<- "C://Users/Nathan Pollesch/Documents/GitHub/AOPWiki/" #Personal Dir
 KERimport <- "data/all-KERs.txt"
 KEimport <- "data/all-KEs.txt"
-source("R_files/AOP_net_functions.R")
+source(paste(workingDir,"R_files/AOP_net_functions.R",sep=""))
 KERdata<-read.table(paste(workingDir, KERimport, sep=""), sep="\t", stringsAsFactors=FALSE, header=TRUE)
 KEdata<-read.table(paste(workingDir, KEimport, sep=""), sep="\t", stringsAsFactors=FALSE, header=TRUE)
 
