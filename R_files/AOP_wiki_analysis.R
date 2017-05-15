@@ -2,22 +2,30 @@
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 ##  Set working directory and import key event relationships
 library(igraph)
-workingDir <-"C://Users/NPollesc/Desktop/GitHub/AOPwiki/"
-dataFile <- "data/all-KERs.txt"
-source("C://Users/NPollesc/Desktop/GitHub/AOPwiki/R_files/AOP_net_functions.R")
-allKERs<-read.table(paste(workingDir, dataFile, sep=""), sep="\t", stringsAsFactors=FALSE, header=TRUE)
+# workingDir <-"C://Users/NPollesc/Desktop/GitHub/AOPwiki/" #EPA Dir
+workingDir<- "C://Users/Nathan Pollesch/Documents/GitHub/AOPWiki/" #Personal Dir
+KERimport <- "data/all-KERs.txt"
+KEimport <- "data/all-KEs.txt"
+source("R_files/AOP_net_functions.R")
+KERdata<-read.table(paste(workingDir, KERimport, sep=""), sep="\t", stringsAsFactors=FALSE, header=TRUE)
+KEdata<-read.table(paste(workingDir, KEimport, sep=""), sep="\t", stringsAsFactors=FALSE, header=TRUE)
 
 ##  Identify all unique KEs
-allKEs<-c(allKERs[,2],allKERs[,4])
+allKEs<-c(KERdata[,2],KERdata[,4])
 uniqueKEs<-unique(allKEs)
 keID<-data.frame(ID=1:length(uniqueKEs),KE=uniqueKEs)
 
-KERs<-cbind(match(allKERs[,2], keID[,2]),match(allKERs[,4], keID[,2]))
+KERs<-cbind(match(KERdata[,2], keID[,2]),match(KERdata[,4], keID[,2]))
 AOPgraph<-graph_from_edgelist(KERs, directed=T)
 
-## Create names for vertices in AOPwiki graph
+## Add names for key event nodes
 V(AOPgraph)$KE_name<-as.character(keID$KE)
 V(AOPgraph)$name<-keID$KE
+
+## Add level of biological organization for key event nodes
+V(AOPgraph)$lobo<-KEdata[[4]][match(V(AOPgraph)$KE_name,KEdata[[2]])]
+## TASK: Should verify correct lobo assignment
+
 
 #Plot the AOP wiki
 par(bg="black")
