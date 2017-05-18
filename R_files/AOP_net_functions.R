@@ -1,7 +1,7 @@
 
 # color.comps is a function to color all the strongly connected components in a graph.  In theory it should do the same thing as cycle.color below
 # however, I could not get cycle.color to work properly on the AOPwiki graph, so I made this one.  -Nate 5/11/17
-color.comps<-function(gr, ccmode="Strong"){ #function to color all non-trivial strongly connected components in a graph
+color.comps<-function(gr, ccmode="strong"){ #function to color all non-trivial strongly connected components in a graph
   V(gr)$color<-"gray"
   E(gr)$color<-"gray"
   comps<-components(gr, mode=ccmode)
@@ -15,7 +15,13 @@ color.comps<-function(gr, ccmode="Strong"){ #function to color all non-trivial s
     edges.in.cc<-get.edge.ids(gr,edgecombflat,directed=TRUE)
     E(gr)$color[edges.in.cc]<-cols[[i]]
   }
-  return(list(vcol=V(gr)$color,ecol=E(gr)$color))
+  if(ccmode=="strong"){
+    V(gr)$size<-1 
+    E(gr)$width<-1
+    V(gr)$size[which(V(gr)$color!="gray")]<-2 # resizes all the highlighted nodes
+    E(gr)$width[which(E(gr)$color!="gray")]<-2
+    return(list(vcol=V(gr)$color,ecol=E(gr)$color,vsize=V(gr)$size,ewidth=E(gr)$width))}
+  else {return(list(vcol=V(gr)$color,ecol=E(gr)$color))}
 }
 
 # cycle.color function can be used to color SCC edges and vertices for visualization
@@ -118,6 +124,15 @@ aop.paths= function(gr,normalized=FALSE,kelist = V(gr)$ked){ #kelist is a list o
     #set.vertex.attribute(gr,"aoppn",path.counts$count/max(path.counts$count))
   }
 }
+
+deg.col<-function(gr,dmode="all"){
+  gd<-degree(gr,mode=dmode)
+  heatcol=rev(heat.colors(max(gd)))
+  gdcols<-heatcol[gd]
+  return(gdcols)
+}
+
+
 
 ##NOTE: SET VERTEX ATTR NOT WORKING IN FUNCTION YET - PERHAPS JUST CREATE 2D OUTPUT LIKE COLORING FUNCTION ####
 
