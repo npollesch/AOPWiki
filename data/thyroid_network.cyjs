@@ -1,0 +1,2111 @@
+{
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.4.0",
+  "target_cytoscapejs_version" : "~2.1",
+  "data" : {
+    "shared_name" : "Thyroid AOPNetwork.txt_1",
+    "name" : "Thyroid AOPNetwork.txt_1",
+    "SUID" : 1003,
+    "__Annotations" : [ "" ],
+    "selected" : true
+  },
+  "elements" : {
+    "nodes" : [ {
+      "data" : {
+        "id" : "1057",
+        "ClosenessCentrality" : 0.5,
+        "Eccentricity" : 3,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 21,
+        "shared_name" : "\"Decrease, Tissue thyroid hormone concentration\"",
+        "BetweennessCentrality" : 0.15909091,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Decrease, Tissue thyroid hormone concentration\"",
+        "SelfLoops" : 0,
+        "SUID" : 1057,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.5
+      }
+    }, {
+      "data" : {
+        "id" : "1056",
+        "ClosenessCentrality" : 0.66666667,
+        "Eccentricity" : 2,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 16,
+        "shared_name" : "\"Decrease, TR-regulated cochlear proteins\"",
+        "BetweennessCentrality" : 0.12121212,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Decrease, TR-regulated cochlear proteins\"",
+        "SelfLoops" : 0,
+        "SUID" : 1056,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.5,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.0
+      }
+    }, {
+      "data" : {
+        "id" : "1055",
+        "ClosenessCentrality" : 1.0,
+        "Eccentricity" : 1,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 9,
+        "shared_name" : "\"Damage, Structure of the cochlea\"",
+        "BetweennessCentrality" : 0.06818182,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Damage, Structure of the cochlea\"",
+        "SelfLoops" : 0,
+        "SUID" : 1055,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 1.5
+      }
+    }, {
+      "data" : {
+        "id" : "1054",
+        "ClosenessCentrality" : 0.0,
+        "Eccentricity" : 0,
+        "Outdegree" : 0,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"Loss, Cochlear function\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 1,
+        "Indegree" : 1,
+        "Event_Type" : "AO",
+        "name" : "\"Loss, Cochlear function\"",
+        "SelfLoops" : 0,
+        "SUID" : 1054,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 0.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.0
+      }
+    }, {
+      "data" : {
+        "id" : "1053",
+        "ClosenessCentrality" : 0.34615385,
+        "Eccentricity" : 6,
+        "Outdegree" : 2,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"Activation, Pregnane-X receptor, NR1l2\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 2,
+        "Indegree" : 0,
+        "Event_Type" : "MIE",
+        "name" : "\"Activation, Pregnane-X receptor, NR1l2\"",
+        "SelfLoops" : 0,
+        "SUID" : 1053,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.88888889,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.5
+      }
+    }, {
+      "data" : {
+        "id" : "1052",
+        "ClosenessCentrality" : 1.0,
+        "Eccentricity" : 1,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 1,
+        "shared_name" : "\"Up Regulation, Hepatic transporter gene expression\"",
+        "BetweennessCentrality" : 0.00757576,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Up Regulation, Hepatic transporter gene expression\"",
+        "SelfLoops" : 0,
+        "SUID" : 1052,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 1.5
+      }
+    }, {
+      "data" : {
+        "id" : "1051",
+        "ClosenessCentrality" : 0.0,
+        "Eccentricity" : 0,
+        "Outdegree" : 0,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"Increase, Hepatic transport of parent T4\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 1,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Increase, Hepatic transport of parent T4\"",
+        "SelfLoops" : 0,
+        "SUID" : 1051,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 0.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.0
+      }
+    }, {
+      "data" : {
+        "id" : "1050",
+        "ClosenessCentrality" : 0.4,
+        "Eccentricity" : 4,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.16666667,
+        "Stress" : 24,
+        "shared_name" : "\"Decrease, Serum thyroxine (T4)\"",
+        "BetweennessCentrality" : 0.18181818,
+        "EdgeCount" : 3,
+        "Indegree" : 2,
+        "Event_Type" : "KE",
+        "name" : "\"Decrease, Serum thyroxine (T4)\"",
+        "SelfLoops" : 0,
+        "SUID" : 1050,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.5,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.3333333333333335
+      }
+    }, {
+      "data" : {
+        "id" : "1049",
+        "ClosenessCentrality" : 0.375,
+        "Eccentricity" : 5,
+        "Outdegree" : 2,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.05,
+        "Stress" : 18,
+        "shared_name" : "\"Induction, Upregulation of glucuronyltransferase activity\"",
+        "BetweennessCentrality" : 0.13257576,
+        "EdgeCount" : 5,
+        "Indegree" : 3,
+        "Event_Type" : "KE",
+        "name" : "\"Induction, Upregulation of glucuronyltransferase activity\"",
+        "SelfLoops" : 0,
+        "SUID" : 1049,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.66666667,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.2
+      }
+    }, {
+      "data" : {
+        "id" : "1048",
+        "ClosenessCentrality" : 0.30434783,
+        "Eccentricity" : 6,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"Activation, Constitutive androstane receptor, NR1l3\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 1,
+        "Indegree" : 0,
+        "Event_Type" : "MIE",
+        "name" : "\"Activation, Constitutive androstane receptor, NR1l3\"",
+        "SelfLoops" : 0,
+        "SUID" : 1048,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 3.28571429,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 5.0
+      }
+    }, {
+      "data" : {
+        "id" : "1047",
+        "ClosenessCentrality" : 0.33333333,
+        "Eccentricity" : 5,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.16666667,
+        "Stress" : 5,
+        "shared_name" : "\"Increase, Biliary excretion TH glucuronide\"",
+        "BetweennessCentrality" : 0.03787879,
+        "EdgeCount" : 3,
+        "Indegree" : 2,
+        "Event_Type" : "KE",
+        "name" : "\"Increase, Biliary excretion TH glucuronide\"",
+        "SelfLoops" : 0,
+        "SUID" : 1047,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 3.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.3333333333333335
+      }
+    }, {
+      "data" : {
+        "id" : "1046",
+        "ClosenessCentrality" : 0.44117647,
+        "Eccentricity" : 4,
+        "Outdegree" : 2,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.5,
+        "Stress" : 0,
+        "shared_name" : "\"Thyroperoxidase, Inhibition\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 2,
+        "Indegree" : 0,
+        "Event_Type" : "MIE",
+        "name" : "\"Thyroperoxidase, Inhibition\"",
+        "SelfLoops" : 0,
+        "SUID" : 1046,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.26666667,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 8.0
+      }
+    }, {
+      "data" : {
+        "id" : "1045",
+        "ClosenessCentrality" : 0.5,
+        "Eccentricity" : 4,
+        "Outdegree" : 4,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.05357143,
+        "Stress" : 86,
+        "shared_name" : "\"TH synthesis, Decreased\"",
+        "BetweennessCentrality" : 0.07956989,
+        "EdgeCount" : 8,
+        "Indegree" : 4,
+        "Event_Type" : "KE",
+        "name" : "\"TH synthesis, Decreased\"",
+        "SelfLoops" : 0,
+        "SUID" : 1045,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.375
+      }
+    }, {
+      "data" : {
+        "id" : "1044",
+        "ClosenessCentrality" : 0.5,
+        "Eccentricity" : 4,
+        "Outdegree" : 6,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.08928571,
+        "Stress" : 56,
+        "shared_name" : "\"T4 in serum, Decreased\"",
+        "BetweennessCentrality" : 0.06021505,
+        "EdgeCount" : 8,
+        "Indegree" : 2,
+        "Event_Type" : "KE",
+        "name" : "\"T4 in serum, Decreased\"",
+        "SelfLoops" : 0,
+        "SUID" : 1044,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.25
+      }
+    }, {
+      "data" : {
+        "id" : "1043",
+        "ClosenessCentrality" : 0.45,
+        "Eccentricity" : 4,
+        "Outdegree" : 2,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.16666667,
+        "Stress" : 5,
+        "shared_name" : "\"T4 in neuronal tissue, Decreased\"",
+        "BetweennessCentrality" : 0.00537634,
+        "EdgeCount" : 3,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"T4 in neuronal tissue, Decreased\"",
+        "SelfLoops" : 0,
+        "SUID" : 1043,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.22222222,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 5.333333333333333
+      }
+    }, {
+      "data" : {
+        "id" : "1042",
+        "ClosenessCentrality" : 0.5,
+        "Eccentricity" : 3,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.33333333,
+        "Stress" : 3,
+        "shared_name" : "\"Hippocampal gene expression, Altered\"",
+        "BetweennessCentrality" : 0.00322581,
+        "EdgeCount" : 3,
+        "Indegree" : 2,
+        "Event_Type" : "KE",
+        "name" : "\"Hippocampal gene expression, Altered\"",
+        "SelfLoops" : 0,
+        "SUID" : 1042,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 4.666666666666667
+      }
+    }, {
+      "data" : {
+        "id" : "1041",
+        "ClosenessCentrality" : 0.66666667,
+        "Eccentricity" : 2,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.33333333,
+        "Stress" : 4,
+        "shared_name" : "\"Hippocampal anatomy, Altered\"",
+        "BetweennessCentrality" : 0.00430108,
+        "EdgeCount" : 3,
+        "Indegree" : 2,
+        "Event_Type" : "KE",
+        "name" : "\"Hippocampal anatomy, Altered\"",
+        "SelfLoops" : 0,
+        "SUID" : 1041,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.5,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 4.666666666666667
+      }
+    }, {
+      "data" : {
+        "id" : "1040",
+        "ClosenessCentrality" : 1.0,
+        "Eccentricity" : 1,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.33333333,
+        "Stress" : 3,
+        "shared_name" : "\"Hippocampal Physiology, Altered\"",
+        "BetweennessCentrality" : 0.00322581,
+        "EdgeCount" : 3,
+        "Indegree" : 2,
+        "Event_Type" : "KE",
+        "name" : "\"Hippocampal Physiology, Altered\"",
+        "SelfLoops" : 0,
+        "SUID" : 1040,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 4.333333333333333
+      }
+    }, {
+      "data" : {
+        "id" : "1039",
+        "ClosenessCentrality" : 0.0,
+        "Eccentricity" : 0,
+        "Outdegree" : 0,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.5,
+        "Stress" : 0,
+        "shared_name" : "\"Cognitive Function, Decreased\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 2,
+        "Indegree" : 2,
+        "Event_Type" : "AO",
+        "name" : "\"Cognitive Function, Decreased\"",
+        "SelfLoops" : 0,
+        "SUID" : 1039,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 0.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 5.5
+      }
+    }, {
+      "data" : {
+        "id" : "1038",
+        "ClosenessCentrality" : 0.28070175,
+        "Eccentricity" : 6,
+        "Outdegree" : 2,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"Inhibition, Na+/I- symporter (NIS)\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 2,
+        "Indegree" : 0,
+        "Event_Type" : "MIE",
+        "name" : "\"Inhibition, Na+/I- symporter (NIS)\"",
+        "SelfLoops" : 0,
+        "SUID" : 1038,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 3.5625,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.5
+      }
+    }, {
+      "data" : {
+        "id" : "1037",
+        "ClosenessCentrality" : 0.34883721,
+        "Eccentricity" : 5,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 33,
+        "shared_name" : "\"Thyroidal Iodide, Decreased\"",
+        "BetweennessCentrality" : 0.0311828,
+        "EdgeCount" : 3,
+        "Indegree" : 2,
+        "Event_Type" : "KE",
+        "name" : "\"Thyroidal Iodide, Decreased\"",
+        "SelfLoops" : 0,
+        "SUID" : 1037,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.86666667,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.6666666666666665
+      }
+    }, {
+      "data" : {
+        "id" : "1036",
+        "ClosenessCentrality" : 0.8,
+        "Eccentricity" : 2,
+        "Outdegree" : 3,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.15,
+        "Stress" : 22,
+        "shared_name" : "\"BDNF, Reduced\"",
+        "BetweennessCentrality" : 0.01612903,
+        "EdgeCount" : 5,
+        "Indegree" : 2,
+        "Event_Type" : "KE",
+        "name" : "\"BDNF, Reduced\"",
+        "SelfLoops" : 0,
+        "SUID" : 1036,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.25,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 4.2
+      }
+    }, {
+      "data" : {
+        "id" : "1035",
+        "ClosenessCentrality" : 0.5,
+        "Eccentricity" : 3,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.33333333,
+        "Stress" : 14,
+        "shared_name" : "\"GABAergic interneurons, Decreased\"",
+        "BetweennessCentrality" : 0.00752688,
+        "EdgeCount" : 3,
+        "Indegree" : 2,
+        "Event_Type" : "KE",
+        "name" : "\"GABAergic interneurons, Decreased\"",
+        "SelfLoops" : 0,
+        "SUID" : 1035,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 5.333333333333333
+      }
+    }, {
+      "data" : {
+        "id" : "1034",
+        "ClosenessCentrality" : 0.66666667,
+        "Eccentricity" : 2,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.16666667,
+        "Stress" : 19,
+        "shared_name" : "\"Synaptogenesis, Decreased\"",
+        "BetweennessCentrality" : 0.01290323,
+        "EdgeCount" : 3,
+        "Indegree" : 2,
+        "Event_Type" : "KE",
+        "name" : "\"Synaptogenesis, Decreased\"",
+        "SelfLoops" : 0,
+        "SUID" : 1034,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.5,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.3333333333333335
+      }
+    }, {
+      "data" : {
+        "id" : "1033",
+        "ClosenessCentrality" : 1.0,
+        "Eccentricity" : 1,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 2,
+        "shared_name" : "\"Neuronal network function, Decreased\"",
+        "BetweennessCentrality" : 0.00215054,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Neuronal network function, Decreased\"",
+        "SelfLoops" : 0,
+        "SUID" : 1033,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.5
+      }
+    }, {
+      "data" : {
+        "id" : "1032",
+        "ClosenessCentrality" : 0.0,
+        "Eccentricity" : 0,
+        "Outdegree" : 0,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.08333333,
+        "Stress" : 0,
+        "shared_name" : "\"Impairment, Learning and memory\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 4,
+        "Indegree" : 4,
+        "Event_Type" : "AO",
+        "name" : "\"Impairment, Learning and memory\"",
+        "SelfLoops" : 0,
+        "SUID" : 1032,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 0.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 4.25
+      }
+    }, {
+      "data" : {
+        "id" : "1031",
+        "ClosenessCentrality" : 0.6,
+        "Eccentricity" : 3,
+        "Outdegree" : 4,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.25,
+        "Stress" : 0,
+        "shared_name" : "\"Inhibition, Deiodinase 2\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 4,
+        "Indegree" : 0,
+        "Event_Type" : "MIE",
+        "name" : "\"Inhibition, Deiodinase 2\"",
+        "SelfLoops" : 0,
+        "SUID" : 1031,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.66666667,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 5.0
+      }
+    }, {
+      "data" : {
+        "id" : "1030",
+        "ClosenessCentrality" : 0.54545455,
+        "Eccentricity" : 3,
+        "Outdegree" : 2,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.41666667,
+        "Stress" : 0,
+        "shared_name" : "\"Decreased, Triiodothyronine (T3) in serum\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 4,
+        "Indegree" : 2,
+        "Event_Type" : "KE",
+        "name" : "\"Decreased, Triiodothyronine (T3) in serum\"",
+        "SelfLoops" : 0,
+        "SUID" : 1030,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.83333333,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 5.0
+      }
+    }, {
+      "data" : {
+        "id" : "1029",
+        "ClosenessCentrality" : 0.71428571,
+        "Eccentricity" : 2,
+        "Outdegree" : 3,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.23333333,
+        "Stress" : 9,
+        "shared_name" : "\"Reduced, Posterior swim bladder inflation\"",
+        "BetweennessCentrality" : 0.00806452,
+        "EdgeCount" : 6,
+        "Indegree" : 3,
+        "Event_Type" : "KE",
+        "name" : "\"Reduced, Posterior swim bladder inflation\"",
+        "SelfLoops" : 0,
+        "SUID" : 1029,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.4,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 4.166666666666667
+      }
+    }, {
+      "data" : {
+        "id" : "1028",
+        "ClosenessCentrality" : 0.66666667,
+        "Eccentricity" : 2,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.33333333,
+        "Stress" : 2,
+        "shared_name" : "\"Reduced, Swimming performance\"",
+        "BetweennessCentrality" : 0.00107527,
+        "EdgeCount" : 3,
+        "Indegree" : 2,
+        "Event_Type" : "KE",
+        "name" : "\"Reduced, Swimming performance\"",
+        "SelfLoops" : 0,
+        "SUID" : 1028,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.5,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 5.333333333333333
+      }
+    }, {
+      "data" : {
+        "id" : "1027",
+        "ClosenessCentrality" : 1.0,
+        "Eccentricity" : 1,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.08333333,
+        "Stress" : 8,
+        "shared_name" : "\"Reduced, Young of year survival\"",
+        "BetweennessCentrality" : 0.00752688,
+        "EdgeCount" : 4,
+        "Indegree" : 3,
+        "Event_Type" : "AO",
+        "name" : "\"Reduced, Young of year survival\"",
+        "SelfLoops" : 0,
+        "SUID" : 1027,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.0
+      }
+    }, {
+      "data" : {
+        "id" : "1026",
+        "ClosenessCentrality" : 0.0,
+        "Eccentricity" : 0,
+        "Outdegree" : 0,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"Decrease, Population trajectory\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 1,
+        "Indegree" : 1,
+        "Event_Type" : "AO",
+        "name" : "\"Decrease, Population trajectory\"",
+        "SelfLoops" : 0,
+        "SUID" : 1026,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 0.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 4.0
+      }
+    }, {
+      "data" : {
+        "id" : "1025",
+        "ClosenessCentrality" : 0.57142857,
+        "Eccentricity" : 3,
+        "Outdegree" : 2,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.2,
+        "Stress" : 7,
+        "shared_name" : "\"Reduced, Anterior swim bladder inflation\"",
+        "BetweennessCentrality" : 0.00591398,
+        "EdgeCount" : 6,
+        "Indegree" : 4,
+        "Event_Type" : "KE",
+        "name" : "\"Reduced, Anterior swim bladder inflation\"",
+        "SelfLoops" : 0,
+        "SUID" : 1025,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.75,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.8333333333333335
+      }
+    }, {
+      "data" : {
+        "id" : "1024",
+        "ClosenessCentrality" : 0.66666667,
+        "Eccentricity" : 2,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 2,
+        "shared_name" : "\"Reduced, Hearing\"",
+        "BetweennessCentrality" : 0.00107527,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Reduced, Hearing\"",
+        "SelfLoops" : 0,
+        "SUID" : 1024,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.5,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 5.0
+      }
+    }, {
+      "data" : {
+        "id" : "1023",
+        "ClosenessCentrality" : 0.6,
+        "Eccentricity" : 3,
+        "Outdegree" : 4,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.25,
+        "Stress" : 0,
+        "shared_name" : "\"Inhibition, Deiodinase 1\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 4,
+        "Indegree" : 0,
+        "Event_Type" : "MIE",
+        "name" : "\"Inhibition, Deiodinase 1\"",
+        "SelfLoops" : 0,
+        "SUID" : 1023,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.66666667,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 5.0
+      }
+    }, {
+      "data" : {
+        "id" : "1022",
+        "ClosenessCentrality" : 0.66666667,
+        "Eccentricity" : 2,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 16,
+        "shared_name" : "\"Decreased, Thyroxine (T4) in tissues\"",
+        "BetweennessCentrality" : 0.0172043,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Decreased, Thyroxine (T4) in tissues\"",
+        "SelfLoops" : 0,
+        "SUID" : 1022,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.5,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 6.0
+      }
+    }, {
+      "data" : {
+        "id" : "1021",
+        "ClosenessCentrality" : 1.0,
+        "Eccentricity" : 1,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 11,
+        "shared_name" : "\"Decreased, Triiodothyronine (T3) in tissues\"",
+        "BetweennessCentrality" : 0.01182796,
+        "EdgeCount" : 4,
+        "Indegree" : 3,
+        "Event_Type" : "KE",
+        "name" : "\"Decreased, Triiodothyronine (T3) in tissues\"",
+        "SelfLoops" : 0,
+        "SUID" : 1021,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.0
+      }
+    }, {
+      "data" : {
+        "id" : "1020",
+        "ClosenessCentrality" : 0.0,
+        "Eccentricity" : 0,
+        "Outdegree" : 0,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"Altered, Amphibian metamorphosis\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 2,
+        "Indegree" : 2,
+        "Event_Type" : "AO",
+        "name" : "\"Altered, Amphibian metamorphosis\"",
+        "SelfLoops" : 0,
+        "SUID" : 1020,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 0.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.0
+      }
+    }, {
+      "data" : {
+        "id" : "1019",
+        "ClosenessCentrality" : 0.27118644,
+        "Eccentricity" : 6,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"Inhibition, Iodotyrosine deiodinase (IYD)\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 1,
+        "Indegree" : 0,
+        "Event_Type" : "MIE",
+        "name" : "\"Inhibition, Iodotyrosine deiodinase (IYD)\"",
+        "SelfLoops" : 0,
+        "SUID" : 1019,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 3.6875,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.0
+      }
+    }, {
+      "data" : {
+        "id" : "1018",
+        "ClosenessCentrality" : 0.66666667,
+        "Eccentricity" : 2,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"Inhibition, Deiodinase 3\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 1,
+        "Indegree" : 0,
+        "Event_Type" : "MIE",
+        "name" : "\"Inhibition, Deiodinase 3\"",
+        "SelfLoops" : 0,
+        "SUID" : 1018,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.5,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.0
+      }
+    }, {
+      "data" : {
+        "id" : "1017",
+        "ClosenessCentrality" : 1.0,
+        "Eccentricity" : 1,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 1,
+        "shared_name" : "\"Increased, Triiodothyronine (T3) in tissues\"",
+        "BetweennessCentrality" : 0.00107527,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Increased, Triiodothyronine (T3) in tissues\"",
+        "SelfLoops" : 0,
+        "SUID" : 1017,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 1.5
+      }
+    }, {
+      "data" : {
+        "id" : "1016",
+        "ClosenessCentrality" : 0.34883721,
+        "Eccentricity" : 5,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"Inhibition, Pendrin\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 1,
+        "Indegree" : 0,
+        "Event_Type" : "MIE",
+        "name" : "\"Inhibition, Pendrin\"",
+        "SelfLoops" : 0,
+        "SUID" : 1016,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.86666667,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 8.0
+      }
+    }, {
+      "data" : {
+        "id" : "1015",
+        "ClosenessCentrality" : 0.34883721,
+        "Eccentricity" : 5,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"Inhibition, Dual oxidase\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 1,
+        "Indegree" : 0,
+        "Event_Type" : "MIE",
+        "name" : "\"Inhibition, Dual oxidase\"",
+        "SelfLoops" : 0,
+        "SUID" : 1015,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.86666667,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 8.0
+      }
+    }, {
+      "data" : {
+        "id" : "1014",
+        "ClosenessCentrality" : 0.33333333,
+        "Eccentricity" : 6,
+        "Outdegree" : 2,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"Activation, Hepatic nuclear receptor(s)\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 2,
+        "Indegree" : 0,
+        "Event_Type" : "MIE",
+        "name" : "\"Activation, Hepatic nuclear receptor(s)\"",
+        "SelfLoops" : 0,
+        "SUID" : 1014,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 3.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.5
+      }
+    }, {
+      "data" : {
+        "id" : "1013",
+        "ClosenessCentrality" : 0.28571429,
+        "Eccentricity" : 6,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 1,
+        "shared_name" : "\"Increased, Hepatic thyroid hormone uptake/transport\"",
+        "BetweennessCentrality" : 0.00378788,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Increased, Hepatic thyroid hormone uptake/transport\"",
+        "SelfLoops" : 0,
+        "SUID" : 1013,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 3.5,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.5
+      }
+    } ],
+    "edges" : [ {
+      "data" : {
+        "id" : "1122",
+        "source" : "1057",
+        "target" : "1056",
+        "EdgeBetweenness" : 24.0,
+        "shared_name" : "\"Decrease, Tissue thyroid hormone concentration\" (Indirectly leads to) \"Decrease, TR-regulated cochlear proteins\"",
+        "Relationships" : 313,
+        "shared_interaction" : "Indirectly leads to",
+        "name" : "\"Decrease, Tissue thyroid hormone concentration\" (Indirectly leads to) \"Decrease, TR-regulated cochlear proteins\"",
+        "interaction" : "Indirectly leads to",
+        "Evidence" : "Weak",
+        "SUID" : 1122,
+        "Quantitative_Understanding" : "",
+        "selected" : false,
+        "AOPs" : 8
+      }
+    }, {
+      "data" : {
+        "id" : "1121",
+        "source" : "1056",
+        "target" : "1055",
+        "EdgeBetweenness" : 18.0,
+        "shared_name" : "\"Decrease, TR-regulated cochlear proteins\" (Directly leads to) \"Damage, Structure of the cochlea\"",
+        "Relationships" : 314,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Decrease, TR-regulated cochlear proteins\" (Directly leads to) \"Damage, Structure of the cochlea\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Weak",
+        "SUID" : 1121,
+        "Quantitative_Understanding" : "",
+        "selected" : false,
+        "AOPs" : 8
+      }
+    }, {
+      "data" : {
+        "id" : "1120",
+        "source" : "1055",
+        "target" : "1054",
+        "EdgeBetweenness" : 10.0,
+        "shared_name" : "\"Damage, Structure of the cochlea\" (Directly leads to) \"Loss, Cochlear function\"",
+        "Relationships" : 297,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Damage, Structure of the cochlea\" (Directly leads to) \"Loss, Cochlear function\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1120,
+        "Quantitative_Understanding" : "",
+        "selected" : false,
+        "AOPs" : 8
+      }
+    }, {
+      "data" : {
+        "id" : "1119",
+        "source" : "1053",
+        "target" : "1052",
+        "EdgeBetweenness" : 2.0,
+        "shared_name" : "\"Activation, Pregnane-X receptor, NR1l2\" (Directly leads to) \"Up Regulation, Hepatic transporter gene expression\"",
+        "Relationships" : 264,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Activation, Pregnane-X receptor, NR1l2\" (Directly leads to) \"Up Regulation, Hepatic transporter gene expression\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1119,
+        "Quantitative_Understanding" : "",
+        "selected" : false,
+        "AOPs" : 8
+      }
+    }, {
+      "data" : {
+        "id" : "1118",
+        "source" : "1053",
+        "target" : "1049",
+        "EdgeBetweenness" : 7.0,
+        "shared_name" : "\"Activation, Pregnane-X receptor, NR1l2\" (Directly leads to) \"Induction, Upregulation of glucuronyltransferase activity\"",
+        "Relationships" : 265,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Activation, Pregnane-X receptor, NR1l2\" (Directly leads to) \"Induction, Upregulation of glucuronyltransferase activity\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Strong",
+        "SUID" : 1118,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 8
+      }
+    }, {
+      "data" : {
+        "id" : "1117",
+        "source" : "1052",
+        "target" : "1051",
+        "EdgeBetweenness" : 2.0,
+        "shared_name" : "\"Up Regulation, Hepatic transporter gene expression\" (Indirectly leads to) \"Increase, Hepatic transport of parent T4\"",
+        "Relationships" : 149,
+        "shared_interaction" : "Indirectly leads to",
+        "name" : "\"Up Regulation, Hepatic transporter gene expression\" (Indirectly leads to) \"Increase, Hepatic transport of parent T4\"",
+        "interaction" : "Indirectly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1117,
+        "Quantitative_Understanding" : "",
+        "selected" : false,
+        "AOPs" : 8
+      }
+    }, {
+      "data" : {
+        "id" : "1116",
+        "source" : "1050",
+        "target" : "1057",
+        "EdgeBetweenness" : 28.0,
+        "shared_name" : "\"Decrease, Serum thyroxine (T4)\" (Directly leads to) \"Decrease, Tissue thyroid hormone concentration\"",
+        "Relationships" : 285,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Decrease, Serum thyroxine (T4)\" (Directly leads to) \"Decrease, Tissue thyroid hormone concentration\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1116,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 8
+      }
+    }, {
+      "data" : {
+        "id" : "1115",
+        "source" : "1049",
+        "target" : "1050",
+        "EdgeBetweenness" : 20.0,
+        "shared_name" : "\"Induction, Upregulation of glucuronyltransferase activity\" (Indirectly leads to) \"Decrease, Serum thyroxine (T4)\"",
+        "Relationships" : 381,
+        "shared_interaction" : "Indirectly leads to",
+        "name" : "\"Induction, Upregulation of glucuronyltransferase activity\" (Indirectly leads to) \"Decrease, Serum thyroxine (T4)\"",
+        "interaction" : "Indirectly leads to",
+        "Evidence" : "Strong",
+        "SUID" : 1115,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 8
+      }
+    }, {
+      "data" : {
+        "id" : "1114",
+        "source" : "1049",
+        "target" : "1047",
+        "EdgeBetweenness" : 3.5,
+        "shared_name" : "\"Induction, Upregulation of glucuronyltransferase activity\" (Directly leads to) \"Increase, Biliary excretion TH glucuronide\"",
+        "Relationships" : 1060,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Induction, Upregulation of glucuronyltransferase activity\" (Directly leads to) \"Increase, Biliary excretion TH glucuronide\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1114,
+        "Quantitative_Understanding" : "",
+        "selected" : false,
+        "AOPs" : 8
+      }
+    }, {
+      "data" : {
+        "id" : "1113",
+        "source" : "1048",
+        "target" : "1049",
+        "EdgeBetweenness" : 7.0,
+        "shared_name" : "\"Activation, Constitutive androstane receptor, NR1l3\" (Directly leads to) \"Induction, Upregulation of glucuronyltransferase activity\"",
+        "Relationships" : 85,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Activation, Constitutive androstane receptor, NR1l3\" (Directly leads to) \"Induction, Upregulation of glucuronyltransferase activity\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1113,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 8
+      }
+    }, {
+      "data" : {
+        "id" : "1112",
+        "source" : "1047",
+        "target" : "1050",
+        "EdgeBetweenness" : 10.0,
+        "shared_name" : "\"Increase, Biliary excretion TH glucuronide\" (Directly leads to) \"Decrease, Serum thyroxine (T4)\"",
+        "Relationships" : 382,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Increase, Biliary excretion TH glucuronide\" (Directly leads to) \"Decrease, Serum thyroxine (T4)\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1112,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 8
+      }
+    }, {
+      "data" : {
+        "id" : "1111",
+        "source" : "1046",
+        "target" : "1045",
+        "EdgeBetweenness" : 6.0,
+        "shared_name" : "\"Thyroperoxidase, Inhibition\" (Directly leads to) \"TH synthesis, Decreased\"",
+        "Relationships" : 309,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Thyroperoxidase, Inhibition\" (Directly leads to) \"TH synthesis, Decreased\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Strong",
+        "SUID" : 1111,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 42
+      }
+    }, {
+      "data" : {
+        "id" : "1110",
+        "source" : "1046",
+        "target" : "1044",
+        "EdgeBetweenness" : 9.0,
+        "shared_name" : "\"Thyroperoxidase, Inhibition\" (Indirectly leads to) \"T4 in serum, Decreased\"",
+        "Relationships" : 366,
+        "shared_interaction" : "Indirectly leads to",
+        "name" : "\"Thyroperoxidase, Inhibition\" (Indirectly leads to) \"T4 in serum, Decreased\"",
+        "interaction" : "Indirectly leads to",
+        "Evidence" : "Strong",
+        "SUID" : 1110,
+        "Quantitative_Understanding" : "Moderate",
+        "selected" : false,
+        "AOPs" : 42
+      }
+    }, {
+      "data" : {
+        "id" : "1109",
+        "source" : "1045",
+        "target" : "1044",
+        "EdgeBetweenness" : 54.0,
+        "shared_name" : "\"TH synthesis, Decreased\" (Directly leads to) \"T4 in serum, Decreased\"",
+        "Relationships" : 305,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"TH synthesis, Decreased\" (Directly leads to) \"T4 in serum, Decreased\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Strong",
+        "SUID" : 1109,
+        "Quantitative_Understanding" : "Moderate",
+        "selected" : false,
+        "AOPs" : 42
+      }
+    }, {
+      "data" : {
+        "id" : "1108",
+        "source" : "1045",
+        "target" : "1032",
+        "EdgeBetweenness" : 6.0,
+        "shared_name" : "\"TH synthesis, Decreased\" (Indirectly leads to) \"Impairment, Learning and memory\"",
+        "Relationships" : 1506,
+        "shared_interaction" : "Indirectly leads to",
+        "name" : "\"TH synthesis, Decreased\" (Indirectly leads to) \"Impairment, Learning and memory\"",
+        "interaction" : "Indirectly leads to",
+        "Evidence" : "Strong",
+        "SUID" : 1108,
+        "Quantitative_Understanding" : "Moderate",
+        "selected" : false,
+        "AOPs" : 54
+      }
+    }, {
+      "data" : {
+        "id" : "1107",
+        "source" : "1045",
+        "target" : "1036",
+        "EdgeBetweenness" : 14.0,
+        "shared_name" : "\"TH synthesis, Decreased\" (Indirectly leads to) \"BDNF, Reduced\"",
+        "Relationships" : 1504,
+        "shared_interaction" : "Indirectly leads to",
+        "name" : "\"TH synthesis, Decreased\" (Indirectly leads to) \"BDNF, Reduced\"",
+        "interaction" : "Indirectly leads to",
+        "Evidence" : "Weak",
+        "SUID" : 1107,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 54
+      }
+    }, {
+      "data" : {
+        "id" : "1106",
+        "source" : "1045",
+        "target" : "1035",
+        "EdgeBetweenness" : 14.0,
+        "shared_name" : "\"TH synthesis, Decreased\" (Indirectly leads to) \"GABAergic interneurons, Decreased\"",
+        "Relationships" : 1505,
+        "shared_interaction" : "Indirectly leads to",
+        "name" : "\"TH synthesis, Decreased\" (Indirectly leads to) \"GABAergic interneurons, Decreased\"",
+        "interaction" : "Indirectly leads to",
+        "Evidence" : "Weak",
+        "SUID" : 1106,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 54
+      }
+    }, {
+      "data" : {
+        "id" : "1105",
+        "source" : "1044",
+        "target" : "1043",
+        "EdgeBetweenness" : 13.0,
+        "shared_name" : "\"T4 in serum, Decreased\" (Directly leads to) \"T4 in neuronal tissue, Decreased\"",
+        "Relationships" : 312,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"T4 in serum, Decreased\" (Directly leads to) \"T4 in neuronal tissue, Decreased\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1105,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 42
+      }
+    }, {
+      "data" : {
+        "id" : "1104",
+        "source" : "1044",
+        "target" : "1042",
+        "EdgeBetweenness" : 8.0,
+        "shared_name" : "\"T4 in serum, Decreased\" (Indirectly leads to) \"Hippocampal gene expression, Altered\"",
+        "Relationships" : 1387,
+        "shared_interaction" : "Indirectly leads to",
+        "name" : "\"T4 in serum, Decreased\" (Indirectly leads to) \"Hippocampal gene expression, Altered\"",
+        "interaction" : "Indirectly leads to",
+        "Evidence" : "Strong",
+        "SUID" : 1104,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 42
+      }
+    }, {
+      "data" : {
+        "id" : "1103",
+        "source" : "1044",
+        "target" : "1041",
+        "EdgeBetweenness" : 8.0,
+        "shared_name" : "\"T4 in serum, Decreased\" (Indirectly leads to) \"Hippocampal anatomy, Altered\"",
+        "Relationships" : 1388,
+        "shared_interaction" : "Indirectly leads to",
+        "name" : "\"T4 in serum, Decreased\" (Indirectly leads to) \"Hippocampal anatomy, Altered\"",
+        "interaction" : "Indirectly leads to",
+        "Evidence" : "Strong",
+        "SUID" : 1103,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 42
+      }
+    }, {
+      "data" : {
+        "id" : "1102",
+        "source" : "1044",
+        "target" : "1040",
+        "EdgeBetweenness" : 8.0,
+        "shared_name" : "\"T4 in serum, Decreased\" (Indirectly leads to) \"Hippocampal Physiology, Altered\"",
+        "Relationships" : 1389,
+        "shared_interaction" : "Indirectly leads to",
+        "name" : "\"T4 in serum, Decreased\" (Indirectly leads to) \"Hippocampal Physiology, Altered\"",
+        "interaction" : "Indirectly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1102,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 42
+      }
+    }, {
+      "data" : {
+        "id" : "1101",
+        "source" : "1044",
+        "target" : "1039",
+        "EdgeBetweenness" : 8.0,
+        "shared_name" : "\"T4 in serum, Decreased\" (Indirectly leads to) \"Cognitive Function, Decreased\"",
+        "Relationships" : 403,
+        "shared_interaction" : "Indirectly leads to",
+        "name" : "\"T4 in serum, Decreased\" (Indirectly leads to) \"Cognitive Function, Decreased\"",
+        "interaction" : "Indirectly leads to",
+        "Evidence" : "Strong",
+        "SUID" : 1101,
+        "Quantitative_Understanding" : "Moderate",
+        "selected" : false,
+        "AOPs" : 42
+      }
+    }, {
+      "data" : {
+        "id" : "1100",
+        "source" : "1044",
+        "target" : "1022",
+        "EdgeBetweenness" : 24.0,
+        "shared_name" : "\"T4 in serum, Decreased\" (Directly leads to) \"Decreased, Thyroxine (T4) in tissues\"",
+        "Relationships" : 1143,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"T4 in serum, Decreased\" (Directly leads to) \"Decreased, Thyroxine (T4) in tissues\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1100,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 175
+      }
+    }, {
+      "data" : {
+        "id" : "1099",
+        "source" : "1043",
+        "target" : "1042",
+        "EdgeBetweenness" : 4.0,
+        "shared_name" : "\"T4 in neuronal tissue, Decreased\" (Directly leads to) \"Hippocampal gene expression, Altered\"",
+        "Relationships" : 746,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"T4 in neuronal tissue, Decreased\" (Directly leads to) \"Hippocampal gene expression, Altered\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1099,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 42
+      }
+    }, {
+      "data" : {
+        "id" : "1098",
+        "source" : "1043",
+        "target" : "1036",
+        "EdgeBetweenness" : 10.0,
+        "shared_name" : "\"T4 in neuronal tissue, Decreased\" (Directly leads to) \"BDNF, Reduced\"",
+        "Relationships" : 444,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"T4 in neuronal tissue, Decreased\" (Directly leads to) \"BDNF, Reduced\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Weak",
+        "SUID" : 1098,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 54
+      }
+    }, {
+      "data" : {
+        "id" : "1097",
+        "source" : "1042",
+        "target" : "1041",
+        "EdgeBetweenness" : 6.0,
+        "shared_name" : "\"Hippocampal gene expression, Altered\" (Directly leads to) \"Hippocampal anatomy, Altered\"",
+        "Relationships" : 747,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Hippocampal gene expression, Altered\" (Directly leads to) \"Hippocampal anatomy, Altered\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1097,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 42
+      }
+    }, {
+      "data" : {
+        "id" : "1096",
+        "source" : "1041",
+        "target" : "1040",
+        "EdgeBetweenness" : 6.0,
+        "shared_name" : "\"Hippocampal anatomy, Altered\" (Directly leads to) \"Hippocampal Physiology, Altered\"",
+        "Relationships" : 749,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Hippocampal anatomy, Altered\" (Directly leads to) \"Hippocampal Physiology, Altered\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1096,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 42
+      }
+    }, {
+      "data" : {
+        "id" : "1095",
+        "source" : "1040",
+        "target" : "1039",
+        "EdgeBetweenness" : 4.0,
+        "shared_name" : "\"Hippocampal Physiology, Altered\" (Directly leads to) \"Cognitive Function, Decreased\"",
+        "Relationships" : 748,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Hippocampal Physiology, Altered\" (Directly leads to) \"Cognitive Function, Decreased\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Strong",
+        "SUID" : 1095,
+        "Quantitative_Understanding" : "Moderate",
+        "selected" : false,
+        "AOPs" : 42
+      }
+    }, {
+      "data" : {
+        "id" : "1094",
+        "source" : "1038",
+        "target" : "1037",
+        "EdgeBetweenness" : 15.0,
+        "shared_name" : "\"Inhibition, Na+/I- symporter (NIS)\" (Directly leads to) \"Thyroidal Iodide, Decreased\"",
+        "Relationships" : 442,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Inhibition, Na+/I- symporter (NIS)\" (Directly leads to) \"Thyroidal Iodide, Decreased\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Strong",
+        "SUID" : 1094,
+        "Quantitative_Understanding" : "Strong",
+        "selected" : false,
+        "AOPs" : 54
+      }
+    }, {
+      "data" : {
+        "id" : "1093",
+        "source" : "1038",
+        "target" : "1032",
+        "EdgeBetweenness" : 1.0,
+        "shared_name" : "\"Inhibition, Na+/I- symporter (NIS)\" (Indirectly leads to) \"Impairment, Learning and memory\"",
+        "Relationships" : 1503,
+        "shared_interaction" : "Indirectly leads to",
+        "name" : "\"Inhibition, Na+/I- symporter (NIS)\" (Indirectly leads to) \"Impairment, Learning and memory\"",
+        "interaction" : "Indirectly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1093,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 54
+      }
+    }, {
+      "data" : {
+        "id" : "1092",
+        "source" : "1037",
+        "target" : "1045",
+        "EdgeBetweenness" : 44.0,
+        "shared_name" : "\"Thyroidal Iodide, Decreased\" (Directly leads to) \"TH synthesis, Decreased\"",
+        "Relationships" : 872,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Thyroidal Iodide, Decreased\" (Directly leads to) \"TH synthesis, Decreased\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Strong",
+        "SUID" : 1092,
+        "Quantitative_Understanding" : "Strong",
+        "selected" : false,
+        "AOPs" : 54
+      }
+    }, {
+      "data" : {
+        "id" : "1091",
+        "source" : "1036",
+        "target" : "1035",
+        "EdgeBetweenness" : 3.0,
+        "shared_name" : "\"BDNF, Reduced\" (Directly leads to) \"GABAergic interneurons, Decreased\"",
+        "Relationships" : 870,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"BDNF, Reduced\" (Directly leads to) \"GABAergic interneurons, Decreased\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1091,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 54
+      }
+    }, {
+      "data" : {
+        "id" : "1090",
+        "source" : "1036",
+        "target" : "1034",
+        "EdgeBetweenness" : 13.0,
+        "shared_name" : "\"BDNF, Reduced\" (Indirectly leads to) \"Synaptogenesis, Decreased\"",
+        "Relationships" : 448,
+        "shared_interaction" : "Indirectly leads to",
+        "name" : "\"BDNF, Reduced\" (Indirectly leads to) \"Synaptogenesis, Decreased\"",
+        "interaction" : "Indirectly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1090,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 54
+      }
+    }, {
+      "data" : {
+        "id" : "1089",
+        "source" : "1036",
+        "target" : "1032",
+        "EdgeBetweenness" : 3.0,
+        "shared_name" : "\"BDNF, Reduced\" (Indirectly leads to) \"Impairment, Learning and memory\"",
+        "Relationships" : 1507,
+        "shared_interaction" : "Indirectly leads to",
+        "name" : "\"BDNF, Reduced\" (Indirectly leads to) \"Impairment, Learning and memory\"",
+        "interaction" : "Indirectly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1089,
+        "Quantitative_Understanding" : "Moderate",
+        "selected" : false,
+        "AOPs" : 54
+      }
+    }, {
+      "data" : {
+        "id" : "1088",
+        "source" : "1035",
+        "target" : "1034",
+        "EdgeBetweenness" : 10.0,
+        "shared_name" : "\"GABAergic interneurons, Decreased\" (Directly leads to) \"Synaptogenesis, Decreased\"",
+        "Relationships" : 871,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"GABAergic interneurons, Decreased\" (Directly leads to) \"Synaptogenesis, Decreased\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Strong",
+        "SUID" : 1088,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 54
+      }
+    }, {
+      "data" : {
+        "id" : "1087",
+        "source" : "1034",
+        "target" : "1033",
+        "EdgeBetweenness" : 14.0,
+        "shared_name" : "\"Synaptogenesis, Decreased\" (Directly leads to) \"Neuronal network function, Decreased\"",
+        "Relationships" : 358,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Synaptogenesis, Decreased\" (Directly leads to) \"Neuronal network function, Decreased\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Weak",
+        "SUID" : 1087,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 54
+      }
+    }, {
+      "data" : {
+        "id" : "1086",
+        "source" : "1033",
+        "target" : "1032",
+        "EdgeBetweenness" : 3.0,
+        "shared_name" : "\"Neuronal network function, Decreased\" (Directly leads to) \"Impairment, Learning and memory\"",
+        "Relationships" : 359,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Neuronal network function, Decreased\" (Directly leads to) \"Impairment, Learning and memory\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Strong",
+        "SUID" : 1086,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 54
+      }
+    }, {
+      "data" : {
+        "id" : "1085",
+        "source" : "1031",
+        "target" : "1030",
+        "EdgeBetweenness" : 1.0,
+        "shared_name" : "\"Inhibition, Deiodinase 2\" (Directly leads to) \"Decreased, Triiodothyronine (T3) in serum\"",
+        "Relationships" : 1026,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Inhibition, Deiodinase 2\" (Directly leads to) \"Decreased, Triiodothyronine (T3) in serum\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "",
+        "SUID" : 1085,
+        "Quantitative_Understanding" : "",
+        "selected" : false,
+        "AOPs" : 155
+      }
+    }, {
+      "data" : {
+        "id" : "1084",
+        "source" : "1031",
+        "target" : "1029",
+        "EdgeBetweenness" : 3.5,
+        "shared_name" : "\"Inhibition, Deiodinase 2\" (Indirectly leads to) \"Reduced, Posterior swim bladder inflation\"",
+        "Relationships" : 1042,
+        "shared_interaction" : "Indirectly leads to",
+        "name" : "\"Inhibition, Deiodinase 2\" (Indirectly leads to) \"Reduced, Posterior swim bladder inflation\"",
+        "interaction" : "Indirectly leads to",
+        "Evidence" : "",
+        "SUID" : 1084,
+        "Quantitative_Understanding" : "",
+        "selected" : false,
+        "AOPs" : 155
+      }
+    }, {
+      "data" : {
+        "id" : "1083",
+        "source" : "1031",
+        "target" : "1025",
+        "EdgeBetweenness" : 2.5,
+        "shared_name" : "\"Inhibition, Deiodinase 2\" (Indirectly leads to) \"Reduced, Anterior swim bladder inflation\"",
+        "Relationships" : 1043,
+        "shared_interaction" : "Indirectly leads to",
+        "name" : "\"Inhibition, Deiodinase 2\" (Indirectly leads to) \"Reduced, Anterior swim bladder inflation\"",
+        "interaction" : "Indirectly leads to",
+        "Evidence" : "",
+        "SUID" : 1083,
+        "Quantitative_Understanding" : "",
+        "selected" : false,
+        "AOPs" : 156
+      }
+    }, {
+      "data" : {
+        "id" : "1082",
+        "source" : "1031",
+        "target" : "1021",
+        "EdgeBetweenness" : 2.0,
+        "shared_name" : "\"Inhibition, Deiodinase 2\" (Directly leads to) \"Decreased, Triiodothyronine (T3) in tissues\"",
+        "Relationships" : 1199,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Inhibition, Deiodinase 2\" (Directly leads to) \"Decreased, Triiodothyronine (T3) in tissues\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1082,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 190
+      }
+    }, {
+      "data" : {
+        "id" : "1081",
+        "source" : "1030",
+        "target" : "1029",
+        "EdgeBetweenness" : 3.5,
+        "shared_name" : "\"Decreased, Triiodothyronine (T3) in serum\" (Directly leads to) \"Reduced, Posterior swim bladder inflation\"",
+        "Relationships" : 1027,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Decreased, Triiodothyronine (T3) in serum\" (Directly leads to) \"Reduced, Posterior swim bladder inflation\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "",
+        "SUID" : 1081,
+        "Quantitative_Understanding" : "",
+        "selected" : false,
+        "AOPs" : 155
+      }
+    }, {
+      "data" : {
+        "id" : "1080",
+        "source" : "1030",
+        "target" : "1025",
+        "EdgeBetweenness" : 2.5,
+        "shared_name" : "\"Decreased, Triiodothyronine (T3) in serum\" (Directly leads to) \"Reduced, Anterior swim bladder inflation\"",
+        "Relationships" : 1035,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Decreased, Triiodothyronine (T3) in serum\" (Directly leads to) \"Reduced, Anterior swim bladder inflation\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "",
+        "SUID" : 1080,
+        "Quantitative_Understanding" : "",
+        "selected" : false,
+        "AOPs" : 156
+      }
+    }, {
+      "data" : {
+        "id" : "1079",
+        "source" : "1029",
+        "target" : "1028",
+        "EdgeBetweenness" : 2.5,
+        "shared_name" : "\"Reduced, Posterior swim bladder inflation\" (Directly leads to) \"Reduced, Swimming performance\"",
+        "Relationships" : 1028,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Reduced, Posterior swim bladder inflation\" (Directly leads to) \"Reduced, Swimming performance\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "",
+        "SUID" : 1079,
+        "Quantitative_Understanding" : "",
+        "selected" : false,
+        "AOPs" : 155
+      }
+    }, {
+      "data" : {
+        "id" : "1078",
+        "source" : "1029",
+        "target" : "1025",
+        "EdgeBetweenness" : 2.0,
+        "shared_name" : "\"Reduced, Posterior swim bladder inflation\" (Directly leads to) \"Reduced, Anterior swim bladder inflation\"",
+        "Relationships" : 1031,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Reduced, Posterior swim bladder inflation\" (Directly leads to) \"Reduced, Anterior swim bladder inflation\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "",
+        "SUID" : 1078,
+        "Quantitative_Understanding" : "",
+        "selected" : false,
+        "AOPs" : 155
+      }
+    }, {
+      "data" : {
+        "id" : "1077",
+        "source" : "1029",
+        "target" : "1027",
+        "EdgeBetweenness" : 8.0,
+        "shared_name" : "\"Reduced, Posterior swim bladder inflation\" (Indirectly leads to) \"Reduced, Young of year survival\"",
+        "Relationships" : 1041,
+        "shared_interaction" : "Indirectly leads to",
+        "name" : "\"Reduced, Posterior swim bladder inflation\" (Indirectly leads to) \"Reduced, Young of year survival\"",
+        "interaction" : "Indirectly leads to",
+        "Evidence" : "Strong",
+        "SUID" : 1077,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 155
+      }
+    }, {
+      "data" : {
+        "id" : "1076",
+        "source" : "1028",
+        "target" : "1027",
+        "EdgeBetweenness" : 3.0,
+        "shared_name" : "\"Reduced, Swimming performance\" (Directly leads to) \"Reduced, Young of year survival\"",
+        "Relationships" : 1029,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Reduced, Swimming performance\" (Directly leads to) \"Reduced, Young of year survival\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "",
+        "SUID" : 1076,
+        "Quantitative_Understanding" : "",
+        "selected" : false,
+        "AOPs" : 155
+      }
+    }, {
+      "data" : {
+        "id" : "1075",
+        "source" : "1027",
+        "target" : "1026",
+        "EdgeBetweenness" : 8.0,
+        "shared_name" : "\"Reduced, Young of year survival\" (Directly leads to) \"Decrease, Population trajectory\"",
+        "Relationships" : 1030,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Reduced, Young of year survival\" (Directly leads to) \"Decrease, Population trajectory\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "",
+        "SUID" : 1075,
+        "Quantitative_Understanding" : "",
+        "selected" : false,
+        "AOPs" : 155
+      }
+    }, {
+      "data" : {
+        "id" : "1074",
+        "source" : "1025",
+        "target" : "1024",
+        "EdgeBetweenness" : 6.0,
+        "shared_name" : "\"Reduced, Anterior swim bladder inflation\" (Directly leads to) \"Reduced, Hearing\"",
+        "Relationships" : 1032,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Reduced, Anterior swim bladder inflation\" (Directly leads to) \"Reduced, Hearing\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "",
+        "SUID" : 1074,
+        "Quantitative_Understanding" : "",
+        "selected" : false,
+        "AOPs" : 155
+      }
+    }, {
+      "data" : {
+        "id" : "1073",
+        "source" : "1025",
+        "target" : "1028",
+        "EdgeBetweenness" : 3.5,
+        "shared_name" : "\"Reduced, Anterior swim bladder inflation\" (Directly leads to) \"Reduced, Swimming performance\"",
+        "Relationships" : 1034,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Reduced, Anterior swim bladder inflation\" (Directly leads to) \"Reduced, Swimming performance\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "",
+        "SUID" : 1073,
+        "Quantitative_Understanding" : "",
+        "selected" : false,
+        "AOPs" : 155
+      }
+    }, {
+      "data" : {
+        "id" : "1072",
+        "source" : "1024",
+        "target" : "1027",
+        "EdgeBetweenness" : 3.0,
+        "shared_name" : "\"Reduced, Hearing\" (Directly leads to) \"Reduced, Young of year survival\"",
+        "Relationships" : 1033,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Reduced, Hearing\" (Directly leads to) \"Reduced, Young of year survival\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "",
+        "SUID" : 1072,
+        "Quantitative_Understanding" : "",
+        "selected" : false,
+        "AOPs" : 155
+      }
+    }, {
+      "data" : {
+        "id" : "1071",
+        "source" : "1023",
+        "target" : "1030",
+        "EdgeBetweenness" : 1.0,
+        "shared_name" : "\"Inhibition, Deiodinase 1\" (Directly leads to) \"Decreased, Triiodothyronine (T3) in serum\"",
+        "Relationships" : 1037,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Inhibition, Deiodinase 1\" (Directly leads to) \"Decreased, Triiodothyronine (T3) in serum\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "",
+        "SUID" : 1071,
+        "Quantitative_Understanding" : "",
+        "selected" : false,
+        "AOPs" : 157
+      }
+    }, {
+      "data" : {
+        "id" : "1070",
+        "source" : "1023",
+        "target" : "1029",
+        "EdgeBetweenness" : 3.5,
+        "shared_name" : "\"Inhibition, Deiodinase 1\" (Indirectly leads to) \"Reduced, Posterior swim bladder inflation\"",
+        "Relationships" : 1044,
+        "shared_interaction" : "Indirectly leads to",
+        "name" : "\"Inhibition, Deiodinase 1\" (Indirectly leads to) \"Reduced, Posterior swim bladder inflation\"",
+        "interaction" : "Indirectly leads to",
+        "Evidence" : "",
+        "SUID" : 1070,
+        "Quantitative_Understanding" : "",
+        "selected" : false,
+        "AOPs" : 157
+      }
+    }, {
+      "data" : {
+        "id" : "1069",
+        "source" : "1023",
+        "target" : "1025",
+        "EdgeBetweenness" : 2.5,
+        "shared_name" : "\"Inhibition, Deiodinase 1\" (Indirectly leads to) \"Reduced, Anterior swim bladder inflation\"",
+        "Relationships" : 1045,
+        "shared_interaction" : "Indirectly leads to",
+        "name" : "\"Inhibition, Deiodinase 1\" (Indirectly leads to) \"Reduced, Anterior swim bladder inflation\"",
+        "interaction" : "Indirectly leads to",
+        "Evidence" : "",
+        "SUID" : 1069,
+        "Quantitative_Understanding" : "",
+        "selected" : false,
+        "AOPs" : 158
+      }
+    }, {
+      "data" : {
+        "id" : "1068",
+        "source" : "1023",
+        "target" : "1021",
+        "EdgeBetweenness" : 2.0,
+        "shared_name" : "\"Inhibition, Deiodinase 1\" (Directly leads to) \"Decreased, Triiodothyronine (T3) in tissues\"",
+        "Relationships" : 1198,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Inhibition, Deiodinase 1\" (Directly leads to) \"Decreased, Triiodothyronine (T3) in tissues\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1068,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 189
+      }
+    }, {
+      "data" : {
+        "id" : "1067",
+        "source" : "1022",
+        "target" : "1021",
+        "EdgeBetweenness" : 18.0,
+        "shared_name" : "\"Decreased, Thyroxine (T4) in tissues\" (Directly leads to) \"Decreased, Triiodothyronine (T3) in tissues\"",
+        "Relationships" : 1163,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Decreased, Thyroxine (T4) in tissues\" (Directly leads to) \"Decreased, Triiodothyronine (T3) in tissues\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Strong",
+        "SUID" : 1067,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 175
+      }
+    }, {
+      "data" : {
+        "id" : "1066",
+        "source" : "1021",
+        "target" : "1020",
+        "EdgeBetweenness" : 12.0,
+        "shared_name" : "\"Decreased, Triiodothyronine (T3) in tissues\" (Directly leads to) \"Altered, Amphibian metamorphosis\"",
+        "Relationships" : 1164,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Decreased, Triiodothyronine (T3) in tissues\" (Directly leads to) \"Altered, Amphibian metamorphosis\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Strong",
+        "SUID" : 1066,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 175
+      }
+    }, {
+      "data" : {
+        "id" : "1065",
+        "source" : "1019",
+        "target" : "1037",
+        "EdgeBetweenness" : 16.0,
+        "shared_name" : "\"Inhibition, Iodotyrosine deiodinase (IYD)\" (Directly leads to) \"Thyroidal Iodide, Decreased\"",
+        "Relationships" : 1197,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Inhibition, Iodotyrosine deiodinase (IYD)\" (Directly leads to) \"Thyroidal Iodide, Decreased\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Weak",
+        "SUID" : 1065,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 188
+      }
+    }, {
+      "data" : {
+        "id" : "1064",
+        "source" : "1018",
+        "target" : "1017",
+        "EdgeBetweenness" : 2.0,
+        "shared_name" : "\"Inhibition, Deiodinase 3\" (Directly leads to) \"Increased, Triiodothyronine (T3) in tissues\"",
+        "Relationships" : 1200,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Inhibition, Deiodinase 3\" (Directly leads to) \"Increased, Triiodothyronine (T3) in tissues\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Weak",
+        "SUID" : 1064,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 191
+      }
+    }, {
+      "data" : {
+        "id" : "1063",
+        "source" : "1017",
+        "target" : "1020",
+        "EdgeBetweenness" : 2.0,
+        "shared_name" : "\"Increased, Triiodothyronine (T3) in tissues\" (Directly leads to) \"Altered, Amphibian metamorphosis\"",
+        "Relationships" : 1201,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Increased, Triiodothyronine (T3) in tissues\" (Directly leads to) \"Altered, Amphibian metamorphosis\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1063,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 191
+      }
+    }, {
+      "data" : {
+        "id" : "1062",
+        "source" : "1016",
+        "target" : "1045",
+        "EdgeBetweenness" : 15.0,
+        "shared_name" : "\"Inhibition, Pendrin\" (Directly leads to) \"TH synthesis, Decreased\"",
+        "Relationships" : 1202,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Inhibition, Pendrin\" (Directly leads to) \"TH synthesis, Decreased\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Weak",
+        "SUID" : 1062,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 192
+      }
+    }, {
+      "data" : {
+        "id" : "1061",
+        "source" : "1015",
+        "target" : "1045",
+        "EdgeBetweenness" : 15.0,
+        "shared_name" : "\"Inhibition, Dual oxidase\" (Directly leads to) \"TH synthesis, Decreased\"",
+        "Relationships" : 1203,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Inhibition, Dual oxidase\" (Directly leads to) \"TH synthesis, Decreased\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1061,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 193
+      }
+    }, {
+      "data" : {
+        "id" : "1060",
+        "source" : "1014",
+        "target" : "1013",
+        "EdgeBetweenness" : 1.5,
+        "shared_name" : "\"Activation, Hepatic nuclear receptor(s)\" (Directly leads to) \"Increased, Hepatic thyroid hormone uptake/transport\"",
+        "Relationships" : 1204,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Activation, Hepatic nuclear receptor(s)\" (Directly leads to) \"Increased, Hepatic thyroid hormone uptake/transport\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1060,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 193
+      }
+    }, {
+      "data" : {
+        "id" : "1059",
+        "source" : "1014",
+        "target" : "1049",
+        "EdgeBetweenness" : 6.5,
+        "shared_name" : "\"Activation, Hepatic nuclear receptor(s)\" (Directly leads to) \"Induction, Upregulation of glucuronyltransferase activity\"",
+        "Relationships" : 1205,
+        "shared_interaction" : "Directly leads to",
+        "name" : "\"Activation, Hepatic nuclear receptor(s)\" (Directly leads to) \"Induction, Upregulation of glucuronyltransferase activity\"",
+        "interaction" : "Directly leads to",
+        "Evidence" : "Moderate",
+        "SUID" : 1059,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 193
+      }
+    }, {
+      "data" : {
+        "id" : "1058",
+        "source" : "1013",
+        "target" : "1047",
+        "EdgeBetweenness" : 6.5,
+        "shared_name" : "\"Increased, Hepatic thyroid hormone uptake/transport\" (Indirectly leads to) \"Increase, Biliary excretion TH glucuronide\"",
+        "Relationships" : 1206,
+        "shared_interaction" : "Indirectly leads to",
+        "name" : "\"Increased, Hepatic thyroid hormone uptake/transport\" (Indirectly leads to) \"Increase, Biliary excretion TH glucuronide\"",
+        "interaction" : "Indirectly leads to",
+        "Evidence" : "Weak",
+        "SUID" : 1058,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false,
+        "AOPs" : 193
+      }
+    } ]
+  }
+}

@@ -2,6 +2,7 @@
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 ##  Set working directory and import key event relationships
 library(igraph)
+par(bg="black")
 workingDir <-"C://Users/NPollesc/Desktop/GitHub/AOPwiki/" #EPA Dir
 # workingDir<- "C://Users/Nathan Pollesch/Documents/GitHub/AOPWiki/" #Personal Dir
 setwd(workingDir)
@@ -36,10 +37,6 @@ V(AOPg)$AOP_ID<-KEPdata[match(V(AOPg)$KE_EID,KEPdata[,3]),1] # finds AOPID to ad
 # V(AOPg)$KE_name[which(is.na(V(AOPg)$KE_EID))]
 
 # Plot the AOP wiki, colored by AOP
-length(unique(V(AOPg)$AOP_ID))
-length(E(AOPg))
-length(V(AOPg))
-
 acols=topo.colors(length(unique(V(AOPg)$AOP_ID)))
 for(i in 1:length(unique(V(AOPg)$AOP_ID))){
   V(AOPg)[which(V(AOPg)$AOP_ID==unique(V(AOPg)$AOP_ID)[i])]$acol<-acols[i]
@@ -52,15 +49,12 @@ AOP_freqs<-table(V(AOPg)$AOP_ID)
 bp_wcc<-barplot(table(V(AOPg)$AOP_ID),col.axis="white", xlab="AOP ID",ylab="# Key Events",col.lab="white")
 abline(h=mean(AOP_freqs),col="red")
 
-
-
 #  TASK: WORK ON EDGE COLORING FOR AOP ID
 #  edgecombcc<-expand.grid(V(gr)[which(comps$membership==ntcomps[i])],V(gr)[which(comps$membership==ntcomps[i])]) #creates a pairwise list of all nodes in the cc
 #  edgecombflat<-as.vector(rbind(edgecombcc[[1]],edgecombcc[[2]])) #flattens the pairwise list to a vector where entries are read pairwise
 #  edges.in.cc<-get.edge.ids(gr,edgecombflat,directed=TRUE)
 #  E(gr)$color[edges.in.cc]<-cols[[i]]
 
-  
 #### CONNECTED COMPONENTS ANALYSIS ####
 
 ## Color vertices and edges by their weakly or strongly connected components.
@@ -134,43 +128,79 @@ V(AOPg)$cent_size<-1
 V(AOPg)$cent_col<-"white"
 
 # Which key event has the most incident nodes?
-sort(degree(AOPg, mode="in"))
+sort(degree(AOPg, mode="all"))
   V(AOPg)$KE_name[which(V(AOPg)$name==449)]
   V(AOPg)$cent_size[which(V(AOPg)$name==345)]<-3
   V(AOPg)$cent_col[which(V(AOPg)$name==345)]<-"blue"
-  
+
+## DEGREE ALL VISUALIZATIONS ##
+    
 #global degree coloring for network plot
-V(AOPg)$deg_col<-deg.col(AOPg)
+V(AOPg)$deg_col<-deg.col(AOPg,dmode="all")
 #colored by degree
 plot(AOPg, vertex.size=2, vertex.color=V(AOPg)$deg_col, edge.arrow.size=.1, vertex.label=NA, edge.color="gray",edge.width=1)
 #colored by degree and sized by degree
+set.seed(1)
 plot(AOPg, vertex.size=500*degree(AOPg,mode="all",normalized=TRUE), vertex.color=V(AOPg)$deg_col, edge.arrow.size=.1, vertex.label=NA, edge.color="gray",edge.width=1)
 #barplot to show degree histogram
-barplot(table(degree(AOPg)),col=rev(heat.colors(max(degree(AOPg,mode="all")))))
+barplot(table(degree(AOPg,mode="all")), xlab="Degree (all)", ylab="# of KEs with Degree (all)",col.axis="white", col.lab="white",col=rev(heat.colors(max(degree(AOPg,mode="all"))+1)))
 
+## DEGREE IN VISUALIZATIONS ##
+
+#global degree coloring for network plot
+sort(degree(AOPg,mode="in"))
+V(AOPg)$KE_name[which(V(AOPg)$name==449)]
+
+V(AOPg)$deg_col<-deg.col(AOPg,dmode="in")
+#colored by degree
+plot(AOPg, vertex.size=2, vertex.color=V(AOPg)$deg_col, edge.arrow.size=.1, vertex.label=NA, edge.color="gray",edge.width=1)
+#colored by degree and sized by degree
+set.seed(1)
+plot(AOPg, vertex.size=500*degree(AOPg,mode="in",normalized=TRUE), vertex.color=V(AOPg)$deg_col, edge.arrow.size=.1, vertex.label=NA, edge.color="gray",edge.width=1)
+#barplot to show degree histogram
+barplot(table(degree(AOPg,mode="in")), xlab="Degree (in)", ylab="# of KEs with Degree (in)",col.axis="white", col.lab="white",col=rev(heat.colors(max(degree(AOPg,mode="in"))+1)))
+
+## DEGREE OUT VISUALIZATIONS ##
+
+#global degree coloring for network plot
+sort(degree(AOPg,mode="out"))
+V(AOPg)$KE_name[which(V(AOPg)$name==345)]
+
+V(AOPg)$deg_col<-deg.col(AOPg,dmode="out")
+#colored by degree
+plot(AOPg, vertex.size=2, vertex.color=V(AOPg)$deg_col, edge.arrow.size=.1, vertex.label=NA, edge.color="gray",edge.width=1)
+#colored by degree and sized by degree
+set.seed(1)
+plot(AOPg, vertex.size=500*degree(AOPg,mode="out",normalized=TRUE), vertex.color=V(AOPg)$deg_col, edge.arrow.size=.1, vertex.label=NA, edge.color="gray",edge.width=1)
+#barplot to show degree histogram
+barplot(table(degree(AOPg,mode="in")), xlab="Degree (out)", ylab="# of KEs with Degree (out)",col.axis="white", col.lab="white",col=rev(heat.colors(max(degree(AOPg,mode="out"))+1)))
+
+#plot(degree.distribution(AOPg), col.axis="white", col.lab="white", pch=20,col="white", xlab="Degree", ylab="Percentage (%)")
 #### Betweenness Centrality ####
 
 # Which key event is involved in the most shortest paths between other key events?
-sort(betweenness(AOPg))
-which(V(AOPg)$name==345)
+sort(betweenness(AOPg,directed=TRUE))
+table(betweenness(AOPg,directed=TRUE))
+
+V(AOPg)$KE_name[which(V(AOPg)$name==345)]
 V(AOPg)$cent_size[which(V(AOPg)$name==345)]<-3
 V(AOPg)$cent_col[which(V(AOPg)$name==345)]<-"green"
 V(AOPg)$deg_col<-deg.col(AOPg)
 #colored by betweenness
 
 wbpal=colorRampPalette(c("white","blue"))
-V(AOPg)$bet_col<-wbpal(10)[as.numeric(cut(betweenness(AOPg),breaks = 10))]
+V(AOPg)$bet_col<-wbpal(20)[as.numeric(cut(betweenness(AOPg,directed=TRUE),breaks = 20))]
 
 par(bg="black")
 plot(AOPg, vertex.size=2, vertex.color=V(AOPg)$bet_col, edge.arrow.size=.1, vertex.label=NA, edge.color="gray",edge.width=1)
 #colored by degree and sized by degree
-plot(AOPg, vertex.size=1000*betweenness(AOPg,normalized=TRUE), vertex.color=V(AOPg)$bet_col, edge.arrow.size=.1, vertex.label=NA, edge.color="gray",edge.width=1)
+set.seed(1)
+plot(AOPg, vertex.size=3000*betweenness(AOPg,normalized=TRUE,directed=T), vertex.color=V(AOPg)$bet_col, edge.arrow.size=.1, vertex.label=NA, edge.color="gray",edge.width=1)
 #barplot to show degree histogram
-barplot(table(degree(AOPg)),col=rev(heat.colors(max(degree(AOPg,mode="all")))))
+barplot(table(as.numeric(cut(betweenness(AOPg),breaks = 20))),col=wbpal(20))
 
-
-
-
+plot(sort(betweenness(AOPg)),col="blue", col.axis="white",col.lab="white", pch=10)
+#### Closeness Analysis ####
 # Which key event is the closest to the rest?
 sort(closeness(AOPg))
 V(AOPg)$KE_name[which(V(AOPg)$name==711)]
@@ -180,6 +210,20 @@ V(AOPg)$cent_col[which(V(AOPg)$name==711)]<-"purple"
 set.seed(1)
 par(bg="black")
 plot(AOPg, vertex.size=V(AOPg)$cent_size, vertex.color=V(AOPg)$cent_col, edge.arrow.size=.1, vertex.label=NA, edge.color="white")#, vertex.color="orange",edge.color="gray")
+
+#### Eccentricity ####
+# The eccentricity of a vertex is its shortest path distance from the farthest other node in the graph.
+sort(eccentricity(AOPg,mode ="all"))
+
+
+
+
+
+
+
+
+
+
 
 #### Thyroid AOP network ####
 THYimport <- "data/thyroid_net_direct.txt"

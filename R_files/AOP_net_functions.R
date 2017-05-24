@@ -127,8 +127,8 @@ aop.paths= function(gr,normalized=FALSE,kelist = V(gr)$ked){ #kelist is a list o
 
 deg.col<-function(gr,dmode="all"){
   gd<-degree(gr,mode=dmode)
-  heatcol=rev(heat.colors(max(gd)))
-  gdcols<-heatcol[gd]
+  heatcol=rev(heat.colors(max(gd)+1))
+  gdcols<-heatcol[gd+1]
   return(gdcols)
 }
 

@@ -1,0 +1,116 @@
+Upstream KE	Downstream KE	Directness	Evidence	Quantitative Understanding
+"Inhibition, Aromatase"	"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells"	Directly 	Strong	Moderate
+"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells"	"Reduction, Plasma 17beta-estradiol concentrations"	Directly 	Strong	Moderate
+"Reduction, Plasma 17beta-estradiol concentrations"	"Reduction, Vitellogenin synthesis in liver"	Directly 	Strong	Moderate
+"Reduction, Cumulative fecundity and spawning"	"Decrease, Population trajectory"	Directly 	Moderate	Moderate
+"Reduction, Vitellogenin accumulation into oocytes and oocyte growth/development"	"Reduction, Cumulative fecundity and spawning"	Directly 	Moderate	Moderate
+"Reduction, Plasma vitellogenin concentrations"	"Reduction, Vitellogenin accumulation into oocytes and oocyte growth/development"	Directly 	Moderate	Weak
+"Reduction, Vitellogenin synthesis in liver"	"Reduction, Plasma vitellogenin concentrations"	Directly 	Strong	Moderate
+"Reduction, Plasma 17beta-estradiol concentrations"	"Reduction, Plasma vitellogenin concentrations"	Indirectly 	Strong	Moderate
+"Reduction, Plasma 17beta-estradiol concentrations"	"irregularities, ovarian cycle"	Directly 	Strong	
+"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells"	"Reduction, Plasma 17beta-estradiol concentrations"	Directly 	Strong	
+"irregularities, ovarian cycle"	"impaired, Fertility"	Indirectly 	Moderate	
+"reduction in ovarian granulosa cells, Aromatase (Cyp19a1)"	"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells"	Directly 	Moderate	
+"Agonism, Androgen receptor"	"Reduction, Gonadotropins, circulating concentrations"	Directly 	Weak	Weak
+"Reduction, Gonadotropins, circulating concentrations"	"Reduction, Testosterone synthesis by ovarian theca cells"	Directly 	Strong	Weak
+"Reduction, Testosterone synthesis by ovarian theca cells"	"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells"	Directly 	Strong	Weak
+"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells"	"Reduction, Plasma 17beta-estradiol concentrations"	Directly 	Strong	Weak
+"Reduction, Plasma 17beta-estradiol concentrations"	"Reduction, Vitellogenin synthesis in liver"	Directly 	Strong	Moderate
+"Reduction, Vitellogenin synthesis in liver"	"Reduction, Plasma vitellogenin concentrations"	Directly 	Strong	Moderate
+"Reduction, Plasma vitellogenin concentrations"	"Reduction, Vitellogenin accumulation into oocytes and oocyte growth/development"	Directly 	Moderate	Weak
+"Reduction, Vitellogenin accumulation into oocytes and oocyte growth/development"	"Reduction, Cumulative fecundity and spawning"	Directly 	Moderate	Moderate
+"Reduction, Cumulative fecundity and spawning"	"Decrease, Population trajectory"	Directly 	Moderate	Moderate
+"Agonism, Androgen receptor"	"Reduction, Testosterone synthesis by ovarian theca cells"	Indirectly 	Moderate	Weak
+"Agonism, Androgen receptor"	"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells"	Indirectly 	Moderate	Weak
+"Agonism, Androgen receptor"	"Reduction, Vitellogenin synthesis in liver"	Indirectly 	Strong	Weak
+"Reduction, Plasma 17beta-estradiol concentrations"	"Reduction, Plasma vitellogenin concentrations"	Indirectly 	Strong	Moderate
+"Inhibition, Prolyl hydroxylases"	"Increased, HIF-1 heterodimer"	Directly 	Strong	Weak
+"Increased, HIF-1 heterodimer"	"Decreased, Aromatase (Cyp19a1) mRNA"	Directly 	Moderate	Weak
+"Decreased, Aromatase (Cyp19a1) mRNA"	"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells"	Directly 	Strong	Moderate
+"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells"	"Reduction, Plasma 17beta-estradiol concentrations"	Directly 	Strong	Moderate
+"Reduction, Plasma 17beta-estradiol concentrations"	"Reduction, Vitellogenin synthesis in liver"	Directly 	Strong	Moderate
+"Reduction, Vitellogenin synthesis in liver"	"Reduction, Plasma vitellogenin concentrations"	Directly 	Strong	Strong
+"Reduction, Plasma vitellogenin concentrations"	"Reduction, Vitellogenin accumulation into oocytes and oocyte growth/development"	Directly 	Moderate	
+"Reduction, Vitellogenin accumulation into oocytes and oocyte growth/development"	"Reduction, Cumulative fecundity and spawning"	Directly 		
+"Reduction, Cumulative fecundity and spawning"	"Decrease, Population trajectory"	Directly 		
+"modulation, Unknown"	"Increased, HIF-1 alpha transcription"	Directly 		
+"Increased, HIF-1 alpha transcription"	"Increased, HIF-1 heterodimer"	Directly 	Weak	Weak
+"Increased, HIF-1 heterodimer"	"Decreased, Aromatase (Cyp19a1) mRNA"	Directly 	Weak	
+"Decreased, Aromatase (Cyp19a1) mRNA"	"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells"	Directly 		
+"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells"	"Reduction, Plasma 17beta-estradiol concentrations"	Directly 		
+"Reduction, Plasma 17beta-estradiol concentrations"	"Reduction, Vitellogenin synthesis in liver"	Directly 		
+"Reduction, Vitellogenin synthesis in liver"	"Reduction, Plasma vitellogenin concentrations"	Directly 		
+"Reduction, Plasma vitellogenin concentrations"	"Reduction, Vitellogenin accumulation into oocytes and oocyte growth/development"	Directly 		
+"Reduction, Vitellogenin accumulation into oocytes and oocyte growth/development"	"Reduction, Cumulative fecundity and spawning"	Directly 		
+"Reduction, Cumulative fecundity and spawning"	"Decrease, Population trajectory"	Directly 		
+"Antagonism, Estrogen receptor"	"Reduction, Vitellogenin synthesis in liver"	Directly 	Strong	Weak
+"Reduction, Vitellogenin synthesis in liver"	"Reduction, Plasma vitellogenin concentrations"	Directly 	Strong	Moderate
+"Reduction, Plasma vitellogenin concentrations"	"Reduction, Vitellogenin accumulation into oocytes and oocyte growth/development"	Directly 	Moderate	Weak
+"Reduction, Vitellogenin accumulation into oocytes and oocyte growth/development"	"Reduction, Cumulative fecundity and spawning"	Directly 	Moderate	Moderate
+"Reduction, Cumulative fecundity and spawning"	"Decrease, Population trajectory"	Directly 	Moderate	Moderate
+"Agonism, Estrogen receptor"	"Impaired development of, Reproductive organs"	Directly 	Strong	
+"Increase, Renal pathology due to VTG deposition"	"Altered, Larval development"	Directly 	Strong	
+"Agonism, Estrogen receptor"	"Increase, Vitellogenin synthesis in liver"	Directly 	Strong	
+"Increase, Plasma vitellogenin concentrations"	"Increase, Renal pathology due to VTG deposition"	Directly 	Strong	
+"Agonism, Estrogen receptor"	"Altered, Reproductive behaviour"	Directly 	Strong	
+"Increase, Vitellogenin synthesis in liver"	"Increase, Plasma vitellogenin concentrations"	Directly 	Strong	
+"Inhibition, Cyclooxygenase activity"	"Reduced, Prostaglandin F2alpha synthesis, ovary"	Directly 	Weak	Weak
+"Reduced, Prostaglandin F2alpha concentration, plasma"	"Reduced, Spawning behavior"	Directly 	Strong	Weak
+"Reduced, Ability to attract spawning mates"	"Reduced, Reproductive Success"	Directly 	Moderate	Weak
+"Reduced, Reproductive Success"	"Decrease, Population trajectory"	Directly 	Strong	Strong
+"Reduced, Spawning behavior"	"Reduced, Ability to attract spawning mates"	Directly 	Moderate	Weak
+"Reduced, Prostaglandin F2alpha synthesis, ovary"	"Reduced, Prostaglandin F2alpha concentration, plasma"	Directly 	Moderate	Weak
+"Inhibition, Deiodinase 2"	"Decreased, Triiodothyronine (T3) in serum"	Directly 		
+"Decreased, Triiodothyronine (T3) in serum"	"Reduced, Posterior swim bladder inflation"	Directly 		
+"Reduced, Posterior swim bladder inflation"	"Reduced, Swimming performance"	Directly 		
+"Reduced, Swimming performance"	"Reduced, Young of year survival"	Directly 		
+"Reduced, Young of year survival"	"Decrease, Population trajectory"	Directly 		
+"Reduced, Posterior swim bladder inflation"	"Reduced, Anterior swim bladder inflation"	Directly 		
+"Reduced, Anterior swim bladder inflation"	"Reduced, Hearing"	Directly 		
+"Reduced, Hearing"	"Reduced, Young of year survival"	Directly 		
+"Reduced, Anterior swim bladder inflation"	"Reduced, Swimming performance"	Directly 		
+"Reduced, Posterior swim bladder inflation"	"Reduced, Young of year survival"	Indirectly 	Strong	Weak
+"Inhibition, Deiodinase 2"	"Reduced, Posterior swim bladder inflation"	Indirectly 		
+"Decreased, Triiodothyronine (T3) in serum"	"Reduced, Anterior swim bladder inflation"	Directly 		
+"Inhibition, Deiodinase 2"	"Decreased, Triiodothyronine (T3) in serum"	Directly 		
+"Reduced, Anterior swim bladder inflation"	"Reduced, Hearing"	Directly 		
+"Reduced, Hearing"	"Reduced, Young of year survival"	Directly 		
+"Reduced, Anterior swim bladder inflation"	"Reduced, Swimming performance"	Directly 		
+"Reduced, Swimming performance"	"Reduced, Young of year survival"	Directly 		
+"Reduced, Young of year survival"	"Decrease, Population trajectory"	Directly 		
+"Inhibition, Deiodinase 2"	"Reduced, Anterior swim bladder inflation"	Indirectly 		
+"Inhibition, Deiodinase 1"	"Decreased, Triiodothyronine (T3) in serum"	Directly 		
+"Decreased, Triiodothyronine (T3) in serum"	"Reduced, Posterior swim bladder inflation"	Directly 		
+"Reduced, Posterior swim bladder inflation"	"Reduced, Swimming performance"	Directly 		
+"Reduced, Swimming performance"	"Reduced, Young of year survival"	Directly 		
+"Reduced, Young of year survival"	"Decrease, Population trajectory"	Directly 		
+"Reduced, Posterior swim bladder inflation"	"Reduced, Anterior swim bladder inflation"	Directly 		
+"Reduced, Anterior swim bladder inflation"	"Reduced, Hearing"	Directly 		
+"Reduced, Hearing"	"Reduced, Young of year survival"	Directly 		
+"Reduced, Anterior swim bladder inflation"	"Reduced, Swimming performance"	Directly 		
+"Inhibition, Deiodinase 1"	"Reduced, Posterior swim bladder inflation"	Indirectly 		
+"Reduced, Posterior swim bladder inflation"	"Reduced, Young of year survival"	Indirectly 	Strong	Weak
+"Inhibition, Deiodinase 1"	"Decreased, Triiodothyronine (T3) in serum"	Directly 		
+"Decreased, Triiodothyronine (T3) in serum"	"Reduced, Anterior swim bladder inflation"	Directly 		
+"Reduced, Anterior swim bladder inflation"	"Reduced, Hearing"	Directly 		
+"Reduced, Hearing"	"Reduced, Young of year survival"	Directly 		
+"Reduced, Young of year survival"	"Decrease, Population trajectory"	Directly 		
+"Reduced, Anterior swim bladder inflation"	"Reduced, Swimming performance"	Directly 		
+"Reduced, Swimming performance"	"Reduced, Young of year survival"	Directly 		
+"Inhibition, Deiodinase 1"	"Reduced, Anterior swim bladder inflation"	Indirectly 		
+"Reduced, Anterior swim bladder inflation"	"Reduced, Hearing"	Directly 		
+"Reduced, Hearing"	"Reduced, Young of year survival"	Directly 		
+"T4 in serum, Decreased"	"Reduced, Anterior swim bladder inflation"	Directly 		
+"Reduced, Young of year survival"	"Decrease, Population trajectory"	Directly 		
+"Reduced, Anterior swim bladder inflation"	"Reduced, Swimming performance"	Directly 		
+"Reduced, Swimming performance"	"Reduced, Young of year survival"	Directly 		
+"Thyroperoxidase, Inhibition"	"TH synthesis, Decreased"	Directly 		
+"TH synthesis, Decreased"	"T4 in serum, Decreased"	Directly 		
+"Thyroperoxidase, Inhibition"	"T4 in serum, Decreased"	Indirectly 		
+Excessive ROS formation	"Increase, Oxidative Stress"	Directly 	Strong	Strong
+"Increase, Oxidative Stress"	"Increased, DNA Damage"	Directly 	Strong	Moderate
+"Increased, DNA Damage"	"Increase, Apoptosis"	Directly 	Strong	Moderate
+"Increase, Apoptosis"	"Decrease, Oogenesis"	Directly 	Weak	Weak
+"Decrease, Oogenesis"	"Decrease, Ovulation"	Directly 	Moderate	Weak
+"Decrease, Ovulation"	"Decreased, Fertility"	Directly 	Strong	Strong
+"Decreased, Fertility"	"Decrease, Population trajectory"	Directly 	Moderate	Weak
