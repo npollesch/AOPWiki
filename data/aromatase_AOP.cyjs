@@ -1,0 +1,2130 @@
+{
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.4.0",
+  "target_cytoscapejs_version" : "~2.1",
+  "data" : {
+    "shared_name" : "Aromatase network_non-redundant KERs.txt",
+    "name" : "Aromatase network_non-redundant KERs.txt",
+    "SUID" : 1431,
+    "__Annotations" : [ "" ],
+    "selected" : true
+  },
+  "elements" : {
+    "nodes" : [ {
+      "data" : {
+        "id" : "1491",
+        "ClosenessCentrality" : 1.0,
+        "Eccentricity" : 1,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 6,
+        "shared_name" : "\"Decreased, Fertility\"",
+        "BetweennessCentrality" : 0.00332226,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Decreased, Fertility\"",
+        "SelfLoops" : 0,
+        "SUID" : 1491,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.0
+      }
+    }, {
+      "data" : {
+        "id" : "1490",
+        "ClosenessCentrality" : 0.66666667,
+        "Eccentricity" : 2,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 10,
+        "shared_name" : "\"Decrease, Ovulation\"",
+        "BetweennessCentrality" : 0.0055371,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Decrease, Ovulation\"",
+        "SelfLoops" : 0,
+        "SUID" : 1490,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.5,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.0
+      }
+    }, {
+      "data" : {
+        "id" : "1489",
+        "ClosenessCentrality" : 0.5,
+        "Eccentricity" : 3,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 12,
+        "shared_name" : "\"Decrease, Oogenesis\"",
+        "BetweennessCentrality" : 0.00664452,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Decrease, Oogenesis\"",
+        "SelfLoops" : 0,
+        "SUID" : 1489,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.0
+      }
+    }, {
+      "data" : {
+        "id" : "1488",
+        "ClosenessCentrality" : 0.4,
+        "Eccentricity" : 4,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 12,
+        "shared_name" : "\"Increase, Apoptosis\"",
+        "BetweennessCentrality" : 0.00664452,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Increase, Apoptosis\"",
+        "SelfLoops" : 0,
+        "SUID" : 1488,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.5,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.0
+      }
+    }, {
+      "data" : {
+        "id" : "1487",
+        "ClosenessCentrality" : 0.33333333,
+        "Eccentricity" : 5,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 10,
+        "shared_name" : "\"Increased, DNA Damage\"",
+        "BetweennessCentrality" : 0.0055371,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Increased, DNA Damage\"",
+        "SelfLoops" : 0,
+        "SUID" : 1487,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 3.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.0
+      }
+    }, {
+      "data" : {
+        "id" : "1486",
+        "ClosenessCentrality" : 0.28571429,
+        "Eccentricity" : 6,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 6,
+        "shared_name" : "\"Increase, Oxidative Stress\"",
+        "BetweennessCentrality" : 0.00332226,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Increase, Oxidative Stress\"",
+        "SelfLoops" : 0,
+        "SUID" : 1486,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 3.5,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 1.5
+      }
+    }, {
+      "data" : {
+        "id" : "1485",
+        "ClosenessCentrality" : 0.25,
+        "Eccentricity" : 7,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "Excessive ROS formation",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 1,
+        "Indegree" : 0,
+        "Event_Type" : "KE",
+        "name" : "Excessive ROS formation",
+        "SelfLoops" : 0,
+        "SUID" : 1485,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 4.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.0
+      }
+    }, {
+      "data" : {
+        "id" : "1484",
+        "ClosenessCentrality" : 0.33333333,
+        "Eccentricity" : 5,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.5,
+        "Stress" : 0,
+        "shared_name" : "\"TH synthesis, Decreased\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"TH synthesis, Decreased\"",
+        "SelfLoops" : 0,
+        "SUID" : 1484,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 3.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.5
+      }
+    }, {
+      "data" : {
+        "id" : "1483",
+        "ClosenessCentrality" : 0.36842105,
+        "Eccentricity" : 5,
+        "Outdegree" : 2,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.5,
+        "Stress" : 0,
+        "shared_name" : "\"Thyroperoxidase, Inhibition\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 2,
+        "Indegree" : 0,
+        "Event_Type" : "MIE",
+        "name" : "\"Thyroperoxidase, Inhibition\"",
+        "SelfLoops" : 0,
+        "SUID" : 1483,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.71428571,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.5
+      }
+    }, {
+      "data" : {
+        "id" : "1482",
+        "ClosenessCentrality" : 0.41666667,
+        "Eccentricity" : 4,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.16666667,
+        "Stress" : 14,
+        "shared_name" : "\"T4 in serum, Decreased\"",
+        "BetweennessCentrality" : 0.0055371,
+        "EdgeCount" : 3,
+        "Indegree" : 2,
+        "Event_Type" : "KE",
+        "name" : "\"T4 in serum, Decreased\"",
+        "SelfLoops" : 0,
+        "SUID" : 1482,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.4,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.6666666666666665
+      }
+    }, {
+      "data" : {
+        "id" : "1481",
+        "ClosenessCentrality" : 0.58333333,
+        "Eccentricity" : 3,
+        "Outdegree" : 3,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.5,
+        "Stress" : 0,
+        "shared_name" : "\"Inhibition, Deiodinase 1\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 3,
+        "Indegree" : 0,
+        "Event_Type" : "MIE",
+        "name" : "\"Inhibition, Deiodinase 1\"",
+        "SelfLoops" : 0,
+        "SUID" : 1481,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.71428571,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 5.666666666666667
+      }
+    }, {
+      "data" : {
+        "id" : "1480",
+        "ClosenessCentrality" : 0.66666667,
+        "Eccentricity" : 2,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 8,
+        "shared_name" : "\"Reduced, Hearing\"",
+        "BetweennessCentrality" : 0.00221484,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Reduced, Hearing\"",
+        "SelfLoops" : 0,
+        "SUID" : 1480,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.5,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 5.5
+      }
+    }, {
+      "data" : {
+        "id" : "1479",
+        "ClosenessCentrality" : 0.57142857,
+        "Eccentricity" : 3,
+        "Outdegree" : 2,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.14285714,
+        "Stress" : 25,
+        "shared_name" : "\"Reduced, Anterior swim bladder inflation\"",
+        "BetweennessCentrality" : 0.00968992,
+        "EdgeCount" : 7,
+        "Indegree" : 5,
+        "Event_Type" : "KE",
+        "name" : "\"Reduced, Anterior swim bladder inflation\"",
+        "SelfLoops" : 0,
+        "SUID" : 1479,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.75,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.4285714285714284
+      }
+    }, {
+      "data" : {
+        "id" : "1478",
+        "ClosenessCentrality" : 1.0,
+        "Eccentricity" : 1,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.08333333,
+        "Stress" : 14,
+        "shared_name" : "\"Reduced, Young of year survival\"",
+        "BetweennessCentrality" : 0.0055371,
+        "EdgeCount" : 4,
+        "Indegree" : 3,
+        "Event_Type" : "AO",
+        "name" : "\"Reduced, Young of year survival\"",
+        "SelfLoops" : 0,
+        "SUID" : 1478,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.75
+      }
+    }, {
+      "data" : {
+        "id" : "1477",
+        "ClosenessCentrality" : 0.66666667,
+        "Eccentricity" : 2,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.33333333,
+        "Stress" : 8,
+        "shared_name" : "\"Reduced, Swimming performance\"",
+        "BetweennessCentrality" : 0.00221484,
+        "EdgeCount" : 3,
+        "Indegree" : 2,
+        "Event_Type" : "KE",
+        "name" : "\"Reduced, Swimming performance\"",
+        "SelfLoops" : 0,
+        "SUID" : 1477,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.5,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 5.666666666666667
+      }
+    }, {
+      "data" : {
+        "id" : "1476",
+        "ClosenessCentrality" : 0.71428571,
+        "Eccentricity" : 2,
+        "Outdegree" : 3,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.23333333,
+        "Stress" : 9,
+        "shared_name" : "\"Reduced, Posterior swim bladder inflation\"",
+        "BetweennessCentrality" : 0.00415282,
+        "EdgeCount" : 6,
+        "Indegree" : 3,
+        "Event_Type" : "KE",
+        "name" : "\"Reduced, Posterior swim bladder inflation\"",
+        "SelfLoops" : 0,
+        "SUID" : 1476,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.4,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 4.0
+      }
+    }, {
+      "data" : {
+        "id" : "1475",
+        "ClosenessCentrality" : 0.54545455,
+        "Eccentricity" : 3,
+        "Outdegree" : 2,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.41666667,
+        "Stress" : 0,
+        "shared_name" : "\"Decreased, Triiodothyronine (T3) in serum\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 4,
+        "Indegree" : 2,
+        "Event_Type" : "KE",
+        "name" : "\"Decreased, Triiodothyronine (T3) in serum\"",
+        "SelfLoops" : 0,
+        "SUID" : 1475,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.83333333,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 4.75
+      }
+    }, {
+      "data" : {
+        "id" : "1474",
+        "ClosenessCentrality" : 0.58333333,
+        "Eccentricity" : 3,
+        "Outdegree" : 3,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.5,
+        "Stress" : 0,
+        "shared_name" : "\"Inhibition, Deiodinase 2\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 3,
+        "Indegree" : 0,
+        "Event_Type" : "MIE",
+        "name" : "\"Inhibition, Deiodinase 2\"",
+        "SelfLoops" : 0,
+        "SUID" : 1474,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.71428571,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 5.666666666666667
+      }
+    }, {
+      "data" : {
+        "id" : "1473",
+        "ClosenessCentrality" : 1.0,
+        "Eccentricity" : 1,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 5,
+        "shared_name" : "\"Reduced, Reproductive Success\"",
+        "BetweennessCentrality" : 0.00276855,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "AO",
+        "name" : "\"Reduced, Reproductive Success\"",
+        "SelfLoops" : 0,
+        "SUID" : 1473,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.0
+      }
+    }, {
+      "data" : {
+        "id" : "1472",
+        "ClosenessCentrality" : 0.66666667,
+        "Eccentricity" : 2,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 8,
+        "shared_name" : "\"Reduced, Ability to attract spawning mates\"",
+        "BetweennessCentrality" : 0.00442968,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Reduced, Ability to attract spawning mates\"",
+        "SelfLoops" : 0,
+        "SUID" : 1472,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.5,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.0
+      }
+    }, {
+      "data" : {
+        "id" : "1471",
+        "ClosenessCentrality" : 0.5,
+        "Eccentricity" : 3,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 9,
+        "shared_name" : "\"Reduced, Spawning behavior\"",
+        "BetweennessCentrality" : 0.00498339,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Reduced, Spawning behavior\"",
+        "SelfLoops" : 0,
+        "SUID" : 1471,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.0
+      }
+    }, {
+      "data" : {
+        "id" : "1470",
+        "ClosenessCentrality" : 0.4,
+        "Eccentricity" : 4,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 8,
+        "shared_name" : "\"Reduced, Prostaglandin F2alpha concentration, plasma\"",
+        "BetweennessCentrality" : 0.00442968,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Reduced, Prostaglandin F2alpha concentration, plasma\"",
+        "SelfLoops" : 0,
+        "SUID" : 1470,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.5,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.0
+      }
+    }, {
+      "data" : {
+        "id" : "1469",
+        "ClosenessCentrality" : 0.33333333,
+        "Eccentricity" : 5,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 5,
+        "shared_name" : "\"Reduced, Prostaglandin F2alpha synthesis, ovary\"",
+        "BetweennessCentrality" : 0.00276855,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Reduced, Prostaglandin F2alpha synthesis, ovary\"",
+        "SelfLoops" : 0,
+        "SUID" : 1469,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 3.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 1.5
+      }
+    }, {
+      "data" : {
+        "id" : "1468",
+        "ClosenessCentrality" : 0.28571429,
+        "Eccentricity" : 6,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"Inhibition, Cyclooxygenase activity\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 1,
+        "Indegree" : 0,
+        "Event_Type" : "MIE",
+        "name" : "\"Inhibition, Cyclooxygenase activity\"",
+        "SelfLoops" : 0,
+        "SUID" : 1468,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 3.5,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.0
+      }
+    }, {
+      "data" : {
+        "id" : "1467",
+        "ClosenessCentrality" : 0.0,
+        "Eccentricity" : 0,
+        "Outdegree" : 0,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"Altered, Reproductive behaviour\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 1,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Altered, Reproductive behaviour\"",
+        "SelfLoops" : 0,
+        "SUID" : 1467,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 0.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.0
+      }
+    }, {
+      "data" : {
+        "id" : "1466",
+        "ClosenessCentrality" : 0.66666667,
+        "Eccentricity" : 2,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 4,
+        "shared_name" : "\"Increase, Plasma vitellogenin concentrations\"",
+        "BetweennessCentrality" : 0.13333333,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Increase, Plasma vitellogenin concentrations\"",
+        "SelfLoops" : 0,
+        "SUID" : 1466,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.5,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.0
+      }
+    }, {
+      "data" : {
+        "id" : "1465",
+        "ClosenessCentrality" : 0.5,
+        "Eccentricity" : 3,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 3,
+        "shared_name" : "\"Increase, Vitellogenin synthesis in liver\"",
+        "BetweennessCentrality" : 0.1,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Increase, Vitellogenin synthesis in liver\"",
+        "SelfLoops" : 0,
+        "SUID" : 1465,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.5
+      }
+    }, {
+      "data" : {
+        "id" : "1464",
+        "ClosenessCentrality" : 0.0,
+        "Eccentricity" : 0,
+        "Outdegree" : 0,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"Altered, Larval development\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 1,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Altered, Larval development\"",
+        "SelfLoops" : 0,
+        "SUID" : 1464,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 0.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.0
+      }
+    }, {
+      "data" : {
+        "id" : "1463",
+        "ClosenessCentrality" : 1.0,
+        "Eccentricity" : 1,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 3,
+        "shared_name" : "\"Increase, Renal pathology due to VTG deposition\"",
+        "BetweennessCentrality" : 0.1,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Increase, Renal pathology due to VTG deposition\"",
+        "SelfLoops" : 0,
+        "SUID" : 1463,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 1.5
+      }
+    }, {
+      "data" : {
+        "id" : "1462",
+        "ClosenessCentrality" : 0.0,
+        "Eccentricity" : 0,
+        "Outdegree" : 0,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"Impaired development of, Reproductive organs\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 1,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Impaired development of, Reproductive organs\"",
+        "SelfLoops" : 0,
+        "SUID" : 1462,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 0.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.0
+      }
+    }, {
+      "data" : {
+        "id" : "1461",
+        "ClosenessCentrality" : 0.5,
+        "Eccentricity" : 4,
+        "Outdegree" : 3,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"Agonism, Estrogen receptor\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 3,
+        "Indegree" : 0,
+        "Event_Type" : "MIE",
+        "name" : "\"Agonism, Estrogen receptor\"",
+        "SelfLoops" : 0,
+        "SUID" : 1461,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 1.3333333333333333
+      }
+    }, {
+      "data" : {
+        "id" : "1460",
+        "ClosenessCentrality" : 0.33333333,
+        "Eccentricity" : 5,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"Antagonism, Estrogen receptor\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 1,
+        "Indegree" : 0,
+        "Event_Type" : "MIE",
+        "name" : "\"Antagonism, Estrogen receptor\"",
+        "SelfLoops" : 0,
+        "SUID" : 1460,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 3.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 4.0
+      }
+    }, {
+      "data" : {
+        "id" : "1459",
+        "ClosenessCentrality" : 0.21153846,
+        "Eccentricity" : 8,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 11,
+        "shared_name" : "\"Increased, HIF-1 alpha transcription\"",
+        "BetweennessCentrality" : 0.00609081,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Increased, HIF-1 alpha transcription\"",
+        "SelfLoops" : 0,
+        "SUID" : 1459,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 4.72727273,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.0
+      }
+    }, {
+      "data" : {
+        "id" : "1458",
+        "ClosenessCentrality" : 0.1875,
+        "Eccentricity" : 9,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"modulation, Unknown\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 1,
+        "Indegree" : 0,
+        "Event_Type" : "KE",
+        "name" : "\"modulation, Unknown\"",
+        "SelfLoops" : 0,
+        "SUID" : 1458,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 5.33333333,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.0
+      }
+    }, {
+      "data" : {
+        "id" : "1457",
+        "ClosenessCentrality" : 0.29032258,
+        "Eccentricity" : 6,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 36,
+        "shared_name" : "\"Decreased, Aromatase (Cyp19a1) mRNA\"",
+        "BetweennessCentrality" : 0.01993355,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Decreased, Aromatase (Cyp19a1) mRNA\"",
+        "SelfLoops" : 0,
+        "SUID" : 1457,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 3.44444444,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 4.5
+      }
+    }, {
+      "data" : {
+        "id" : "1456",
+        "ClosenessCentrality" : 0.24390244,
+        "Eccentricity" : 7,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 30,
+        "shared_name" : "\"Increased, HIF-1 heterodimer\"",
+        "BetweennessCentrality" : 0.0166113,
+        "EdgeCount" : 3,
+        "Indegree" : 2,
+        "Event_Type" : "KE",
+        "name" : "\"Increased, HIF-1 heterodimer\"",
+        "SelfLoops" : 0,
+        "SUID" : 1456,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 4.1,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 1.6666666666666667
+      }
+    }, {
+      "data" : {
+        "id" : "1455",
+        "ClosenessCentrality" : 0.21153846,
+        "Eccentricity" : 8,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"Inhibition, Prolyl hydroxylases\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 1,
+        "Indegree" : 0,
+        "Event_Type" : "MIE",
+        "name" : "\"Inhibition, Prolyl hydroxylases\"",
+        "SelfLoops" : 0,
+        "SUID" : 1455,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 4.72727273,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.0
+      }
+    }, {
+      "data" : {
+        "id" : "1454",
+        "ClosenessCentrality" : 0.29032258,
+        "Eccentricity" : 6,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.33333333,
+        "Stress" : 9,
+        "shared_name" : "\"Reduction, Testosterone synthesis by ovarian theca cells\"",
+        "BetweennessCentrality" : 0.00498339,
+        "EdgeCount" : 3,
+        "Indegree" : 2,
+        "Event_Type" : "KE",
+        "name" : "\"Reduction, Testosterone synthesis by ovarian theca cells\"",
+        "SelfLoops" : 0,
+        "SUID" : 1454,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 3.44444444,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 4.0
+      }
+    }, {
+      "data" : {
+        "id" : "1453",
+        "ClosenessCentrality" : 0.24390244,
+        "Eccentricity" : 7,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.5,
+        "Stress" : 0,
+        "shared_name" : "\"Reduction, Gonadotropins, circulating concentrations\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Reduction, Gonadotropins, circulating concentrations\"",
+        "SelfLoops" : 0,
+        "SUID" : 1453,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 4.1,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.5
+      }
+    }, {
+      "data" : {
+        "id" : "1452",
+        "ClosenessCentrality" : 0.40740741,
+        "Eccentricity" : 5,
+        "Outdegree" : 4,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.16666667,
+        "Stress" : 0,
+        "shared_name" : "\"Agonism, Androgen receptor\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 4,
+        "Indegree" : 0,
+        "Event_Type" : "MIE",
+        "name" : "\"Agonism, Androgen receptor\"",
+        "SelfLoops" : 0,
+        "SUID" : 1452,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.45454545,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.75
+      }
+    }, {
+      "data" : {
+        "id" : "1451",
+        "ClosenessCentrality" : 0.29032258,
+        "Eccentricity" : 6,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"reduction in ovarian granulosa cells, Aromatase (Cyp19a1)\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 1,
+        "Indegree" : 0,
+        "Event_Type" : "MIE",
+        "name" : "\"reduction in ovarian granulosa cells, Aromatase (Cyp19a1)\"",
+        "SelfLoops" : 0,
+        "SUID" : 1451,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 3.44444444,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 6.0
+      }
+    }, {
+      "data" : {
+        "id" : "1450",
+        "ClosenessCentrality" : 0.0,
+        "Eccentricity" : 0,
+        "Outdegree" : 0,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"impaired, Fertility\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 1,
+        "Indegree" : 1,
+        "Event_Type" : "AO",
+        "name" : "\"impaired, Fertility\"",
+        "SelfLoops" : 0,
+        "SUID" : 1450,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 0.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.0
+      }
+    }, {
+      "data" : {
+        "id" : "1449",
+        "ClosenessCentrality" : 1.0,
+        "Eccentricity" : 1,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 12,
+        "shared_name" : "\"irregularities, ovarian cycle\"",
+        "BetweennessCentrality" : 0.00664452,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"irregularities, ovarian cycle\"",
+        "SelfLoops" : 0,
+        "SUID" : 1449,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.5
+      }
+    }, {
+      "data" : {
+        "id" : "1448",
+        "ClosenessCentrality" : 0.5,
+        "Eccentricity" : 3,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.16666667,
+        "Stress" : 42,
+        "shared_name" : "\"Reduction, Plasma vitellogenin concentrations\"",
+        "BetweennessCentrality" : 0.02325581,
+        "EdgeCount" : 3,
+        "Indegree" : 2,
+        "Event_Type" : "KE",
+        "name" : "\"Reduction, Plasma vitellogenin concentrations\"",
+        "SelfLoops" : 0,
+        "SUID" : 1448,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.3333333333333335
+      }
+    }, {
+      "data" : {
+        "id" : "1447",
+        "ClosenessCentrality" : 0.66666667,
+        "Eccentricity" : 2,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 30,
+        "shared_name" : "\"Reduction, Vitellogenin accumulation into oocytes and oocyte growth/development\"",
+        "BetweennessCentrality" : 0.0166113,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Reduction, Vitellogenin accumulation into oocytes and oocyte growth/development\"",
+        "SelfLoops" : 0,
+        "SUID" : 1447,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.5,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.5
+      }
+    }, {
+      "data" : {
+        "id" : "1446",
+        "ClosenessCentrality" : 0.0,
+        "Eccentricity" : 0,
+        "Outdegree" : 0,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"Decrease, Population trajectory\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 4,
+        "Indegree" : 4,
+        "Event_Type" : "AO",
+        "name" : "\"Decrease, Population trajectory\"",
+        "SelfLoops" : 0,
+        "SUID" : 1446,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 0.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.5
+      }
+    }, {
+      "data" : {
+        "id" : "1445",
+        "ClosenessCentrality" : 1.0,
+        "Eccentricity" : 1,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 16,
+        "shared_name" : "\"Reduction, Cumulative fecundity and spawning\"",
+        "BetweennessCentrality" : 0.00885936,
+        "EdgeCount" : 2,
+        "Indegree" : 1,
+        "Event_Type" : "AO",
+        "name" : "\"Reduction, Cumulative fecundity and spawning\"",
+        "SelfLoops" : 0,
+        "SUID" : 1445,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 1.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.0
+      }
+    }, {
+      "data" : {
+        "id" : "1444",
+        "ClosenessCentrality" : 0.4,
+        "Eccentricity" : 4,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.08333333,
+        "Stress" : 8,
+        "shared_name" : "\"Reduction, Vitellogenin synthesis in liver\"",
+        "BetweennessCentrality" : 0.00442968,
+        "EdgeCount" : 4,
+        "Indegree" : 3,
+        "Event_Type" : "KE",
+        "name" : "\"Reduction, Vitellogenin synthesis in liver\"",
+        "SelfLoops" : 0,
+        "SUID" : 1444,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.5,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.0
+      }
+    }, {
+      "data" : {
+        "id" : "1443",
+        "ClosenessCentrality" : 0.5,
+        "Eccentricity" : 4,
+        "Outdegree" : 3,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.08333333,
+        "Stress" : 72,
+        "shared_name" : "\"Reduction, Plasma 17beta-estradiol concentrations\"",
+        "BetweennessCentrality" : 0.03986711,
+        "EdgeCount" : 4,
+        "Indegree" : 1,
+        "Event_Type" : "KE",
+        "name" : "\"Reduction, Plasma 17beta-estradiol concentrations\"",
+        "SelfLoops" : 0,
+        "SUID" : 1443,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.0,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 3.75
+      }
+    }, {
+      "data" : {
+        "id" : "1442",
+        "ClosenessCentrality" : 0.36363636,
+        "Eccentricity" : 5,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.03333333,
+        "Stress" : 75,
+        "shared_name" : "\"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells\"",
+        "BetweennessCentrality" : 0.04152824,
+        "EdgeCount" : 6,
+        "Indegree" : 5,
+        "Event_Type" : "KE",
+        "name" : "\"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells\"",
+        "SelfLoops" : 0,
+        "SUID" : 1442,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 2.75,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 2.5
+      }
+    }, {
+      "data" : {
+        "id" : "1441",
+        "ClosenessCentrality" : 0.29032258,
+        "Eccentricity" : 6,
+        "Outdegree" : 1,
+        "PartnerOfMultiEdgedNodePairs" : 0,
+        "ClusteringCoefficient" : 0.0,
+        "Stress" : 0,
+        "shared_name" : "\"Inhibition, Aromatase\"",
+        "BetweennessCentrality" : 0.0,
+        "EdgeCount" : 1,
+        "Indegree" : 0,
+        "Event_Type" : "MIE",
+        "name" : "\"Inhibition, Aromatase\"",
+        "SelfLoops" : 0,
+        "SUID" : 1441,
+        "IsSingleNode" : false,
+        "AverageShortestPathLength" : 3.44444444,
+        "selected" : false,
+        "NeighborhoodConnectivity" : 6.0
+      }
+    } ],
+    "edges" : [ {
+      "data" : {
+        "id" : "1553",
+        "source" : "1491",
+        "target" : "1446",
+        "EdgeBetweenness" : 7.0,
+        "shared_name" : "\"Decreased, Fertility\" (pp) \"Decrease, Population trajectory\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Decreased, Fertility\" (pp) \"Decrease, Population trajectory\"",
+        "interaction" : "pp",
+        "Evidence" : "Moderate",
+        "SUID" : 1553,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1552",
+        "source" : "1490",
+        "target" : "1491",
+        "EdgeBetweenness" : 12.0,
+        "shared_name" : "\"Decrease, Ovulation\" (pp) \"Decreased, Fertility\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Decrease, Ovulation\" (pp) \"Decreased, Fertility\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1552,
+        "Quantitative_Understanding" : "Strong",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1551",
+        "source" : "1489",
+        "target" : "1490",
+        "EdgeBetweenness" : 15.0,
+        "shared_name" : "\"Decrease, Oogenesis\" (pp) \"Decrease, Ovulation\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Decrease, Oogenesis\" (pp) \"Decrease, Ovulation\"",
+        "interaction" : "pp",
+        "Evidence" : "Moderate",
+        "SUID" : 1551,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1550",
+        "source" : "1488",
+        "target" : "1489",
+        "EdgeBetweenness" : 16.0,
+        "shared_name" : "\"Increase, Apoptosis\" (pp) \"Decrease, Oogenesis\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Increase, Apoptosis\" (pp) \"Decrease, Oogenesis\"",
+        "interaction" : "pp",
+        "Evidence" : "Weak",
+        "SUID" : 1550,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1549",
+        "source" : "1487",
+        "target" : "1488",
+        "EdgeBetweenness" : 15.0,
+        "shared_name" : "\"Increased, DNA Damage\" (pp) \"Increase, Apoptosis\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Increased, DNA Damage\" (pp) \"Increase, Apoptosis\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1549,
+        "Quantitative_Understanding" : "Moderate",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1548",
+        "source" : "1486",
+        "target" : "1487",
+        "EdgeBetweenness" : 12.0,
+        "shared_name" : "\"Increase, Oxidative Stress\" (pp) \"Increased, DNA Damage\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Increase, Oxidative Stress\" (pp) \"Increased, DNA Damage\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1548,
+        "Quantitative_Understanding" : "Moderate",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1547",
+        "source" : "1485",
+        "target" : "1486",
+        "EdgeBetweenness" : 7.0,
+        "shared_name" : "Excessive ROS formation (pp) \"Increase, Oxidative Stress\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "Excessive ROS formation (pp) \"Increase, Oxidative Stress\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1547,
+        "Quantitative_Understanding" : "Strong",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1546",
+        "source" : "1484",
+        "target" : "1482",
+        "EdgeBetweenness" : 6.0,
+        "shared_name" : "\"TH synthesis, Decreased\" (pp) \"T4 in serum, Decreased\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"TH synthesis, Decreased\" (pp) \"T4 in serum, Decreased\"",
+        "interaction" : "pp",
+        "Evidence" : "",
+        "SUID" : 1546,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1545",
+        "source" : "1483",
+        "target" : "1482",
+        "EdgeBetweenness" : 6.0,
+        "shared_name" : "\"Thyroperoxidase, Inhibition\" (pp) \"T4 in serum, Decreased\"",
+        "Directness" : "Indirectly",
+        "shared_interaction" : "pp",
+        "name" : "\"Thyroperoxidase, Inhibition\" (pp) \"T4 in serum, Decreased\"",
+        "interaction" : "pp",
+        "Evidence" : "",
+        "SUID" : 1545,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1544",
+        "source" : "1483",
+        "target" : "1484",
+        "EdgeBetweenness" : 1.0,
+        "shared_name" : "\"Thyroperoxidase, Inhibition\" (pp) \"TH synthesis, Decreased\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Thyroperoxidase, Inhibition\" (pp) \"TH synthesis, Decreased\"",
+        "interaction" : "pp",
+        "Evidence" : "",
+        "SUID" : 1544,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1543",
+        "source" : "1482",
+        "target" : "1479",
+        "EdgeBetweenness" : 15.0,
+        "shared_name" : "\"T4 in serum, Decreased\" (pp) \"Reduced, Anterior swim bladder inflation\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"T4 in serum, Decreased\" (pp) \"Reduced, Anterior swim bladder inflation\"",
+        "interaction" : "pp",
+        "Evidence" : "",
+        "SUID" : 1543,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1542",
+        "source" : "1481",
+        "target" : "1479",
+        "EdgeBetweenness" : 2.5,
+        "shared_name" : "\"Inhibition, Deiodinase 1\" (pp) \"Reduced, Anterior swim bladder inflation\"",
+        "Directness" : "Indirectly",
+        "shared_interaction" : "pp",
+        "name" : "\"Inhibition, Deiodinase 1\" (pp) \"Reduced, Anterior swim bladder inflation\"",
+        "interaction" : "pp",
+        "Evidence" : "",
+        "SUID" : 1542,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1541",
+        "source" : "1481",
+        "target" : "1476",
+        "EdgeBetweenness" : 3.5,
+        "shared_name" : "\"Inhibition, Deiodinase 1\" (pp) \"Reduced, Posterior swim bladder inflation\"",
+        "Directness" : "Indirectly",
+        "shared_interaction" : "pp",
+        "name" : "\"Inhibition, Deiodinase 1\" (pp) \"Reduced, Posterior swim bladder inflation\"",
+        "interaction" : "pp",
+        "Evidence" : "",
+        "SUID" : 1541,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1540",
+        "source" : "1481",
+        "target" : "1475",
+        "EdgeBetweenness" : 1.0,
+        "shared_name" : "\"Inhibition, Deiodinase 1\" (pp) \"Decreased, Triiodothyronine (T3) in serum\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Inhibition, Deiodinase 1\" (pp) \"Decreased, Triiodothyronine (T3) in serum\"",
+        "interaction" : "pp",
+        "Evidence" : "",
+        "SUID" : 1540,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1539",
+        "source" : "1480",
+        "target" : "1478",
+        "EdgeBetweenness" : 6.0,
+        "shared_name" : "\"Reduced, Hearing\" (pp) \"Reduced, Young of year survival\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduced, Hearing\" (pp) \"Reduced, Young of year survival\"",
+        "interaction" : "pp",
+        "Evidence" : "",
+        "SUID" : 1539,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1538",
+        "source" : "1479",
+        "target" : "1477",
+        "EdgeBetweenness" : 9.5,
+        "shared_name" : "\"Reduced, Anterior swim bladder inflation\" (pp) \"Reduced, Swimming performance\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduced, Anterior swim bladder inflation\" (pp) \"Reduced, Swimming performance\"",
+        "interaction" : "pp",
+        "Evidence" : "",
+        "SUID" : 1538,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1537",
+        "source" : "1479",
+        "target" : "1480",
+        "EdgeBetweenness" : 12.0,
+        "shared_name" : "\"Reduced, Anterior swim bladder inflation\" (pp) \"Reduced, Hearing\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduced, Anterior swim bladder inflation\" (pp) \"Reduced, Hearing\"",
+        "interaction" : "pp",
+        "Evidence" : "",
+        "SUID" : 1537,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1536",
+        "source" : "1478",
+        "target" : "1446",
+        "EdgeBetweenness" : 11.0,
+        "shared_name" : "\"Reduced, Young of year survival\" (pp) \"Decrease, Population trajectory\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduced, Young of year survival\" (pp) \"Decrease, Population trajectory\"",
+        "interaction" : "pp",
+        "Evidence" : "",
+        "SUID" : 1536,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1535",
+        "source" : "1477",
+        "target" : "1478",
+        "EdgeBetweenness" : 6.0,
+        "shared_name" : "\"Reduced, Swimming performance\" (pp) \"Reduced, Young of year survival\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduced, Swimming performance\" (pp) \"Reduced, Young of year survival\"",
+        "interaction" : "pp",
+        "Evidence" : "",
+        "SUID" : 1535,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1534",
+        "source" : "1476",
+        "target" : "1478",
+        "EdgeBetweenness" : 8.0,
+        "shared_name" : "\"Reduced, Posterior swim bladder inflation\" (pp) \"Reduced, Young of year survival\"",
+        "Directness" : "Indirectly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduced, Posterior swim bladder inflation\" (pp) \"Reduced, Young of year survival\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1534,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1533",
+        "source" : "1476",
+        "target" : "1479",
+        "EdgeBetweenness" : 2.0,
+        "shared_name" : "\"Reduced, Posterior swim bladder inflation\" (pp) \"Reduced, Anterior swim bladder inflation\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduced, Posterior swim bladder inflation\" (pp) \"Reduced, Anterior swim bladder inflation\"",
+        "interaction" : "pp",
+        "Evidence" : "",
+        "SUID" : 1533,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1532",
+        "source" : "1476",
+        "target" : "1477",
+        "EdgeBetweenness" : 2.5,
+        "shared_name" : "\"Reduced, Posterior swim bladder inflation\" (pp) \"Reduced, Swimming performance\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduced, Posterior swim bladder inflation\" (pp) \"Reduced, Swimming performance\"",
+        "interaction" : "pp",
+        "Evidence" : "",
+        "SUID" : 1532,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1531",
+        "source" : "1475",
+        "target" : "1479",
+        "EdgeBetweenness" : 2.5,
+        "shared_name" : "\"Decreased, Triiodothyronine (T3) in serum\" (pp) \"Reduced, Anterior swim bladder inflation\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Decreased, Triiodothyronine (T3) in serum\" (pp) \"Reduced, Anterior swim bladder inflation\"",
+        "interaction" : "pp",
+        "Evidence" : "",
+        "SUID" : 1531,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1530",
+        "source" : "1475",
+        "target" : "1476",
+        "EdgeBetweenness" : 3.5,
+        "shared_name" : "\"Decreased, Triiodothyronine (T3) in serum\" (pp) \"Reduced, Posterior swim bladder inflation\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Decreased, Triiodothyronine (T3) in serum\" (pp) \"Reduced, Posterior swim bladder inflation\"",
+        "interaction" : "pp",
+        "Evidence" : "",
+        "SUID" : 1530,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1529",
+        "source" : "1474",
+        "target" : "1479",
+        "EdgeBetweenness" : 2.5,
+        "shared_name" : "\"Inhibition, Deiodinase 2\" (pp) \"Reduced, Anterior swim bladder inflation\"",
+        "Directness" : "Indirectly",
+        "shared_interaction" : "pp",
+        "name" : "\"Inhibition, Deiodinase 2\" (pp) \"Reduced, Anterior swim bladder inflation\"",
+        "interaction" : "pp",
+        "Evidence" : "",
+        "SUID" : 1529,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1528",
+        "source" : "1474",
+        "target" : "1476",
+        "EdgeBetweenness" : 3.5,
+        "shared_name" : "\"Inhibition, Deiodinase 2\" (pp) \"Reduced, Posterior swim bladder inflation\"",
+        "Directness" : "Indirectly",
+        "shared_interaction" : "pp",
+        "name" : "\"Inhibition, Deiodinase 2\" (pp) \"Reduced, Posterior swim bladder inflation\"",
+        "interaction" : "pp",
+        "Evidence" : "",
+        "SUID" : 1528,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1527",
+        "source" : "1474",
+        "target" : "1475",
+        "EdgeBetweenness" : 1.0,
+        "shared_name" : "\"Inhibition, Deiodinase 2\" (pp) \"Decreased, Triiodothyronine (T3) in serum\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Inhibition, Deiodinase 2\" (pp) \"Decreased, Triiodothyronine (T3) in serum\"",
+        "interaction" : "pp",
+        "Evidence" : "",
+        "SUID" : 1527,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1526",
+        "source" : "1473",
+        "target" : "1446",
+        "EdgeBetweenness" : 6.0,
+        "shared_name" : "\"Reduced, Reproductive Success\" (pp) \"Decrease, Population trajectory\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduced, Reproductive Success\" (pp) \"Decrease, Population trajectory\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1526,
+        "Quantitative_Understanding" : "Strong",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1525",
+        "source" : "1472",
+        "target" : "1473",
+        "EdgeBetweenness" : 10.0,
+        "shared_name" : "\"Reduced, Ability to attract spawning mates\" (pp) \"Reduced, Reproductive Success\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduced, Ability to attract spawning mates\" (pp) \"Reduced, Reproductive Success\"",
+        "interaction" : "pp",
+        "Evidence" : "Moderate",
+        "SUID" : 1525,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1524",
+        "source" : "1471",
+        "target" : "1472",
+        "EdgeBetweenness" : 12.0,
+        "shared_name" : "\"Reduced, Spawning behavior\" (pp) \"Reduced, Ability to attract spawning mates\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduced, Spawning behavior\" (pp) \"Reduced, Ability to attract spawning mates\"",
+        "interaction" : "pp",
+        "Evidence" : "Moderate",
+        "SUID" : 1524,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1523",
+        "source" : "1470",
+        "target" : "1471",
+        "EdgeBetweenness" : 12.0,
+        "shared_name" : "\"Reduced, Prostaglandin F2alpha concentration, plasma\" (pp) \"Reduced, Spawning behavior\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduced, Prostaglandin F2alpha concentration, plasma\" (pp) \"Reduced, Spawning behavior\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1523,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1522",
+        "source" : "1469",
+        "target" : "1470",
+        "EdgeBetweenness" : 10.0,
+        "shared_name" : "\"Reduced, Prostaglandin F2alpha synthesis, ovary\" (pp) \"Reduced, Prostaglandin F2alpha concentration, plasma\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduced, Prostaglandin F2alpha synthesis, ovary\" (pp) \"Reduced, Prostaglandin F2alpha concentration, plasma\"",
+        "interaction" : "pp",
+        "Evidence" : "Moderate",
+        "SUID" : 1522,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1521",
+        "source" : "1468",
+        "target" : "1469",
+        "EdgeBetweenness" : 6.0,
+        "shared_name" : "\"Inhibition, Cyclooxygenase activity\" (pp) \"Reduced, Prostaglandin F2alpha synthesis, ovary\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Inhibition, Cyclooxygenase activity\" (pp) \"Reduced, Prostaglandin F2alpha synthesis, ovary\"",
+        "interaction" : "pp",
+        "Evidence" : "Weak",
+        "SUID" : 1521,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1520",
+        "source" : "1466",
+        "target" : "1463",
+        "EdgeBetweenness" : 6.0,
+        "shared_name" : "\"Increase, Plasma vitellogenin concentrations\" (pp) \"Increase, Renal pathology due to VTG deposition\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Increase, Plasma vitellogenin concentrations\" (pp) \"Increase, Renal pathology due to VTG deposition\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1520,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1519",
+        "source" : "1465",
+        "target" : "1466",
+        "EdgeBetweenness" : 6.0,
+        "shared_name" : "\"Increase, Vitellogenin synthesis in liver\" (pp) \"Increase, Plasma vitellogenin concentrations\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Increase, Vitellogenin synthesis in liver\" (pp) \"Increase, Plasma vitellogenin concentrations\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1519,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1518",
+        "source" : "1463",
+        "target" : "1464",
+        "EdgeBetweenness" : 4.0,
+        "shared_name" : "\"Increase, Renal pathology due to VTG deposition\" (pp) \"Altered, Larval development\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Increase, Renal pathology due to VTG deposition\" (pp) \"Altered, Larval development\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1518,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1517",
+        "source" : "1461",
+        "target" : "1467",
+        "EdgeBetweenness" : 1.0,
+        "shared_name" : "\"Agonism, Estrogen receptor\" (pp) \"Altered, Reproductive behaviour\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Agonism, Estrogen receptor\" (pp) \"Altered, Reproductive behaviour\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1517,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1516",
+        "source" : "1461",
+        "target" : "1465",
+        "EdgeBetweenness" : 4.0,
+        "shared_name" : "\"Agonism, Estrogen receptor\" (pp) \"Increase, Vitellogenin synthesis in liver\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Agonism, Estrogen receptor\" (pp) \"Increase, Vitellogenin synthesis in liver\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1516,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1515",
+        "source" : "1461",
+        "target" : "1462",
+        "EdgeBetweenness" : 1.0,
+        "shared_name" : "\"Agonism, Estrogen receptor\" (pp) \"Impaired development of, Reproductive organs\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Agonism, Estrogen receptor\" (pp) \"Impaired development of, Reproductive organs\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1515,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1514",
+        "source" : "1460",
+        "target" : "1444",
+        "EdgeBetweenness" : 5.0,
+        "shared_name" : "\"Antagonism, Estrogen receptor\" (pp) \"Reduction, Vitellogenin synthesis in liver\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Antagonism, Estrogen receptor\" (pp) \"Reduction, Vitellogenin synthesis in liver\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1514,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1513",
+        "source" : "1459",
+        "target" : "1456",
+        "EdgeBetweenness" : 22.0,
+        "shared_name" : "\"Increased, HIF-1 alpha transcription\" (pp) \"Increased, HIF-1 heterodimer\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Increased, HIF-1 alpha transcription\" (pp) \"Increased, HIF-1 heterodimer\"",
+        "interaction" : "pp",
+        "Evidence" : "Weak",
+        "SUID" : 1513,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1512",
+        "source" : "1458",
+        "target" : "1459",
+        "EdgeBetweenness" : 12.0,
+        "shared_name" : "\"modulation, Unknown\" (pp) \"Increased, HIF-1 alpha transcription\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"modulation, Unknown\" (pp) \"Increased, HIF-1 alpha transcription\"",
+        "interaction" : "pp",
+        "Evidence" : "",
+        "SUID" : 1512,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1511",
+        "source" : "1457",
+        "target" : "1442",
+        "EdgeBetweenness" : 45.0,
+        "shared_name" : "\"Decreased, Aromatase (Cyp19a1) mRNA\" (pp) \"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Decreased, Aromatase (Cyp19a1) mRNA\" (pp) \"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1511,
+        "Quantitative_Understanding" : "Moderate",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1510",
+        "source" : "1456",
+        "target" : "1457",
+        "EdgeBetweenness" : 40.0,
+        "shared_name" : "\"Increased, HIF-1 heterodimer\" (pp) \"Decreased, Aromatase (Cyp19a1) mRNA\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Increased, HIF-1 heterodimer\" (pp) \"Decreased, Aromatase (Cyp19a1) mRNA\"",
+        "interaction" : "pp",
+        "Evidence" : "Moderate",
+        "SUID" : 1510,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1509",
+        "source" : "1455",
+        "target" : "1456",
+        "EdgeBetweenness" : 11.0,
+        "shared_name" : "\"Inhibition, Prolyl hydroxylases\" (pp) \"Increased, HIF-1 heterodimer\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Inhibition, Prolyl hydroxylases\" (pp) \"Increased, HIF-1 heterodimer\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1509,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1508",
+        "source" : "1454",
+        "target" : "1442",
+        "EdgeBetweenness" : 18.0,
+        "shared_name" : "\"Reduction, Testosterone synthesis by ovarian theca cells\" (pp) \"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduction, Testosterone synthesis by ovarian theca cells\" (pp) \"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1508,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1507",
+        "source" : "1453",
+        "target" : "1454",
+        "EdgeBetweenness" : 10.0,
+        "shared_name" : "\"Reduction, Gonadotropins, circulating concentrations\" (pp) \"Reduction, Testosterone synthesis by ovarian theca cells\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduction, Gonadotropins, circulating concentrations\" (pp) \"Reduction, Testosterone synthesis by ovarian theca cells\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1507,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1506",
+        "source" : "1452",
+        "target" : "1444",
+        "EdgeBetweenness" : 5.0,
+        "shared_name" : "\"Agonism, Androgen receptor\" (pp) \"Reduction, Vitellogenin synthesis in liver\"",
+        "Directness" : "Indirectly",
+        "shared_interaction" : "pp",
+        "name" : "\"Agonism, Androgen receptor\" (pp) \"Reduction, Vitellogenin synthesis in liver\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1506,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1505",
+        "source" : "1452",
+        "target" : "1442",
+        "EdgeBetweenness" : 4.0,
+        "shared_name" : "\"Agonism, Androgen receptor\" (pp) \"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells\"",
+        "Directness" : "Indirectly",
+        "shared_interaction" : "pp",
+        "name" : "\"Agonism, Androgen receptor\" (pp) \"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells\"",
+        "interaction" : "pp",
+        "Evidence" : "Moderate",
+        "SUID" : 1505,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1504",
+        "source" : "1452",
+        "target" : "1454",
+        "EdgeBetweenness" : 1.0,
+        "shared_name" : "\"Agonism, Androgen receptor\" (pp) \"Reduction, Testosterone synthesis by ovarian theca cells\"",
+        "Directness" : "Indirectly",
+        "shared_interaction" : "pp",
+        "name" : "\"Agonism, Androgen receptor\" (pp) \"Reduction, Testosterone synthesis by ovarian theca cells\"",
+        "interaction" : "pp",
+        "Evidence" : "Moderate",
+        "SUID" : 1504,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1503",
+        "source" : "1452",
+        "target" : "1453",
+        "EdgeBetweenness" : 1.0,
+        "shared_name" : "\"Agonism, Androgen receptor\" (pp) \"Reduction, Gonadotropins, circulating concentrations\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Agonism, Androgen receptor\" (pp) \"Reduction, Gonadotropins, circulating concentrations\"",
+        "interaction" : "pp",
+        "Evidence" : "Weak",
+        "SUID" : 1503,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1502",
+        "source" : "1451",
+        "target" : "1442",
+        "EdgeBetweenness" : 9.0,
+        "shared_name" : "\"reduction in ovarian granulosa cells, Aromatase (Cyp19a1)\" (pp) \"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"reduction in ovarian granulosa cells, Aromatase (Cyp19a1)\" (pp) \"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells\"",
+        "interaction" : "pp",
+        "Evidence" : "Moderate",
+        "SUID" : 1502,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1501",
+        "source" : "1449",
+        "target" : "1450",
+        "EdgeBetweenness" : 13.0,
+        "shared_name" : "\"irregularities, ovarian cycle\" (pp) \"impaired, Fertility\"",
+        "Directness" : "Indirectly",
+        "shared_interaction" : "pp",
+        "name" : "\"irregularities, ovarian cycle\" (pp) \"impaired, Fertility\"",
+        "interaction" : "pp",
+        "Evidence" : "Moderate",
+        "SUID" : 1501,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1500",
+        "source" : "1448",
+        "target" : "1447",
+        "EdgeBetweenness" : 45.0,
+        "shared_name" : "\"Reduction, Plasma vitellogenin concentrations\" (pp) \"Reduction, Vitellogenin accumulation into oocytes and oocyte growth/development\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduction, Plasma vitellogenin concentrations\" (pp) \"Reduction, Vitellogenin accumulation into oocytes and oocyte growth/development\"",
+        "interaction" : "pp",
+        "Evidence" : "Moderate",
+        "SUID" : 1500,
+        "Quantitative_Understanding" : "Weak",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1499",
+        "source" : "1447",
+        "target" : "1445",
+        "EdgeBetweenness" : 32.0,
+        "shared_name" : "\"Reduction, Vitellogenin accumulation into oocytes and oocyte growth/development\" (pp) \"Reduction, Cumulative fecundity and spawning\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduction, Vitellogenin accumulation into oocytes and oocyte growth/development\" (pp) \"Reduction, Cumulative fecundity and spawning\"",
+        "interaction" : "pp",
+        "Evidence" : "Moderate",
+        "SUID" : 1499,
+        "Quantitative_Understanding" : "Moderate",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1498",
+        "source" : "1445",
+        "target" : "1446",
+        "EdgeBetweenness" : 17.0,
+        "shared_name" : "\"Reduction, Cumulative fecundity and spawning\" (pp) \"Decrease, Population trajectory\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduction, Cumulative fecundity and spawning\" (pp) \"Decrease, Population trajectory\"",
+        "interaction" : "pp",
+        "Evidence" : "Moderate",
+        "SUID" : 1498,
+        "Quantitative_Understanding" : "Moderate",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1497",
+        "source" : "1444",
+        "target" : "1448",
+        "EdgeBetweenness" : 12.0,
+        "shared_name" : "\"Reduction, Vitellogenin synthesis in liver\" (pp) \"Reduction, Plasma vitellogenin concentrations\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduction, Vitellogenin synthesis in liver\" (pp) \"Reduction, Plasma vitellogenin concentrations\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1497,
+        "Quantitative_Understanding" : "Moderate",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1496",
+        "source" : "1443",
+        "target" : "1449",
+        "EdgeBetweenness" : 24.0,
+        "shared_name" : "\"Reduction, Plasma 17beta-estradiol concentrations\" (pp) \"irregularities, ovarian cycle\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduction, Plasma 17beta-estradiol concentrations\" (pp) \"irregularities, ovarian cycle\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1496,
+        "Quantitative_Understanding" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1495",
+        "source" : "1443",
+        "target" : "1448",
+        "EdgeBetweenness" : 44.0,
+        "shared_name" : "\"Reduction, Plasma 17beta-estradiol concentrations\" (pp) \"Reduction, Plasma vitellogenin concentrations\"",
+        "Directness" : "Indirectly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduction, Plasma 17beta-estradiol concentrations\" (pp) \"Reduction, Plasma vitellogenin concentrations\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1495,
+        "Quantitative_Understanding" : "Moderate",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1494",
+        "source" : "1443",
+        "target" : "1444",
+        "EdgeBetweenness" : 11.0,
+        "shared_name" : "\"Reduction, Plasma 17beta-estradiol concentrations\" (pp) \"Reduction, Vitellogenin synthesis in liver\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduction, Plasma 17beta-estradiol concentrations\" (pp) \"Reduction, Vitellogenin synthesis in liver\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1494,
+        "Quantitative_Understanding" : "Moderate",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1493",
+        "source" : "1442",
+        "target" : "1443",
+        "EdgeBetweenness" : 83.0,
+        "shared_name" : "\"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells\" (pp) \"Reduction, Plasma 17beta-estradiol concentrations\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells\" (pp) \"Reduction, Plasma 17beta-estradiol concentrations\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1493,
+        "Quantitative_Understanding" : "Moderate",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "1492",
+        "source" : "1441",
+        "target" : "1442",
+        "EdgeBetweenness" : 9.0,
+        "shared_name" : "\"Inhibition, Aromatase\" (pp) \"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells\"",
+        "Directness" : "Directly",
+        "shared_interaction" : "pp",
+        "name" : "\"Inhibition, Aromatase\" (pp) \"Reduction, 17beta-estradiol synthesis by ovarian granulosa cells\"",
+        "interaction" : "pp",
+        "Evidence" : "Strong",
+        "SUID" : 1492,
+        "Quantitative_Understanding" : "Moderate",
+        "selected" : false
+      }
+    } ]
+  }
+}

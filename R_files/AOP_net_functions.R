@@ -103,7 +103,7 @@ aop.paths= function(gr,normalized=FALSE,kelist = V(gr)$ked){ #kelist is a list o
     ao.list<-which(kelist=="AO")
     for(fromnode in mie.list){
       for(tonode in ao.list){
-        x<- all_simple_paths(gr,fromnode, to = tonode)
+        x<- all_simple_paths(gr,fromnode, to = tonode, mode="out")
         if(length(x)>0){
         #assign(paste("from",fromnode,"to",tonode,sep="."), x)  #Can uncomment to create lists of paths
         for(i in 1:length(x)){

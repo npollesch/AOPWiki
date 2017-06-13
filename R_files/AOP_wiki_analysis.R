@@ -37,7 +37,8 @@ V(AOPg)$AOP_ID<-KEPdata[match(V(AOPg)$KE_EID,KEPdata[,3]),1] # finds AOPID to ad
 # V(AOPg)$KE_name[which(is.na(V(AOPg)$KE_EID))]
 
 # Plot the AOP wiki, colored by AOP
-acols=topo.colors(length(unique(V(AOPg)$AOP_ID)))
+#acols=topo.colors(length(unique(V(AOPg)$AOP_ID)))
+acols=colorRampPalette(c("white","blue"))
 for(i in 1:length(unique(V(AOPg)$AOP_ID))){
   V(AOPg)[which(V(AOPg)$AOP_ID==unique(V(AOPg)$AOP_ID)[i])]$acol<-acols[i]
   }
@@ -187,6 +188,7 @@ V(AOPg)$cent_size[which(V(AOPg)$name==345)]<-3
 V(AOPg)$cent_col[which(V(AOPg)$name==345)]<-"green"
 V(AOPg)$deg_col<-deg.col(AOPg)
 #colored by betweenness
+primary.colors() 
 
 wbpal=colorRampPalette(c("white","blue"))
 V(AOPg)$bet_col<-wbpal(20)[as.numeric(cut(betweenness(AOPg,directed=TRUE),breaks = 20))]

@@ -1,0 +1,671 @@
+{
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.4.0",
+  "target_cytoscapejs_version" : "~2.1",
+  "data" : {
+    "shared_name" : "SSRI_Neurotoxicity",
+    "name" : "SSRI_Neurotoxicity",
+    "SUID" : 169,
+    "__Annotations" : [ "" ],
+    "selected" : true
+  },
+  "elements" : {
+    "nodes" : [ {
+      "data" : {
+        "id" : "207",
+        "shared_name" : "Node 11",
+        "name" : "SSRI",
+        "SUID" : 207,
+        "KED" : "MIE",
+        "type" : "chemical_stressor",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "206",
+        "shared_name" : "Node 10",
+        "name" : "hypertension",
+        "SUID" : 206,
+        "KED" : "AO",
+        "type" : "outcome",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "205",
+        "shared_name" : "Node 9",
+        "name" : "vascular smooth muscle contraction",
+        "SUID" : 205,
+        "KED" : "KE",
+        "type" : "action",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "204",
+        "shared_name" : "Node 8",
+        "name" : "myosin light chain phosphorylation",
+        "SUID" : 204,
+        "KED" : "KE",
+        "type" : "action",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "203",
+        "shared_name" : "Node 7",
+        "name" : "Calmodulin",
+        "SUID" : 203,
+        "KED" : "KE",
+        "type" : "protein",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "202",
+        "shared_name" : "Node 6",
+        "name" : "intracellular_Ca+",
+        "SUID" : 202,
+        "KED" : "KE",
+        "type" : "ion",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "201",
+        "shared_name" : "Node 5",
+        "name" : "Inositol trisphosphate",
+        "SUID" : 201,
+        "KED" : "KE",
+        "type" : "metabolite",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "200",
+        "shared_name" : "Node 4",
+        "name" : "PLC",
+        "SUID" : 200,
+        "KED" : "KE",
+        "type" : "protein",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "199",
+        "shared_name" : "Node 3",
+        "name" : "5-HT2A",
+        "SUID" : 199,
+        "KED" : "KE",
+        "type" : "protein",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "198",
+        "shared_name" : "Node 2",
+        "name" : "agitation",
+        "SUID" : 198,
+        "KED" : "AO",
+        "type" : "outcome",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "197",
+        "shared_name" : "Node 28",
+        "name" : "depression",
+        "SUID" : 197,
+        "KED" : "AO",
+        "type" : "outcome",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "196",
+        "shared_name" : "Node 27",
+        "name" : "5-HTR",
+        "SUID" : 196,
+        "KED" : "KE",
+        "type" : "protein",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "195",
+        "shared_name" : "Node 26",
+        "name" : "BDNF",
+        "SUID" : 195,
+        "KED" : "KE",
+        "type" : "protein",
+        "selected" : false,
+        "Location" : "hippocampus"
+      }
+    }, {
+      "data" : {
+        "id" : "194",
+        "shared_name" : "Node 25",
+        "name" : "neuroplasticity",
+        "SUID" : 194,
+        "KED" : "KE",
+        "type" : "action",
+        "selected" : false,
+        "Location" : "hippocampus"
+      }
+    }, {
+      "data" : {
+        "id" : "193",
+        "shared_name" : "Node 22",
+        "name" : "glucocoritcoid_receptor",
+        "SUID" : 193,
+        "KED" : "KE",
+        "type" : "protein",
+        "selected" : false,
+        "Location" : "hippocampus"
+      }
+    }, {
+      "data" : {
+        "id" : "192",
+        "shared_name" : "Node 21",
+        "name" : "cortisone",
+        "SUID" : 192,
+        "KED" : "KE",
+        "type" : "hormone",
+        "selected" : false,
+        "Location" : "adrenal_gland"
+      }
+    }, {
+      "data" : {
+        "id" : "191",
+        "shared_name" : "Node 20",
+        "name" : "stress",
+        "SUID" : 191,
+        "KED" : "MIE",
+        "type" : "stressor",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "190",
+        "shared_name" : "Node 1",
+        "name" : "extracellular_serotonin",
+        "SUID" : 190,
+        "KED" : "KE",
+        "type" : "metabolite",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "189",
+        "shared_name" : "Node 2",
+        "name" : "extracellular_norepinephrine",
+        "SUID" : 189,
+        "KED" : "KE",
+        "type" : "metabolite",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "188",
+        "shared_name" : "Node 3",
+        "name" : "serotonin transporter",
+        "SUID" : 188,
+        "KED" : "KE",
+        "type" : "protein",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "187",
+        "shared_name" : "Node 4",
+        "name" : "extracellular_Na+",
+        "SUID" : 187,
+        "KED" : "ION",
+        "type" : "ion",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "186",
+        "shared_name" : "Node 5",
+        "name" : "extracellular_Cl-",
+        "SUID" : 186,
+        "KED" : "ION",
+        "type" : "ion",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "185",
+        "shared_name" : "Node 6",
+        "name" : "intracellular_serotonin",
+        "SUID" : 185,
+        "KED" : "KE",
+        "type" : "metabolite",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "184",
+        "shared_name" : "Node 7",
+        "name" : "intracellular_Na+",
+        "SUID" : 184,
+        "KED" : "ION",
+        "type" : "ion",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "183",
+        "shared_name" : "Node 8",
+        "name" : "intracellular_Cl-",
+        "SUID" : 183,
+        "KED" : "ION",
+        "type" : "ion",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "182",
+        "shared_name" : "Node 11",
+        "name" : "5-HT3",
+        "SUID" : 182,
+        "KED" : "KE",
+        "type" : "metabolite",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "181",
+        "shared_name" : "Node 15",
+        "name" : "seizure",
+        "SUID" : 181,
+        "KED" : "AO",
+        "type" : "outcome",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "180",
+        "shared_name" : "Node 1",
+        "name" : "packaged_serotonin",
+        "SUID" : 180,
+        "KED" : "KE",
+        "type" : "",
+        "selected" : false,
+        "Location" : ""
+      }
+    }, {
+      "data" : {
+        "id" : "179",
+        "shared_name" : "Node 2",
+        "name" : "synaptic_release",
+        "SUID" : 179,
+        "KED" : "KE",
+        "type" : "",
+        "selected" : false,
+        "Location" : ""
+      }
+    } ],
+    "edges" : [ {
+      "data" : {
+        "id" : "235",
+        "source" : "207",
+        "target" : "188",
+        "shared_name" : "Node 11 (interacts with) Node 3",
+        "name" : "Node 11 (interacts with) Node 3",
+        "interaction" : "inhibits",
+        "SUID" : 235,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "234",
+        "source" : "205",
+        "target" : "206",
+        "shared_name" : "Node 9 (interacts with) Node 10",
+        "name" : "Node 9 (interacts with) Node 10",
+        "interaction" : "activates",
+        "SUID" : 234,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "233",
+        "source" : "204",
+        "target" : "205",
+        "shared_name" : "Node 8 (interacts with) Node 9",
+        "name" : "Node 8 (interacts with) Node 9",
+        "interaction" : "activates",
+        "SUID" : 233,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "232",
+        "source" : "203",
+        "target" : "204",
+        "shared_name" : "Node 7 (interacts with) Node 8",
+        "name" : "Node 7 (interacts with) Node 8",
+        "interaction" : "activates",
+        "SUID" : 232,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "231",
+        "source" : "202",
+        "target" : "203",
+        "shared_name" : "Node 6 (interacts with) Node 7",
+        "name" : "Node 6 (interacts with) Node 7",
+        "interaction" : "activates",
+        "SUID" : 231,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "230",
+        "source" : "201",
+        "target" : "202",
+        "shared_name" : "Node 5 (interacts with) Node 6",
+        "name" : "Node 5 (interacts with) Node 6",
+        "interaction" : "activates",
+        "SUID" : 230,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "229",
+        "source" : "200",
+        "target" : "201",
+        "shared_name" : "Node 4 (interacts with) Node 5",
+        "name" : "Node 4 (interacts with) Node 5",
+        "interaction" : "activates",
+        "SUID" : 229,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "228",
+        "source" : "199",
+        "target" : "200",
+        "shared_name" : "Node 3 (interacts with) Node 4",
+        "name" : "Node 3 (interacts with) Node 4",
+        "interaction" : "activates",
+        "SUID" : 228,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "227",
+        "source" : "196",
+        "target" : "195",
+        "shared_name" : "Node 27 (interacts with) Node 26",
+        "name" : "Node 27 (interacts with) Node 26",
+        "interaction" : "activates expression",
+        "SUID" : 227,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "226",
+        "source" : "195",
+        "target" : "194",
+        "shared_name" : "Node 26 (interacts with) Node 25",
+        "name" : "Node 26 (interacts with) Node 25",
+        "interaction" : "activates",
+        "SUID" : 226,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "225",
+        "source" : "194",
+        "target" : "198",
+        "shared_name" : "Node 25 (interacts with) Node 2",
+        "name" : "Node 25 (interacts with) Node 2",
+        "interaction" : "inhibits",
+        "SUID" : 225,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "224",
+        "source" : "194",
+        "target" : "197",
+        "shared_name" : "Node 25 (interacts with) Node 28",
+        "name" : "Node 25 (interacts with) Node 28",
+        "interaction" : "inhibits",
+        "SUID" : 224,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "223",
+        "source" : "193",
+        "target" : "195",
+        "shared_name" : "Node 22 (interacts with) Node 26",
+        "name" : "Node 22 (interacts with) Node 26",
+        "interaction" : "inhibits",
+        "SUID" : 223,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "222",
+        "source" : "192",
+        "target" : "193",
+        "shared_name" : "Node 21 (interacts with) Node 22",
+        "name" : "Node 21 (interacts with) Node 22",
+        "interaction" : "activates",
+        "SUID" : 222,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "221",
+        "source" : "191",
+        "target" : "192",
+        "shared_name" : "Node 20 (interacts with) Node 21",
+        "name" : "Node 20 (interacts with) Node 21",
+        "interaction" : "activates",
+        "SUID" : 221,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "220",
+        "source" : "190",
+        "target" : "199",
+        "shared_name" : "Node 1 (interacts with) Node 3",
+        "name" : "Node 1 (interacts with) Node 3",
+        "interaction" : "activates",
+        "SUID" : 220,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "219",
+        "source" : "190",
+        "target" : "196",
+        "shared_name" : "Node 1 (interacts with) Node 27",
+        "name" : "Node 1 (interacts with) Node 27",
+        "interaction" : "activates",
+        "SUID" : 219,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "218",
+        "source" : "190",
+        "target" : "182",
+        "shared_name" : "Node 1 (interacts with) Node 11",
+        "name" : "Node 1 (interacts with) Node 11",
+        "interaction" : "activates",
+        "SUID" : 218,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "217",
+        "source" : "188",
+        "target" : "185",
+        "shared_name" : "Node 3 (interacts with) Node 6",
+        "name" : "Node 3 (interacts with) Node 6",
+        "interaction" : "activates",
+        "SUID" : 217,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "216",
+        "source" : "188",
+        "target" : "184",
+        "shared_name" : "Node 3 (interacts with) Node 7",
+        "name" : "Node 3 (interacts with) Node 7",
+        "interaction" : "activates",
+        "SUID" : 216,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "215",
+        "source" : "188",
+        "target" : "183",
+        "shared_name" : "Node 3 (interacts with) Node 8",
+        "name" : "Node 3 (interacts with) Node 8",
+        "interaction" : "activates",
+        "SUID" : 215,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "214",
+        "source" : "188",
+        "target" : "190",
+        "shared_name" : "Node 3 (interacts with) Node 1",
+        "name" : "Node 3 (interacts with) Node 1",
+        "interaction" : "decreases",
+        "SUID" : 214,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "213",
+        "source" : "188",
+        "target" : "187",
+        "shared_name" : "Node 3 (interacts with) Node 4",
+        "name" : "Node 3 (interacts with) Node 4",
+        "interaction" : "decreases",
+        "SUID" : 213,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "212",
+        "source" : "188",
+        "target" : "186",
+        "shared_name" : "Node 3 (interacts with) Node 5",
+        "name" : "Node 3 (interacts with) Node 5",
+        "interaction" : "decreases",
+        "SUID" : 212,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "211",
+        "source" : "185",
+        "target" : "180",
+        "shared_name" : "Node 6 (interacts with) Node 1",
+        "name" : "Node 6 (interacts with) Node 1",
+        "interaction" : "activates",
+        "SUID" : 211,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "210",
+        "source" : "182",
+        "target" : "181",
+        "shared_name" : "Node 11 (interacts with) Node 15",
+        "name" : "Node 11 (interacts with) Node 15",
+        "interaction" : "inhibits",
+        "SUID" : 210,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "209",
+        "source" : "180",
+        "target" : "179",
+        "shared_name" : "Node 1 (interacts with) Node 2",
+        "name" : "Node 1 (interacts with) Node 2",
+        "interaction" : "activates",
+        "SUID" : 209,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "208",
+        "source" : "179",
+        "target" : "190",
+        "shared_name" : "Node 2 (interacts with) Node 1",
+        "name" : "Node 2 (interacts with) Node 1",
+        "interaction" : "activates",
+        "SUID" : 208,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    } ]
+  }
+}

@@ -1,0 +1,726 @@
+{
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.4.0",
+  "target_cytoscapejs_version" : "~2.1",
+  "data" : {
+    "shared_name" : "Sheet1(2)",
+    "name" : "Angrish net with assays",
+    "SUID" : 125,
+    "__Annotations" : [ "" ],
+    "selected" : true
+  },
+  "elements" : {
+    "nodes" : [ {
+      "data" : {
+        "id" : "149",
+        "shared_name" : "Node 9",
+        "name" : "mTORC1",
+        "Author" : "",
+        "SUID" : 149,
+        "assay" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "148",
+        "shared_name" : "Node 8",
+        "name" : "cytosolic fatty acids",
+        "Author" : "",
+        "SUID" : 148,
+        "assay" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "147",
+        "shared_name" : "Node 7",
+        "name" : "L-FABP",
+        "Author" : "",
+        "SUID" : 147,
+        "assay" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "146",
+        "shared_name" : "Node 6",
+        "name" : "Fatty Acid Beta oxidation",
+        "Author" : "",
+        "SUID" : 146,
+        "assay" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "145",
+        "shared_name" : "Node 5",
+        "name" : "SREBP-1",
+        "Author" : "",
+        "SUID" : 145,
+        "assay" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "144",
+        "shared_name" : "Node 4",
+        "name" : "aPKC",
+        "Author" : "",
+        "SUID" : 144,
+        "assay" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "143",
+        "shared_name" : "Node 3",
+        "name" : "PI3K",
+        "Author" : "",
+        "SUID" : 143,
+        "assay" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "142",
+        "shared_name" : "Node 2",
+        "name" : "LRH-1",
+        "Author" : "",
+        "SUID" : 142,
+        "assay" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "82",
+        "shared_name" : "PPARalpha",
+        "name" : "PPARalpha",
+        "Author" : "",
+        "SUID" : 82,
+        "assay" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "81",
+        "shared_name" : "PPARgamma",
+        "name" : "PPARgamma",
+        "Author" : "",
+        "SUID" : 81,
+        "assay" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "77",
+        "shared_name" : "LXR",
+        "name" : "LXR",
+        "Author" : "",
+        "SUID" : 77,
+        "assay" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "76",
+        "shared_name" : "Steatosis",
+        "name" : "Steatosis",
+        "Author" : "",
+        "SUID" : 76,
+        "assay" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "88",
+        "shared_name" : "AKT",
+        "name" : "AKT",
+        "Author" : "",
+        "SUID" : 88,
+        "assay" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "86",
+        "shared_name" : "HSD17b4",
+        "name" : "HSD17b4",
+        "Author" : "",
+        "SUID" : 86,
+        "assay" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "85",
+        "shared_name" : "lipogenesis",
+        "name" : "lipogenesis",
+        "Author" : "",
+        "SUID" : 85,
+        "assay" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "84",
+        "shared_name" : "FAS",
+        "name" : "FAS",
+        "Author" : "",
+        "SUID" : 84,
+        "assay" : "yes",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "141",
+        "shared_name" : "FXR",
+        "name" : "FXR",
+        "Author" : "",
+        "SUID" : 141,
+        "assay" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "140",
+        "shared_name" : "NFE2/Nrf2",
+        "name" : "NFE2/Nrf2",
+        "Author" : "",
+        "SUID" : 140,
+        "assay" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "139",
+        "shared_name" : "SHP",
+        "name" : "SHP",
+        "Author" : "",
+        "SUID" : 139,
+        "assay" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "138",
+        "shared_name" : "Node 1",
+        "name" : "SCD1",
+        "Author" : "",
+        "SUID" : 138,
+        "assay" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "137",
+        "shared_name" : "Node 3",
+        "name" : "mTORC2",
+        "Author" : "",
+        "SUID" : 137,
+        "assay" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "136",
+        "shared_name" : "Node 4",
+        "name" : "insulin receptor",
+        "Author" : "",
+        "SUID" : 136,
+        "assay" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "135",
+        "shared_name" : "Node 5",
+        "name" : "insulin",
+        "Author" : "",
+        "SUID" : 135,
+        "assay" : "",
+        "selected" : false
+      }
+    } ],
+    "edges" : [ {
+      "data" : {
+        "id" : "178",
+        "source" : "149",
+        "target" : "145",
+        "shared_name" : "Node 9 (interacts with) Node 5",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "",
+        "name" : "Node 9 (interacts with) Node 5",
+        "interaction" : "interacts with",
+        "SUID" : 178,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "177",
+        "source" : "148",
+        "target" : "76",
+        "shared_name" : "Node 8 (interacts with) Steatosis",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "",
+        "name" : "Node 8 (interacts with) Steatosis",
+        "interaction" : "interacts with",
+        "SUID" : 177,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "176",
+        "source" : "147",
+        "target" : "81",
+        "shared_name" : "Node 7 (interacts with) PPARgamma",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "",
+        "name" : "Node 7 (interacts with) PPARgamma",
+        "interaction" : "interacts with",
+        "SUID" : 176,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "175",
+        "source" : "147",
+        "target" : "148",
+        "shared_name" : "Node 7 (interacts with) Node 8",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "",
+        "name" : "Node 7 (interacts with) Node 8",
+        "interaction" : "interacts with",
+        "SUID" : 175,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "174",
+        "source" : "146",
+        "target" : "76",
+        "shared_name" : "Node 6 (interacts with) Steatosis",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "",
+        "name" : "Node 6 (interacts with) Steatosis",
+        "interaction" : "inhibits",
+        "SUID" : 174,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "173",
+        "source" : "145",
+        "target" : "138",
+        "shared_name" : "Node 5 (interacts with) Node 1",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "",
+        "name" : "Node 5 (interacts with) Node 1",
+        "interaction" : "interacts with",
+        "SUID" : 173,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "172",
+        "source" : "144",
+        "target" : "145",
+        "shared_name" : "Node 4 (interacts with) Node 5",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "",
+        "name" : "Node 4 (interacts with) Node 5",
+        "interaction" : "interacts with",
+        "SUID" : 172,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "171",
+        "source" : "143",
+        "target" : "147",
+        "shared_name" : "Node 3 (interacts with) Node 7",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "",
+        "name" : "Node 3 (interacts with) Node 7",
+        "interaction" : "interacts with",
+        "SUID" : 171,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "170",
+        "source" : "143",
+        "target" : "144",
+        "shared_name" : "Node 3 (interacts with) Node 4",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "",
+        "name" : "Node 3 (interacts with) Node 4",
+        "interaction" : "interacts with",
+        "SUID" : 170,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "169",
+        "source" : "143",
+        "target" : "88",
+        "shared_name" : "Node 3 (interacts with) AKT",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "",
+        "name" : "Node 3 (interacts with) AKT",
+        "interaction" : "interacts with",
+        "SUID" : 169,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "168",
+        "source" : "142",
+        "target" : "84",
+        "shared_name" : "Node 2 (interacts with) FAS",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "",
+        "name" : "Node 2 (interacts with) FAS",
+        "interaction" : "interacts with",
+        "SUID" : 168,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "105",
+        "source" : "82",
+        "target" : "86",
+        "shared_name" : "PPARalpha (interacts with) DHB4/HSD17b4",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "Burgoon",
+        "name" : "PPARalpha (interacts with) DHB4/HSD17b4",
+        "interaction" : "interacts with",
+        "SUID" : 105,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "102",
+        "source" : "81",
+        "target" : "84",
+        "shared_name" : "PPARgamma (interacts with) FAS, ACC, SCD",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "Angrish",
+        "name" : "PPARgamma (interacts with) FAS, ACC, SCD",
+        "interaction" : "interacts with",
+        "SUID" : 102,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "167",
+        "source" : "81",
+        "target" : "145",
+        "shared_name" : "PPARgamma (interacts with) Node 5",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "",
+        "name" : "PPARgamma (interacts with) Node 5",
+        "interaction" : "interacts with",
+        "SUID" : 167,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "166",
+        "source" : "77",
+        "target" : "84",
+        "shared_name" : "LXR (interacts with) FASN protein",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "",
+        "name" : "LXR (interacts with) FASN protein",
+        "interaction" : "interacts with",
+        "SUID" : 166,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "165",
+        "source" : "77",
+        "target" : "139",
+        "shared_name" : "LXR (interacts with) SHP",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "Burgoon",
+        "name" : "LXR (interacts with) SHP",
+        "interaction" : "interacts with",
+        "SUID" : 165,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "164",
+        "source" : "77",
+        "target" : "82",
+        "shared_name" : "LXR (interacts with) PPARalpha",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "Burgoon",
+        "name" : "LXR (interacts with) PPARalpha",
+        "interaction" : "interacts with",
+        "SUID" : 164,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "163",
+        "source" : "88",
+        "target" : "149",
+        "shared_name" : "AKT (interacts with) Node 9",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "",
+        "name" : "AKT (interacts with) Node 9",
+        "interaction" : "interacts with",
+        "SUID" : 163,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "162",
+        "source" : "88",
+        "target" : "147",
+        "shared_name" : "AKT (interacts with) Node 7",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "",
+        "name" : "AKT (interacts with) Node 7",
+        "interaction" : "interacts with",
+        "SUID" : 162,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "161",
+        "source" : "86",
+        "target" : "146",
+        "shared_name" : "HSD17b4 (interacts with) Node 6",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "",
+        "name" : "HSD17b4 (interacts with) Node 6",
+        "interaction" : "interacts with",
+        "SUID" : 161,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "160",
+        "source" : "85",
+        "target" : "76",
+        "shared_name" : "lipid synthesis (interacts with) Steatosis",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "",
+        "name" : "lipid synthesis (interacts with) Steatosis",
+        "interaction" : "interacts with",
+        "SUID" : 160,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "107",
+        "source" : "84",
+        "target" : "85",
+        "shared_name" : "FAS, ACC, SCD (interacts with) lipid synthesis",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "Angrish",
+        "name" : "FAS, ACC, SCD (interacts with) lipid synthesis",
+        "interaction" : "interacts with",
+        "SUID" : 107,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "159",
+        "source" : "141",
+        "target" : "139",
+        "shared_name" : "FXR (interacts with) SHP",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "Burgoon",
+        "name" : "FXR (interacts with) SHP",
+        "interaction" : "interacts with",
+        "SUID" : 159,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "158",
+        "source" : "141",
+        "target" : "82",
+        "shared_name" : "FXR (interacts with) PPARalpha",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "Burgoon",
+        "name" : "FXR (interacts with) PPARalpha",
+        "interaction" : "interacts with",
+        "SUID" : 158,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "157",
+        "source" : "140",
+        "target" : "141",
+        "shared_name" : "NFE2/Nrf2 (interacts with) FXR",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "Burgoon",
+        "name" : "NFE2/Nrf2 (interacts with) FXR",
+        "interaction" : "interacts with",
+        "SUID" : 157,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "156",
+        "source" : "139",
+        "target" : "142",
+        "shared_name" : "SHP (interacts with) Node 2",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "",
+        "name" : "SHP (interacts with) Node 2",
+        "interaction" : "inhibits",
+        "SUID" : 156,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "155",
+        "source" : "139",
+        "target" : "82",
+        "shared_name" : "SHP (interacts with) PPARalpha",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "Burgoon",
+        "name" : "SHP (interacts with) PPARalpha",
+        "interaction" : "interacts with",
+        "SUID" : 155,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "154",
+        "source" : "139",
+        "target" : "77",
+        "shared_name" : "SHP (interacts with) LXR",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "Burgoon",
+        "name" : "SHP (interacts with) LXR",
+        "interaction" : "interacts with",
+        "SUID" : 154,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "153",
+        "source" : "138",
+        "target" : "85",
+        "shared_name" : "Node 1 (interacts with) lipogenesis",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "",
+        "name" : "Node 1 (interacts with) lipogenesis",
+        "interaction" : "interacts with",
+        "SUID" : 153,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "152",
+        "source" : "137",
+        "target" : "88",
+        "shared_name" : "Node 3 (interacts with) AKT",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "",
+        "name" : "Node 3 (interacts with) AKT",
+        "interaction" : "interacts with",
+        "SUID" : 152,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "151",
+        "source" : "136",
+        "target" : "137",
+        "shared_name" : "Node 4 (interacts with) Node 3",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "",
+        "name" : "Node 4 (interacts with) Node 3",
+        "interaction" : "interacts with",
+        "SUID" : 151,
+        "source_state" : "",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "150",
+        "source" : "135",
+        "target" : "136",
+        "shared_name" : "Node 5 (interacts with) Node 4",
+        "target_state" : "",
+        "shared_interaction" : "interacts with",
+        "author" : "",
+        "name" : "Node 5 (interacts with) Node 4",
+        "interaction" : "interacts with",
+        "SUID" : 150,
+        "source_state" : "",
+        "selected" : false
+      }
+    } ]
+  }
+}

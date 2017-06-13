@@ -1,0 +1,428 @@
+{
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.4.0",
+  "target_cytoscapejs_version" : "~2.1",
+  "data" : {
+    "shared_name" : "gastric_ulcer",
+    "name" : "gastric_ulcer",
+    "SUID" : 52,
+    "__Annotations" : [ "" ],
+    "selected" : true
+  },
+  "elements" : {
+    "nodes" : [ {
+      "data" : {
+        "id" : "77",
+        "shared_name" : "Node 32",
+        "name" : "PTGS1",
+        "SUID" : 77,
+        "KED" : "KE",
+        "type" : "protein",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "76",
+        "shared_name" : "Node 31",
+        "name" : "NH4+",
+        "SUID" : 76,
+        "KED" : "KE",
+        "type" : "ion",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "75",
+        "shared_name" : "Node 30",
+        "name" : "phospholipase",
+        "SUID" : 75,
+        "KED" : "KE",
+        "type" : "protein",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "74",
+        "shared_name" : "Node 29",
+        "name" : "Helicobacter pylori",
+        "SUID" : 74,
+        "KED" : "MIE",
+        "type" : "stressor",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "73",
+        "shared_name" : "Node 28",
+        "name" : "surfactant",
+        "SUID" : 73,
+        "KED" : "KE",
+        "type" : "metabolite",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "72",
+        "shared_name" : "Node 27",
+        "name" : "bicarbonate",
+        "SUID" : 72,
+        "KED" : "KE",
+        "type" : "ion",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "71",
+        "shared_name" : "Node 26",
+        "name" : "mucous",
+        "SUID" : 71,
+        "KED" : "KE",
+        "type" : "metabolite",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "70",
+        "shared_name" : "Node 21",
+        "name" : "gastric ulcer",
+        "SUID" : 70,
+        "KED" : "AO",
+        "type" : "outcome",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "69",
+        "shared_name" : "Node 22",
+        "name" : "mucosal defense",
+        "SUID" : 69,
+        "KED" : "KE",
+        "type" : "activity",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "68",
+        "shared_name" : "Node 33",
+        "name" : "PTGS2",
+        "SUID" : 68,
+        "KED" : "KE",
+        "type" : "protein",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "67",
+        "shared_name" : "Node 34",
+        "name" : "platelet aggregation",
+        "SUID" : 67,
+        "KED" : "KE",
+        "type" : "activity",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "66",
+        "shared_name" : "Node 35",
+        "name" : "mucosal blood flow",
+        "SUID" : 66,
+        "KED" : "KE",
+        "type" : "activity",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "65",
+        "shared_name" : "Node 36",
+        "name" : "angiogenesis",
+        "SUID" : 65,
+        "KED" : "KE",
+        "type" : "activity",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "64",
+        "shared_name" : "Node 37",
+        "name" : "leukocyte adherence",
+        "SUID" : 64,
+        "KED" : "KE",
+        "type" : "activity",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "63",
+        "shared_name" : "Node 38",
+        "name" : "leukocyte activation",
+        "SUID" : 63,
+        "KED" : "KE",
+        "type" : "activity",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "62",
+        "shared_name" : "Node 39",
+        "name" : "NSAID",
+        "SUID" : 62,
+        "KED" : "MIE",
+        "type" : "chemical_stressor",
+        "selected" : false
+      }
+    } ],
+    "edges" : [ {
+      "data" : {
+        "id" : "98",
+        "source" : "77",
+        "target" : "71",
+        "shared_name" : "Node 32 (interacts with) Node 26",
+        "name" : "Node 32 (interacts with) Node 26",
+        "interaction" : "activates",
+        "SUID" : 98,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "97",
+        "source" : "77",
+        "target" : "72",
+        "shared_name" : "Node 32 (interacts with) Node 27",
+        "name" : "Node 32 (interacts with) Node 27",
+        "interaction" : "activates",
+        "SUID" : 97,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "96",
+        "source" : "77",
+        "target" : "67",
+        "shared_name" : "Node 32 (interacts with) Node 34",
+        "name" : "Node 32 (interacts with) Node 34",
+        "interaction" : "activates",
+        "SUID" : 96,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "95",
+        "source" : "77",
+        "target" : "66",
+        "shared_name" : "Node 32 (interacts with) Node 35",
+        "name" : "Node 32 (interacts with) Node 35",
+        "interaction" : "activates",
+        "SUID" : 95,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "94",
+        "source" : "76",
+        "target" : "73",
+        "shared_name" : "Node 31 (interacts with) Node 28",
+        "name" : "Node 31 (interacts with) Node 28",
+        "interaction" : "inhibits",
+        "SUID" : 94,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "93",
+        "source" : "75",
+        "target" : "73",
+        "shared_name" : "Node 30 (interacts with) Node 28",
+        "name" : "Node 30 (interacts with) Node 28",
+        "interaction" : "inhibits",
+        "SUID" : 93,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "92",
+        "source" : "74",
+        "target" : "76",
+        "shared_name" : "Node 29 (interacts with) Node 31",
+        "name" : "Node 29 (interacts with) Node 31",
+        "interaction" : "activates",
+        "SUID" : 92,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "91",
+        "source" : "74",
+        "target" : "75",
+        "shared_name" : "Node 29 (interacts with) Node 30",
+        "name" : "Node 29 (interacts with) Node 30",
+        "interaction" : "activates",
+        "SUID" : 91,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "90",
+        "source" : "73",
+        "target" : "69",
+        "shared_name" : "Node 28 (interacts with) Node 22",
+        "name" : "Node 28 (interacts with) Node 22",
+        "interaction" : "activates",
+        "SUID" : 90,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "89",
+        "source" : "72",
+        "target" : "69",
+        "shared_name" : "Node 27 (interacts with) Node 22",
+        "name" : "Node 27 (interacts with) Node 22",
+        "interaction" : "activates",
+        "SUID" : 89,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "88",
+        "source" : "71",
+        "target" : "69",
+        "shared_name" : "Node 26 (interacts with) Node 22",
+        "name" : "Node 26 (interacts with) Node 22",
+        "interaction" : "activates",
+        "SUID" : 88,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "87",
+        "source" : "69",
+        "target" : "70",
+        "shared_name" : "Node 22 (interacts with) Node 21",
+        "name" : "Node 22 (interacts with) Node 21",
+        "interaction" : "inhibits",
+        "SUID" : 87,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "86",
+        "source" : "68",
+        "target" : "65",
+        "shared_name" : "Node 33 (interacts with) Node 36",
+        "name" : "Node 33 (interacts with) Node 36",
+        "interaction" : "activates",
+        "SUID" : 86,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "85",
+        "source" : "68",
+        "target" : "64",
+        "shared_name" : "Node 33 (interacts with) Node 37",
+        "name" : "Node 33 (interacts with) Node 37",
+        "interaction" : "inhibits",
+        "SUID" : 85,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "84",
+        "source" : "67",
+        "target" : "70",
+        "shared_name" : "Node 34 (interacts with) Node 21",
+        "name" : "Node 34 (interacts with) Node 21",
+        "interaction" : "inhibits",
+        "SUID" : 84,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "83",
+        "source" : "66",
+        "target" : "69",
+        "shared_name" : "Node 35 (interacts with) Node 22",
+        "name" : "Node 35 (interacts with) Node 22",
+        "interaction" : "activates",
+        "SUID" : 83,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "82",
+        "source" : "65",
+        "target" : "70",
+        "shared_name" : "Node 36 (interacts with) Node 21",
+        "name" : "Node 36 (interacts with) Node 21",
+        "interaction" : "inhibits",
+        "SUID" : 82,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "81",
+        "source" : "64",
+        "target" : "63",
+        "shared_name" : "Node 37 (interacts with) Node 38",
+        "name" : "Node 37 (interacts with) Node 38",
+        "interaction" : "activates",
+        "SUID" : 81,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "80",
+        "source" : "63",
+        "target" : "70",
+        "shared_name" : "Node 38 (interacts with) Node 21",
+        "name" : "Node 38 (interacts with) Node 21",
+        "interaction" : "activates",
+        "SUID" : 80,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "79",
+        "source" : "62",
+        "target" : "77",
+        "shared_name" : "Node 39 (interacts with) Node 32",
+        "name" : "Node 39 (interacts with) Node 32",
+        "interaction" : "inhibits",
+        "SUID" : 79,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    }, {
+      "data" : {
+        "id" : "78",
+        "source" : "62",
+        "target" : "68",
+        "shared_name" : "Node 39 (interacts with) Node 33",
+        "name" : "Node 39 (interacts with) Node 33",
+        "interaction" : "inhibits",
+        "SUID" : 78,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      }
+    } ]
+  }
+}
