@@ -102,8 +102,8 @@ lobo_freqs<-table(V(AOPg)$lobo_o)
 
 # a plot the AOP wiki using a standard left to right lobo layout.
 plot(AOPg, layout=lobo.layout(AOPg),vertex.size=2,  edge.curved=.3, edge.color="gray", edge.arrow.size=.1, vertex.label=NA, vertex.color=V(AOPg)$lobo_col)
-legend('topright',c("Molecular","Cellular","Tissue","Organ","Individual","Population","Not Specified"), pch=22,
-       col="#777777", xjust=1,yjust=1, pt.bg=tcols, pt.cex=2, cex=.8, bty="n", ncol=1, y.intersp=.5, box.col="black", text.col="white")
+#legend('topright',c("Molecular","Cellular","Tissue","Organ","Individual","Population","Not Specified"), pch=22,
+#       col="#777777", xjust=1,yjust=1, pt.bg=tcols, pt.cex=2, cex=.8, bty="n", ncol=1, y.intersp=.5, box.col="black", text.col="white")
 
 
 ## Barplot of lobo frequency
@@ -139,7 +139,12 @@ V(AOPg)$cent_col<-"white"
 
 # Which key event has the most incident nodes?
 sort(degree(AOPg, mode="all"))
-  V(AOPg)$KE_name[which(V(AOPg)$name==449)]
+
+rev(as.integer(tail(sort(degree(AOPg, mode="all")),10)))
+as.integer(names(tail(sort(degree(AOPg, mode="all")),10)))
+ rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(degree(AOPg, mode="all")),10))),V(AOPg)$name)])
+ 
+V(AOPg)$KE_name[which(V(AOPg)$name==449)]
   V(AOPg)$cent_size[which(V(AOPg)$name==345)]<-3
   V(AOPg)$cent_col[which(V(AOPg)$name==345)]<-"blue"
 
@@ -159,6 +164,12 @@ barplot(table(degree(AOPg,mode="all")), xlab="Degree (all)", ylab="# of KEs with
 
 #global degree coloring for network plot
 sort(degree(AOPg,mode="in"))
+rev(as.integer(tail(sort(degree(AOPg, mode="in")),10)))
+
+rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(degree(AOPg, mode="in")),10))),V(AOPg)$name)])
+
+
+
 V(AOPg)$KE_name[which(V(AOPg)$name==449)]
 
 V(AOPg)$deg_col<-deg.col(AOPg,dmode="in")
@@ -174,6 +185,12 @@ barplot(table(degree(AOPg,mode="in")), xlab="Degree (in)", ylab="# of KEs with D
 
 #global degree coloring for network plot
 sort(degree(AOPg,mode="out"))
+rev(as.integer(tail(sort(degree(AOPg, mode="out")),10)))
+rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(degree(AOPg, mode="out")),10))),V(AOPg)$name)])
+
+
+
+
 V(AOPg)$KE_name[which(V(AOPg)$name==345)]
 
 V(AOPg)$deg_col<-deg.col(AOPg,dmode="out")
