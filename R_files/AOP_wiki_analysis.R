@@ -38,15 +38,19 @@ V(AOPg)$AOP_ID<-KEPdata[match(V(AOPg)$KE_EID,KEPdata[,3]),1] # finds AOPID to ad
 
 # Plot the AOP wiki, colored by AOP
 #acols=topo.colors(length(unique(V(AOPg)$AOP_ID)))
-acols=colorRampPalette(c("white","blue"))
+acols=colorRampPalette(c("green","red","cyan","orange","magenta","yellow","blue"))
+
 for(i in 1:length(unique(V(AOPg)$AOP_ID))){
-  V(AOPg)[which(V(AOPg)$AOP_ID==unique(V(AOPg)$AOP_ID)[i])]$acol<-acols[i]
+  V(AOPg)[which(V(AOPg)$AOP_ID==unique(V(AOPg)$AOP_ID)[i])]$acol<-acols(length(unique(V(AOPg)$AOP_ID)))[i]
   }
 par(bg="black",xpd=FALSE)
 set.seed(1)
 plot(AOPg,vertex.color=V(AOPg)$acol,vertex.label=NA, vertex.size=2, edge.arrow.size=.1)
-
+#Calculates number of KE per unique AOP ID
 AOP_freqs<-table(V(AOPg)$AOP_ID)
+#Histogram of number of KE per unique AOP ID
+hist(AOP_freqs,col.axis="white",xlab="# Key Events",ylab="Frequency",col.lab="white",col="white")
+#Barplot of number of KE per unique AOP ID with red line to show mean
 bp_wcc<-barplot(table(V(AOPg)$AOP_ID),col.axis="white", xlab="AOP ID",ylab="# Key Events",col.lab="white")
 abline(h=mean(AOP_freqs),col="red")
 
@@ -92,9 +96,15 @@ for(i in 1:length(ntcomps)){
 V(AOPg)$lobo<-KEdata[[4]][match(V(AOPg)$KE_name,KEdata[[2]])]
 V(AOPg)$lobo[which(is.na(V(AOPg)$lobo))]<-"" #assigns blank to NA data
 tcols=rainbow(length(unique(V(AOPg)$lobo))) #creates a color scheme for visualization
-lobo_order=c("Molecular","Cellular","Tissue","Organ","Individual","Population","") #creates an ordering of biological organization
-V(AOPg)$lobo_o<-match(V(AOPg)$lobo,lobo_order) #assigns a value of biological organization instead of string.  1=molecular, 2=cellular, ...
+lobo_list=c("Molecular","Cellular","Tissue","Organ","Individual","Population","") #creates an ordering of biological organization
+V(AOPg)$lobo_o<-match(V(AOPg)$lobo,lobo_list) #assigns a value of biological organization instead of string.  1=molecular, 2=cellular, ...
 lobo_freqs<-table(V(AOPg)$lobo_o)
+
+# a plot the AOP wiki using a standard left to right lobo layout.
+plot(AOPg, layout=lobo.layout(AOPg),vertex.size=2,  edge.curved=.3, edge.color="gray", edge.arrow.size=.1, vertex.label=NA, vertex.color=V(AOPg)$lobo_col)
+legend('topright',c("Molecular","Cellular","Tissue","Organ","Individual","Population","Not Specified"), pch=22,
+       col="#777777", xjust=1,yjust=1, pt.bg=tcols, pt.cex=2, cex=.8, bty="n", ncol=1, y.intersp=.5, box.col="black", text.col="white")
+
 
 ## Barplot of lobo frequency
 par(bg="black")
@@ -106,8 +116,7 @@ legend('topright',c("Molecular","Cellular","Tissue","Organ","Individual","Popula
 #plot the AOP wiki by lobo info
 V(AOPg)$lobo_col<-tcols[V(AOPg)$lobo_o]
 set.seed(1)
-plot(AOPg, vertex.size=2, edge.color="gray", edge.arrow.size=.1, vertex.label=NA, vertex.color=V(AOPg)$lobo_col)
-
+plot(AOPg ,vertex.size=2, edge.color="gray", edge.arrow.size=.1, vertex.label=NA, vertex.color=V(AOPg)$lobo_col)
 
 # #### Graph condensation ####
 # 
@@ -188,7 +197,7 @@ V(AOPg)$cent_size[which(V(AOPg)$name==345)]<-3
 V(AOPg)$cent_col[which(V(AOPg)$name==345)]<-"green"
 V(AOPg)$deg_col<-deg.col(AOPg)
 #colored by betweenness
-primary.colors() 
+primary.colors()
 
 wbpal=colorRampPalette(c("white","blue"))
 V(AOPg)$bet_col<-wbpal(20)[as.numeric(cut(betweenness(AOPg,directed=TRUE),breaks = 20))]

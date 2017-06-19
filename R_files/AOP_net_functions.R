@@ -91,6 +91,21 @@ topo.layout = function(gr){
   return(x) #makes the layout object the output
 }
 
+# 
+lobo.layout<-function(gr,lobos=lobo_list){ #assumes lobo data is stored as V(gr)$lobo 
+  if(exists("lobos")) lobos else lobos=c("Molecular","Cellular","Tissue","Organ","Individual","Population","")
+  
+  for(i in 1:length(lobos)){ 
+    lobo_len<-length(which(V(gr)$lobo==lobos[i]))
+    V(gr)[which(V(gr)$lobo==lobos[i])]$lobo_locx<-rep(i,lobo_len)
+    V(gr)[which(V(gr)$lobo==lobos[i])]$lobo_locy<-seq(1,lobo_len)
+  }
+  lobo_locs<-cbind(V(gr)$lobo_locx,V(gr)$lobo_locy)
+  return(lobo_locs)
+}
+
+
+
 # function computes path counts for nodes involved in simple paths between MIEs and AOs.  
 aop.paths= function(gr,normalized=FALSE,kelist = V(gr)$ked){ #kelist is a list of key event designation characters (MIE,KE, or AO) corresponding to nodes in the graph gr
   if(is.null(kelist)){print("Error: No key event designation list supplied")} 
