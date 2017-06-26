@@ -1,43 +1,43 @@
-"SUID","AverageShortestPathLength","BetweennessCentrality","ClosenessCentrality","ClusteringCoefficient","Degree","Eccentricity","EdgeCount","Event Type","Indegree","IsSingleNode","name","NeighborhoodConnectivity","NumberOfDirectedEdges","NumberOfUndirectedEdges","Outdegree","PartnerOfMultiEdgedNodePairs","Radiality","selected","SelfLoops","shared name","Stress","TopologicalCoefficient"
-"72","5.925","0.0","0.16877637","0.0","1","11","1","MIE","0","false","""Activation, Hepatic nuclear receptor(s)""","4.0","1","0","1","0","0.64821429","false","0","""Activation, Hepatic nuclear receptor(s)""","0","0.0"
-"73","5.0","0.0","0.2","0.0","1","10","1","MIE","0","false","""Inhibition, Dual oxidase""","5.0","1","0","1","0","0.71428571","false","0","""Inhibition, Dual oxidase""","0","0.0"
-"74","5.0","0.0","0.2","0.0","1","10","1","MIE","0","false","""Inhibition, Pendrin""","5.0","1","0","1","0","0.71428571","false","0","""Inhibition, Pendrin""","0","0.0"
-"75","5.85","0.05","0.17094017","0.0","2","10","2","KE","1","false","""Increased, Triiodothyronine (T3) in tissues""","1.5","2","0","1","0","0.65357143","false","0","""Increased, Triiodothyronine (T3) in tissues""","112","0.5"
-"76","6.825","0.0","0.14652015","0.0","1","11","1","MIE","0","false","""Inhibition, Deiodinase 3""","2.0","1","0","1","0","0.58392857","false","0","""Inhibition, Deiodinase 3""","0","0.0"
-"77","5.875","0.0","0.17021277","0.0","1","11","1","MIE","0","false","""Inhibition, Iodotyrosine deiodinase (IYD)""","3.0","1","0","1","0","0.65178571","false","0","""Inhibition, Iodotyrosine deiodinase (IYD)""","0","0.0"
-"78","4.925","0.0974359","0.20304569","0.0","2","9","2","AO","2","false","""Altered, Amphibian metamorphosis""","3.0","2","0","0","0","0.71964286","false","0","""Altered, Amphibian metamorphosis""","220","0.5"
-"79","4.05","0.46602564","0.24691358","0.0","4","8","4","KE","3","false","""Decreased, Triiodothyronine (T3) in tissues""","2.0","4","0","1","0","0.78214286","false","0","""Decreased, Triiodothyronine (T3) in tissues""","1782","0.33333333"
-"80","3.675","0.45","0.27210884","0.0","2","7","2","KE","1","false","""Decreased, Thyroxine (T4) in tissues""","4.5","2","0","1","0","0.80892857","false","0","""Decreased, Thyroxine (T4) in tissues""","1620","0.5"
-"81","4.675","0.14358974","0.21390374","0.0","2","9","2","MIE","0","false","""Inhibition, Deiodinase 1""","4.0","2","0","2","0","0.7375","false","0","""Inhibition, Deiodinase 1""","768","0.6"
-"82","6.925","0.03119658","0.14440433","0.0","2","12","2","KE","1","false","""Reduced, Hearing""","3.5","2","0","1","0","0.57678571","false","0","""Reduced, Hearing""","272","0.625"
-"83","6.05","0.12905983","0.16528926","0.33333333","4","11","4","KE","2","false","""Reduced, Anterior swim bladder inflation""","3.0","4","0","2","0","0.63928571","false","0","""Reduced, Anterior swim bladder inflation""","808","0.45833333"
-"84","8.75","0.0","0.11428571","0.0","1","14","1","AO","1","false","""Decrease, Population trajectory""","3.0","1","0","0","0","0.44642857","false","0","""Decrease, Population trajectory""","0","0.0"
-"85","7.775","0.05064103","0.12861736","0.0","3","13","3","AO","2","false","""Reduced, Young of year survival""","2.0","3","0","1","0","0.51607143","false","0","""Reduced, Young of year survival""","414","0.5"
-"86","6.9","0.06367521","0.14492754","0.33333333","3","12","3","KE","2","false","""Reduced, Swimming performance""","3.33333333","3","0","1","0","0.57857143","false","0","""Reduced, Swimming performance""","544","0.6"
-"87","6.075","0.05235043","0.16460905","0.66666667","3","11","3","KE","1","false","""Reduced, Posterior swim bladder inflation""","3.66666667","3","0","2","0","0.6375","false","0","""Reduced, Posterior swim bladder inflation""","402","0.52380952"
-"88","5.3","0.26217949","0.18867925","0.16666667","4","10","4","KE","2","false","""Decreased, Triiodothyronine (T3) in serum""","2.75","4","0","2","0","0.69285714","false","0","""Decreased, Triiodothyronine (T3) in serum""","1454","0.45"
-"89","4.675","0.14358974","0.21390374","0.0","2","9","2","MIE","0","false","""Inhibition, Deiodinase 2""","4.0","2","0","2","0","0.7375","false","0","""Inhibition, Deiodinase 2""","768","0.6"
-"90","8.25","0.0","0.12121212","0.0","1","14","1","AO","1","false","""Impairment, Learning and memory""","2.0","1","0","0","0","0.48214286","false","0","""Impairment, Learning and memory""","0","0.0"
-"91","7.275","0.05","0.13745704","0.0","2","13","2","KE","1","false","""Neuronal network function, Decreased""","1.5","2","0","1","0","0.55178571","false","0","""Neuronal network function, Decreased""","112","0.5"
-"92","6.35","0.0974359","0.15748031","0.0","2","12","2","KE","1","false","""Synaptogenesis, Decreased""","2.0","2","0","1","0","0.61785714","false","0","""Synaptogenesis, Decreased""","220","0.5"
-"93","5.475","0.14230769","0.1826484","0.0","2","11","2","KE","1","false","""GABAergic interneurons, Decreased""","2.0","2","0","1","0","0.68035714","false","0","""GABAergic interneurons, Decreased""","324","0.5"
-"94","4.65","0.18461538","0.21505376","0.0","2","10","2","KE","1","false","""BDNF, Reduced""","2.5","2","0","1","0","0.73928571","false","0","""BDNF, Reduced""","424","0.5"
-"95","4.9","0.09871795","0.20408163","0.0","3","10","3","KE","2","false","""Thyroidal Iodide, Decreased""","2.33333333","3","0","1","0","0.72142857","false","0","""Thyroidal Iodide, Decreased""","222","0.33333333"
-"96","5.875","0.0","0.17021277","0.0","1","11","1","MIE","0","false","""Inhibition, Na+/I- symporter (NIS)""","3.0","1","0","1","0","0.65178571","false","0","""Inhibition, Na+/I- symporter (NIS)""","0","0.0"
-"97","7.475","0.0","0.13377926","0.0","1","13","1","AO","1","false","""Cognitive Function, Decreased""","2.0","1","0","0","0","0.5375","false","0","""Cognitive Function, Decreased""","0","0.0"
-"98","6.5","0.05","0.15384615","0.0","2","12","2","KE","1","false","""Hippocampal Physiology, Altered""","1.5","2","0","1","0","0.60714286","false","0","""Hippocampal Physiology, Altered""","112","0.5"
-"99","5.575","0.0974359","0.1793722","0.0","2","11","2","KE","1","false","""Hippocampal anatomy, Altered""","2.0","2","0","1","0","0.67321429","false","0","""Hippocampal anatomy, Altered""","220","0.5"
-"100","4.7","0.14230769","0.21276596","0.0","2","10","2","KE","1","false","""Hippocampal gene expression, Altered""","2.5","2","0","1","0","0.73571429","false","0","""Hippocampal gene expression, Altered""","324","0.5"
-"101","3.875","0.38333333","0.25806452","0.0","3","9","3","KE","1","false","""T4 in neuronal tissue, Decreased""","3.0","3","0","2","0","0.79464286","false","0","""T4 in neuronal tissue, Decreased""","904","0.33333333"
-"102","4.025","0.27692308","0.2484472","0.0","5","9","5","KE","4","false","""TH synthesis, Decreased""","2.2","5","0","1","0","0.78392857","false","0","""TH synthesis, Decreased""","636","0.2"
-"103","5.0","0.0","0.2","0.0","1","10","1","MIE","0","false","""Thyroperoxidase, Inhibition""","5.0","1","0","1","0","0.71428571","false","0","""Thyroperoxidase, Inhibition""","0","0.0"
-"104","4.125","0.18461538","0.24242424","0.0","2","9","2","KE","1","false","""Increase, Biliary excretion TH glucuronide""","4.5","2","0","1","0","0.77678571","false","0","""Increase, Biliary excretion TH glucuronide""","424","0.5"
-"105","5.925","0.0","0.16877637","0.0","1","11","1","MIE","0","false","""Activation, Constitutive androstane receptor, NR1l3""","4.0","1","0","1","0","0.64821429","false","0","""Activation, Constitutive androstane receptor, NR1l3""","0","0.0"
-"106","4.95","0.14615385","0.2020202","0.0","4","10","4","KE","3","false","""Induction, Upregulation of glucuronyltransferase activity""","1.25","4","0","1","0","0.71785714","false","0","""Induction, Upregulation of glucuronyltransferase activity""","330","0.25"
-"107","5.925","0.0","0.16877637","0.0","1","11","1","MIE","0","false","""Activation, Pregnane-X receptor, NR1l2""","4.0","1","0","1","0","0.64821429","false","0","""Activation, Pregnane-X receptor, NR1l2""","0","0.0"
-"108","3.35","0.77820513","0.29850746","0.0","5","8","5","KE","2","false","""T4 in serum, Decreased""","2.8","5","0","3","0","0.83214286","false","0","""T4 in serum, Decreased""","2098","0.2"
-"109","6.95","0.0","0.14388489","0.0","1","12","1","AO","1","false","""Loss, Cochlear function""","2.0","1","0","0","0","0.575","false","0","""Loss, Cochlear function""","0","0.0"
-"110","5.975","0.05","0.16736402","0.0","2","11","2","KE","1","false","""Damage, Structure of the cochlea""","1.5","2","0","1","0","0.64464286","false","0","""Damage, Structure of the cochlea""","112","0.5"
-"111","5.05","0.0974359","0.1980198","0.0","2","10","2","KE","1","false","""Decrease, TR-regulated cochlear proteins""","2.0","2","0","1","0","0.71071429","false","0","""Decrease, TR-regulated cochlear proteins""","220","0.5"
-"112","4.175","0.14230769","0.23952096","0.0","2","9","2","KE","1","false","""Decrease, Tissue thyroid hormone concentration""","3.5","2","0","1","0","0.77321429","false","0","""Decrease, Tissue thyroid hormone concentration""","324","0.5"
-"157",,,,,,,,"KE",,"false","""Increased, Hepatic thyroid hormone uptake/transport""",,,,,,,"false",,"""Increased, Hepatic thyroid hormone uptake/transport""",,
+SUID,KE_ID,AverageShortestPathLength,BetweennessCentrality,ClosenessCentrality,ClusteringCoefficient,Degree,Eccentricity,EdgeCount,Event Type,Indegree,IsSingleNode,name,NeighborhoodConnectivity,NumberOfDirectedEdges,NumberOfUndirectedEdges,Outdegree,PartnerOfMultiEdgedNodePairs,Radiality,selected,SelfLoops,shared name,Stress,TopologicalCoefficient
+105,71,5.925,0,0.16877637,0,1,11,1,MIE,0,FALSE,"""Activation, Constitutive androstane receptor, NR1l3""",4,1,0,1,0,0.64821429,FALSE,0,"""Activation, Constitutive androstane receptor, NR1l3""",0,0
+72,1157,5.925,0,0.16877637,0,1,11,1,MIE,0,FALSE,"""Activation, Hepatic nuclear receptor(s)""",4,1,0,1,0,0.64821429,FALSE,0,"""Activation, Hepatic nuclear receptor(s)""",0,0
+107,239,5.925,0,0.16877637,0,1,11,1,MIE,0,FALSE,"""Activation, Pregnane-X receptor, NR1l2""",4,1,0,1,0,0.64821429,FALSE,0,"""Activation, Pregnane-X receptor, NR1l2""",0,0
+78,1101,4.925,0.0974359,0.20304569,0,2,9,2,AO,2,FALSE,"""Altered, Amphibian metamorphosis""",3,2,0,0,0,0.71964286,FALSE,0,"""Altered, Amphibian metamorphosis""",220,0.5
+94,381,4.65,0.18461538,0.21505376,0,2,10,2,KE,1,FALSE,"""BDNF, Reduced""",2.5,2,0,1,0,0.73928571,FALSE,0,"""BDNF, Reduced""",424,0.5
+97,402,7.475,0,0.13377926,0,1,13,1,AO,1,FALSE,"""Cognitive Function, Decreased""",2,1,0,0,0,0.5375,FALSE,0,"""Cognitive Function, Decreased""",0,0
+110,267,5.975,0.05,0.16736402,0,2,11,2,KE,1,FALSE,"""Damage, Structure of the cochlea""",1.5,2,0,1,0,0.64464286,FALSE,0,"""Damage, Structure of the cochlea""",112,0.5
+84,360,8.75,0,0.11428571,0,1,14,1,AO,1,FALSE,"""Decrease, Population trajectory""",3,1,0,0,0,0.44642857,FALSE,0,"""Decrease, Population trajectory""",0,0
+112,283,4.175,0.14230769,0.23952096,0,2,9,2,KE,1,FALSE,"""Decrease, Tissue thyroid hormone concentration""",3.5,2,0,1,0,0.77321429,FALSE,0,"""Decrease, Tissue thyroid hormone concentration""",324,0.5
+111,284,5.05,0.0974359,0.1980198,0,2,10,2,KE,1,FALSE,"""Decrease, TR-regulated cochlear proteins""",2,2,0,1,0,0.71071429,FALSE,0,"""Decrease, TR-regulated cochlear proteins""",220,0.5
+80,1093,3.675,0.45,0.27210884,0,2,7,2,KE,1,FALSE,"""Decreased, Thyroxine (T4) in tissues""",4.5,2,0,1,0,0.80892857,FALSE,0,"""Decreased, Thyroxine (T4) in tissues""",1620,0.5
+88,1003,5.3,0.26217949,0.18867925,0.16666667,4,10,4,KE,2,FALSE,"""Decreased, Triiodothyronine (T3) in serum""",2.75,4,0,2,0,0.69285714,FALSE,0,"""Decreased, Triiodothyronine (T3) in serum""",1454,0.45
+79,1116,4.05,0.46602564,0.24691358,0,4,8,4,KE,3,FALSE,"""Decreased, Triiodothyronine (T3) in tissues""",2,4,0,1,0,0.78214286,FALSE,0,"""Decreased, Triiodothyronine (T3) in tissues""",1782,0.33333333
+93,851,5.475,0.14230769,0.1826484,0,2,11,2,KE,1,FALSE,"""GABAergic interneurons, Decreased""",2,2,0,1,0,0.68035714,FALSE,0,"""GABAergic interneurons, Decreased""",324,0.5
+99,757,5.575,0.0974359,0.1793722,0,2,11,2,KE,1,FALSE,"""Hippocampal anatomy, Altered""",2,2,0,1,0,0.67321429,FALSE,0,"""Hippocampal anatomy, Altered""",220,0.5
+100,756,4.7,0.14230769,0.21276596,0,2,10,2,KE,1,FALSE,"""Hippocampal gene expression, Altered""",2.5,2,0,1,0,0.73571429,FALSE,0,"""Hippocampal gene expression, Altered""",324,0.5
+98,758,6.5,0.05,0.15384615,0,2,12,2,KE,1,FALSE,"""Hippocampal Physiology, Altered""",1.5,2,0,1,0,0.60714286,FALSE,0,"""Hippocampal Physiology, Altered""",112,0.5
+90,341,8.25,0,0.12121212,0,1,14,1,AO,1,FALSE,"""Impairment, Learning and memory""",2,1,0,0,0,0.48214286,FALSE,0,"""Impairment, Learning and memory""",0,0
+104,401,4.125,0.18461538,0.24242424,0,2,9,2,KE,1,FALSE,"""Increase, Biliary excretion TH glucuronide""",4.5,2,0,1,0,0.77678571,FALSE,0,"""Increase, Biliary excretion TH glucuronide""",424,0.5
+157,1158,,,,,,,,KE,,FALSE,"""Increased, Hepatic thyroid hormone uptake/transport""",,,,,,,FALSE,,"""Increased, Hepatic thyroid hormone uptake/transport""",,
+75,1154,5.85,0.05,0.17094017,0,2,10,2,KE,1,FALSE,"""Increased, Triiodothyronine (T3) in tissues""",1.5,2,0,1,0,0.65357143,FALSE,0,"""Increased, Triiodothyronine (T3) in tissues""",112,0.5
+106,295,4.95,0.14615385,0.2020202,0,4,10,4,KE,3,FALSE,"""Induction, Upregulation of glucuronyltransferase activity""",1.25,4,0,1,0,0.71785714,FALSE,0,"""Induction, Upregulation of glucuronyltransferase activity""",330,0.25
+81,1009,4.675,0.14358974,0.21390374,0,2,9,2,MIE,0,FALSE,"""Inhibition, Deiodinase 1""",4,2,0,2,0,0.7375,FALSE,0,"""Inhibition, Deiodinase 1""",768,0.6
+89,1002,4.675,0.14358974,0.21390374,0,2,9,2,MIE,0,FALSE,"""Inhibition, Deiodinase 2""",4,2,0,2,0,0.7375,FALSE,0,"""Inhibition, Deiodinase 2""",768,0.6
+76,1153,6.825,0,0.14652015,0,1,11,1,MIE,0,FALSE,"""Inhibition, Deiodinase 3""",2,1,0,1,0,0.58392857,FALSE,0,"""Inhibition, Deiodinase 3""",0,0
+73,1156,5,0,0.2,0,1,10,1,MIE,0,FALSE,"""Inhibition, Dual oxidase""",5,1,0,1,0,0.71428571,FALSE,0,"""Inhibition, Dual oxidase""",0,0
+77,1152,5.875,0,0.17021277,0,1,11,1,MIE,0,FALSE,"""Inhibition, Iodotyrosine deiodinase (IYD)""",3,1,0,1,0,0.65178571,FALSE,0,"""Inhibition, Iodotyrosine deiodinase (IYD)""",0,0
+96,424,5.875,0,0.17021277,0,1,11,1,MIE,0,FALSE,"""Inhibition, Na+/I- symporter (NIS)""",3,1,0,1,0,0.65178571,FALSE,0,"""Inhibition, Na+/I- symporter (NIS)""",0,0
+74,1155,5,0,0.2,0,1,10,1,MIE,0,FALSE,"""Inhibition, Pendrin""",5,1,0,1,0,0.71428571,FALSE,0,"""Inhibition, Pendrin""",0,0
+109,319,6.95,0,0.14388489,0,1,12,1,AO,1,FALSE,"""Loss, Cochlear function""",2,1,0,0,0,0.575,FALSE,0,"""Loss, Cochlear function""",0,0
+91,386,7.275,0.05,0.13745704,0,2,13,2,KE,1,FALSE,"""Neuronal network function, Decreased""",1.5,2,0,1,0,0.55178571,FALSE,0,"""Neuronal network function, Decreased""",112,0.5
+83,1007,6.05,0.12905983,0.16528926,0.33333333,4,11,4,KE,2,FALSE,"""Reduced, Anterior swim bladder inflation""",3,4,0,2,0,0.63928571,FALSE,0,"""Reduced, Anterior swim bladder inflation""",808,0.45833333
+82,1008,6.925,0.03119658,0.14440433,0,2,12,2,KE,1,FALSE,"""Reduced, Hearing""",3.5,2,0,1,0,0.57678571,FALSE,0,"""Reduced, Hearing""",272,0.625
+87,1004,6.075,0.05235043,0.16460905,0.66666667,3,11,3,KE,1,FALSE,"""Reduced, Posterior swim bladder inflation""",3.66666667,3,0,2,0,0.6375,FALSE,0,"""Reduced, Posterior swim bladder inflation""",402,0.52380952
+86,1005,6.9,0.06367521,0.14492754,0.33333333,3,12,3,KE,2,FALSE,"""Reduced, Swimming performance""",3.33333333,3,0,1,0,0.57857143,FALSE,0,"""Reduced, Swimming performance""",544,0.6
+85,1006,7.775,0.05064103,0.12861736,0,3,13,3,AO,2,FALSE,"""Reduced, Young of year survival""",2,3,0,1,0,0.51607143,FALSE,0,"""Reduced, Young of year survival""",414,0.5
+92,385,6.35,0.0974359,0.15748031,0,2,12,2,KE,1,FALSE,"""Synaptogenesis, Decreased""",2,2,0,1,0,0.61785714,FALSE,0,"""Synaptogenesis, Decreased""",220,0.5
+101,280,3.875,0.38333333,0.25806452,0,3,9,3,KE,1,FALSE,"""T4 in neuronal tissue, Decreased""",3,3,0,2,0,0.79464286,FALSE,0,"""T4 in neuronal tissue, Decreased""",904,0.33333333
+108,281,3.35,0.77820513,0.29850746,0,5,8,5,KE,2,FALSE,"""T4 in serum, Decreased""",2.8,5,0,3,0,0.83214286,FALSE,0,"""T4 in serum, Decreased""",2098,0.2
+102,277,4.025,0.27692308,0.2484472,0,5,9,5,KE,4,FALSE,"""TH synthesis, Decreased""",2.2,5,0,1,0,0.78392857,FALSE,0,"""TH synthesis, Decreased""",636,0.2
+95,425,4.9,0.09871795,0.20408163,0,3,10,3,KE,2,FALSE,"""Thyroidal Iodide, Decreased""",2.33333333,3,0,1,0,0.72142857,FALSE,0,"""Thyroidal Iodide, Decreased""",222,0.33333333
+103,279,5,0,0.2,0,1,10,1,MIE,0,FALSE,"""Thyroperoxidase, Inhibition""",5,1,0,1,0,0.71428571,FALSE,0,"""Thyroperoxidase, Inhibition""",0,0

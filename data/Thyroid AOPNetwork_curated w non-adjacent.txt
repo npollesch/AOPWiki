@@ -1,0 +1,63 @@
+AOPs	Relationships	Upstream KE	Downstream KE	Directness	Evidence	Quantitative Understanding	KEup-ID	KEdn-ID	KEup_loo	KEdn_loo
+8	313	"Decrease, Tissue thyroid hormone concentration"	"Decrease, TR-regulated cochlear proteins"	Directly leads to	Weak		283	284	tissue	tissue
+8	314	"Decrease, TR-regulated cochlear proteins"	"Damage, Structure of the cochlea"	Directly leads to	Weak		284	267	tissue	tissue
+8	297	"Damage, Structure of the cochlea"	"Loss, Cochlear function"	Directly leads to	Moderate		267	319	tissue	organ
+8	285	"T4 in serum, Decreased"	"Decrease, Tissue thyroid hormone concentration"	Directly leads to	Moderate	Weak	259	283	organ	tissue
+8	265	"Activation, Pregnane-X receptor, NR1l2"	"Induction, Upregulation of glucuronyltransferase activity"	Directly leads to	Strong	Weak	239	295	molecular	molecular
+8	85	"Activation, Constitutive androstane receptor, NR1l3"	"Induction, Upregulation of glucuronyltransferase activity"	Directly leads to	Moderate	Weak	71	295	molecular	molecular
+8	381	"Induction, Upregulation of glucuronyltransferase activity"	"T4 in serum, Decreased"	Indirectly leads to	Strong	Weak	295	259	molecular	organ
+8	382	"Increase, Biliary excretion TH glucuronide"	"T4 in serum, Decreased"	Directly leads to	Moderate	Weak	401	259	organ	organ
+8	1060	"Induction, Upregulation of glucuronyltransferase activity"	"Increase, Biliary excretion TH glucuronide"	Directly leads to	Moderate		295	401	molecular	organ
+42	309	"Thyroperoxidase, Inhibition"	"TH synthesis, Decreased"	Directly leads to	Strong	Weak	279	277		
+42	305	"TH synthesis, Decreased"	"T4 in serum, Decreased"	Directly leads to	Strong	Moderate	277	281		
+42	366	"Thyroperoxidase, Inhibition"	"T4 in serum, Decreased"	Indirectly leads to	Strong	Moderate	279	281		
+42	312	"T4 in serum, Decreased"	"T4 in neuronal tissue, Decreased"	Directly leads to	Moderate	Weak	281	280		
+42	746	"T4 in neuronal tissue, Decreased"	"Hippocampal gene expression, Altered"	Directly leads to	Moderate	Weak	280	756		
+42	747	"Hippocampal gene expression, Altered"	"Hippocampal anatomy, Altered"	Directly leads to	Moderate	Weak	756	757		
+42	749	"Hippocampal anatomy, Altered"	"Hippocampal Physiology, Altered"	Directly leads to	Moderate	Weak	757	758		
+42	748	"Hippocampal Physiology, Altered"	"Cognitive Function, Decreased"	Directly leads to	Strong	Moderate	758	402		
+42	1387	"T4 in serum, Decreased"	"Hippocampal gene expression, Altered"	Indirectly leads to	Strong	Weak	281	756		
+42	1388	"T4 in serum, Decreased"	"Hippocampal anatomy, Altered"	Indirectly leads to	Strong	Weak	281	757		
+42	1389	"T4 in serum, Decreased"	"Hippocampal Physiology, Altered"	Indirectly leads to	Moderate	Weak	281	758		
+42	403	"T4 in serum, Decreased"	"Cognitive Function, Decreased"	Indirectly leads to	Strong	Moderate	281	402		
+54	442	"Inhibition, Na+/I- symporter (NIS)"	"Thyroidal Iodide, Decreased"	Directly leads to	Strong	Strong	424	425		
+54	872	"Thyroidal Iodide, Decreased"	"TH synthesis, Decreased"	Directly leads to	Strong	Strong	425	277		
+54	444	"T4 in neuronal tissue, Decreased"	"BDNF, Reduced"	Directly leads to	Weak	Weak	280	381		
+54	870	"BDNF, Reduced"	"GABAergic interneurons, Decreased"	Directly leads to	Moderate	Weak	381	851		
+54	871	"GABAergic interneurons, Decreased"	"Synaptogenesis, Decreased"	Directly leads to	Strong	Weak	851	385		
+54	358	"Synaptogenesis, Decreased"	"Neuronal network function, Decreased"	Directly leads to	Weak	Weak	385	386		
+54	359	"Neuronal network function, Decreased"	"Impairment, Learning and memory"	Directly leads to	Strong	Weak	386	341		
+54	1503	"Inhibition, Na+/I- symporter (NIS)"	"Impairment, Learning and memory"	Indirectly leads to	Moderate	Weak	424	341		
+54	1506	"TH synthesis, Decreased"	"Impairment, Learning and memory"	Indirectly leads to	Strong	Moderate	277	341		
+54	1504	"TH synthesis, Decreased"	"BDNF, Reduced"	Indirectly leads to	Weak	Weak	277	381		
+54	1505	"TH synthesis, Decreased"	"GABAergic interneurons, Decreased"	Indirectly leads to	Weak	Weak	277	851		
+54	448	"BDNF, Reduced"	"Synaptogenesis, Decreased"	Indirectly leads to	Moderate	Weak	381	385		
+54	1507	"BDNF, Reduced"	"Impairment, Learning and memory"	Indirectly leads to	Moderate	Moderate	381	341		
+155	1026	"Inhibition, Deiodinase 2"	"Decreased, Triiodothyronine (T3) in serum"	Directly leads to			1002	1003		
+155	1027	"Decreased, Triiodothyronine (T3) in serum"	"Reduced, Posterior swim bladder inflation"	Directly leads to			1003	1004		
+155	1028	"Reduced, Posterior swim bladder inflation"	"Reduced, Swimming performance"	Directly leads to			1004	1005		
+155	1029	"Reduced, Swimming performance"	"Reduced, Young of year survival"	Directly leads to			1005	1006		
+155	1030	"Reduced, Young of year survival"	"Decrease, Population trajectory"	Directly leads to			1006	360		
+155	1031	"Reduced, Posterior swim bladder inflation"	"Reduced, Anterior swim bladder inflation"	Directly leads to			1004	1007		
+155	1032	"Reduced, Anterior swim bladder inflation"	"Reduced, Hearing"	Directly leads to			1007	1008		
+155	1033	"Reduced, Hearing"	"Reduced, Young of year survival"	Directly leads to			1008	1006		
+155	1034	"Reduced, Anterior swim bladder inflation"	"Reduced, Swimming performance"	Directly leads to			1007	1005		
+155	1041	"Reduced, Posterior swim bladder inflation"	"Reduced, Young of year survival"	Indirectly leads to	Strong	Weak	1004	1006		
+155	1042	"Inhibition, Deiodinase 2"	"Reduced, Posterior swim bladder inflation"	Indirectly leads to			1002	1004		
+156	1035	"Decreased, Triiodothyronine (T3) in serum"	"Reduced, Anterior swim bladder inflation"	Directly leads to			1003	1007		
+156	1043	"Inhibition, Deiodinase 2"	"Reduced, Anterior swim bladder inflation"	Indirectly leads to			1002	1007		
+157	1037	"Inhibition, Deiodinase 1"	"Decreased, Triiodothyronine (T3) in serum"	Directly leads to			1009	1003		
+157	1044	"Inhibition, Deiodinase 1"	"Reduced, Posterior swim bladder inflation"	Indirectly leads to			1009	1004		
+158	1045	"Inhibition, Deiodinase 1"	"Reduced, Anterior swim bladder inflation"	Indirectly leads to			1009	1007		
+175	1143	"T4 in serum, Decreased"	"Decreased, Thyroxine (T4) in tissues"	Directly leads to	Moderate	Weak	281	1093		
+175	1163	"Decreased, Thyroxine (T4) in tissues"	"Decreased, Triiodothyronine (T3) in tissues"	Directly leads to	Strong	Weak	1093	1116		
+175	1164	"Decreased, Triiodothyronine (T3) in tissues"	"Altered, Amphibian metamorphosis"	Directly leads to	Strong	Weak	1116	1101		
+188	1197	"Inhibition, Iodotyrosine deiodinase (IYD)"	"Thyroidal Iodide, Decreased"	Directly leads to	Weak	Weak	1152	425		
+189	1198	"Inhibition, Deiodinase 1"	"Decreased, Triiodothyronine (T3) in tissues"	Directly leads to	Moderate	Weak	1009	1116		
+190	1199	"Inhibition, Deiodinase 2"	"Decreased, Triiodothyronine (T3) in tissues"	Directly leads to	Moderate	Weak	1002	1116		
+191	1200	"Inhibition, Deiodinase 3"	"Increased, Triiodothyronine (T3) in tissues"	Directly leads to	Weak	Weak	1153	1154		
+191	1201	"Increased, Triiodothyronine (T3) in tissues"	"Altered, Amphibian metamorphosis"	Directly leads to	Moderate	Weak	1154	1101		
+192	1202	"Inhibition, Pendrin"	"TH synthesis, Decreased"	Directly leads to	Weak	Weak	1155	277		
+193	1203	"Inhibition, Dual oxidase"	"TH synthesis, Decreased"	Directly leads to	Moderate	Weak	1156	277		
+193	1205	"Activation, Hepatic nuclear receptor(s)"	"Induction, Upregulation of glucuronyltransferase activity"	Directly leads to	Moderate	Weak	1157	295		
+193	1206	"Increased, Hepatic thyroid hormone uptake/transport"	"Increase, Biliary excretion TH glucuronide"	Indirectly leads to	Weak	Weak	1158	401		

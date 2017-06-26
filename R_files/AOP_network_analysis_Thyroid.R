@@ -52,6 +52,12 @@ V(AOP)$name<-AOP_data$name[match(V(AOP)$name,as.character(AOP_data$SUID))]
 
 # Assign key event descriptor types (MIE,AO,KE,etc...) And color MIE and AO
 V(AOP)$ked<-AOP_data$`Event Type`[match(V(AOP)$name,as.character(AOP_data$name))]
+V(AOP)$KE_ID<-AOP_data$KE_ID[match(V(AOP)$name,as.character(AOP_data$name))]
+# Assign level of biological organization data from KEPdata sheet in AOP_wiki_analysis file
+V(AOP)$lobo<-KEPdata$Level.of.Organisation[match(V(AOP)$KE_ID,KEPdata$Event)]
+V(AOP)$KE_ID
+V(AOP)$KE_ID[which(is.na(V(AOP)$lobo))]
+match(V(AOP)$KE_ID,KEPdata$Event)
 
 # Assign KEs with 0 in-degree to be MIE and 0-out-degree to be AO
 indeg<-degree(AOP,mode="in")
@@ -77,14 +83,9 @@ V(AOP)$color[which(V(AOP)$ked=="MIE")]<-"Green"
 V(AOP)$color[which(V(AOP)$ked=="AO")]<-"Red"
 
 
-    
-
-
-
 #### PLOTS NETWORKS ####
 
 # creates plot of igraph object with KED coloring
-dev.off()
 set.seed(2)
 plot(AOP, edge.arrow.size=.25, edge.curved=.1, vertex.size=10, main=paste(AOP.name,"AOP Network"),layout=layout.davidson.harel(AOP), vertex.label.cex=.75, vertex.label=NA, edge.curved=T )
 legend('topleft',c("MIE","KE", "AO"), pch=22,
@@ -296,6 +297,19 @@ axis(1,at=seq(0,45,5))
 text(1, aop.paths.bp, aop.paths(AOP,norm=FALSE), cex=1,pos=4) #adds values to bars
 text(.25, aop.paths.bp, V(AOP)$ked ,cex=.5,pos=4 ) #adds OE value text next to bars
 dev.off()
+
+
+#### LOBO Layout Visualization
+lobo_list=c("Molecular","Cellular","Tissue","Organ","Individual","Population","") #creates an ordering of biological organization
+V(AOP)$lobo[which(is.na(V(AOP)$lobo))]<-"" #NAs are not recognized by the lobo.layout function, only those created in the ordering lobo_list above.
+V(AOP)$lobo_o<-match(V(AOP)$lobo,lobo_list)
+tcols=rainbow(length(unique(V(AOP)$lobo))) #creates a color scheme for visualization
+V(AOP)$lobo_col<-tcols[V(AOP)$lobo_o]
+
+V(AOP)$lobo_col
+lobo.layout(AOP)
+plot(AOP, layout=lobo.layout(AOP),vertex.size=5,  edge.curved=.3, edge.color="gray", edge.arrow.size=.1, vertex.label=V(AOP)$KE_ID, vertex.color=V(AOP)$lobo_col)
+
 
 #~ Misc, notes, and tasks ####
 
