@@ -18,8 +18,8 @@ color.comps<-function(gr, ccmode="strong"){ #function to color all non-trivial s
   if(ccmode=="strong"){
     V(gr)$size<-1 
     E(gr)$width<-1
-    V(gr)$size[which(V(gr)$color!="gray")]<-2 # resizes all the highlighted nodes
-    E(gr)$width[which(E(gr)$color!="gray")]<-2
+    V(gr)$size[which(V(gr)$color!="gray")]<-3 # resizes all the highlighted nodes
+    E(gr)$width[which(E(gr)$color!="gray")]<-3
     return(list(vcol=V(gr)$color,ecol=E(gr)$color,vsize=V(gr)$size,ewidth=E(gr)$width))}
   else {return(list(vcol=V(gr)$color,ecol=E(gr)$color))}
 }
@@ -140,7 +140,16 @@ aop.paths= function(gr,normalized=FALSE,kelist = V(gr)$ked){ #kelist is a list o
   }
 }
 
-deg.col<-function(gr,dmode="all"){
+deg.col.grad<-function(gr,dmode="all",gradcols){
+  gd<-degree(gr,mode=dmode)
+  #heatcol=rev(heat.colors(max(gd)+1))
+  #gdcols<-heatcol[gd+1]
+  wbpal=colorRampPalette(gradcols)
+  gdcols<-wbpal(max(gd)+1)[gd+1]
+  
+  return(gdcols)
+}
+deg.col.heat<-function(gr,dmode="all"){
   gd<-degree(gr,mode=dmode)
   heatcol=rev(heat.colors(max(gd)+1))
   gdcols<-heatcol[gd+1]
