@@ -1,5 +1,5 @@
 
-# color.comps is a function to color all the strongly connected components in a graph.  In theory it should do the same thing as cycle.color below
+# color.comps() is a function to color all the strongly connected components in a graph.  In theory it should do the same thing as cycle.color below
 # however, I could not get cycle.color to work properly on the AOPwiki graph, so I made this one.  -Nate 5/11/17
 color.comps<-function(gr, ccmode="strong"){ #function to color all non-trivial strongly connected components in a graph
   V(gr)$color<-"gray"
@@ -24,7 +24,8 @@ color.comps<-function(gr, ccmode="strong"){ #function to color all non-trivial s
   else {return(list(vcol=V(gr)$color,ecol=E(gr)$color))}
 }
 
-# cycle.color function can be used to color SCC edges and vertices for visualization
+
+# cycle.color() function can be used to color SCC edges and vertices for visualization
 # The output is a list of vertex colors[[1]] and node colors[[2]]
 
 cycle.color = function(gr){
@@ -53,8 +54,8 @@ cycle.color = function(gr){
 }
 
 
-#condense.map function determines condensation mapping needed to contract vertices in igraph
-#output is a vector map to be used in 'condense.graph' function
+# condense.map() function determines condensation mapping needed to contract vertices in igraph
+#o utput is a vector map to be used in 'condense.graph' function
 condense.map = function(gr,suppress=FALSE){
   if(is.dag(gr)){print("Graph is acyclic")}
   else{gsccs<-components(gr, mode="strong")
@@ -62,8 +63,8 @@ condense.map = function(gr,suppress=FALSE){
   }
 }
 
-#condense.graph function takes the condensation vector map and original graph and creates the condensed graph
-#output is a new igraph object that has strongly connected components groups into supernodes 
+# condense.graph() function takes the condensation vector map and original graph and creates the condensed graph
+# output is a new igraph object that has strongly connected components groups into supernodes 
 condense.graph = function(gr,map){
   areColors <- function(x) { #function found at http://stackoverflow.com/questions/13289009/check-if-character-string-is-a-valid-color-representation by Josh O'Brien 
     sapply(x, function(X) {
@@ -81,7 +82,7 @@ condense.graph = function(gr,map){
   
 }
 
-# this function computes a topological ordering layout for visualizaiton of an igraph object
+# topo.layout() function computes a topological ordering layout for visualizaiton of an igraph object
 topo.layout = function(gr){
   tsort<-topo_sort(gr, mode = c("out"))
   tpos<-match(V(gr)$name,tsort$name) # finds position of node names in topoloigcal ordering
@@ -91,7 +92,7 @@ topo.layout = function(gr){
   return(x) #makes the layout object the output
 }
 
-# 
+# lobo.layout() creates a layout in increasing order of level of biological organization
 lobo.layout<-function(gr,lobos=lobo_list){ #assumes lobo data is stored as V(gr)$lobo 
   if(exists("lobos")) lobos else lobos=c("Molecular","Cellular","Tissue","Organ","Individual","Population","")
   
@@ -104,9 +105,7 @@ lobo.layout<-function(gr,lobos=lobo_list){ #assumes lobo data is stored as V(gr)
   return(lobo_locs)
 }
 
-
-
-# function computes path counts for nodes involved in simple paths between MIEs and AOs.  
+# aop.paths() function computes path counts for nodes involved in simple paths between MIEs and AOs.  
 aop.paths= function(gr,normalized=FALSE,kelist = V(gr)$ked){ #kelist is a list of key event designation characters (MIE,KE, or AO) corresponding to nodes in the graph gr
   if(is.null(kelist)){print("Error: No key event designation list supplied")} 
   #is.character(V(sg.cond)$ked)
@@ -139,7 +138,7 @@ aop.paths= function(gr,normalized=FALSE,kelist = V(gr)$ked){ #kelist is a list o
     #set.vertex.attribute(gr,"aoppn",path.counts$count/max(path.counts$count))
   }
 }
-
+# deg.col.grad() provides an option for coloring nodes based on degree and specified gradient colors
 deg.col.grad<-function(gr,dmode="all",gradcols){
   gd<-degree(gr,mode=dmode)
   #heatcol=rev(heat.colors(max(gd)+1))
@@ -149,15 +148,10 @@ deg.col.grad<-function(gr,dmode="all",gradcols){
   
   return(gdcols)
 }
+# deg.col.heat() provides an option for coloring nodes based on degree and heat.colors()
 deg.col.heat<-function(gr,dmode="all"){
   gd<-degree(gr,mode=dmode)
   heatcol=rev(heat.colors(max(gd)+1))
   gdcols<-heatcol[gd+1]
   return(gdcols)
 }
-
-
-
-##NOTE: SET VERTEX ATTR NOT WORKING IN FUNCTION YET - PERHAPS JUST CREATE 2D OUTPUT LIKE COLORING FUNCTION ####
-
-#~TASK: NEED TO FIX THIS FUNCTION - PERHAPS SOME PATHS DON"T EXIST BETWEEN MIE AND ALL AOS? ####
