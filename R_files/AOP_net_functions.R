@@ -155,3 +155,25 @@ deg.col.heat<-function(gr,dmode="all"){
   gdcols<-heatcol[gd+1]
   return(gdcols)
 }
+
+# set.bg.black takes an arguement of true or false and will set the plotting background black and adjust colors for barplot visualizations.
+set.bg.black<-function(x){
+  if(x==T){
+    plotlabcol<<-"white"
+    totdegcol<<-c("gray30","green")
+    indegcol<<-c("gray30","purple")
+    outdegcol<<-c("gray30","orange")
+    betcol<<-c("gray30","blue")
+    clscol<<-c("gray30","magenta")
+    ecccol<<-c("gray30","cyan")
+    return(par(bg="black"))}
+  else{
+    plotlabcol<<-"black"
+  totdegcol<<-c("black","green")
+  indegcol<<-c("black","purple")
+  outdegcol<<-c("black","orange")
+  betcol<<-c("black","blue")
+  clscol<<-c("black","magenta")
+  ecccol<<-c("black","cyan")
+  return(par(bg="white"))}
+}
