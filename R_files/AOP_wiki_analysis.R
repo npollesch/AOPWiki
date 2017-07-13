@@ -10,10 +10,6 @@ workingDir <-"C://Users/NPollesc/Desktop/GitHub/AOPwiki/" ## Nate's EPA working 
 # workingDir<- "C://Users/Nathan Pollesch/Documents/GitHub/AOPWiki/" ## Nate's personal comp working directory
 setwd(workingDir)
 
-## Set default plotting background color to black 
-##!! Evaluate as either T or F or plots will not display properly
-set.bg.black(T)
-
 ## Identifies location of data files
 KERimport <- "data/all-KERs.txt"
 KEimport <- "data/all-KEs.txt"
@@ -42,6 +38,11 @@ V(AOPg)$name<-keID$KE
 V(AOPg)$KE_EID<-KEdata[match(V(AOPg)$KE_name,KEdata[,2]),1] # adds event ID number
 V(AOPg)$AOP_ID<-KEPdata[match(V(AOPg)$KE_EID,KEPdata[,3]),1] # finds AOPID to add to V(AOPg) data
 
+## Set default plotting background color to black 
+##!! Evaluate as either T or F or plots will not display properly
+set.bg.black(T)
+
+
 ## Identifies which KEs are included in KERs, but are not themselves included in the KE event listings.
 # V(AOPg)$KE_name[which(is.na(V(AOPg)$KE_EID))]
 
@@ -55,20 +56,25 @@ for(i in 1:length(unique(V(AOPg)$AOP_ID))){
   V(AOPg)[which(V(AOPg)$AOP_ID==unique(V(AOPg)$AOP_ID)[i])]$acol<-acols(length(unique(V(AOPg)$AOP_ID)))[i]
   }
 
+sort(table(V(AOPg)$AOP_ID))
+
+## Highlight a given AOP for identification by using size on the network plot
+V(AOPg)$exsize<-2
+V(AOPg)[which(V(AOPg)$AOP_ID==130)]$exsize<-5 #Note: must specify V(AOPg)$exsize as vertex.size in plot for this to work
+
 ## Plot
-par(bg="white",xpd=FALSE)
 set.seed(1)
-plot(AOPg,layout=layout.fruchterman.reingold(AOPg),  vertex.color=V(AOPg)$acol,vertex.label=NA, vertex.size=2, edge.arrow.size=.1)
+plot(AOPg,layout=layout.fruchterman.reingold(AOPg),  vertex.color=V(AOPg)$acol,vertex.label=NA, vertex.size=2, edge.arrow.size=.08)
 
 ## Calculates number of KE per unique AOP ID
 AOP_freqs<-table(V(AOPg)$AOP_ID)
-
+sort(AOP_freqs)
 ## Histogram of number of KE per unique AOP ID
 hist(AOP_freqs,col.axis="white",xlab="# Key Events",ylab="Frequency",col.lab="white",col="white")
 hist(AOP_freqs,col.axis="black",xlab="Key Events per AOP",ylab="Frequency",col.lab="black",col="gray")
 
 ## Barplot of number of KE per unique AOP ID with red line to show mean
-bp_wcc<-barplot(table(V(AOPg)$AOP_ID),col.axis="white", xlab="AOP ID",ylab="# Key Events",col.lab="white")
+bp_wcc<-barplot(table(V(AOPg)$AOP_ID),xaxt='n',col.axis="white", xlab="AOP",ylab="# Key Events",col.lab="white")
 abline(h=mean(AOP_freqs),col="red")
 
 #  TASK: WORK ON EDGE COLORING FOR AOP ID
@@ -116,7 +122,6 @@ V(AOPg)$cc_color<-unlist(color.comps(AOPg,"weak")$vcol)  #color.comps is a custo
 E(AOPg)$cc_color<-unlist(color.comps(AOPg,"weak")$ecol)  #color.comps is a custom function stored in the AOP_net_functions.R file
 
 ## Plot
-par(bg="white")
 set.seed(1)
 plot(AOPg,vertex.size=2, edge.arrow.size=.1,vertex.color=V(AOPg)$cc_color, edge.color=E(AOPg)$cc_color,  vertex.size=2,vertex.label=NA)
 
@@ -124,7 +129,7 @@ plot(AOPg,vertex.size=2, edge.arrow.size=.1,vertex.color=V(AOPg)$cc_color, edge.
 ## barplot for size of weakly connected components
 wcomps<-components(AOPg,mode="weak")
 wcc_freqs<-table(wcomps$csize)
-bp_wcc<-barplot(table(wcomps$csize),col="black", col.axis="black", xlab="Component size",ylab="Frequency",col.lab="black")
+bp_wcc<-barplot(table(wcomps$csize),col=plotlabcol, col.axis=plotlabcol, xlab="Component size",ylab="Frequency",col.lab=plotlabcol)
 
 
 ####~~ Strongly connected component analysis and plotting ####
