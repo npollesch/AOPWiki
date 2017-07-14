@@ -67,17 +67,16 @@ V(AOPg)[which(V(AOPg)$AOP_ID==130)]$exsize<-5 #Note: must specify V(AOPg)$exsize
 
 ## Plot
 set.seed(1)
-plot(AOPg,layout=layout.fruchterman.reingold(AOPg),  vertex.color=V(AOPg)$acol,vertex.label=NA, vertex.size=2, edge.arrow.size=.08)
+plot(AOPg,layout=layout.fruchterman.reingold(AOPg), vertex.color=V(AOPg)$acol,vertex.label=NA, vertex.size=2, edge.arrow.size=.08)
 
 ## Calculates number of KE per unique AOP ID
 AOP_freqs<-table(V(AOPg)$AOP_ID)
 sort(AOP_freqs)
 ## Histogram of number of KE per unique AOP ID
-hist(AOP_freqs,col.axis="white",xlab="# Key Events",ylab="Frequency",col.lab="white",col="white")
-hist(AOP_freqs,col.axis="black",xlab="Key Events per AOP",ylab="Frequency",col.lab="black",col="gray")
+hist(AOP_freqs,xlab="# Key Events",ylab="Frequency",col.axis=plotlabcol,col.lab=plotlabcol,col="gray")
 
 ## Barplot of number of KE per unique AOP ID with red line to show mean
-bp_wcc<-barplot(table(V(AOPg)$AOP_ID),xaxt='n',col.axis="white", xlab="AOP",ylab="# Key Events",col.lab="white")
+bp_wcc<-barplot(table(V(AOPg)$AOP_ID),xaxt='n',xlab="AOP",ylab="# Key Events",col.axis=plotlabcol,col.lab=plotlabcol)
 abline(h=mean(AOP_freqs),col="red")
 
 #  TASK: WORK ON EDGE COLORING FOR AOP ID
@@ -258,6 +257,28 @@ hist(log10(betweenness(AOPg)),breaks=20,col=b2upal(20), col.axis=plotlabcol, col
 ## Barplot of betweenness totals with 20 bins
 barplot(table(as.numeric(cut(betweenness(AOPg),breaks = 20))),col=b2upal(20),col.axis=plotlabcol, col.lab=plotlabcol)
 
+####~~~ Undirected Betweenness ####
+
+## Prints the top-ten key event names by betweenness value
+sort(betweenness(AOPg,directed=F))
+rev(as.integer(tail(sort(betweenness(AOPg,directed=F)),10)))
+rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(betweenness(AOPg,directed=F)),10))),V(AOPg)$name)])
+
+## Colors nodes by betweenness values
+b2upal=colorRampPalette(betcol)
+V(AOPg)$bet_col<-b2upal(30)[as.numeric(cut(betweenness(AOPg,directed=F),breaks = 30))]
+
+## Plot colored and nodes sized by degree
+set.seed(1)
+plot(AOPg, vertex.size=50*betweenness(AOPg,normalized=TRUE,directed=F), vertex.color=V(AOPg)$bet_col, edge.arrow.size=.1, vertex.label=NA, edge.color="gray",edge.width=1)
+
+## Betweenness histogram
+hist(log10(betweenness(AOPg, directed=F)),breaks=30,col=b2upal(30), col.axis=plotlabcol, col.lab=plotlabcol, xlab=expression(paste("Log"[10],"(Betweeness"["undir"],")","")), main="")
+
+hist(betweenness(AOPg, directed=F),breaks=20,col=b2upal(20), col.axis=plotlabcol, col.lab=plotlabcol, xlab=expression(paste("Log"[10],"(Betweeness)","")), main="")
+## Barplot of betweenness totals with 20 bins
+barplot(table(as.numeric(cut(betweenness(AOPg,directed=F),breaks = 30))),col=b2upal(30),col.axis=plotlabcol, col.lab=plotlabcol)
+
 
 
 
@@ -280,14 +301,60 @@ hist(closeness(AOPg,mode="all")*10^6,breaks=20,col=b2mpal(20))
 ## Scatterplot of closeness values
 plot(closeness(AOPg,mode="all"), xlab="Key Event", col.axis=plotlabcol, col.lab=plotlabcol, xaxt='n', ylab="Closeness Value",main="KE Closeness in AOPwiki",col=V(AOPg)$close_col)
 
+####~~~In-path Closeness ####
+
+clsmode="in"
+## Prints the top-ten key event names by closeness value
+sort(closeness(AOPg,mode=clsmode))
+rev(as.integer(tail(sort(closeness(AOPg,mode=clsmode)),10)))
+rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(closeness(AOPg,mode=clsmode)),10))),V(AOPg)$name)])
+
+## Colors nodes based on cloesness values
+b2mpal=colorRampPalette(clscol)
+V(AOPg)$close_col<-b2mpal(1000)[as.numeric(cut(closeness(AOPg,mode=clsmode,norm=TRUE),breaks = 1000))]
+
+## Plots color and nodes sized by closeness
+set.seed(1)
+plot(AOPg, vertex.size=2000*closeness(AOPg,normalized=TRUE,mode=clsmode), vertex.color=V(AOPg)$close_col, edge.arrow.size=.1, vertex.label=NA)#, vertex.color="orange",edge.color="gray")
+
+## Histogram of closeness (including a change of units)
+hist(closeness(AOPg,mode=clsmode)*10^6,breaks=20,col=b2mpal(20),col.axis=plotlabcol, col.lab=plotlabcol,)
+## Scatterplot of closeness values
+plot(closeness(AOPg,mode=clsmode), xlab="Key Event", col.axis=plotlabcol, col.lab=plotlabcol, xaxt='n', ylab="Closeness Value",main="KE Closeness in AOPwiki",col=V(AOPg)$close_col)
+
+####~~~Out-path Closeness ####
+
+clsmode="out"
+## Prints the top-ten key event names by closeness value
+sort(closeness(AOPg,mode=clsmode))
+rev(as.integer(tail(sort(closeness(AOPg,mode=clsmode)),10)))
+rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(closeness(AOPg,mode=clsmode)),10))),V(AOPg)$name)])
+
+## Colors nodes based on cloesness values
+b2mpal=colorRampPalette(clscol)
+V(AOPg)$close_col<-b2mpal(1000)[as.numeric(cut(closeness(AOPg,mode=clsmode,norm=TRUE),breaks = 1000))]
+
+## Plots color and nodes sized by closeness
+set.seed(1)
+plot(AOPg, vertex.size=2000*closeness(AOPg,normalized=TRUE,mode=clsmode), vertex.color=V(AOPg)$close_col, edge.arrow.size=.1, vertex.label=NA)#, vertex.color="orange",edge.color="gray")
+
+## Histogram of closeness (including a change of units)
+hist(closeness(AOPg,mode=clsmode)*10^6,breaks=20,col=b2mpal(20),col.axis=plotlabcol, col.lab=plotlabcol,)
+## Scatterplot of closeness values
+plot(closeness(AOPg,mode=clsmode), xlab="Key Event", col.axis=plotlabcol, col.lab=plotlabcol, xaxt='n', ylab="Closeness Value",main="KE Closeness in AOPwiki",col=V(AOPg)$close_col)
+
 ####~~ Eccentricity ####
+
+
+####~~~ Total Eccentricity ####
+eccmode="all"
 ## Assigns eccentricity values as a node attribute
-V(AOPg)$ecc<-eccentricity(AOPg,mode ="all")
+V(AOPg)$ecc<-eccentricity(AOPg,mode =eccmode)
 
 ## Prints the top-ten key event names by eccentricity value
-sort(eccentricity(AOPg,mode ="all"))
-rev(as.integer(tail(sort(eccentricity(AOPg,mode="all")),10)))
-rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(eccentricity(AOPg,mode="all")),10))),V(AOPg)$name)])
+sort(eccentricity(AOPg,mode =eccmode))
+rev(as.integer(tail(sort(eccentricity(AOPg,mode=eccmode)),10)))
+rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(eccentricity(AOPg,mode=eccmode)),10))),V(AOPg)$name)])
 
 ## Assigns color based on eccentricity value
 b2cpal=colorRampPalette(ecccol)
@@ -298,9 +365,58 @@ set.seed(1)
 plot(AOPg, vertex.size=4*(V(AOPg)$ecc/max(V(AOPg)$ecc)), vertex.color=V(AOPg)$ecc_col, edge.arrow.size=.1, vertex.label=NA, edge.color="gray",edge.width=1)
 
 ## Histogram of eccentricity values
-barplot(table(eccentricity(AOPg,mode ="all")), xlab="Eccentricity", ylab="Frequency",col.axis=plotlabcol, col.lab=plotlabcol,col=b2cpal(max(eccentricity(AOPg,mode ="all"))))
-legend('topright',legend=rev(seq(min(eccentricity(AOPg,mode ="all")),max(eccentricity(AOPg,mode ="all")),3)), pch=22,
-       col="#777777", xjust=1,yjust=1, pt.bg=rev(b2cpal(length(rev(seq(min(eccentricity(AOPg,mode ="all")),max(eccentricity(AOPg,mode ="all")),3))))), pt.cex=2, cex=.8, bty="n", ncol=1, y.intersp=.5, box.col="white", text.col=plotlabcol)
+barplot(table(eccentricity(AOPg,mode=eccmode)), xlab="Eccentricity", ylab="Frequency",col.axis=plotlabcol, col.lab=plotlabcol,col=b2cpal(max(eccentricity(AOPg,mode =eccmode))))
+legend('topright',legend=rev(seq(min(eccentricity(AOPg,mode =eccmode)),max(eccentricity(AOPg,mode =eccmode)),3)), pch=22,
+       col="#777777", xjust=1,yjust=1, pt.bg=rev(b2cpal(length(rev(seq(min(eccentricity(AOPg,mode =eccmode)),max(eccentricity(AOPg,mode =eccmode)),3))))), pt.cex=2, cex=.8, bty="n", ncol=1, y.intersp=.5, box.col="white", text.col=plotlabcol)
+
+####~~~ In-Eccentricity ####
+
+eccmode="in"
+## Assigns eccentricity values as a node attribute
+V(AOPg)$ecc<-eccentricity(AOPg,mode =eccmode)
+
+## Prints the top-ten key event names by eccentricity value
+sort(eccentricity(AOPg,mode =eccmode))
+rev(as.integer(tail(sort(eccentricity(AOPg,mode=eccmode)),10)))
+rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(eccentricity(AOPg,mode=eccmode)),10))),V(AOPg)$name)])
+
+## Assigns color based on eccentricity value
+b2cpal=colorRampPalette(ecccol)
+V(AOPg)$ecc_col<-b2cpal(max(V(AOPg)$ecc)+1)[V(AOPg)$ecc+1]
+
+## Plot colors and node sizes based on eccentricity value
+set.seed(1)
+plot(AOPg, vertex.size=4*(V(AOPg)$ecc/max(V(AOPg)$ecc)), vertex.color=V(AOPg)$ecc_col, edge.arrow.size=.1, vertex.label=NA, edge.color="gray",edge.width=1)
+
+## Histogram of eccentricity values
+barplot(table(eccentricity(AOPg,mode=eccmode)), xlab="Eccentricity", ylab="Frequency",col.axis=plotlabcol, col.lab=plotlabcol,col=b2cpal(max(eccentricity(AOPg,mode =eccmode))))
+legend('topright',legend=rev(seq(min(eccentricity(AOPg,mode =eccmode)),max(eccentricity(AOPg,mode =eccmode)),3)), pch=22,
+       col="#777777", xjust=1,yjust=1, pt.bg=rev(b2cpal(length(rev(seq(min(eccentricity(AOPg,mode =eccmode)),max(eccentricity(AOPg,mode =eccmode)),3))))), pt.cex=2, cex=.8, bty="n", ncol=1, y.intersp=.5, box.col="white", text.col=plotlabcol)
+
+####~~~ Out-Eccentricity ####
+
+eccmode="out"
+## Assigns eccentricity values as a node attribute
+V(AOPg)$ecc<-eccentricity(AOPg,mode =eccmode)
+
+## Prints the top-ten key event names by eccentricity value
+sort(eccentricity(AOPg,mode =eccmode))
+rev(as.integer(tail(sort(eccentricity(AOPg,mode=eccmode)),10)))
+rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(eccentricity(AOPg,mode=eccmode)),10))),V(AOPg)$name)])
+
+## Assigns color based on eccentricity value
+b2cpal=colorRampPalette(ecccol)
+V(AOPg)$ecc_col<-b2cpal(max(V(AOPg)$ecc)+1)[V(AOPg)$ecc+1]
+
+## Plot colors and node sizes based on eccentricity value
+set.seed(1)
+plot(AOPg, vertex.size=4*(V(AOPg)$ecc/max(V(AOPg)$ecc)), vertex.color=V(AOPg)$ecc_col, edge.arrow.size=.1, vertex.label=NA, edge.color="gray",edge.width=1)
+
+## Histogram of eccentricity values
+barplot(table(eccentricity(AOPg,mode=eccmode)), xlab="Eccentricity", ylab="Frequency",col.axis=plotlabcol, col.lab=plotlabcol,col=b2cpal(max(eccentricity(AOPg,mode =eccmode))+1))
+legend('topright',legend=rev(seq(min(eccentricity(AOPg,mode =eccmode)),max(eccentricity(AOPg,mode =eccmode)),3)), pch=22,
+       col="#777777", xjust=1,yjust=1, pt.bg=rev(b2cpal(length(rev(seq(min(eccentricity(AOPg,mode =eccmode)),max(eccentricity(AOPg,mode =eccmode)),3))))), pt.cex=2, cex=.8, bty="n", ncol=1, y.intersp=.5, box.col="white", text.col=plotlabcol)
+
 
 
 ####~~ ADDITIONAL ANALYSES ####
