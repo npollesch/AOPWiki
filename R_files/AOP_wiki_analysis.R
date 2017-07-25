@@ -1,13 +1,16 @@
 
-
 ####~ LOAD PACKAGES AND IMPORT AOPWIKI DATA ####
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
 ## Needs igraph package
-library(igraph)
+#localLibDir<-"C:\\NatesDir"  #Nate's local library directory
+localLibDir<-"C:\\Program Files\\R\\R-3.2.0\\library\\"  #Jason's local library directory
+library(igraph, lib.loc = localLibDir)
 
 ##  Set working directory
-workingDir <-"C://Users/NPollesc/Desktop/GitHub/AOPwiki/" ## Nate's EPA working directory
-# workingDir<- "C://Users/Nathan Pollesch/Documents/GitHub/AOPWiki/" ## Nate's personal comp working directory
+#workingDir<-"C://Users/NPollesc/Desktop/GitHub/AOPwiki/" ## Nate's EPA working directory
+#workingDir<-"C://Users/Nathan Pollesch/Documents/GitHub/AOPWiki/" ## Nate's personal comp working directory
+workingDir<-"C:\\Users\\obrienja\\Documents\\GitHub\\AOPWiki\\"
 setwd(workingDir)
 
 ## Identifies location of data files
