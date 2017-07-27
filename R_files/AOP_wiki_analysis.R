@@ -33,6 +33,8 @@ allKEs<-c(KERdata[,2],KERdata[,4])
 uniqueKEs<-unique(allKEs)
 keID<-data.frame(ID=1:length(uniqueKEs),KE=uniqueKEs)
 KERs<-cbind(match(KERdata[,2], keID[,2]),match(KERdata[,4], keID[,2]))
+
+## Create AOP igraph object
 AOPg<-graph_from_edgelist(KERs, directed=T)
 
 ## Add names for key event nodes
@@ -40,14 +42,15 @@ V(AOPg)$KE_name<-as.character(keID$KE)
 V(AOPg)$name<-keID$KE
 V(AOPg)$KE_EID<-KEdata[match(V(AOPg)$KE_name,KEdata[,2]),1] # adds event ID number
 V(AOPg)$AOP_ID<-KEPdata[match(V(AOPg)$KE_EID,KEPdata[,3]),1] # finds AOPID to add to V(AOPg) data
+###Question RE: AOP_ID....what if the KE is more than one AOP? this will have to be fixex so that vertices can have multiple AOP IDs
 
 ## Set default plotting background color to black 
 ##!! Evaluate as either T or F or plots will not display properly
 set.bg.black(T)
 
-
 ## Identifies which KEs are included in KERs, but are not themselves included in the KE event listings.
 # V(AOPg)$KE_name[which(is.na(V(AOPg)$KE_EID))]
+
 
 ####~ AOPWIKI BY AOP ID VISUALIZATION ####
 
@@ -72,6 +75,7 @@ plot(AOPg,layout=layout.fruchterman.reingold(AOPg),  vertex.color=V(AOPg)$acol,v
 ## Calculates number of KE per unique AOP ID
 AOP_freqs<-table(V(AOPg)$AOP_ID)
 sort(AOP_freqs)
+
 ## Histogram of number of KE per unique AOP ID
 hist(AOP_freqs,col.axis="white",xlab="# Key Events",ylab="Frequency",col.lab="white",col="white")
 hist(AOP_freqs,col.axis="black",xlab="Key Events per AOP",ylab="Frequency",col.lab="black",col="gray")
@@ -102,7 +106,6 @@ V(AOPg)$lobo_col<-tcols[V(AOPg)$lobo_o]
 set.seed(1)
 plot(AOPg ,vertex.size=2, edge.color="gray", edge.arrow.size=.1, vertex.label=NA, vertex.color=V(AOPg)$lobo_col)
 
-
 ## Plot the AOP wiki using a standard left to right lobo layout.
 plot(AOPg, layout=lobo.layout(AOPg),vertex.size=2,  edge.curved=.3, edge.color="gray", edge.arrow.size=.1, vertex.label=NA, vertex.color=V(AOPg)$lobo_col)
 # legend('topright',c("Molecular","Cellular","Tissue","Organ","Individual","Population","Not Specified"), pch=22,
@@ -116,10 +119,16 @@ legend('topright',c("Molecular","Cellular","Tissue","Organ","Individual","Popula
        col="#777777", xjust=1,yjust=1, pt.bg=tcols, pt.cex=2, cex=.8, bty="n", ncol=1, y.intersp=.5, box.col="white", text.col="black")
 
 
-
 ####~ CONNECTED COMPONENTS ANALYSIS####
 
 ####~~ Weakly connected component analysis and plotting ####
+
+## Break separate weakly connected components into individual igraph objects (to use later for component-specific analysis)
+AOPcomps<-decompose(AOPg, "weak")
+
+##Largest component
+maxAOPcomp<-AOPcomps[[which(components(AOPg)$csize==max(components(AOPg)$csize))]]
+
 ## Color vertices and edges by their weakly connected components 
 V(AOPg)$cc_color<-unlist(color.comps(AOPg,"weak")$vcol)  #color.comps is a custom function stored in the AOP_net_functions.R file
 E(AOPg)$cc_color<-unlist(color.comps(AOPg,"weak")$ecol)  #color.comps is a custom function stored in the AOP_net_functions.R file
@@ -262,23 +271,57 @@ barplot(table(as.numeric(cut(betweenness(AOPg),breaks = 20))),col=b2upal(20),col
 
 
 ####~~ Closeness Analysis ####
+
+## Set closeness mode to "in, "out", "all", or "total"
+closeMode="all"
+
 ## Prints the top-ten key event names by closeness value
-sort(closeness(AOPg,mode="all"))
-rev(as.integer(tail(sort(closeness(AOPg,mode="all")),10)))
-rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(closeness(AOPg,mode="all")),10))),V(AOPg)$name)])
+sort(closeness(AOPg,mode=closeMode))
+rev(as.integer(tail(sort(closeness(AOPg,mode=closeMode)),10)))  ##What's this for? -jason
+rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(closeness(AOPg,mode=closemode)),10))),V(AOPg)$name)])
 
 ## Colors nodes based on cloesness values
 b2mpal=colorRampPalette(clscol)
-V(AOPg)$close_col<-b2mpal(1000)[as.numeric(cut(closeness(AOPg,mode="all",norm=TRUE),breaks = 1000))]
+V(AOPg)$close_col<-b2mpal(1000)[as.numeric(cut(closeness(AOPg,mode=closeMode,norm=TRUE),breaks = 1000))]
 
 ## Plots color and nodes sized by closeness
 set.seed(1)
-plot(AOPg, vertex.size=1000*closeness(AOPg,normalized=TRUE,mode="all"), vertex.color=V(AOPg)$close_col, edge.arrow.size=.1, vertex.label=NA)#, vertex.color="orange",edge.color="gray")
+plot(AOPg, vertex.size=1000*closeness(AOPg,normalized=TRUE,mode=CloseMode), vertex.color=V(AOPg)$close_col, edge.arrow.size=.1, vertex.label=NA)#, vertex.color="orange",edge.color="gray")
 
 ## Histogram of closeness (including a change of units)
 hist(closeness(AOPg,mode="all")*10^6,breaks=20,col=b2mpal(20))
+
 ## Scatterplot of closeness values
-plot(closeness(AOPg,mode="all"), xlab="Key Event", col.axis=plotlabcol, col.lab=plotlabcol, xaxt='n', ylab="Closeness Value",main="KE Closeness in AOPwiki",col=V(AOPg)$close_col)
+plot(closeness(AOPg,mode=closeMode), xlab="Key Event", col.axis=plotlabcol, col.lab=plotlabcol, xaxt='n', ylab="Closeness Value",main="KE Closeness in AOPwiki",col=V(AOPg)$close_col)
+
+
+
+### Closeness analysis on individual component (only the largest component for now)
+
+## Set closeness mode to "in, "out", "all", or "total"
+closeMode="all"
+
+## Prints the top-ten key event names by closeness value
+sort(closeness(maxAOPcomp,mode=closeMode))
+rev(as.integer(tail(sort(closeness(maxAOPcomp,mode=closeMode)),10)))  ##What's this for? -jason
+rev(V(maxAOPcomp)$KE_name[match(as.integer(names(tail(sort(closeness(maxAOPcomp,mode=closeMode)),10))),V(maxAOPcomp)$name)])
+
+## Colors nodes based on cloesness values
+b2mpal=colorRampPalette(clscol)
+V(maxAOPcomp)$close_col<-b2mpal(1000)[as.numeric(cut(closeness(maxAOPcomp,mode=closeMode,norm=TRUE),breaks = 1000))]
+
+## Plots color and nodes sized by closeness
+set.seed(1)
+plot(maxAOPcomp, vertex.size=50*closeness(maxAOPcomp,normalized=TRUE,mode=closeMode), vertex.color=V(maxAOPcomp)$close_col, edge.arrow.size=.1, vertex.label=NA)#, vertex.color="orange",edge.color="gray")
+###NOTE: This doesnt keep the same structure as when you simultaneously plotting all components.... solution: plot using AOPg, but make all other components have vertices and edges that are the same as the background color
+
+## Histogram of closeness (including a change of units)
+hist(closeness(maxAOPcomp,mode=closeMode)*10^6,breaks=20,col=b2mpal(20))
+
+## Scatterplot of closeness values
+plot(closeness(maxAOPcomp,mode=closeMode), xlab="Key Event", col.axis=plotlabcol, col.lab=plotlabcol, xaxt='n', ylab="Closeness Value",main="KE Closeness in AOPwiki",col=V(maxAOPcomp)$close_col)
+
+
 
 ####~~ Eccentricity ####
 ## Assigns eccentricity values as a node attribute
