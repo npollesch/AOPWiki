@@ -138,6 +138,61 @@ aop.paths= function(gr,normalized=FALSE,kelist = V(gr)$ked){ #kelist is a list o
     #set.vertex.attribute(gr,"aoppn",path.counts$count/max(path.counts$count))
   }
 }
+
+aop.edge.connectivity= function(gr,kelist = V(gr)$ked,names=F){ #kelist is a list of key event designation characters (MIE,KE, or AO) corresponding to nodes in the graph gr
+  if(is.null(kelist)){print("Error: No key event designation list supplied")} 
+  #is.character(V(sg.cond)$ked)
+  else{
+    mie.list<-which(kelist=="MIE")
+    ao.list<-which(kelist=="AO")
+     ec.list<-list()
+     ec.listn<-list()
+    i=0;
+    for(fromnode in mie.list){
+      for(tonode in ao.list){
+        i=i+1
+        x<- edge.connectivity(gr,source=fromnode,target=tonode)
+        ec.list[[i]]<-c(fromnode,tonode,x)
+        ec.listn[[i]]<-c(V(gr)$name[fromnode],V(gr)$name[tonode],x)
+      }
+    }
+    if(names==F){return(matrix(unlist(ec.list),ncol=3,byrow=T))}
+    else{return(matrix(unlist(ec.listn),ncol=3,byrow=T))
+    }
+}
+}
+# This function colors all simple paths between the 'fromnode' node to the 
+# 'tonode' node using the color specificed by 'clr' stored as the asp_color 
+# attribute of the edges
+simple.path.coloring<-function(gr,fromnode,tonode,loc=T,clr="purple"){
+  paths<-all_simple_paths(gr,fromnode,to=tonode)
+  if(length(paths)==0){return("No simple paths between nodes")}
+  else{
+  if(loc){
+  for(i in 1:length(paths)){
+    E(gr,path=paths[[i]],dir=T)$clrs<-clr}
+return(which(!is.na(E(gr)$clrs)))
+  }
+else{
+  E(gr)$clrs<-"gray"
+  for(i in 1:length(paths)){
+    E(gr,path=paths[[i]],dir=T)$clrs<-clr}
+  return(E(gr)$clrs)
+}
+  }
+}
+# SIMPLE PATH (NODE) REDUNDANCY
+# Calculates the difference between the longest and shortest simple path
+# between nodes.  This inidcates the number of nodes that can be removed
+# the set of nodes included in paths between nodes while still maintaining
+# a path between nodes.  
+simple.path.redundancy<-function(gr,fromnode,tonode){
+  paths<-all_simple_paths(gr,fromnode,to=tonode)
+  spaths<-shortest_paths(gr,fromnode,to=tonode)
+  allpathnodes<-unique(as.vector(unlist(paths)))
+  allspathnodes<-as.vector(unlist(spaths))
+  return(length(allpathnodes)-length(allspathnodes))
+  }
 # deg.col.grad() provides an option for coloring nodes based on degree and specified gradient colors
 deg.col.grad<-function(gr,dmode="all",gradcols){
   gd<-degree(gr,mode=dmode)

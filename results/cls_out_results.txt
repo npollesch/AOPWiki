@@ -1,0 +1,5 @@
+Suppression, Constitutive androstane receptor, NR1l3 (2.16153)
+Activation, NRF2 (2.13677)
+Activation, NR1H4 (2.13393)
+Activation, AHR (2.13098)
+Activation, PPAR? (2.1243)

@@ -1,0 +1,1463 @@
+Aop:1	Event:142	KeyEvent	Hyperplasia, Hyperplasia
+Aop:1	Event:334	AdverseOutcome	Promotion, Hepatocelluar carcinoma
+Aop:1	Event:57	KeyEvent	Proliferation, Cell proliferation in the absence of cytotoxicity
+Aop:1	Event:294	MolecularInitiatingEvent	N/A, Unknown
+Aop:3	Event:887	KeyEvent	Inhibition, NADH-ubiquinone oxidoreductase  (complex I)
+Aop:3	Event:888	MolecularInitiatingEvent	Binding of inhibitor, NADH-ubiquinone oxidoreductase (complex I)
+Aop:3	Event:177	KeyEvent	N/A, Mitochondrial dysfunction 1
+Aop:3	Event:889	KeyEvent	Impaired, Proteostasis
+Aop:3	Event:188	KeyEvent	N/A, Neuroinflammation
+Aop:3	Event:890	KeyEvent	Degeneration of dopaminergic neurons of the nigrostriatal pathway
+Aop:3	Event:896	AdverseOutcome	Parkinsonian motor deficits
+Aop:4	Event:103	MolecularInitiatingEvent	Activation, Ecdysone receptor
+Aop:4	Event:988	KeyEvent	Reduction, Release of circulating ecdysis triggering hormone
+Aop:4	Event:990	KeyEvent	Induction, Incomplete ecdysis
+Aop:4	Event:993	KeyEvent	Reduction, Abdominal muscle contraction
+Aop:4	Event:351	AdverseOutcome	Increased, Mortality
+Aop:4	Event:1264	KeyEvent	Induction, Nuclear receptor E75b gene
+Aop:4	Event:1265	KeyEvent	Suppression, Fushi tarazu factor-1 gene
+Aop:4	Event:1266	KeyEvent	Reduction, Release of circulating crustacean cardioactive peptide
+Aop:4	Event:1267	KeyEvent	Reduction, Ecdysis motoneuron bursts
+Aop:4	Event:1268	KeyEvent	Reduction, Excitatory postsynaptic potential
+Aop:6	Event:858	KeyEvent	Decreased, PPARalpha transactivation of gene expression
+Aop:6	Event:860	KeyEvent	Decreased, Mitochondrial Fatty Acid Beta Oxidation
+Aop:6	Event:861	KeyEvent	Decreased, Ketogenesis (production of ketone bodies)
+Aop:6	Event:862	KeyEvent	Not Increased, Circulating Ketone Bodies
+Aop:6	Event:864	AdverseOutcome	Decreased, Body Weight
+Aop:6	Event:859	KeyEvent	Decreased, Peroxisomal Fatty Acid Beta Oxidation of Fatty Acids
+Aop:6	Event:863	KeyEvent	Increased, Catabolism of Muscle Protein
+Aop:6	Event:998	MolecularInitiatingEvent	Binding of antagonist, PPAR alpha
+Aop:6	Event:1000	KeyEvent	stabilization, PPAR alpha co-repressor
+Aop:7	Event:219	KeyEvent	Reduction, Plasma 17beta-estradiol concentrations
+Aop:7	Event:3	KeyEvent	Reduction, 17beta-estradiol synthesis by ovarian granulosa cells
+Aop:7	Event:406	AdverseOutcome	impaired, Fertility
+Aop:7	Event:405	AdverseOutcome	irregularities, ovarian cycle
+Aop:7	Event:408	MolecularInitiatingEvent	reduction in ovarian granulosa cells, Aromatase (Cyp19a1)
+Aop:8	Event:239	MolecularInitiatingEvent	Activation, Pregnane-X receptor, NR1l2
+Aop:8	Event:319	AdverseOutcome	Loss, Cochlear function
+Aop:8	Event:280	KeyEvent	Decrease of thyroxine (T4) in neuronal tissue
+Aop:8	Event:281	KeyEvent	Decrease of thyroxine (T4) in serum
+Aop:8	Event:295	KeyEvent	Induction, Upregulation of glucuronyltransferase activity
+Aop:8	Event:401	KeyEvent	Increase, Biliary excretion TH glucuronide
+Aop:8	Event:757	KeyEvent	Hippocampal anatomy, Altered 
+Aop:8	Event:758	KeyEvent	Hippocampal Physiology, Altered
+Aop:8	Event:756	KeyEvent	Hippocampal gene expression, Altered 
+Aop:10	Event:64	KeyEvent	Reduction, Ionotropic GABA receptor chloride channel conductance
+Aop:10	Event:616	KeyEvent	Occurrence, A paroxysmal depolarizing shift
+Aop:10	Event:613	AdverseOutcome	Occurrence, Epileptic seizure
+Aop:10	Event:667	MolecularInitiatingEvent	Binding at picrotoxin site, iGABAR chloride channel
+Aop:10	Event:669	KeyEvent	Reduction, Neuronal synaptic inhibition
+Aop:10	Event:682	KeyEvent	Generation, Amplified excitatory postsynaptic potential (EPSP)
+Aop:11	Event:245	MolecularInitiatingEvent	Activation, PXR/SXR
+Aop:12	Event:195	KeyEvent	Inhibition, NMDARs
+Aop:12	Event:352	AdverseOutcome	N/A, Neurodegeneration
+Aop:12	Event:52	KeyEvent	Decreased, Calcium influx
+Aop:12	Event:201	MolecularInitiatingEvent	Binding of antagonist, NMDA receptors
+Aop:12	Event:381	KeyEvent	Reduced levels of BDNF
+Aop:12	Event:55	KeyEvent	N/A, Cell injury/death
+Aop:12	Event:188	KeyEvent	N/A, Neuroinflammation
+Aop:12	Event:341	AdverseOutcome	Impairment, Learning and memory
+Aop:13	Event:201	MolecularInitiatingEvent	Binding of antagonist, NMDA receptors
+Aop:13	Event:52	KeyEvent	Decreased, Calcium influx
+Aop:13	Event:195	KeyEvent	Inhibition, NMDARs
+Aop:13	Event:341	AdverseOutcome	Impairment, Learning and memory
+Aop:13	Event:381	KeyEvent	Reduced levels of BDNF
+Aop:13	Event:382	KeyEvent	Aberrant, Dendritic morphology
+Aop:13	Event:385	KeyEvent	Decrease of synaptogenesis
+Aop:13	Event:386	KeyEvent	Decrease of neuronal network function
+Aop:13	Event:383	KeyEvent	Reduced, Presynaptic release of glutamate
+Aop:13	Event:55	KeyEvent	N/A, Cell injury/death
+Aop:14	Event:122	MolecularInitiatingEvent	Activation, Glucocorticoid Receptor
+Aop:14	Event:202	KeyEvent	Inhibition, Nuclear factor kappa B (NF-kB)
+Aop:14	Event:152	KeyEvent	Suppression, Inflammatory cytokines
+Aop:14	Event:168	KeyEvent	Decreased, Lymphocytes
+Aop:14	Event:145	KeyEvent	Induction, IKB inhibitory protein
+Aop:14	Event:323	AdverseOutcome	Increased, Disease susceptibility
+Aop:14	Event:403	KeyEvent	Suppression, Immune system
+Aop:15	Event:336	AdverseOutcome	Increase, Heritable mutations in offspring
+Aop:15	Event:97	MolecularInitiatingEvent	Alkylation, DNA
+Aop:15	Event:185	KeyEvent	Increase, Mutations
+Aop:15	Event:155	KeyEvent	N/A, Insufficient or incorrect DNA repair
+Aop:16	Event:351	AdverseOutcome	Increased, Mortality
+Aop:16	Event:442	AdverseOutcome	Decreased, Population trajectory
+Aop:16	Event:12	MolecularInitiatingEvent	Inhibition, Acetylcholinesterase (AchE)
+Aop:16	Event:10	KeyEvent	Accumulation, Acetylcholine in synapses
+Aop:16	Event:444	KeyEvent	Increased, Atrioventricular block and bradycardia
+Aop:16	Event:445	KeyEvent	Increased, Respiratory distress/arrest
+Aop:16	Event:39	KeyEvent	Induction, Ataxia, paralysis, or hyperactivity
+Aop:17	Event:261	MolecularInitiatingEvent	Binding, SH-/selen-proteins
+Aop:17	Event:158	KeyEvent	N/A, Interferences with SH-/selen-proteins
+Aop:17	Event:130	KeyEvent	Depletion, GSH
+Aop:17	Event:210	KeyEvent	N/A, Oxidative stress
+Aop:17	Event:191	KeyEvent	N/A, Neuronal dysfunction
+Aop:17	Event:188	KeyEvent	N/A, Neuroinflammation
+Aop:17	Event:352	AdverseOutcome	N/A, Neurodegeneration
+Aop:18	Event:227	MolecularInitiatingEvent	Activation, PPARα
+Aop:18	Event:406	AdverseOutcome	impaired, Fertility
+Aop:18	Event:266	KeyEvent	Decrease, Steroidogenic acute regulatory protein (STAR)
+Aop:18	Event:447	KeyEvent	Reduction, Cholesterol transport in mitochondria
+Aop:18	Event:413	KeyEvent	Reduction, Testosterone synthesis in Leydig cells
+Aop:18	Event:446	KeyEvent	Reduction, testosterone level
+Aop:18	Event:289	KeyEvent	Decrease, Translocator protein (TSPO)
+Aop:18	Event:348	AdverseOutcome	Malformation, Male reproductive tract
+Aop:19	Event:27	MolecularInitiatingEvent	N/A, Androgen receptor, Antagonism
+Aop:19	Event:310	KeyEvent	Alteration, Wnt pathway
+Aop:19	Event:240	KeyEvent	Feminisation or incomplete development, Primary and accessory male sex organs
+Aop:19	Event:286	KeyEvent	Decreased, Transcription of genes by AR
+Aop:19	Event:337	AdverseOutcome	N/A, Impairment of reproductive capacity
+Aop:21	Event:18	MolecularInitiatingEvent	Activation, AhR
+Aop:21	Event:944	KeyEvent	dimerization, AHR/ARNT
+Aop:21	Event:317	KeyEvent	Altered, Cardiovascular development/function
+Aop:21	Event:1269	KeyEvent	Increase, COX-2 expression
+Aop:21	Event:351	AdverseOutcome	Increased, Mortality
+Aop:21	Event:442	AdverseOutcome	Decreased, Population trajectory
+Aop:23	Event:360	AdverseOutcome	Decrease, Population trajectory
+Aop:23	Event:25	MolecularInitiatingEvent	Agonism, Androgen receptor
+Aop:23	Event:274	KeyEvent	Reduction, Testosterone synthesis by ovarian theca cells
+Aop:23	Event:3	KeyEvent	Reduction, 17beta-estradiol synthesis by ovarian granulosa cells
+Aop:23	Event:219	KeyEvent	Reduction, Plasma 17beta-estradiol concentrations
+Aop:23	Event:285	KeyEvent	Reduction, Vitellogenin synthesis in liver
+Aop:23	Event:78	KeyEvent	Reduction, Cumulative fecundity and spawning
+Aop:23	Event:221	KeyEvent	Reduction, Plasma vitellogenin concentrations
+Aop:23	Event:309	KeyEvent	Reduction, Vitellogenin accumulation into oocytes and oocyte growth/development
+Aop:23	Event:129	KeyEvent	Reduction, Gonadotropins, circulating concentrations
+Aop:25	Event:360	AdverseOutcome	Decrease, Population trajectory
+Aop:25	Event:36	MolecularInitiatingEvent	Inhibition, Aromatase
+Aop:25	Event:219	KeyEvent	Reduction, Plasma 17beta-estradiol concentrations
+Aop:25	Event:285	KeyEvent	Reduction, Vitellogenin synthesis in liver
+Aop:25	Event:309	KeyEvent	Reduction, Vitellogenin accumulation into oocytes and oocyte growth/development
+Aop:25	Event:3	KeyEvent	Reduction, 17beta-estradiol synthesis by ovarian granulosa cells
+Aop:25	Event:78	KeyEvent	Reduction, Cumulative fecundity and spawning
+Aop:25	Event:221	KeyEvent	Reduction, Plasma vitellogenin concentrations
+Aop:26	Event:51	MolecularInitiatingEvent	Inhibition, Ca++ ATPase
+Aop:26	Event:50	KeyEvent	Increase, Ca++ (intracellular)
+Aop:26	Event:178	KeyEvent	Disruption, Mitochondrial electron transport chain
+Aop:26	Event:40	KeyEvent	Decrease, Mitochondrial ATP production
+Aop:26	Event:257	KeyEvent	Increase, Reactive oxygen species production
+Aop:26	Event:193	KeyEvent	Decreased, Nitric Oxide
+Aop:26	Event:166	KeyEvent	Decreased, Long-term potentiation (LTP)
+Aop:26	Event:356	AdverseOutcome	Increased, Oxidative damage
+Aop:27	Event:41	MolecularInitiatingEvent	Inhibition, Bile Salt Export Pump (ABCB11)
+Aop:27	Event:288	KeyEvent	Activation of specific nuclear receptors, Transcriptional change
+Aop:27	Event:214	KeyEvent	Bile accumulation, Pathological condition
+Aop:27	Event:87	KeyEvent	Release, Cytokine
+Aop:27	Event:149	KeyEvent	Increase, Inflammation
+Aop:27	Event:249	KeyEvent	Production, Reactive oxygen species
+Aop:27	Event:209	KeyEvent	Peptide Oxidation
+Aop:27	Event:357	AdverseOutcome	Cholestasis, Pathology
+Aop:28	Event:79	MolecularInitiatingEvent	Inhibition, Cyclooxygenase activity
+Aop:28	Event:243	KeyEvent	Reduction, Prostaglandin E2 concentration
+Aop:28	Event:49	KeyEvent	Reduction, Ca and HCO3 transport to shell gland
+Aop:28	Event:106	KeyEvent	Reduction, Eggshell thickness
+Aop:28	Event:119	KeyEvent	N/A, Gap
+Aop:28	Event:253	AdverseOutcome	N/A, Reproductive failure
+Aop:29	Event:111	MolecularInitiatingEvent	Agonism, Estrogen receptor
+Aop:29	Event:78	KeyEvent	Reduction, Cumulative fecundity and spawning
+Aop:29	Event:220	KeyEvent	Increase, Plasma vitellogenin concentrations
+Aop:29	Event:307	KeyEvent	Increase, Vitellogenin synthesis in liver
+Aop:29	Event:252	KeyEvent	Increase, Renal pathology due to VTG deposition
+Aop:29	Event:360	AdverseOutcome	Decrease, Population trajectory
+Aop:29	Event:363	AdverseOutcome	Altered, Reproductive behaviour
+Aop:29	Event:339	AdverseOutcome	Altered, Larval development
+Aop:29	Event:364	AdverseOutcome	Impaired development of, Reproductive organs
+Aop:30	Event:360	AdverseOutcome	Decrease, Population trajectory
+Aop:30	Event:112	MolecularInitiatingEvent	Antagonism, Estrogen receptor
+Aop:30	Event:285	KeyEvent	Reduction, Vitellogenin synthesis in liver
+Aop:30	Event:221	KeyEvent	Reduction, Plasma vitellogenin concentrations
+Aop:30	Event:309	KeyEvent	Reduction, Vitellogenin accumulation into oocytes and oocyte growth/development
+Aop:30	Event:78	KeyEvent	Reduction, Cumulative fecundity and spawning
+Aop:31	Event:213	MolecularInitiatingEvent	N/A, Parent compound is converted to the reactive metabolite and forms free radicals leading to oxidation of heme iron(II) in hemoglobin to iron(III)
+Aop:31	Event:21	KeyEvent	Altered regulation, Alpha hemoglobin
+Aop:31	Event:211	KeyEvent	Propagation, Oxidative stress
+Aop:31	Event:250	KeyEvent	Damaging, Red blood cells; hemolysis
+Aop:31	Event:118	KeyEvent	Formation, Formation of hemoglobin adducts
+Aop:31	Event:131	KeyEvent	Down Regulation, Gulcose-6-phosphate dehydrogenase
+Aop:31	Event:246	KeyEvent	Increase, RBC congestion in liver
+Aop:31	Event:161	KeyEvent	Increase, Liver and splenic hemosiderosis
+Aop:31	Event:173	KeyEvent	N/A, Methemoglobinemia, decreased hemoglobin, hematocrit, red blood cell number
+Aop:31	Event:321	AdverseOutcome	N/A, Cyanosis occurs
+Aop:32	Event:77	KeyEvent	Production, Critical Metabolites (CGA 330050 and CGA 265307)
+Aop:32	Event:164	KeyEvent	Induction, Liver “Dysfunctional” Changes by CGA 330050
+Aop:32	Event:147	KeyEvent	Inhibition, Inducible Nitric Oxide Synthase by Metabolite CGA 265307
+Aop:32	Event:270	KeyEvent	Induction, Sustained Hepatotoxicity
+Aop:32	Event:269	KeyEvent	Induction, Sustained Cell Proliferation
+Aop:32	Event:347	KeyEvent	Formation, Liver tumor
+Aop:33	Event:9	MolecularInitiatingEvent	Activation, 5HT2c
+Aop:33	Event:759	AdverseOutcome	Increased, Kidney Failure
+Aop:33	Event:294	KeyEvent	N/A, Unknown
+Aop:34	Event:167	MolecularInitiatingEvent	Activation, LXR
+Aop:34	Event:54	KeyEvent	Up Regulation, CD36
+Aop:34	Event:115	KeyEvent	Increase, FA Influx
+Aop:34	Event:66	KeyEvent	Activation, ChREBP
+Aop:34	Event:264	KeyEvent	Activation, SREBP-1c
+Aop:34	Event:116	KeyEvent	Activation, FAS
+Aop:34	Event:258	KeyEvent	Activation, SCD-1
+Aop:34	Event:89	KeyEvent	Synthesis, De Novo FA
+Aop:34	Event:291	KeyEvent	Accumulation, Triglyceride
+Aop:34	Event:176	KeyEvent	Damaging, Mitochondria
+Aop:34	Event:345	AdverseOutcome	N/A, Liver Steatosis
+Aop:34	Event:228	MolecularInitiatingEvent	peroxisome proliferator activated receptor promoter demethylation
+Aop:35	Event:46	MolecularInitiatingEvent	Accumulation, Biological membranes
+Aop:35	Event:169	KeyEvent	Disruption, Membrane integrity
+Aop:36	Event:231	MolecularInitiatingEvent	Decreased, PPAR-alpha activation
+Aop:36	Event:232	MolecularInitiatingEvent	Decreased, PPAR-beta activation
+Aop:36	Event:233	MolecularInitiatingEvent	Decreased, PPAR-gamma activation
+Aop:36	Event:327	KeyEvent	Accumulation, Fatty acid
+Aop:36	Event:140	KeyEvent	Decreased, HSD17B10 expression
+Aop:36	Event:179	KeyEvent	Decreased, Mitochondrial fatty acid beta-oxidation
+Aop:36	Event:8	KeyEvent	Decreased, 3-hydroxyacyl-CoA dehydrogenase type-2 activity
+Aop:36	Event:459	AdverseOutcome	Increased, Liver Steatosis
+Aop:37	Event:227	MolecularInitiatingEvent	Activation, PPARα
+Aop:37	Event:1170	KeyEvent	modulation, Genes/proteins that regulate hepatocyte fate
+Aop:37	Event:716	KeyEvent	Increase, Mitogenic cell proliferation (hepatocytes)
+Aop:37	Event:1171	KeyEvent	Increase, Clonal Expansion / Cell Proliferatin to form Pre-Neoplastic Altered Hepatic Foci
+Aop:37	Event:719	AdverseOutcome	Increase, Adenomas/carcinomas (hepatocellular)
+Aop:38	Event:344	AdverseOutcome	N/A, Liver fibrosis
+Aop:38	Event:244	MolecularInitiatingEvent	Alkylation, Protein
+Aop:38	Event:55	KeyEvent	N/A, Cell injury/death
+Aop:38	Event:134	KeyEvent	Increased, Activation and Recruitment of Hepatic macrophages (Kupffer Cells)
+Aop:38	Event:276	KeyEvent	Up Regulation, TGFbeta1 expression
+Aop:38	Event:265	KeyEvent	Activation, Stellate cells
+Aop:38	Event:68	KeyEvent	Accumulation, Collagen
+Aop:39	Event:75	MolecularInitiatingEvent	N/A, Covalent binding to protein, possibly lysine residue
+Aop:39	Event:151	KeyEvent	Activation, Inflammatory cytokines, chemokines, cytoprotective gene pathways
+Aop:39	Event:313	AdverseOutcome	Increase, Allergic Respiratory Hypersensitivity Response
+Aop:40	Event:396	MolecularInitiatingEvent	Covalent Binding, Protein
+Aop:40	Event:827	AdverseOutcome	sensitisation, skin
+Aop:40	Event:826	KeyEvent	Activation, Keratinocytes
+Aop:40	Event:398	KeyEvent	Activation, Dendritic Cells
+Aop:40	Event:272	KeyEvent	Activation/Proliferation, T-cells
+Aop:41	Event:139	KeyEvent	N/A, Hepatotoxicity, Hepatopathy, including a constellation of observable effects
+Aop:41	Event:165	MolecularInitiatingEvent	Activation, Long term AHR receptor driven direct and indirect gene expression changes
+Aop:41	Event:853	KeyEvent	Changes/Inhibition, Cellular Homeostasis and Apoptosis
+Aop:41	Event:854	KeyEvent	Alterations, Cellular proliferation / hyperplasia
+Aop:41	Event:856	AdverseOutcome	Formation, Hepatocellular and Bile duct tumors
+Aop:42	Event:279	MolecularInitiatingEvent	Thyroperoxidase, Inhibition
+Aop:42	Event:277	KeyEvent	Decrease of thyroid hormone synthesis
+Aop:42	Event:281	KeyEvent	Decrease of thyroxine (T4) in serum
+Aop:42	Event:280	KeyEvent	Decrease of thyroxine (T4) in neuronal tissue
+Aop:42	Event:402	AdverseOutcome	Cognitive Function, Decreased 
+Aop:42	Event:756	KeyEvent	Hippocampal gene expression, Altered 
+Aop:42	Event:757	KeyEvent	Hippocampal anatomy, Altered 
+Aop:42	Event:758	KeyEvent	Hippocampal Physiology, Altered
+Aop:43	Event:305	MolecularInitiatingEvent	Inhibition, VegfR2
+Aop:43	Event:28	KeyEvent	Reduction, Angiogenesis
+Aop:43	Event:110	KeyEvent	Impairment, Endothelial network
+Aop:43	Event:298	KeyEvent	Insufficiency, Vascular
+Aop:43	Event:1001	AdverseOutcome	Increased, Developmental Defects
+Aop:46	Event:373	MolecularInitiatingEvent	Formation, Pro-mutagenic DNA Adducts
+Aop:46	Event:378	AdverseOutcome	Tumorigenesis, Hepatocellular carcinoma
+Aop:46	Event:376	KeyEvent	Increased, Induced Mutations in Critical Genes
+Aop:46	Event:409	KeyEvent	Metabolism of AFB1, Production of Reactive Electrophiles
+Aop:46	Event:491	KeyEvent	Clonal Expansion/Cell Proliferation, to form Altered Hepatic Foci (AHF)
+Aop:46	Event:493	KeyEvent	Increased, Insufficient repair or mis-repair of pro-mutagenic DNA adducts
+Aop:48	Event:177	KeyEvent	N/A, Mitochondrial dysfunction 1
+Aop:48	Event:341	AdverseOutcome	Impairment, Learning and memory
+Aop:48	Event:55	KeyEvent	N/A, Cell injury/death
+Aop:48	Event:352	KeyEvent	N/A, Neurodegeneration
+Aop:48	Event:388	KeyEvent	Overactivation, NMDARs
+Aop:48	Event:389	KeyEvent	Increased, Intracellular Calcium overload
+Aop:48	Event:618	KeyEvent	Decreased, Neuronal network function in adult brain
+Aop:48	Event:875	MolecularInitiatingEvent	Binding of agonist, Ionotropic glutamate receptors
+Aop:48	Event:188	KeyEvent	N/A, Neuroinflammation
+Aop:51	Event:406	AdverseOutcome	impaired, Fertility
+Aop:51	Event:414	KeyEvent	Increase, Luteinizing hormone (LH) 
+Aop:51	Event:415	KeyEvent	Hyperplasia, Leydig cell
+Aop:51	Event:416	KeyEvent	Increase proliferation, Leydig cell 
+Aop:51	Event:227	MolecularInitiatingEvent	Activation, PPARα
+Aop:51	Event:446	KeyEvent	Reduction, testosterone level
+Aop:51	Event:413	KeyEvent	Reduction, Testosterone synthesis in Leydig cells
+Aop:51	Event:447	KeyEvent	Reduction, Cholesterol transport in mitochondria
+Aop:52	Event:111	MolecularInitiatingEvent	Agonism, Estrogen receptor
+Aop:52	Event:417	AdverseOutcome	skewed, sex ratio
+Aop:53	Event:111	MolecularInitiatingEvent	Agonism, Estrogen receptor
+Aop:53	Event:418	KeyEvent	Increased, Vitellogenin synthesis
+Aop:53	Event:220	KeyEvent	Increase, Plasma vitellogenin concentrations
+Aop:53	Event:419	KeyEvent	Increased, renal vitellogenin deposition
+Aop:53	Event:421	KeyEvent	Increased, glomerular rupture and renal hemorrhaging
+Aop:53	Event:422	KeyEvent	Increased, nephropathy
+Aop:54	Event:425	KeyEvent	Decrease of Thyroidal iodide
+Aop:54	Event:280	KeyEvent	Decrease of thyroxine (T4) in neuronal tissue
+Aop:54	Event:381	KeyEvent	Reduced levels of BDNF
+Aop:54	Event:385	KeyEvent	Decrease of synaptogenesis
+Aop:54	Event:341	AdverseOutcome	Impairment, Learning and memory
+Aop:54	Event:281	KeyEvent	Decrease of thyroxine (T4) in serum
+Aop:54	Event:851	KeyEvent	Decrease of GABAergic interneurons
+Aop:54	Event:424	MolecularInitiatingEvent	Inhibition, Na+/I- symporter (NIS)
+Aop:54	Event:386	KeyEvent	Decrease of neuronal network function
+Aop:54	Event:277	KeyEvent	Decrease of thyroid hormone synthesis
+Aop:57	Event:18	MolecularInitiatingEvent	Activation, AhR
+Aop:57	Event:450	KeyEvent	Suppression, VLDL secretion
+Aop:57	Event:451	KeyEvent	Inhibition, Mitochondrial fatty acid beta-oxidation
+Aop:57	Event:327	KeyEvent	Accumulation, Fatty acid
+Aop:57	Event:216	KeyEvent	Decreased, PCK1 expression (control point for glycolysis/gluconeogenesis pathway)
+Aop:57	Event:291	KeyEvent	Accumulation, Triglyceride
+Aop:57	Event:455	AdverseOutcome	Accumulation, Liver lipid
+Aop:57	Event:54	KeyEvent	Up Regulation, CD36
+Aop:57	Event:465	KeyEvent	Increased, FA Influx
+Aop:57	Event:466	KeyEvent	Up Regulation, LDLR (low density lipoprotein receptor)
+Aop:57	Event:467	KeyEvent	Increased, LDL uptake
+Aop:57	Event:80	KeyEvent	Up Regulation, CYP1A1
+Aop:57	Event:462	KeyEvent	Up Regulation, SCD-1
+Aop:58	Event:456	MolecularInitiatingEvent	Suppression, Constitutive androstane receptor, NR1l3
+Aop:58	Event:457	KeyEvent	Activation, SREBF1
+Aop:58	Event:66	KeyEvent	Activation, ChREBP
+Aop:58	Event:458	KeyEvent	Increased, De Novo FA synthesis
+Aop:58	Event:459	AdverseOutcome	Increased, Liver Steatosis
+Aop:58	Event:454	KeyEvent	Increased, Triglyceride formation
+Aop:58	Event:54	KeyEvent	Up Regulation, CD36
+Aop:58	Event:462	KeyEvent	Up Regulation, SCD-1
+Aop:58	Event:463	KeyEvent	Up Regulation, FAS
+Aop:58	Event:468	MolecularInitiatingEvent	Inhibition, PPAR alpha
+Aop:58	Event:167	MolecularInitiatingEvent	Activation, LXR
+Aop:58	Event:228	MolecularInitiatingEvent	peroxisome proliferator activated receptor promoter demethylation
+Aop:58	Event:451	KeyEvent	Inhibition, Mitochondrial fatty acid beta-oxidation
+Aop:58	Event:327	KeyEvent	Accumulation, Fatty acid
+Aop:58	Event:470	KeyEvent	Up Regulation, Acetyl-CoA carboxylase-1 (ACC-1)
+Aop:58	Event:465	KeyEvent	Increased, FA Influx
+Aop:59	Event:461	MolecularInitiatingEvent	Suppression, HNF4alpha
+Aop:60	Event:245	MolecularInitiatingEvent	Activation, PXR/SXR
+Aop:60	Event:459	AdverseOutcome	Increased, Liver Steatosis
+Aop:60	Event:471	KeyEvent	Inhibition, FoxA2
+Aop:60	Event:179	KeyEvent	Decreased, Mitochondrial fatty acid beta-oxidation
+Aop:60	Event:472	KeyEvent	Down Regulation, CPT1A
+Aop:60	Event:474	KeyEvent	Down Regulation, HMGCS2
+Aop:60	Event:462	KeyEvent	Up Regulation, SCD-1
+Aop:60	Event:54	KeyEvent	Up Regulation, CD36
+Aop:60	Event:465	KeyEvent	Increased, FA Influx
+Aop:60	Event:477	KeyEvent	Decreased, Ketogenesis
+Aop:60	Event:454	KeyEvent	Increased, Triglyceride formation
+Aop:60	Event:327	KeyEvent	Accumulation, Fatty acid
+Aop:61	Event:478	MolecularInitiatingEvent	Activation, NRF2
+Aop:61	Event:479	MolecularInitiatingEvent	Activation, NR1H4
+Aop:61	Event:480	KeyEvent	Activation, SHP
+Aop:61	Event:227	KeyEvent	Activation, PPARα
+Aop:61	Event:482	KeyEvent	Decreased, DHB4/HSD17B4
+Aop:61	Event:451	KeyEvent	Inhibition, Mitochondrial fatty acid beta-oxidation
+Aop:61	Event:483	KeyEvent	Activation, LXR alpha
+Aop:61	Event:459	AdverseOutcome	Increased, Liver Steatosis
+Aop:61	Event:878	KeyEvent	Inhibition, SREBP1c
+Aop:61	Event:879	KeyEvent	Activation, MTTP
+Aop:61	Event:880	KeyEvent	Increased, ApoB100
+Aop:61	Event:881	KeyEvent	Increased, Triglyceride
+Aop:61	Event:458	KeyEvent	Increased, De Novo FA synthesis
+Aop:62	Event:484	KeyEvent	Activation, AKT2
+Aop:62	Event:459	AdverseOutcome	Increased, Liver Steatosis
+Aop:62	Event:486	MolecularInitiatingEvent	systemic inflammation leading to hepatic steatosis
+Aop:62	Event:457	KeyEvent	Activation, SREBF1
+Aop:63	Event:675	AdverseOutcome	Reduced, Reproductive Success
+Aop:63	Event:686	AdverseOutcome	Declining, Population trajectory
+Aop:63	Event:79	MolecularInitiatingEvent	Inhibition, Cyclooxygenase activity
+Aop:63	Event:488	KeyEvent	Decrease, Ovulation
+Aop:63	Event:685	KeyEvent	Reduced, Prostaglandins, ovary
+Aop:64	Event:494	MolecularInitiatingEvent	Glucocorticoid Receptor Agonist, Activation
+Aop:64	Event:495	KeyEvent	Repressed expression of steroidogenic enzymes 
+Aop:64	Event:496	KeyEvent	Increased apoptosis, decreased number of adult Leydig Cells 
+Aop:64	Event:413	KeyEvent	Reduction, Testosterone synthesis in Leydig cells
+Aop:64	Event:446	KeyEvent	Reduction, testosterone level
+Aop:64	Event:520	KeyEvent	Decreased sperm quantity or quality in the adult, Decreased fertility 
+Aop:64	Event:406	AdverseOutcome	impaired, Fertility
+Aop:65	Event:424	MolecularInitiatingEvent	Inhibition, Na+/I- symporter (NIS)
+Aop:65	Event:277	KeyEvent	Decrease of thyroid hormone synthesis
+Aop:65	Event:281	KeyEvent	Decrease of thyroxine (T4) in serum
+Aop:65	Event:280	KeyEvent	Decrease of thyroxine (T4) in neuronal tissue
+Aop:65	Event:186	KeyEvent	Altered, Neuroanatomy
+Aop:65	Event:192	KeyEvent	Altered, Neurophysiology
+Aop:65	Event:402	AdverseOutcome	Cognitive Function, Decreased 
+Aop:66	Event:505	AdverseOutcome	Decreased sperm quantity / quality in the adult, Decreased fertility 
+Aop:66	Event:653	MolecularInitiatingEvent	Decreased testosterone by the fetal Leydig cells, Increased corticosterone
+Aop:66	Event:654	MolecularInitiatingEvent	Decreased testosterone by the fetal Leydig cells, Activation by other glucocorticoid receptor agonists
+Aop:66	Event:655	KeyEvent	Decreased testosterone by the fetal Leydig cells, Increased COUP-TFII in fetal Leydig cells
+Aop:66	Event:656	KeyEvent	Decreased number and function of adult Leydig cells, Decreased COUP-TFII stem Leydig cells
+Aop:66	Event:657	KeyEvent	Decreased testosterone by the fetal Leydig cells, Dysgenesis of fetal Leydig cells
+Aop:67	Event:505	AdverseOutcome	Decreased sperm quantity / quality in the adult, Decreased fertility 
+Aop:67	Event:658	MolecularInitiatingEvent	Decreased testosterone by the fetal Leydig cells, Increased estradiol
+Aop:67	Event:659	MolecularInitiatingEvent	Decreased testosterone by the fetal Leydig cells, Activation by other estradiol agonists
+Aop:67	Event:655	KeyEvent	Decreased testosterone by the fetal Leydig cells, Increased COUP-TFII in fetal Leydig cells
+Aop:67	Event:660	KeyEvent	decreased testosterone by fetal Leydig cells, Dysgenesis of fetal Leydig cells
+Aop:67	Event:656	KeyEvent	Decreased number and function of adult Leydig cells, Decreased COUP-TFII stem Leydig cells
+Aop:68	Event:505	AdverseOutcome	Decreased sperm quantity / quality in the adult, Decreased fertility 
+Aop:68	Event:661	MolecularInitiatingEvent	Decreased testosterone by the fetal Leydig cells, Alterations in the fetal testis proteome
+Aop:68	Event:655	KeyEvent	Decreased testosterone by the fetal Leydig cells, Increased COUP-TFII in fetal Leydig cells
+Aop:68	Event:657	KeyEvent	Decreased testosterone by the fetal Leydig cells, Dysgenesis of fetal Leydig cells
+Aop:68	Event:656	KeyEvent	Decreased number and function of adult Leydig cells, Decreased COUP-TFII stem Leydig cells
+Aop:69	Event:642	MolecularInitiatingEvent	Decreased Cholesterol, Decreased De Novo Biosynthesis of Choleseterol
+Aop:69	Event:643	MolecularInitiatingEvent	Decreased Cholesterol, Decreased Uptake of Lipoproteins
+Aop:69	Event:644	MolecularInitiatingEvent	Decreased Cholesterol, Decreased Transport of Cholesterol to the Inner Mitochondrial Membrane
+Aop:69	Event:645	KeyEvent	Decreased Cholesterol, Decreased Testosterone Production by Adult Leydig Cells
+Aop:69	Event:646	AdverseOutcome	Decreased Cholesterol, Decreased sperm quantity and/or quality in the adult testis
+Aop:70	Event:520	AdverseOutcome	Decreased sperm quantity or quality in the adult, Decreased fertility 
+Aop:70	Event:640	MolecularInitiatingEvent	Decreased steroidogenesis, Proteomic alterations in the adult Leydig cell
+Aop:70	Event:647	KeyEvent	Decreased steroidogenesis, Decreased Activity of Steroidogenic Enzymes in Adult Leydig cells
+Aop:70	Event:648	KeyEvent	Decreased steroidogenesis, Increased Apoptosis of Adult Leydig Cells
+Aop:70	Event:649	KeyEvent	Decreased steroidogenesis, Alterations in the Leydig Cell Cytoskeleton
+Aop:71	Event:525	KeyEvent	Apoptosis of adult Leydig cells, Decreased testosterone by adult Leydig cells
+Aop:71	Event:520	AdverseOutcome	Decreased sperm quantity or quality in the adult, Decreased fertility 
+Aop:71	Event:650	MolecularInitiatingEvent	Stimulation of adult Leydig cells via the Adrenal Corticosterone, Increased Glucocorticoid
+Aop:71	Event:651	KeyEvent	Glucocorticoid Receptor mediated alterations in steriodogenic enzymes, Decreased testosterone by adult Leydig cells
+Aop:71	Event:652	KeyEvent	Direct effects of Corticosterone on steroidogenesis, Decreased testosterone by adult Leydig cells
+Aop:72	Event:228	MolecularInitiatingEvent	peroxisome proliferator activated receptor promoter demethylation
+Aop:72	Event:1028	KeyEvent	Activation of specific nuclear receptors, PPAR-gamma activation
+Aop:72	Event:1447	AdverseOutcome	obesity
+Aop:72	Event:1448	KeyEvent	activation of CCAAT/enhancer-binding protein alpha
+Aop:72	Event:1449	KeyEvent	increased adipogenesis
+Aop:72	Event:1450	KeyEvent	decreased dopamine
+Aop:72	Event:1451	KeyEvent	decreased reward
+Aop:72	Event:1452	KeyEvent	decreased DNA methylation of tyrosine hydroxylase
+Aop:72	Event:1453	KeyEvent	decreased methylation of dopamine transporter promoter
+Aop:72	Event:1454	MolecularInitiatingEvent	chronic high fat diet
+Aop:73	Event:526	MolecularInitiatingEvent	Inhibition, Inhibition of Dopamine-beta-hydroxylase
+Aop:73	Event:527	AdverseOutcome	Decreased, Decreased fecundity 
+Aop:73	Event:528	KeyEvent	Decreased, Synthesis of NE
+Aop:73	Event:529	KeyEvent	Decreased, GnRH cfos activity
+Aop:73	Event:530	KeyEvent	Decreased, GnRH pulsatility/release
+Aop:73	Event:531	KeyEvent	Decreased, LH Surge
+Aop:73	Event:532	KeyEvent	Delayed, Ovulation
+Aop:73	Event:533	KeyEvent	Decreased, Cortical granule release/distribution upon fertilization
+Aop:73	Event:534	KeyEvent	Altered, Formation of cortical envelope
+Aop:73	Event:535	KeyEvent	Abnormal, Sperm penetration (polyspermy)
+Aop:73	Event:536	KeyEvent	Altered, Chromosome number (polyploid) zygote
+Aop:74	Event:543	AdverseOutcome	Decreased fertility in the adult, Decreased sperm quantity and/or quality in the adult testis
+Aop:74	Event:662	MolecularInitiatingEvent	Decreased testosterone by the fetal Leydig cells, Hypermethylation in the fetal testis
+Aop:74	Event:655	KeyEvent	Decreased testosterone by the fetal Leydig cells, Increased COUP-TFII in fetal Leydig cells
+Aop:74	Event:540	KeyEvent	Decreased testosterone by the fetal Leydig cells, Dysgensis of fetal Leydig cells
+Aop:74	Event:541	KeyEvent	Decreased testosterone by the fetal Leydig cells, Decreased COUP-TFII stem Leydig cells
+Aop:77	Event:559	MolecularInitiatingEvent	Activation, Nicotinic acetylcholine receptor
+Aop:77	Event:177	KeyEvent	N/A, Mitochondrial dysfunction 1
+Aop:77	Event:341	KeyEvent	Impairment, Learning and memory
+Aop:77	Event:560	KeyEvent	Abnormal, Foraging activity and behavior
+Aop:77	Event:563	AdverseOutcome	Death/Failure, Colony
+Aop:77	Event:1107	KeyEvent	Weakened, Colony
+Aop:77	Event:1243	KeyEvent	Altered, Ca2+-calmodulin activated signal transduction
+Aop:78	Event:559	MolecularInitiatingEvent	Activation, Nicotinic acetylcholine receptor
+Aop:78	Event:177	KeyEvent	N/A, Mitochondrial dysfunction 1
+Aop:78	Event:386	KeyEvent	Decrease of neuronal network function
+Aop:78	Event:341	KeyEvent	Impairment, Learning and memory
+Aop:78	Event:564	KeyEvent	Abnormal, Roll change within caste
+Aop:78	Event:565	KeyEvent	Reduced, Brood care
+Aop:78	Event:566	AdverseOutcome	impaired, Larval development
+Aop:78	Event:563	AdverseOutcome	Death/Failure, Colony
+Aop:79	Event:559	MolecularInitiatingEvent	Activation, Nicotinic acetylcholine receptor
+Aop:79	Event:177	KeyEvent	N/A, Mitochondrial dysfunction 1
+Aop:79	Event:563	AdverseOutcome	Death/Failure, Colony
+Aop:79	Event:568	KeyEvent	impaired, Hive thermoregulation
+Aop:79	Event:1107	KeyEvent	Weakened, Colony
+Aop:80	Event:177	KeyEvent	N/A, Mitochondrial dysfunction 1
+Aop:80	Event:570	KeyEvent	Accumulation, Damaged mitochondrial DNA
+Aop:80	Event:571	KeyEvent	Accelerated, Aging
+Aop:80	Event:572	AdverseOutcome	Decrease, Number of worker bees
+Aop:80	Event:568	AdverseOutcome	impaired, Hive thermoregulation
+Aop:80	Event:563	AdverseOutcome	Death/Failure, Colony
+Aop:80	Event:664	KeyEvent	Overwhelmed, Mitochondrial DNA repair mechanisms
+Aop:80	Event:559	MolecularInitiatingEvent	Activation, Nicotinic acetylcholine receptor
+Aop:81	Event:573	KeyEvent	Increase, Energetic demands and therefore metabolic stress
+Aop:81	Event:574	KeyEvent	Increased, Appetite and hunger
+Aop:81	Event:560	KeyEvent	Abnormal, Foraging activity and behavior
+Aop:81	Event:572	AdverseOutcome	Decrease, Number of worker bees
+Aop:81	Event:563	AdverseOutcome	Death/Failure, Colony
+Aop:82	Event:564	KeyEvent	Abnormal, Roll change within caste
+Aop:82	Event:565	KeyEvent	Reduced, Brood care
+Aop:82	Event:566	AdverseOutcome	impaired, Larval development
+Aop:82	Event:563	AdverseOutcome	Death/Failure, Colony
+Aop:84	Event:403	KeyEvent	Suppression, Immune system
+Aop:84	Event:576	KeyEvent	Increased, Viral susceptibility
+Aop:84	Event:577	KeyEvent	impaired, Development
+Aop:84	Event:572	AdverseOutcome	Decrease, Number of worker bees
+Aop:84	Event:568	AdverseOutcome	impaired, Hive thermoregulation
+Aop:84	Event:563	AdverseOutcome	Death/Failure, Colony
+Aop:85	Event:403	KeyEvent	Suppression, Immune system
+Aop:85	Event:576	KeyEvent	Increased, Viral susceptibility
+Aop:85	Event:560	KeyEvent	Abnormal, Foraging activity and behavior
+Aop:85	Event:572	AdverseOutcome	Decrease, Number of worker bees
+Aop:85	Event:563	AdverseOutcome	Death/Failure, Colony
+Aop:86	Event:578	KeyEvent	Decreased, Glucose oxidase enzyme activity
+Aop:86	Event:579	KeyEvent	Decreased, Hydrogen peroxide production
+Aop:86	Event:580	KeyEvent	Reduced, Antiseptic incorporated in food
+Aop:86	Event:564	KeyEvent	Abnormal, Roll change within caste
+Aop:86	Event:561	KeyEvent	Reduced, Food storage
+Aop:86	Event:566	AdverseOutcome	impaired, Larval development
+Aop:86	Event:563	AdverseOutcome	Death/Failure, Colony
+Aop:87	Event:559	MolecularInitiatingEvent	Activation, Nicotinic acetylcholine receptor
+Aop:87	Event:177	KeyEvent	N/A, Mitochondrial dysfunction 1
+Aop:87	Event:341	KeyEvent	Impairment, Learning and memory
+Aop:87	Event:560	KeyEvent	Abnormal, Foraging activity and behavior
+Aop:87	Event:563	AdverseOutcome	Death/Failure, Colony
+Aop:87	Event:1107	KeyEvent	Weakened, Colony
+Aop:87	Event:1108	KeyEvent	Abnormal, Role change within caste
+Aop:87	Event:1243	KeyEvent	Altered, Ca2+-calmodulin activated signal transduction
+Aop:88	Event:559	MolecularInitiatingEvent	Activation, Nicotinic acetylcholine receptor
+Aop:88	Event:341	KeyEvent	Impairment, Learning and memory
+Aop:88	Event:563	AdverseOutcome	Death/Failure, Colony
+Aop:88	Event:560	KeyEvent	Abnormal, Foraging activity and behavior
+Aop:88	Event:663	KeyEvent	Desensitization, Nicotinic acetylcholine receptor
+Aop:88	Event:1107	KeyEvent	Weakened, Colony
+Aop:88	Event:1243	KeyEvent	Altered, Ca2+-calmodulin activated signal transduction
+Aop:89	Event:559	MolecularInitiatingEvent	Activation, Nicotinic acetylcholine receptor
+Aop:89	Event:341	KeyEvent	Impairment, Learning and memory
+Aop:89	Event:563	AdverseOutcome	Death/Failure, Colony
+Aop:89	Event:560	KeyEvent	Abnormal, Foraging activity and behavior
+Aop:89	Event:663	KeyEvent	Desensitization, Nicotinic acetylcholine receptor
+Aop:89	Event:1107	KeyEvent	Weakened, Colony
+Aop:89	Event:1108	KeyEvent	Abnormal, Role change within caste
+Aop:89	Event:1243	KeyEvent	Altered, Ca2+-calmodulin activated signal transduction
+Aop:90	Event:559	MolecularInitiatingEvent	Activation, Nicotinic acetylcholine receptor
+Aop:90	Event:341	KeyEvent	Impairment, Learning and memory
+Aop:90	Event:564	KeyEvent	Abnormal, Roll change within caste
+Aop:90	Event:565	KeyEvent	Reduced, Brood care
+Aop:90	Event:566	AdverseOutcome	impaired, Larval development
+Aop:90	Event:563	AdverseOutcome	Death/Failure, Colony
+Aop:90	Event:663	KeyEvent	Desensitization, Nicotinic acetylcholine receptor
+Aop:90	Event:386	KeyEvent	Decrease of neuronal network function
+Aop:91	Event:584	MolecularInitiatingEvent	Inhibition, sodium channel
+Aop:91	Event:585	KeyEvent	Decreased, Sodium conductance 1
+Aop:91	Event:586	KeyEvent	Reduced, swimming speed
+Aop:91	Event:587	AdverseOutcome	Reduced, feeding 1
+Aop:91	Event:588	AdverseOutcome	Increased, predation
+Aop:91	Event:592	AdverseOutcome	Reduced, survival
+Aop:93	Event:585	KeyEvent	Decreased, Sodium conductance 1
+Aop:93	Event:586	KeyEvent	Reduced, swimming speed
+Aop:93	Event:588	AdverseOutcome	Increased, predation
+Aop:93	Event:584	MolecularInitiatingEvent	Inhibition, sodium channel
+Aop:94	Event:584	MolecularInitiatingEvent	Inhibition, sodium channel
+Aop:94	Event:444	KeyEvent	Increased, Atrioventricular block and bradycardia
+Aop:94	Event:445	KeyEvent	Increased, Respiratory distress/arrest
+Aop:94	Event:590	KeyEvent	N/A, hypoxia
+Aop:94	Event:591	AdverseOutcome	Increased, amputations
+Aop:94	Event:585	KeyEvent	Decreased, Sodium conductance 1
+Aop:95	Event:585	KeyEvent	Decreased, Sodium conductance 1
+Aop:95	Event:586	KeyEvent	Reduced, swimming speed
+Aop:95	Event:587	KeyEvent	Reduced, feeding 1
+Aop:95	Event:588	KeyEvent	Increased, predation
+Aop:95	Event:592	AdverseOutcome	Reduced, survival
+Aop:95	Event:593	MolecularInitiatingEvent	Inhibition, Ether-a-go-go (ERG) voltage-gated potassium channel 
+Aop:96	Event:598	MolecularInitiatingEvent	modulation, sodium channel
+Aop:96	Event:599	KeyEvent	prolonged, Depolarization of neuronal membrane
+Aop:96	Event:600	KeyEvent	Overactivation, Neuronotransmitter release
+Aop:96	Event:601	KeyEvent	Overactivation, muscle contraction
+Aop:96	Event:602	KeyEvent	Increased, Ataxia, paralysis, or hyperactivity
+Aop:96	Event:351	AdverseOutcome	Increased, Mortality
+Aop:97	Event:619	MolecularInitiatingEvent	Inhibition, 5-hydroxytryptamine transporter (5-HTT; SERT)
+Aop:97	Event:623	AdverseOutcome	Increase, predation
+Aop:97	Event:625	KeyEvent	Increased, muscular waves in foot
+Aop:97	Event:1139	KeyEvent	Increased, water retention in foot
+Aop:97	Event:361	AdverseOutcome	Decline, Population
+Aop:97	Event:1142	KeyEvent	Increased, valve movement
+Aop:97	Event:1143	KeyEvent	Depletion, energy reserves
+Aop:97	Event:624	KeyEvent	Increased, foot detachment
+Aop:97	Event:622	KeyEvent	Increased, locomotion
+Aop:97	Event:626	KeyEvent	Increased, serotonin (5-HT) 
+Aop:98	Event:619	MolecularInitiatingEvent	Inhibition, 5-hydroxytryptamine transporter (5-HTT; SERT)
+Aop:98	Event:626	KeyEvent	Increased, serotonin (5-HT) 
+Aop:98	Event:627	KeyEvent	Decreased, anxiety
+Aop:98	Event:629	KeyEvent	Decreased, sheltering
+Aop:98	Event:588	AdverseOutcome	Increased, predation
+Aop:99	Event:633	KeyEvent	Decrease, histaminergic neuron excitation
+Aop:99	Event:634	KeyEvent	N/A, sedation
+Aop:99	Event:635	KeyEvent	Decreased, locomotion
+Aop:99	Event:636	AdverseOutcome	Decreased, survival
+Aop:99	Event:588	AdverseOutcome	Increased, predation
+Aop:99	Event:638	MolecularInitiatingEvent	Antagonism, Histamine Receptor (H2)
+Aop:99	Event:341	KeyEvent	Impairment, Learning and memory
+Aop:100	Event:79	MolecularInitiatingEvent	Inhibition, Cyclooxygenase activity
+Aop:100	Event:671	KeyEvent	Reduced, Prostaglandin F2alpha concentration, plasma 
+Aop:100	Event:672	KeyEvent	Reduced, Prostaglandin F2alpha synthesis, ovary  
+Aop:100	Event:673	KeyEvent	Reduced, Spawning behavior
+Aop:100	Event:674	KeyEvent	Reduced, Ability to attract spawning mates
+Aop:100	Event:675	AdverseOutcome	Reduced, Reproductive Success
+Aop:100	Event:360	AdverseOutcome	Decrease, Population trajectory
+Aop:101	Event:79	MolecularInitiatingEvent	Inhibition, Cyclooxygenase activity
+Aop:101	Event:674	KeyEvent	Reduced, Ability to attract spawning mates
+Aop:101	Event:675	AdverseOutcome	Reduced, Reproductive Success
+Aop:101	Event:679	AdverseOutcome	Decline, Population trajectory
+Aop:101	Event:678	KeyEvent	Reduced, Pheromone release
+Aop:101	Event:681	KeyEvent	Decreased, Prostaglandin F2alpha synthesis, ovary  
+Aop:101	Event:671	KeyEvent	Reduced, Prostaglandin F2alpha concentration, plasma 
+Aop:102	Event:687	KeyEvent	Reduced, Prostaglandin E2 concentration, hypothalamus
+Aop:102	Event:689	KeyEvent	Reduced, Gonadotropin releasing hormone, hypothalamus
+Aop:102	Event:690	KeyEvent	Reduced, Luteinizing hormone (LH), plasma 
+Aop:102	Event:691	KeyEvent	Reduced, Maturation inducing steroid, plasma
+Aop:102	Event:692	KeyEvent	Reduced, Maturation inducing steroid receptor signalling, oocyte
+Aop:102	Event:694	KeyEvent	Reduced, Meiotic prophase I/metaphase I transition, oocyte
+Aop:102	Event:693	KeyEvent	Increased, cyclic adenosine monophosphate
+Aop:102	Event:679	AdverseOutcome	Decline, Population trajectory
+Aop:102	Event:675	AdverseOutcome	Reduced, Reproductive Success
+Aop:102	Event:79	MolecularInitiatingEvent	Inhibition, Cyclooxygenase activity
+Aop:103	Event:79	MolecularInitiatingEvent	Inhibition, Cyclooxygenase activity
+Aop:103	Event:687	KeyEvent	Reduced, Prostaglandin E2 concentration, hypothalamus
+Aop:103	Event:689	KeyEvent	Reduced, Gonadotropin releasing hormone, hypothalamus
+Aop:103	Event:690	KeyEvent	Reduced, Luteinizing hormone (LH), plasma 
+Aop:103	Event:691	KeyEvent	Reduced, Maturation inducing steroid, plasma
+Aop:103	Event:692	KeyEvent	Reduced, Maturation inducing steroid receptor signalling, oocyte
+Aop:103	Event:695	KeyEvent	Upregulated, Spindle assembly checkpoint protein Mad2-oocyte
+Aop:103	Event:696	KeyEvent	Increased, Chromosome misseggregation
+Aop:103	Event:675	AdverseOutcome	Reduced, Reproductive Success
+Aop:103	Event:686	AdverseOutcome	Declining, Population trajectory
+Aop:104	Event:697	MolecularInitiatingEvent	impaired, ion channels
+Aop:104	Event:351	AdverseOutcome	Increased, Mortality
+Aop:104	Event:698	KeyEvent	Altered, Action Potential
+Aop:104	Event:699	KeyEvent	Increased, cardiac arrthymia
+Aop:105	Event:708	KeyEvent	Increased, Accumulation of alpha2u microglobulin (proximal tubular epithelium)
+Aop:105	Event:709	KeyEvent	Increase, Cytotoxicity (renal tubular cell)
+Aop:105	Event:710	KeyEvent	Increase, Regenerative cell proliferation (tubular epithelial cells)
+Aop:105	Event:713	AdverseOutcome	Increase, Adenomas/carcinomas (renal tubular)
+Aop:105	Event:767	KeyEvent	Increase, Hyperplasia (renal tubular cells)
+Aop:105	Event:714	MolecularInitiatingEvent	Increased, Binding of chemicals to 2u (serum)
+Aop:106	Event:718	MolecularInitiatingEvent	Binding, Tubulin
+Aop:106	Event:720	KeyEvent	Depolymerization, Microtubule
+Aop:106	Event:721	KeyEvent	Disorganization, Spindle
+Aop:106	Event:728	AdverseOutcome	Increase, Aneuploid offspring
+Aop:106	Event:752	KeyEvent	Altered, Meiotic chromosome dynamics
+Aop:106	Event:723	KeyEvent	Altered, Chromosome number
+Aop:107	Event:715	MolecularInitiatingEvent	Activation, Constitutive androstane receptor
+Aop:107	Event:716	KeyEvent	Increase, Mitogenic cell proliferation (hepatocytes)
+Aop:107	Event:719	AdverseOutcome	Increase, Adenomas/carcinomas (hepatocellular)
+Aop:107	Event:774	KeyEvent	Increase, Preneoplastic foci (hepatocytes)
+Aop:107	Event:1214	KeyEvent	Altered gene expression specific to CAR activation, Hepatocytes
+Aop:108	Event:719	AdverseOutcome	Increase, Adenomas/carcinomas (hepatocellular)
+Aop:108	Event:768	KeyEvent	Increase, Cytotoxicity
+Aop:108	Event:209	KeyEvent	Peptide Oxidation
+Aop:108	Event:726	KeyEvent	Increased, Induction of pyruvate dehydrogenase (PDH)
+Aop:108	Event:724	MolecularInitiatingEvent	Inhibition, Pyruvate dehydrogenase kinase (PDK) enzyme
+Aop:108	Event:769	KeyEvent	Increase, Oxidative metabolism
+Aop:109	Event:733	KeyEvent	Increase, Necrosis (terminal bronchiolar cells)
+Aop:109	Event:734	KeyEvent	Increase, Regenerative cell proliferation (terminal bronchiolar epithelial cells)
+Aop:109	Event:735	KeyEvent	Increase, Hyperplasia (terminal bronchiolar cells)
+Aop:109	Event:736	AdverseOutcome	Increase, Adenomas/carcinomas (bronchioloalveolar)
+Aop:109	Event:770	MolecularInitiatingEvent	Increase, Cytotoxicity (club cells)
+Aop:110	Event:737	MolecularInitiatingEvent	Decreased, Uptake of inorganic iodide
+Aop:110	Event:739	KeyEvent	Increase, Hypertrophy and proliferation (follicular cell)
+Aop:110	Event:740	KeyEvent	Increase, Hyperplasia (follicular cells)
+Aop:110	Event:741	AdverseOutcome	Increase, Adenomas/carcinomas (follicular cell)
+Aop:110	Event:753	KeyEvent	Increase, Thyroid-stimulating hormone (TSH)
+Aop:110	Event:771	KeyEvent	Decrease, Serum thyroid hormone (T4/T3)
+Aop:111	Event:742	MolecularInitiatingEvent	Decreased, Androgen receptor activity
+Aop:111	Event:743	KeyEvent	Decreased, Testosterone binding to androgen receptor (hypothalamus)
+Aop:111	Event:744	KeyEvent	Increase, Hyperplasia (Leydig cells)
+Aop:111	Event:745	AdverseOutcome	Increase, Leydig cell tumors
+Aop:111	Event:754	KeyEvent	Increased, Luteinizing hormone (LH) 
+Aop:112	Event:746	MolecularInitiatingEvent	Increase, Dopaminergic activity
+Aop:112	Event:747	KeyEvent	Decreased, Prolactin
+Aop:112	Event:748	KeyEvent	Increased, Estrogen receptor (ER) activity
+Aop:112	Event:749	KeyEvent	Decreased, Progesterone from corpus luteum
+Aop:112	Event:772	KeyEvent	Increase, Hyperplasia (glandular epithelial cells of endometrium)
+Aop:112	Event:773	AdverseOutcome	Increase, Endometrial adenocarcinomas
+Aop:113	Event:760	MolecularInitiatingEvent	Activation, Glutamate-gated chloride channel
+Aop:113	Event:761	KeyEvent	Increased, Chloride conductance
+Aop:113	Event:763	KeyEvent	hyperpolarisation, neuron
+Aop:113	Event:764	KeyEvent	N/A, Ataxia, paralysis, or hyperactivity
+Aop:113	Event:351	AdverseOutcome	Increased, Mortality
+Aop:113	Event:765	AdverseOutcome	Decreased, population 1
+Aop:114	Event:766	MolecularInitiatingEvent	Inhibition, 4-hydroxyphenyl-pyruvate dioxygenase (HPPD) enzyme
+Aop:114	Event:775	KeyEvent	Increased, Plasma tyrosine
+Aop:114	Event:776	KeyEvent	Increase, Cytotoxicity (corneal cells)
+Aop:114	Event:777	KeyEvent	Increase, Inflammation (corneal cells)
+Aop:114	Event:778	KeyEvent	Increase, Regenerative cell proliferation (corneal cells)
+Aop:114	Event:779	AdverseOutcome	Increase, Papillomas/carcinomas (squamous cells)
+Aop:115	Event:780	MolecularInitiatingEvent	Increase, Cytotoxicity (epithelial cells)
+Aop:115	Event:149	KeyEvent	Increase, Inflammation
+Aop:115	Event:781	KeyEvent	Increase, Regenerative cell proliferation (forestomach epithelial cells)
+Aop:115	Event:782	KeyEvent	Increase, Hyperplasia (forestomach epithelial cells)
+Aop:115	Event:779	AdverseOutcome	Increase, Papillomas/carcinomas (squamous cells)
+Aop:116	Event:783	MolecularInitiatingEvent	Increase, Cytotoxicity (tubular epithelial cells)
+Aop:116	Event:710	KeyEvent	Increase, Regenerative cell proliferation (tubular epithelial cells)
+Aop:116	Event:784	KeyEvent	Increase, Hyperplasia (tubular epithelial cells)
+Aop:116	Event:713	AdverseOutcome	Increase, Adenomas/carcinomas (renal tubular)
+Aop:117	Event:785	MolecularInitiatingEvent	Activation, Androgen receptor
+Aop:117	Event:716	KeyEvent	Increase, Mitogenic cell proliferation (hepatocytes)
+Aop:117	Event:774	KeyEvent	Increase, Preneoplastic foci (hepatocytes)
+Aop:117	Event:719	AdverseOutcome	Increase, Adenomas/carcinomas (hepatocellular)
+Aop:118	Event:786	MolecularInitiatingEvent	Increase, Cytotoxicity (hepatocytes)
+Aop:118	Event:787	KeyEvent	Increase, Regenerative cell proliferation (hepatocytes)
+Aop:118	Event:774	KeyEvent	Increase, Preneoplastic foci (hepatocytes)
+Aop:118	Event:719	AdverseOutcome	Increase, Adenomas/carcinomas (hepatocellular)
+Aop:119	Event:279	MolecularInitiatingEvent	Thyroperoxidase, Inhibition
+Aop:119	Event:788	KeyEvent	Decrease, Incorporation of active iodide into iodotyrosines
+Aop:119	Event:739	KeyEvent	Increase, Hypertrophy and proliferation (follicular cell)
+Aop:119	Event:740	KeyEvent	Increase, Hyperplasia (follicular cells)
+Aop:119	Event:753	KeyEvent	Increase, Thyroid-stimulating hormone (TSH)
+Aop:119	Event:741	AdverseOutcome	Increase, Adenomas/carcinomas (follicular cell)
+Aop:119	Event:771	KeyEvent	Decrease, Serum thyroid hormone (T4/T3)
+Aop:120	Event:790	MolecularInitiatingEvent	Inhibition, 5α-reductase activity
+Aop:120	Event:791	KeyEvent	Increased, Leutinizing hormone (LH)
+Aop:120	Event:744	KeyEvent	Increase, Hyperplasia (Leydig cells)
+Aop:120	Event:792	KeyEvent	Decrease, Bioactivation of testosterone
+Aop:120	Event:745	AdverseOutcome	Increase, Leydig cell tumors
+Aop:121	Event:793	MolecularInitiatingEvent	Increase, Urinary bladder calculi
+Aop:121	Event:794	KeyEvent	Increase, Cytotoxicity (urothelial cells)
+Aop:121	Event:795	KeyEvent	Increase, Regenerative cell proliferation (urothelial cells)
+Aop:121	Event:796	KeyEvent	Increase, Hyperplasia (urothelial)
+Aop:121	Event:797	AdverseOutcome	Increase, Adenomas/carcinomas (urothelial)
+Aop:122	Event:798	MolecularInitiatingEvent	Inhibition, Prolyl hydroxylases
+Aop:122	Event:799	KeyEvent	Increased, HIF-1 heterodimer
+Aop:122	Event:800	KeyEvent	Decreased, Aromatase (Cyp19a1) mRNA
+Aop:122	Event:3	KeyEvent	Reduction, 17beta-estradiol synthesis by ovarian granulosa cells
+Aop:122	Event:219	KeyEvent	Reduction, Plasma 17beta-estradiol concentrations
+Aop:122	Event:285	KeyEvent	Reduction, Vitellogenin synthesis in liver
+Aop:122	Event:221	KeyEvent	Reduction, Plasma vitellogenin concentrations
+Aop:122	Event:309	KeyEvent	Reduction, Vitellogenin accumulation into oocytes and oocyte growth/development
+Aop:122	Event:78	AdverseOutcome	Reduction, Cumulative fecundity and spawning
+Aop:122	Event:360	AdverseOutcome	Decrease, Population trajectory
+Aop:123	Event:801	MolecularInitiatingEvent	modulation, Unknown
+Aop:123	Event:799	KeyEvent	Increased, HIF-1 heterodimer
+Aop:123	Event:802	KeyEvent	Increased, HIF-1 alpha transcription
+Aop:123	Event:800	KeyEvent	Decreased, Aromatase (Cyp19a1) mRNA
+Aop:123	Event:219	KeyEvent	Reduction, Plasma 17beta-estradiol concentrations
+Aop:123	Event:3	KeyEvent	Reduction, 17beta-estradiol synthesis by ovarian granulosa cells
+Aop:123	Event:285	KeyEvent	Reduction, Vitellogenin synthesis in liver
+Aop:123	Event:221	KeyEvent	Reduction, Plasma vitellogenin concentrations
+Aop:123	Event:309	KeyEvent	Reduction, Vitellogenin accumulation into oocytes and oocyte growth/development
+Aop:123	Event:78	AdverseOutcome	Reduction, Cumulative fecundity and spawning
+Aop:123	Event:360	AdverseOutcome	Decrease, Population trajectory
+Aop:124	Event:804	MolecularInitiatingEvent	Inhibition, HMG-CoA reductase
+Aop:124	Event:805	KeyEvent	Decreased, mevalonate
+Aop:124	Event:807	KeyEvent	Decreased, cholesterol
+Aop:124	Event:808	KeyEvent	Decreased, Testosterone
+Aop:124	Event:809	KeyEvent	malformed, Male reproductive tract
+Aop:124	Event:330	AdverseOutcome	Decrease, Fertility
+Aop:126	Event:848	KeyEvent	Decreased, Binding of NE to NE receptors on GnRH neurons
+Aop:126	Event:849	MolecularInitiatingEvent	Inhibition, Antgonism of NE receptor
+Aop:126	Event:529	KeyEvent	Decreased, GnRH cfos activity
+Aop:126	Event:530	KeyEvent	Decreased, GnRH pulsatility/release
+Aop:126	Event:531	KeyEvent	Decreased, LH Surge
+Aop:126	Event:532	KeyEvent	Delayed, Ovulation
+Aop:126	Event:533	KeyEvent	Decreased, Cortical granule release/distribution upon fertilization
+Aop:126	Event:534	KeyEvent	Altered, Formation of cortical envelope
+Aop:126	Event:535	KeyEvent	Abnormal, Sperm penetration (polyspermy)
+Aop:126	Event:536	KeyEvent	Altered, Chromosome number (polyploid) zygote
+Aop:126	Event:527	AdverseOutcome	Decreased, Decreased fecundity 
+Aop:128	Event:277	MolecularInitiatingEvent	Decrease of thyroid hormone synthesis
+Aop:128	Event:426	KeyEvent	Decreased, Thyroxine (T4) in serum
+Aop:128	Event:814	AdverseOutcome	Occurrence, Kidney toxicity
+Aop:128	Event:819	KeyEvent	Decreased, Glomerular filtration
+Aop:128	Event:820	KeyEvent	Decreased, Renal plasma flow
+Aop:128	Event:821	KeyEvent	Decreased, Sodium reabsorption
+Aop:128	Event:813	KeyEvent	Increased, Serum creatinine
+Aop:128	Event:823	KeyEvent	Occurrence, Cystic dilatation (renal tubule)
+Aop:128	Event:824	KeyEvent	Occurrence, Cytoplasmic vacuolization (podocyte)
+Aop:128	Event:818	KeyEvent	Occurrence, Cytoplasmic vacuolization (Renal tubule)
+Aop:128	Event:825	KeyEvent	Decreased, Renal ability to dilute urine
+Aop:130	Event:828	MolecularInitiatingEvent	Inhibition, Phospholipase A
+Aop:130	Event:829	KeyEvent	Damage, Lipid bilayer
+Aop:130	Event:831	KeyEvent	Disturbance, Lysosomal function
+Aop:130	Event:832	KeyEvent	Injury, Mitochondria
+Aop:130	Event:833	KeyEvent	Occurrence, Cytoplasmic vacuolization (hepatocyte)
+Aop:130	Event:835	KeyEvent	Occurrence, Ballooning degeneration (hepatocyte)
+Aop:130	Event:837	KeyEvent	Occurrence, Cytoplasmic vacuolization (kupffer cell)
+Aop:130	Event:838	KeyEvent	Induction, Microvesicular fat
+Aop:130	Event:839	KeyEvent	Formation, Mallory body
+Aop:130	Event:840	AdverseOutcome	Formation, Liver fibrosis
+Aop:130	Event:836	KeyEvent	Occurrence, Cytoplasmic vacuolization (Bile duct cell)
+Aop:131	Event:18	MolecularInitiatingEvent	Activation, AhR
+Aop:131	Event:844	KeyEvent	Oxidation, Uroporphyrinogen
+Aop:131	Event:845	KeyEvent	Inhibition, UROD
+Aop:131	Event:846	KeyEvent	Accumulation, Highly carboxylated porphyrins
+Aop:131	Event:369	AdverseOutcome	Uroporphyria
+Aop:131	Event:850	KeyEvent	Induction, CYP1A2/CYP1A5
+Aop:134	Event:424	MolecularInitiatingEvent	Inhibition, Na+/I- symporter (NIS)
+Aop:134	Event:277	KeyEvent	Decrease of thyroid hormone synthesis
+Aop:134	Event:425	KeyEvent	Decrease of Thyroidal iodide
+Aop:134	Event:281	KeyEvent	Decrease of thyroxine (T4) in serum
+Aop:134	Event:280	KeyEvent	Decrease of thyroxine (T4) in neuronal tissue
+Aop:134	Event:756	KeyEvent	Hippocampal gene expression, Altered 
+Aop:134	Event:757	KeyEvent	Hippocampal anatomy, Altered 
+Aop:134	Event:758	KeyEvent	Hippocampal Physiology, Altered
+Aop:134	Event:402	AdverseOutcome	Cognitive Function, Decreased 
+Aop:134	Event:426	KeyEvent	Decreased, Thyroxine (T4) in serum
+Aop:136	Event:867	MolecularInitiatingEvent	Decrease, Intracellular pH
+Aop:136	Event:868	KeyEvent	Increase, Tissue Degeneration, Necrosis & Atrophy 
+Aop:136	Event:870	KeyEvent	Increase, Cell Proliferation
+Aop:136	Event:869	KeyEvent	Increase, Respiratory or Squamous Metaplasia
+Aop:136	Event:768	KeyEvent	Increase, Cytotoxicity
+Aop:136	Event:872	AdverseOutcome	Increase, Site of Contact Nasal Tumors
+Aop:136	Event:876	KeyEvent	Increase, Mutations in Critical Genes
+Aop:138	Event:877	MolecularInitiatingEvent	Inhibition, organic anion transporter 1 (OAT1)
+Aop:138	Event:1096	KeyEvent	Increased, blood uric acid concentration
+Aop:138	Event:1097	KeyEvent	Occurrence, renal proximal tubular necrosis
+Aop:138	Event:1098	KeyEvent	Increased, blood potassium concentration
+Aop:138	Event:351	AdverseOutcome	Increased, Mortality
+Aop:138	Event:361	AdverseOutcome	Decline, Population
+Aop:138	Event:1102	KeyEvent	Occurrence, tophi (urate) deposition
+Aop:138	Event:1106	KeyEvent	Occurrence, cardiac arrhythmia
+Aop:138	Event:1088	KeyEvent	Increased, Oxidative Stress
+Aop:139	Event:97	MolecularInitiatingEvent	Alkylation, DNA
+Aop:139	Event:155	KeyEvent	N/A, Insufficient or incorrect DNA repair
+Aop:139	Event:185	KeyEvent	Increase, Mutations
+Aop:139	Event:885	AdverseOutcome	Increase, Cancer
+Aop:141	Event:155	KeyEvent	N/A, Insufficient or incorrect DNA repair
+Aop:141	Event:185	KeyEvent	Increase, Mutations
+Aop:141	Event:885	AdverseOutcome	Increase, Cancer
+Aop:141	Event:97	MolecularInitiatingEvent	Alkylation, DNA
+Aop:144	Event:902	AdverseOutcome	Inflammation, Liver
+Aop:144	Event:209	KeyEvent	Peptide Oxidation
+Aop:144	Event:177	KeyEvent	N/A, Mitochondrial dysfunction 1
+Aop:144	Event:55	KeyEvent	N/A, Cell injury/death
+Aop:144	Event:87	KeyEvent	Release, Cytokine
+Aop:144	Event:898	MolecularInitiatingEvent	Disruption, Lysosome
+Aop:144	Event:901	KeyEvent	Infiltration, Inflammatory cells
+Aop:148	Event:919	KeyEvent	Occurrence, Transdifferentiation of ciliated epithelial cells
+Aop:148	Event:920	KeyEvent	Occurrence, Metaplasia of goblet cells
+Aop:148	Event:921	KeyEvent	Occurrence, Hyperplasia of goblet cells
+Aop:148	Event:923	KeyEvent	Increase, Proliferation of goblet cells
+Aop:148	Event:924	KeyEvent	Activation, SP1
+Aop:148	Event:914	KeyEvent	Decrease, Apoptosis of ciliated epithelial cells
+Aop:148	Event:941	MolecularInitiatingEvent	Activation, EGFR
+Aop:148	Event:962	KeyEvent	Increase, Mucin production
+Aop:148	Event:1250	AdverseOutcome	Decrease, Lung function
+Aop:148	Event:1251	KeyEvent	Chronic, Mucus hypersecretion
+Aop:149	Event:209	MolecularInitiatingEvent	Peptide Oxidation
+Aop:149	Event:926	KeyEvent	Oxidation, Glutathione
+Aop:149	Event:927	KeyEvent	S-Glutathionylation, eNOS
+Aop:149	Event:935	KeyEvent	Decrease, GTPCH-1
+Aop:149	Event:934	KeyEvent	Decrease, Tetrahydrobiopterin
+Aop:149	Event:932	KeyEvent	Uncoupling, eNOS
+Aop:149	Event:933	KeyEvent	Depletion, Nitric Oxide
+Aop:149	Event:937	KeyEvent	impaired, Vasodilation
+Aop:149	Event:951	KeyEvent	Increase, Vascular Resistance
+Aop:149	Event:952	AdverseOutcome	Hypertension
+Aop:149	Event:973	KeyEvent	Decrease, Akt/eNOS activity
+Aop:150	Event:18	MolecularInitiatingEvent	Activation, AhR
+Aop:150	Event:944	KeyEvent	dimerization, AHR/ARNT
+Aop:150	Event:945	KeyEvent	reduced dimerization, ARNT/HIF1-alpha
+Aop:150	Event:110	KeyEvent	Impairment, Endothelial network
+Aop:150	Event:317	KeyEvent	Altered, Cardiovascular development/function
+Aop:150	Event:947	AdverseOutcome	Increase, Embryolethality
+Aop:150	Event:948	KeyEvent	reduced production, VEGF
+Aop:152	Event:957	MolecularInitiatingEvent	Binding, Transthyretin in serum
+Aop:152	Event:958	KeyEvent	Displacement, Serum thyroxine (T4) from transthyretin
+Aop:152	Event:959	KeyEvent	Increased, Free serum thyroxine (T4)
+Aop:152	Event:960	KeyEvent	Increased, Uptake of thyroxine into tissue
+Aop:152	Event:961	KeyEvent	Increased, Clearance of thyroxine from tissues
+Aop:152	Event:281	KeyEvent	Decrease of thyroxine (T4) in serum
+Aop:152	Event:280	KeyEvent	Decrease of thyroxine (T4) in neuronal tissue
+Aop:152	Event:756	KeyEvent	Hippocampal gene expression, Altered 
+Aop:152	Event:757	KeyEvent	Hippocampal anatomy, Altered 
+Aop:152	Event:758	KeyEvent	Hippocampal Physiology, Altered
+Aop:152	Event:402	AdverseOutcome	Cognitive Function, Decreased 
+Aop:153	Event:964	MolecularInitiatingEvent	Inhibition of Aromatase Enzyme, Chemical exposure during critical window of estrous cycle between diestrus 2 and proestrus inhibits aromatase conversion of testosterone to estradiol
+Aop:153	Event:965	KeyEvent	reduction in ovarian granulosa cells synthesis of estradiol, Reduced steroidogenic production of estradiol in granulosa cells
+Aop:153	Event:966	KeyEvent	Reduced Estradiol in Circulation, Reduced steroidogenic production of estradiol in granulosa cells leading to decreased estradiol in circulation
+Aop:153	Event:967	KeyEvent	Decreased positive estrogenic feedback on hypothalamus, Reduced estradiol in circulation decreases estrogen concentration at hypothalamus
+Aop:153	Event:968	KeyEvent	Decreased Kisspeptin release from neurons in AVPV, Decreased hypothalamic estrogen reduces kisspeptinergic neuron response 
+Aop:153	Event:969	KeyEvent	Decreased GnRH Release, Decreased Kisspeptin stimulation of GnRH neurons 
+Aop:153	Event:970	KeyEvent	Decreased LH release from Anterior Pituitary, Decreased GnRH stimulation of Anterior Pituitary Gonadotrophs
+Aop:153	Event:971	KeyEvent	Ovulation of oocytes Reduced, Delayed, or Blocked, Decrease or delay in LH surge required for ovulation 
+Aop:153	Event:972	AdverseOutcome	Decreased fertility, Reduced number of oocytes ovulated 
+Aop:154	Event:980	KeyEvent	Inhibition, Calcineurin Activity
+Aop:154	Event:979	KeyEvent	Interference, nuclear localization of NFAT
+Aop:154	Event:981	KeyEvent	Reduction, NFAT complex formation
+Aop:154	Event:984	AdverseOutcome	Impairment, T-cell dependent antibody response
+Aop:154	Event:1201	MolecularInitiatingEvent	Binding, Immunophilins
+Aop:154	Event:1202	KeyEvent	Suppression, IL-2 and IL-4 production
+Aop:155	Event:1002	MolecularInitiatingEvent	Inhibition, Deiodinase 2
+Aop:155	Event:1003	KeyEvent	Decreased, Triiodothyronine (T3) in serum
+Aop:155	Event:1004	KeyEvent	Reduced, Posterior swim bladder inflation
+Aop:155	Event:1005	KeyEvent	Reduced, Swimming performance
+Aop:155	Event:1006	KeyEvent	Reduced, Young of year survival
+Aop:155	Event:360	AdverseOutcome	Decrease, Population trajectory
+Aop:155	Event:1007	KeyEvent	Reduced, Anterior swim bladder inflation
+Aop:155	Event:1008	KeyEvent	Reduced, Hearing
+Aop:156	Event:1002	MolecularInitiatingEvent	Inhibition, Deiodinase 2
+Aop:156	Event:360	AdverseOutcome	Decrease, Population trajectory
+Aop:156	Event:1003	KeyEvent	Decreased, Triiodothyronine (T3) in serum
+Aop:156	Event:1007	KeyEvent	Reduced, Anterior swim bladder inflation
+Aop:156	Event:1008	KeyEvent	Reduced, Hearing
+Aop:156	Event:1005	KeyEvent	Reduced, Swimming performance
+Aop:156	Event:1006	KeyEvent	Reduced, Young of year survival
+Aop:157	Event:1009	MolecularInitiatingEvent	Inhibition, Deiodinase 1
+Aop:157	Event:360	AdverseOutcome	Decrease, Population trajectory
+Aop:157	Event:1003	KeyEvent	Decreased, Triiodothyronine (T3) in serum
+Aop:157	Event:1004	KeyEvent	Reduced, Posterior swim bladder inflation
+Aop:157	Event:1005	KeyEvent	Reduced, Swimming performance
+Aop:157	Event:1006	KeyEvent	Reduced, Young of year survival
+Aop:157	Event:1007	KeyEvent	Reduced, Anterior swim bladder inflation
+Aop:157	Event:1008	KeyEvent	Reduced, Hearing
+Aop:158	Event:1009	MolecularInitiatingEvent	Inhibition, Deiodinase 1
+Aop:158	Event:360	AdverseOutcome	Decrease, Population trajectory
+Aop:158	Event:1003	KeyEvent	Decreased, Triiodothyronine (T3) in serum
+Aop:158	Event:1007	KeyEvent	Reduced, Anterior swim bladder inflation
+Aop:158	Event:1008	KeyEvent	Reduced, Hearing
+Aop:158	Event:1005	KeyEvent	Reduced, Swimming performance
+Aop:158	Event:1006	KeyEvent	Reduced, Young of year survival
+Aop:159	Event:279	MolecularInitiatingEvent	Thyroperoxidase, Inhibition
+Aop:159	Event:360	AdverseOutcome	Decrease, Population trajectory
+Aop:159	Event:277	KeyEvent	Decrease of thyroid hormone synthesis
+Aop:159	Event:281	KeyEvent	Decrease of thyroxine (T4) in serum
+Aop:159	Event:1007	KeyEvent	Reduced, Anterior swim bladder inflation
+Aop:159	Event:1008	KeyEvent	Reduced, Hearing
+Aop:159	Event:1005	KeyEvent	Reduced, Swimming performance
+Aop:159	Event:1006	KeyEvent	Reduced, Young of year survival
+Aop:160	Event:351	AdverseOutcome	Increased, Mortality
+Aop:160	Event:762	MolecularInitiatingEvent	Activation, ionotropic GABA Receptor chloride channel
+Aop:160	Event:1012	KeyEvent	Increased, Inhibitory postsynaptic potential
+Aop:160	Event:1014	KeyEvent	Induction, Somatic muscle paralysis
+Aop:160	Event:761	KeyEvent	Increased, Chloride conductance
+Aop:160	Event:1015	KeyEvent	Increased, Neuronal synaptic inhibition
+Aop:160	Event:1016	KeyEvent	Inhibition, Feeding
+Aop:161	Event:351	AdverseOutcome	Increased, Mortality
+Aop:161	Event:1015	KeyEvent	Increased, Neuronal synaptic inhibition
+Aop:161	Event:1012	KeyEvent	Increased, Inhibitory postsynaptic potential
+Aop:161	Event:1016	KeyEvent	Inhibition, Feeding
+Aop:161	Event:761	KeyEvent	Increased, Chloride conductance
+Aop:161	Event:1018	MolecularInitiatingEvent	Activation, Glutamate-gated chloride channels
+Aop:161	Event:1019	KeyEvent	Induction, pharyngeal muscle paralysis
+Aop:162	Event:1020	KeyEvent	Increased, induction of UDPGT's in liver
+Aop:162	Event:1021	KeyEvent	Increased, T4/T3 catabolism
+Aop:162	Event:1022	KeyEvent	Decreased, serum T4/T3
+Aop:162	Event:1023	KeyEvent	Increased, Thyroid-stimulating hormone (TSH)
+Aop:162	Event:1024	KeyEvent	Increased, Hypertrophy and proliferation (follicular cell)
+Aop:162	Event:1025	KeyEvent	Increased, Hyperplasia (follicular cells)
+Aop:162	Event:1026	AdverseOutcome	Increased Apoptosis, Adenomas/carcinomas (follicular cell)
+Aop:163	Event:1028	MolecularInitiatingEvent	Activation of specific nuclear receptors, PPAR-gamma activation
+Aop:163	Event:1029	KeyEvent	Increased, adipogenesis
+Aop:163	Event:1032	KeyEvent	Increased, secretion of local growth factors
+Aop:163	Event:1033	KeyEvent	Increased, proliferation of mesenchymal cells
+Aop:163	Event:1034	KeyEvent	Increased, IGF-1 (mouse)
+Aop:163	Event:1035	KeyEvent	Increased, Firbrosarcoma
+Aop:163	Event:1036	KeyEvent	Increased, liposarcoma
+Aop:163	Event:1037	KeyEvent	Increased, hemagiosarcoma
+Aop:164	Event:1038	MolecularInitiatingEvent	Activation, beta-2 adrenergic receptor
+Aop:164	Event:1039	KeyEvent	Increased activity, beta-2 adrenergic receptor
+Aop:164	Event:1040	KeyEvent	relaxation, smooth muscle
+Aop:164	Event:1042	KeyEvent	Proliferation/Clonal Expansion, smooth muscle
+Aop:164	Event:1043	KeyEvent	Hypertrophy/hyperplasia, smooth muscle
+Aop:164	Event:1044	AdverseOutcome	Promotion, mesovarian leiomyomas
+Aop:165	Event:1045	KeyEvent	Decreased, Ovarian E2
+Aop:165	Event:1046	KeyEvent	Suppression, Estrogen receptor (ER) activity
+Aop:165	Event:1047	KeyEvent	Increased, secretion of GnRH from hypothalamus
+Aop:165	Event:1049	KeyEvent	Increased, secrection of FSH from anterior pituitary
+Aop:165	Event:1050	KeyEvent	Increased, secretion of LH from anterior pituitary
+Aop:165	Event:1051	KeyEvent	Hyperplasia, ovarian stromal cells
+Aop:165	Event:1052	KeyEvent	Hyperplasia, ovarian epithelium
+Aop:165	Event:1053	AdverseOutcome	Promotion, ovarian adenomas
+Aop:165	Event:1054	AdverseOutcome	Promotion, ovarian granular cell tumors
+Aop:165	Event:1056	KeyEvent	Decrease, E2 blood concentrations at hypothalamus
+Aop:166	Event:1057	KeyEvent	Increased, PPAR-alpha activation
+Aop:166	Event:1058	KeyEvent	Decreased, bile flow
+Aop:166	Event:1059	KeyEvent	Increased, cholestasis
+Aop:166	Event:1060	KeyEvent	Alteration, lipid metabolism
+Aop:166	Event:1061	KeyEvent	prolonged, elevation of serun CCK
+Aop:166	Event:1062	KeyEvent	Increased, Cellular proliferation / hyperplasia of acinar cells
+Aop:166	Event:1063	AdverseOutcome	Increased, Pancreatic acinar tumors
+Aop:167	Event:1064	MolecularInitiatingEvent	prepubertal increase, Estrogen receptor (ER) activity
+Aop:167	Event:1065	KeyEvent	Activation, estrogen receptor alpha
+Aop:167	Event:1066	KeyEvent	Promotion, SIX-1 postive basal-type progenitor cells
+Aop:167	Event:1067	KeyEvent	Proliferation/Clonal Expansion, aberrant basal cells
+Aop:167	Event:1068	KeyEvent	squamous metaplasia, aberrant basal cells
+Aop:167	Event:1069	KeyEvent	Increased, Hyperplasia (glandular epithelial cells of endometrium)
+Aop:167	Event:1070	AdverseOutcome	Increased, adenosquamous carcinomas of endometrium
+Aop:168	Event:1071	KeyEvent	Decreased, GnRH pulsatility/release in hypothalamus
+Aop:168	Event:1072	KeyEvent	Decreased, LH Surge from anterior pituitary
+Aop:168	Event:1074	KeyEvent	interruption, Ovulation
+Aop:168	Event:1075	KeyEvent	prolonged, estrus
+Aop:168	Event:1076	KeyEvent	Increased, circulating estrogen levels
+Aop:168	Event:1077	KeyEvent	Increased, prolactin exposure
+Aop:168	Event:1078	KeyEvent	Hyperplasia, Mammary gland
+Aop:168	Event:1079	AdverseOutcome	Increased, Adenomas/carcinomas (mammary)
+Aop:168	Event:1080	KeyEvent	Increased, latency period
+Aop:169	Event:1071	KeyEvent	Decreased, GnRH pulsatility/release in hypothalamus
+Aop:169	Event:1072	KeyEvent	Decreased, LH Surge from anterior pituitary
+Aop:169	Event:1075	KeyEvent	prolonged, estrus
+Aop:169	Event:1074	KeyEvent	interruption, Ovulation
+Aop:169	Event:1076	KeyEvent	Increased, circulating estrogen levels
+Aop:169	Event:1081	KeyEvent	Increased, lactotroph hyperplasia and hypertrophy
+Aop:169	Event:1082	AdverseOutcome	Increased, adenomas (pituitary)
+Aop:170	Event:1083	KeyEvent	Decreased, Dopaminergic activity
+Aop:170	Event:1084	KeyEvent	Increased, prolactin secretion
+Aop:170	Event:1085	KeyEvent	Increased, hyperplasia (mammary gland)
+Aop:170	Event:1080	KeyEvent	Increased, latency period
+Aop:170	Event:1079	AdverseOutcome	Increased, Adenomas/carcinomas (mammary)
+Aop:171	Event:1086	KeyEvent	persistent, cytotoxicity (pleura or peritoneum)
+Aop:171	Event:1087	KeyEvent	Increased, inflammation
+Aop:171	Event:1088	KeyEvent	Increased, Oxidative Stress
+Aop:171	Event:1032	KeyEvent	Increased, secretion of local growth factors
+Aop:171	Event:1089	KeyEvent	Increased, Cell Proliferation (mesothelium)
+Aop:171	Event:1090	AdverseOutcome	Increased, mesotheliomas
+Aop:175	Event:279	MolecularInitiatingEvent	Thyroperoxidase, Inhibition
+Aop:175	Event:277	KeyEvent	Decrease of thyroid hormone synthesis
+Aop:175	Event:281	KeyEvent	Decrease of thyroxine (T4) in serum
+Aop:175	Event:1093	KeyEvent	Decreased, Thyroxine (T4) in tissues
+Aop:175	Event:1101	AdverseOutcome	Altered, Amphibian metamorphosis
+Aop:175	Event:1116	KeyEvent	Decreased, Triiodothyronine (T3) in tissues
+Aop:176	Event:424	MolecularInitiatingEvent	Inhibition, Na+/I- symporter (NIS)
+Aop:176	Event:425	KeyEvent	Decrease of Thyroidal iodide
+Aop:176	Event:277	KeyEvent	Decrease of thyroid hormone synthesis
+Aop:176	Event:281	KeyEvent	Decrease of thyroxine (T4) in serum
+Aop:176	Event:1093	KeyEvent	Decreased, Thyroxine (T4) in tissues
+Aop:176	Event:1101	AdverseOutcome	Altered, Amphibian metamorphosis
+Aop:176	Event:1116	KeyEvent	Decreased, Triiodothyronine (T3) in tissues
+Aop:177	Event:1104	KeyEvent	Decreased, Prostaglandin F2alpha concentration, plasma 
+Aop:177	Event:1105	KeyEvent	Occurrence, renal ischemia
+Aop:177	Event:1097	KeyEvent	Occurrence, renal proximal tubular necrosis
+Aop:177	Event:1098	KeyEvent	Increased, blood potassium concentration
+Aop:177	Event:351	AdverseOutcome	Increased, Mortality
+Aop:177	Event:361	AdverseOutcome	Decline, Population
+Aop:177	Event:1103	MolecularInitiatingEvent	Inhibition, Cyclooxygenase 1 activity
+Aop:177	Event:1106	KeyEvent	Occurrence, cardiac arrhythmia
+Aop:177	Event:1088	KeyEvent	Increased, Oxidative Stress
+Aop:177	Event:1096	KeyEvent	Increased, blood uric acid concentration
+Aop:177	Event:1102	KeyEvent	Occurrence, tophi (urate) deposition
+Aop:178	Event:559	MolecularInitiatingEvent	Activation, Nicotinic acetylcholine receptor
+Aop:178	Event:177	KeyEvent	N/A, Mitochondrial dysfunction 1
+Aop:178	Event:1107	KeyEvent	Weakened, Colony
+Aop:178	Event:563	AdverseOutcome	Death/Failure, Colony
+Aop:179	Event:1109	KeyEvent	Increased, Deformed Wing Virus levels
+Aop:179	Event:1107	KeyEvent	Weakened, Colony
+Aop:179	Event:563	AdverseOutcome	Death/Failure, Colony
+Aop:180	Event:560	KeyEvent	Abnormal, Foraging activity and behavior
+Aop:180	Event:1107	KeyEvent	Weakened, Colony
+Aop:180	Event:563	AdverseOutcome	Death/Failure, Colony
+Aop:181	Event:1107	KeyEvent	Weakened, Colony
+Aop:181	Event:563	AdverseOutcome	Death/Failure, Colony
+Aop:182	Event:560	KeyEvent	Abnormal, Foraging activity and behavior
+Aop:182	Event:1107	KeyEvent	Weakened, Colony
+Aop:182	Event:563	AdverseOutcome	Death/Failure, Colony
+Aop:183	Event:1110	KeyEvent	Increased, Energetic demands and therefore metabolic stress
+Aop:183	Event:560	KeyEvent	Abnormal, Foraging activity and behavior
+Aop:183	Event:1107	KeyEvent	Weakened, Colony
+Aop:183	Event:563	AdverseOutcome	Death/Failure, Colony
+Aop:184	Event:1108	KeyEvent	Abnormal, Role change within caste
+Aop:184	Event:1107	KeyEvent	Weakened, Colony
+Aop:184	Event:563	AdverseOutcome	Death/Failure, Colony
+Aop:185	Event:1107	KeyEvent	Weakened, Colony
+Aop:185	Event:563	AdverseOutcome	Death/Failure, Colony
+Aop:186	Event:1114	MolecularInitiatingEvent	Unknown, MIE
+Aop:186	Event:1115	KeyEvent	Increased, Reactive oxygen species
+Aop:186	Event:1088	KeyEvent	Increased, Oxidative Stress
+Aop:186	Event:1097	KeyEvent	Occurrence, renal proximal tubular necrosis
+Aop:186	Event:1098	KeyEvent	Increased, blood potassium concentration
+Aop:186	Event:1106	KeyEvent	Occurrence, cardiac arrhythmia
+Aop:186	Event:351	AdverseOutcome	Increased, Mortality
+Aop:187	Event:1122	KeyEvent	Under carboxylated clotting factors will not assemble on cell surfaces to form clot, Failure of secondary hemostasis  
+Aop:187	Event:1130	KeyEvent	Failure in vascular repair mechanisms, Unresolved blood loss (hemorrhage)
+Aop:187	Event:1131	KeyEvent	Failure in gamma-glutamyl carboxylation of  clotting factors II, VII, IX and X, Under carboxylation of clotting factors (e.g., des-gamma-carboxy prothrombin) 
+Aop:187	Event:1132	KeyEvent	Blood loss and development of anemia, Impaired oxygen delivery and nutrient delivery to tissue, impaired carbon dioxide and waste product removal
+Aop:187	Event:1133	KeyEvent	Hemostasis, Depletion from blood of fully functional carboxylated clotting factors
+Aop:187	Event:1134	MolecularInitiatingEvent	Irreversible inhibition of hepatic VKOR by binding of AR at tyrosine 139, Failure to cycle vitamin K epoxide to vitamin K to form vitamin K hydroquinone
+Aop:187	Event:1135	KeyEvent	Reduced fitness or even mortality, Acidosis, hypovolemic shock and organ dysfunction
+Aop:187	Event:1136	AdverseOutcome	Impaired recruitment , Population trajectory
+Aop:187	Event:1138	MolecularInitiatingEvent	Uncoupling of oxidative phosphorylation, Reduced ability to generate ATP
+Aop:187	Event:1151	KeyEvent	Osteoporosis and vascular calcification, Bone deterioration
+Aop:187	Event:1169	MolecularInitiatingEvent	Anticoagulant rodenticide interferes with carboxylation of Gla proteins in bone, Impairment of post-translational modification (carboxylation) of osteocalcin
+Aop:188	Event:1152	MolecularInitiatingEvent	Inhibition, Iodotyrosine deiodinase (IYD)
+Aop:188	Event:425	KeyEvent	Decrease of Thyroidal iodide
+Aop:188	Event:277	KeyEvent	Decrease of thyroid hormone synthesis
+Aop:188	Event:426	KeyEvent	Decreased, Thyroxine (T4) in serum
+Aop:188	Event:1093	KeyEvent	Decreased, Thyroxine (T4) in tissues
+Aop:188	Event:1116	KeyEvent	Decreased, Triiodothyronine (T3) in tissues
+Aop:188	Event:1101	AdverseOutcome	Altered, Amphibian metamorphosis
+Aop:189	Event:1009	MolecularInitiatingEvent	Inhibition, Deiodinase 1
+Aop:189	Event:1116	KeyEvent	Decreased, Triiodothyronine (T3) in tissues
+Aop:189	Event:1003	KeyEvent	Decreased, Triiodothyronine (T3) in serum
+Aop:189	Event:1101	AdverseOutcome	Altered, Amphibian metamorphosis
+Aop:190	Event:1002	MolecularInitiatingEvent	Inhibition, Deiodinase 2
+Aop:190	Event:1116	KeyEvent	Decreased, Triiodothyronine (T3) in tissues
+Aop:190	Event:1101	AdverseOutcome	Altered, Amphibian metamorphosis
+Aop:191	Event:1153	MolecularInitiatingEvent	Inhibition, Deiodinase 3
+Aop:191	Event:1154	KeyEvent	Increased, Triiodothyronine (T3) in tissues
+Aop:191	Event:1101	AdverseOutcome	Altered, Amphibian metamorphosis
+Aop:192	Event:1155	MolecularInitiatingEvent	Inhibition, Pendrin
+Aop:192	Event:277	KeyEvent	Decrease of thyroid hormone synthesis
+Aop:192	Event:426	KeyEvent	Decreased, Thyroxine (T4) in serum
+Aop:192	Event:1093	KeyEvent	Decreased, Thyroxine (T4) in tissues
+Aop:192	Event:1116	KeyEvent	Decreased, Triiodothyronine (T3) in tissues
+Aop:192	Event:1101	AdverseOutcome	Altered, Amphibian metamorphosis
+Aop:193	Event:1156	MolecularInitiatingEvent	Inhibition, Dual oxidase
+Aop:193	Event:277	KeyEvent	Decrease of thyroid hormone synthesis
+Aop:193	Event:426	KeyEvent	Decreased, Thyroxine (T4) in serum
+Aop:193	Event:1093	KeyEvent	Decreased, Thyroxine (T4) in tissues
+Aop:193	Event:1116	KeyEvent	Decreased, Triiodothyronine (T3) in tissues
+Aop:193	Event:1101	AdverseOutcome	Altered, Amphibian metamorphosis
+Aop:194	Event:1157	MolecularInitiatingEvent	Activation, Hepatic nuclear receptor(s)
+Aop:194	Event:1158	KeyEvent	Increased, Hepatic thyroid hormone uptake/transport
+Aop:194	Event:295	KeyEvent	Induction, Upregulation of glucuronyltransferase activity
+Aop:194	Event:401	KeyEvent	Increase, Biliary excretion TH glucuronide
+Aop:194	Event:281	KeyEvent	Decrease of thyroxine (T4) in serum
+Aop:194	Event:1093	KeyEvent	Decreased, Thyroxine (T4) in tissues
+Aop:194	Event:1116	KeyEvent	Decreased, Triiodothyronine (T3) in tissues
+Aop:194	Event:1101	AdverseOutcome	Altered, Amphibian metamorphosis
+Aop:195	Event:619	MolecularInitiatingEvent	Inhibition, 5-hydroxytryptamine transporter (5-HTT; SERT)
+Aop:195	Event:626	KeyEvent	Increased, serotonin (5-HT) 
+Aop:195	Event:1161	KeyEvent	Increased, oocyte maturation
+Aop:195	Event:1164	AdverseOutcome	Increased, Population
+Aop:195	Event:1255	KeyEvent	induced spawning
+Aop:195	Event:1142	KeyEvent	Increased, valve movement
+Aop:195	Event:1163	KeyEvent	Increased, Reproductive Success
+Aop:195	Event:621	KeyEvent	Increase, cilia movement
+Aop:196	Event:1215	MolecularInitiatingEvent	TRPA1 activation, TRPA1 Receptor
+Aop:196	Event:1218	KeyEvent	Opening of calcium channel, Calcium influx
+Aop:196	Event:1220	KeyEvent	Excitation, Neuron nerve ending excitation
+Aop:196	Event:1222	KeyEvent	SP (Substance P) release, Local increase of SP
+Aop:196	Event:1223	AdverseOutcome	Trigeminal and/or vagal nerve excitation
+Aop:196	Event:1225	KeyEvent	Immune system inflammation 
+Aop:196	Event:1226	AdverseOutcome	Chronic Cough, Respiratory irritability
+Aop:196	Event:1236	KeyEvent	Generation of novel epitopes , Antigen presentation
+Aop:196	Event:1237	AdverseOutcome	Sensitization, Immune system
+Aop:196	Event:1433	KeyEvent	Increased CGRP, neuronal release of CGRP
+Aop:196	Event:1434	AdverseOutcome	Irritation of nasal mucosa inducing sneeze reflex
+Aop:196	Event:1435	KeyEvent	Increased neurokinin A (NKA) by neuronal cells
+Aop:197	Event:584	MolecularInitiatingEvent	Inhibition, sodium channel
+Aop:197	Event:1176	KeyEvent	Decreased, sodium conductance 2
+Aop:197	Event:1179	KeyEvent	Decreased, GABA release
+Aop:200	Event:1181	MolecularInitiatingEvent	Activation, Estrogen receptor
+Aop:200	Event:1182	KeyEvent	Increase, Cell Proliferation (Epithelial Cells)
+Aop:200	Event:1183	KeyEvent	Decreased, Apoptosis (Epithelial Cells)
+Aop:200	Event:177	KeyEvent	N/A, Mitochondrial dysfunction 1
+Aop:200	Event:1088	KeyEvent	Increased, Oxidative Stress
+Aop:200	Event:1187	KeyEvent	Increased, ER binding to DNA (classical pathway) 
+Aop:200	Event:1188	KeyEvent	Increased, ER binding to T.F. to DNA (non-classical pathway)
+Aop:200	Event:1189	KeyEvent	Increased, Proliferation (Endothelial cells) 
+Aop:200	Event:1190	KeyEvent	Increased, Migration (Endothelial Cells)
+Aop:200	Event:1191	KeyEvent	Increased, Non-genomic signaling
+Aop:200	Event:1192	KeyEvent	Increased, Ductal Hyperplasia 
+Aop:200	Event:1193	AdverseOutcome	N/A, Breast Cancer
+Aop:200	Event:1194	KeyEvent	Increase, DNA damage
+Aop:200	Event:1195	KeyEvent	modulation, Extracellular Matrix Composition 
+Aop:200	Event:1196	KeyEvent	Increased, Invasion
+Aop:200	Event:1197	KeyEvent	Activation, Fibroblasts
+Aop:200	Event:1198	KeyEvent	Activation, Macrophages
+Aop:200	Event:1213	KeyEvent	Increased, Angiogenesis
+Aop:200	Event:1239	KeyEvent	Altered, Gene Expression
+Aop:200	Event:1240	KeyEvent	Altered, Protein Production
+Aop:200	Event:1241	KeyEvent	Increased, Motility
+Aop:200	Event:1242	KeyEvent	Increased, Second Messenger Production
+Aop:201	Event:1205	MolecularInitiatingEvent	Activation, Juvenile hormone receptor
+Aop:201	Event:1206	KeyEvent	Induction, Doublesex1 gene
+Aop:201	Event:1208	AdverseOutcome	Increased, Male offspring
+Aop:201	Event:1209	KeyEvent	Induction, Male reproductive tract
+Aop:201	Event:361	AdverseOutcome	Decline, Population
+Aop:201	Event:1210	AdverseOutcome	Alteration, Food-web structures
+Aop:202	Event:1252	MolecularInitiatingEvent	In-utero DNA topoisomerase II “poisons-
+Aop:202	Event:1253	KeyEvent	In utero MLL chromosomal translocation
+Aop:202	Event:1254	AdverseOutcome	Infant leukaemia
+Aop:202	Event:1461	KeyEvent	DNA double-strand break 
+Aop:203	Event:619	MolecularInitiatingEvent	Inhibition, 5-hydroxytryptamine transporter (5-HTT; SERT)
+Aop:203	Event:1142	KeyEvent	Increased, valve movement
+Aop:203	Event:621	KeyEvent	Increase, cilia movement
+Aop:203	Event:1256	KeyEvent	increased mantel display
+Aop:203	Event:1257	KeyEvent	Induced parturition
+Aop:203	Event:1141	AdverseOutcome	Decreased, Reproductive Success
+Aop:203	Event:361	AdverseOutcome	Decline, Population
+Aop:203	Event:626	KeyEvent	Increased, serotonin (5-HT) 
+Aop:204	Event:619	MolecularInitiatingEvent	Inhibition, 5-hydroxytryptamine transporter (5-HTT; SERT)
+Aop:204	Event:1142	KeyEvent	Increased, valve movement
+Aop:204	Event:621	KeyEvent	Increase, cilia movement
+Aop:204	Event:1257	KeyEvent	Induced parturition
+Aop:204	Event:1256	KeyEvent	increased mantel display
+Aop:204	Event:1163	AdverseOutcome	Increased, Reproductive Success
+Aop:204	Event:1164	AdverseOutcome	Increased, Population
+Aop:204	Event:626	KeyEvent	Increased, serotonin (5-HT) 
+Aop:205	Event:1258	MolecularInitiatingEvent	Decompartmentalization
+Aop:205	Event:1260	MolecularInitiatingEvent	Direct mitochondrial inhibition
+Aop:205	Event:1259	MolecularInitiatingEvent	narcosis
+Aop:205	Event:1261	KeyEvent	Mitochondrial impairment
+Aop:205	Event:1262	AdverseOutcome	Apoptosis
+Aop:205	Event:1263	AdverseOutcome	Necrosis
+Aop:206	Event:1270	MolecularInitiatingEvent	Inactivation of PPARγ
+Aop:206	Event:1271	KeyEvent	Activation of TGF-β signaling
+Aop:206	Event:1272	KeyEvent	Differentiation of Myofibroblast
+Aop:206	Event:1274	KeyEvent	Production of α-smooth muscle actin
+Aop:206	Event:1273	KeyEvent	Expression of Collagen
+Aop:206	Event:1275	KeyEvent	Collagen Deposition
+Aop:206	Event:1276	AdverseOutcome	Lung fibrosis
+Aop:207	Event:1174	MolecularInitiatingEvent	Activation, NADPH Oxidase
+Aop:207	Event:1277	AdverseOutcome	Reproductive failure
+Aop:207	Event:1278	KeyEvent	ROS formation
+Aop:207	Event:1279	KeyEvent	Increase, Oxidative Stress / Activation, PMK-1 P38 MAPK
+Aop:207	Event:1280	KeyEvent	Activation, HIF-1
+Aop:207	Event:1281	KeyEvent	Increased, DNA Damage-Repair
+Aop:207	Event:176	KeyEvent	Damaging, Mitochondria
+Aop:207	Event:1262	KeyEvent	Apoptosis
+Aop:208	Event:1282	KeyEvent	Activation, JAK/STAT pathway
+Aop:208	Event:1283	KeyEvent	Activation, TGF-beta pathway
+Aop:208	Event:1277	AdverseOutcome	Reproductive failure
+Aop:209	Event:1284	KeyEvent	Up Regulation, SREBF2
+Aop:209	Event:1285	KeyEvent	Up Regulation, Unsaturated fatty acid
+Aop:209	Event:1286	KeyEvent	Down Regulation, GSS and GSTs gene
+Aop:209	Event:1287	KeyEvent	Glutathione synthesis
+Aop:209	Event:1288	KeyEvent	Activation, 3-hydroxy-3-methylglutaryl-CoA reductase gene
+Aop:209	Event:1289	KeyEvent	Perturbation of cholesterol
+Aop:209	Event:1290	KeyEvent	Glutathione homeostasis
+Aop:209	Event:1291	AdverseOutcome	Hepatotoxicity
+Aop:210	Event:209	KeyEvent	Peptide Oxidation
+Aop:210	Event:1292	KeyEvent	Activation, JNK
+Aop:210	Event:1293	KeyEvent	Activation, FOXO
+Aop:210	Event:1294	KeyEvent	Inhibition, Wnt pathway
+Aop:210	Event:1295	KeyEvent	Defect of Embryogenesis
+Aop:210	Event:1277	AdverseOutcome	Reproductive failure
+Aop:213	Event:1296	KeyEvent	Increase, insulin
+Aop:213	Event:1297	KeyEvent	Activation, insulin receptor 
+Aop:213	Event:1298	KeyEvent	Activation, mTORC2
+Aop:213	Event:1299	KeyEvent	Activation, AKT
+Aop:213	Event:1300	KeyEvent	Activation, mTORC1
+Aop:213	Event:1301	KeyEvent	Activation, SREBP-1
+Aop:213	Event:1302	KeyEvent	Activation, L-FABP 
+Aop:213	Event:1305	KeyEvent	Increase, cytosolic fatty acid
+Aop:213	Event:228	KeyEvent	peroxisome proliferator activated receptor promoter demethylation
+Aop:213	Event:258	KeyEvent	Activation, SCD-1
+Aop:213	Event:1306	KeyEvent	Increased, lipogenesis
+Aop:213	Event:478	KeyEvent	Activation, NRF2
+Aop:213	Event:1304	KeyEvent	Activation, FXR
+Aop:213	Event:480	KeyEvent	Activation, SHP
+Aop:213	Event:227	KeyEvent	Activation, PPARα
+Aop:213	Event:1303	KeyEvent	Activation, HSD17B4
+Aop:213	Event:1307	KeyEvent	Inhibition, LXR
+Aop:213	Event:468	KeyEvent	Inhibition, PPAR alpha
+Aop:213	Event:1308	KeyEvent	Inhibition, LRH-1
+Aop:213	Event:116	KeyEvent	Activation, FAS
+Aop:213	Event:1309	KeyEvent	Activation, aPKC
+Aop:213	Event:1310	KeyEvent	Activation, PI3K
+Aop:213	Event:1311	KeyEvent	Inhibition, Steatosis
+Aop:213	Event:1312	KeyEvent	Induction, fatty acid beta-oxidation
+Aop:213	Event:1313	KeyEvent	Decrease, cytosolic fatty acid
+Aop:213	Event:167	KeyEvent	Activation, LXR
+Aop:213	Event:1314	KeyEvent	Activation, LRH-1
+Aop:214	Event:1316	KeyEvent	Inhibit, serotonin transporter activity
+Aop:214	Event:1317	KeyEvent	Decreased, serotonin transporter activity
+Aop:214	Event:1318	KeyEvent	Decreased, extracellular sodium (Na+) 
+Aop:214	Event:1319	KeyEvent	Decreased, extracellular chloride (Cl-)
+Aop:214	Event:1320	KeyEvent	Increased, extracellular serotonin
+Aop:214	Event:1321	KeyEvent	Increased, intracellular sodium (Na+)
+Aop:214	Event:1322	KeyEvent	Increased, intracellular chloride (Cl-)
+Aop:214	Event:1323	KeyEvent	Decreased, intracellular serotonin
+Aop:214	Event:1324	KeyEvent	Decreased, packaged serotonin
+Aop:214	Event:1325	KeyEvent	Decreased, synaptic release
+Aop:214	Event:1326	KeyEvent	Increased, 5-HT3 (5-hydroxytryptamine)
+Aop:214	Event:1328	KeyEvent	Inactivated, 5-HTR (serotonin receptors)
+Aop:214	Event:1329	KeyEvent	Reduce expression, BDNF (Brain-derived neurotrophic factor)
+Aop:214	Event:1330	KeyEvent	Decreased, neuroplasticity
+Aop:214	Event:1334	KeyEvent	Increase, cortisone
+Aop:214	Event:122	KeyEvent	Activation, Glucocorticoid Receptor
+Aop:214	Event:1335	KeyEvent	Reduced, BDNF (Brain-derived neurotrophic factor)
+Aop:214	Event:1336	KeyEvent	Activation, 5-HT2A (Serotonin 2A)
+Aop:214	Event:1337	KeyEvent	Activate, PLC (Phospholipase C)
+Aop:214	Event:1338	KeyEvent	Increase, inositol triphosphate
+Aop:214	Event:1339	KeyEvent	Increase, intracellular calcium
+Aop:214	Event:1340	KeyEvent	Activate, calmodulin
+Aop:214	Event:1341	KeyEvent	Increase, myosin light chain phosphorylation
+Aop:214	Event:1342	KeyEvent	Increase, vascular smooth muscle contraction
+Aop:214	Event:1344	AdverseOutcome	Increased, seizure
+Aop:214	Event:1345	AdverseOutcome	Increased, agitation
+Aop:214	Event:1346	AdverseOutcome	Increased, depression
+Aop:214	Event:1343	AdverseOutcome	Increase, hypertension
+Aop:214	Event:1347	KeyEvent	Decreased, extracellular serotonin
+Aop:215	Event:1348	AdverseOutcome	Increase, seizure
+Aop:215	Event:1349	KeyEvent	Activated, presynaptic neuron 1
+Aop:215	Event:1350	KeyEvent	Increased, glutamate
+Aop:215	Event:1351	KeyEvent	Activated, NMDA receptor
+Aop:215	Event:1321	KeyEvent	Increased, intracellular sodium (Na+)
+Aop:215	Event:1352	KeyEvent	Activated, voltage-gated sodium channel
+Aop:215	Event:1353	KeyEvent	Inhibit, voltage-gated sodium channel
+Aop:215	Event:1354	KeyEvent	Treat, carbamazepine
+Aop:215	Event:1355	KeyEvent	Activated, membrane depolarization
+Aop:215	Event:1356	KeyEvent	Inactive, membrane depolarization
+Aop:215	Event:1357	KeyEvent	Increased, RDX dose
+Aop:215	Event:1358	KeyEvent	Repress, GABA-A receptor
+Aop:215	Event:1359	KeyEvent	Activate, GABA-A receptor
+Aop:215	Event:1360	KeyEvent	Activate, presynaptic neuron 2
+Aop:215	Event:1361	KeyEvent	Increase, GABA
+Aop:215	Event:1322	KeyEvent	Increased, intracellular chloride (Cl-)
+Aop:215	Event:1362	AdverseOutcome	Increased, hippocampal hyperdepolarization
+Aop:215	Event:1363	AdverseOutcome	Increased, epilepsy
+Aop:216	Event:1194	KeyEvent	Increase, DNA damage
+Aop:216	Event:1365	KeyEvent	Increase, Apoptosis
+Aop:216	Event:1366	KeyEvent	Decrease, Oogenesis
+Aop:216	Event:488	KeyEvent	Decrease, Ovulation
+Aop:216	Event:1444	KeyEvent	Increase, Follicular atresia
+Aop:216	Event:330	AdverseOutcome	Decrease, Fertility
+Aop:216	Event:257	MolecularInitiatingEvent	Increase, Reactive oxygen species production
+Aop:217	Event:1367	AdverseOutcome	Inhibit, gastric ulcer formation
+Aop:217	Event:1368	KeyEvent	Inhibition, PTGS-1 (Prostaglandin-endoperoxide synthase 1)
+Aop:217	Event:1369	KeyEvent	Activation, PTGS-1 (Prostaglandin-endoperoxide synthase 1)
+Aop:217	Event:1370	KeyEvent	Activation, PTGS-2 (Prostaglandin-endoperoxide synthase 2)
+Aop:217	Event:1371	KeyEvent	Inhibition, PTGS-2 (Prostaglandin-endoperoxide synthase 2)
+Aop:217	Event:1372	KeyEvent	Increase, bicarbonate 
+Aop:217	Event:1373	KeyEvent	Increase, mucous
+Aop:217	Event:1374	KeyEvent	Increase, mucosal blood flow
+Aop:217	Event:1375	KeyEvent	Increase, platelet aggregation
+Aop:217	Event:1376	KeyEvent	Increase, angiogenesis
+Aop:217	Event:1377	KeyEvent	Decrease, leukocyte adherence
+Aop:217	Event:1378	KeyEvent	Increase, leukocyte adherence
+Aop:217	Event:1379	KeyEvent	Activate, leukocyte 
+Aop:217	Event:1380	KeyEvent	Activate, mucosal defense
+Aop:217	Event:1381	KeyEvent	Increase, surfactant
+Aop:217	Event:1382	KeyEvent	Decrease, surfactant
+Aop:217	Event:1383	KeyEvent	Activate, phospholipase
+Aop:217	Event:1384	KeyEvent	Increase, ammonium (NH4+)
+Aop:217	Event:1385	AdverseOutcome	Activated, gastric ulcer formation
+Aop:218	Event:1386	MolecularInitiatingEvent	CYP7B activity, inhibition
+Aop:218	Event:1387	KeyEvent	7α-hydroxypregnenolone synthesis in the brain, decreased
+Aop:218	Event:1388	KeyEvent	Dopamine release in the brain, decreased
+Aop:218	Event:1389	KeyEvent	Locomotor activity, decreased
+Aop:218	Event:1141	KeyEvent	Decreased, Reproductive Success
+Aop:218	Event:442	AdverseOutcome	Decreased, Population trajectory
+Aop:219	Event:1386	MolecularInitiatingEvent	CYP7B activity, inhibition
+Aop:219	Event:1387	KeyEvent	7α-hydroxypregnenolone synthesis in the brain, decreased
+Aop:219	Event:1388	KeyEvent	Dopamine release in the brain, decreased
+Aop:219	Event:1390	KeyEvent	Sexual behavior, decreased
+Aop:219	Event:1141	KeyEvent	Decreased, Reproductive Success
+Aop:219	Event:442	AdverseOutcome	Decreased, Population trajectory
+Aop:220	Event:1391	MolecularInitiatingEvent	Activation of Cyp2E1 in the liver
+Aop:220	Event:1392	KeyEvent	Oxidative Stress 
+Aop:220	Event:1393	KeyEvent	Hepatocytotoxicity
+Aop:220	Event:1394	KeyEvent	Hepatocellular Regenerative Proliferation 
+Aop:220	Event:1395	AdverseOutcome	Liver Cancer
+Aop:221	Event:1335	KeyEvent	Reduced, BDNF (Brain-derived neurotrophic factor)
+Aop:221	Event:1330	KeyEvent	Decreased, neuroplasticity
+Aop:221	Event:1328	KeyEvent	Inactivated, 5-HTR (serotonin receptors)
+Aop:221	Event:1347	KeyEvent	Decreased, extracellular serotonin
+Aop:221	Event:1325	KeyEvent	Decreased, synaptic release
+Aop:221	Event:1324	KeyEvent	Decreased, packaged serotonin
+Aop:221	Event:1323	KeyEvent	Decreased, intracellular serotonin
+Aop:221	Event:1317	KeyEvent	Decreased, serotonin transporter activity
+Aop:221	Event:1320	KeyEvent	Increased, extracellular serotonin
+Aop:221	Event:1346	AdverseOutcome	Increased, depression
+Aop:221	Event:1329	KeyEvent	Reduce expression, BDNF (Brain-derived neurotrophic factor)
+Aop:221	Event:1396	MolecularInitiatingEvent	Increased, glucocorticoid receptor activity
+Aop:222	Event:1345	AdverseOutcome	Increased, agitation
+Aop:222	Event:1335	KeyEvent	Reduced, BDNF (Brain-derived neurotrophic factor)
+Aop:222	Event:1329	KeyEvent	Reduce expression, BDNF (Brain-derived neurotrophic factor)
+Aop:222	Event:1328	KeyEvent	Inactivated, 5-HTR (serotonin receptors)
+Aop:222	Event:1330	KeyEvent	Decreased, neuroplasticity
+Aop:222	Event:1347	KeyEvent	Decreased, extracellular serotonin
+Aop:222	Event:1317	KeyEvent	Decreased, serotonin transporter activity
+Aop:222	Event:1320	KeyEvent	Increased, extracellular serotonin
+Aop:222	Event:1325	KeyEvent	Decreased, synaptic release
+Aop:222	Event:1324	KeyEvent	Decreased, packaged serotonin
+Aop:222	Event:1323	KeyEvent	Decreased, intracellular serotonin
+Aop:222	Event:1396	MolecularInitiatingEvent	Increased, glucocorticoid receptor activity
+Aop:223	Event:1320	KeyEvent	Increased, extracellular serotonin
+Aop:223	Event:1347	KeyEvent	Decreased, extracellular serotonin
+Aop:223	Event:1344	AdverseOutcome	Increased, seizure
+Aop:223	Event:1397	MolecularInitiatingEvent	Increased, serotonin transporter activity
+Aop:223	Event:1398	KeyEvent	Increased, intracellular serotonin
+Aop:223	Event:1399	KeyEvent	Increased, packaged serotonin
+Aop:223	Event:1400	KeyEvent	Increased, synaptic release
+Aop:223	Event:1401	KeyEvent	Decreased, 5-HT3
+Aop:224	Event:1346	AdverseOutcome	Increased, depression
+Aop:224	Event:1320	KeyEvent	Increased, extracellular serotonin
+Aop:224	Event:1347	KeyEvent	Decreased, extracellular serotonin
+Aop:224	Event:1397	MolecularInitiatingEvent	Increased, serotonin transporter activity
+Aop:224	Event:1398	KeyEvent	Increased, intracellular serotonin
+Aop:224	Event:1399	KeyEvent	Increased, packaged serotonin
+Aop:224	Event:1400	KeyEvent	Increased, synaptic release
+Aop:224	Event:1328	KeyEvent	Inactivated, 5-HTR (serotonin receptors)
+Aop:224	Event:1329	KeyEvent	Reduce expression, BDNF (Brain-derived neurotrophic factor)
+Aop:224	Event:1330	KeyEvent	Decreased, neuroplasticity
+Aop:225	Event:1320	KeyEvent	Increased, extracellular serotonin
+Aop:225	Event:1347	KeyEvent	Decreased, extracellular serotonin
+Aop:225	Event:1328	KeyEvent	Inactivated, 5-HTR (serotonin receptors)
+Aop:225	Event:1329	KeyEvent	Reduce expression, BDNF (Brain-derived neurotrophic factor)
+Aop:225	Event:1330	KeyEvent	Decreased, neuroplasticity
+Aop:225	Event:1345	AdverseOutcome	Increased, agitation
+Aop:225	Event:1397	KeyEvent	Increased, serotonin transporter activity
+Aop:225	Event:1398	KeyEvent	Increased, intracellular serotonin
+Aop:225	Event:1399	KeyEvent	Increased, packaged serotonin
+Aop:225	Event:1400	KeyEvent	Increased, synaptic release
+Aop:226	Event:1323	KeyEvent	Decreased, intracellular serotonin
+Aop:226	Event:1324	KeyEvent	Decreased, packaged serotonin
+Aop:226	Event:1325	KeyEvent	Decreased, synaptic release
+Aop:226	Event:1320	KeyEvent	Increased, extracellular serotonin
+Aop:226	Event:1347	KeyEvent	Decreased, extracellular serotonin
+Aop:226	Event:1336	KeyEvent	Activation, 5-HT2A (Serotonin 2A)
+Aop:226	Event:1337	KeyEvent	Activate, PLC (Phospholipase C)
+Aop:226	Event:1338	KeyEvent	Increase, inositol triphosphate
+Aop:226	Event:1339	KeyEvent	Increase, intracellular calcium
+Aop:226	Event:1340	KeyEvent	Activate, calmodulin
+Aop:226	Event:1341	KeyEvent	Increase, myosin light chain phosphorylation
+Aop:226	Event:1342	KeyEvent	Increase, vascular smooth muscle contraction
+Aop:226	Event:1343	AdverseOutcome	Increase, hypertension
+Aop:226	Event:1317	MolecularInitiatingEvent	Decreased, serotonin transporter activity
+Aop:227	Event:1402	MolecularInitiatingEvent	Reduced, PTGS1 function
+Aop:227	Event:1385	AdverseOutcome	Activated, gastric ulcer formation
+Aop:227	Event:1403	KeyEvent	Reduced, platelet aggregation
+Aop:227	Event:1404	KeyEvent	Decreased, mucosal blood flow
+Aop:227	Event:1405	KeyEvent	Reduced, mucosal defense
+Aop:227	Event:1406	KeyEvent	Decreased, mucous
+Aop:227	Event:1407	KeyEvent	Decreased, bicarbonate
+Aop:228	Event:1408	MolecularInitiatingEvent	Reduced, PTGS2 function
+Aop:228	Event:1385	AdverseOutcome	Activated, gastric ulcer formation
+Aop:228	Event:1409	KeyEvent	Decreased, angiogenesis
+Aop:228	Event:1410	KeyEvent	Increased, leukocyte adherence
+Aop:228	Event:1411	KeyEvent	Increased, leukocyte activation
+Aop:229	Event:1412	MolecularInitiatingEvent	Helicobacter pylori infection
+Aop:229	Event:1384	KeyEvent	Increase, ammonium (NH4+)
+Aop:229	Event:1383	KeyEvent	Activate, phospholipase
+Aop:229	Event:1382	KeyEvent	Decrease, surfactant
+Aop:229	Event:1405	KeyEvent	Reduced, mucosal defense
+Aop:229	Event:1385	AdverseOutcome	Activated, gastric ulcer formation
+Aop:230	Event:1349	MolecularInitiatingEvent	Activated, presynaptic neuron 1
+Aop:230	Event:1350	KeyEvent	Increased, glutamate
+Aop:230	Event:1351	KeyEvent	Activated, NMDA receptor
+Aop:230	Event:1321	KeyEvent	Increased, intracellular sodium (Na+)
+Aop:230	Event:1352	KeyEvent	Activated, voltage-gated sodium channel
+Aop:230	Event:1355	KeyEvent	Activated, membrane depolarization
+Aop:230	Event:1362	KeyEvent	Increased, hippocampal hyperdepolarization
+Aop:230	Event:1344	KeyEvent	Increased, seizure
+Aop:230	Event:1363	AdverseOutcome	Increased, epilepsy
+Aop:230	Event:1354	KeyEvent	Treat, carbamazepine
+Aop:230	Event:1353	KeyEvent	Inhibit, voltage-gated sodium channel
+Aop:231	Event:1413	MolecularInitiatingEvent	Reduced, presynaptic neuron 2 activity
+Aop:231	Event:1363	AdverseOutcome	Increased, epilepsy
+Aop:231	Event:1414	KeyEvent	Decreased, GABA
+Aop:231	Event:1415	KeyEvent	Reduced, GABA-A receptor activation
+Aop:231	Event:1416	KeyEvent	Decreased, intracellular chloride
+Aop:231	Event:1355	KeyEvent	Activated, membrane depolarization
+Aop:231	Event:1362	KeyEvent	Increased, hippocampal hyperdepolarization
+Aop:231	Event:1344	KeyEvent	Increased, seizure
+Aop:231	Event:1357	KeyEvent	Increased, RDX dose
+Aop:232	Event:1417	MolecularInitiatingEvent	NFE2/Nrf2 repression
+Aop:232	Event:1418	AdverseOutcome	Increased, steatosis
+Aop:232	Event:1419	KeyEvent	Reduced, FXR activity
+Aop:232	Event:1420	KeyEvent	Reduced, SHP activity
+Aop:232	Event:1421	KeyEvent	Activated, LXR
+Aop:232	Event:1422	KeyEvent	Reduced, PPARalpha
+Aop:232	Event:1423	KeyEvent	Reduced, HSD17B4 activity
+Aop:232	Event:1424	KeyEvent	Reduced, fatty acid beta oxidation
+Aop:233	Event:1425	MolecularInitiatingEvent	Mu Opioid Receptor Agonism
+Aop:233	Event:1426	KeyEvent	Release of G Proteins
+Aop:233	Event:1427	KeyEvent	Opening of G protein gated inward rectifying K channels
+Aop:233	Event:763	KeyEvent	hyperpolarisation, neuron
+Aop:233	Event:1428	AdverseOutcome	Analgesia
+Aop:234	Event:1425	MolecularInitiatingEvent	Mu Opioid Receptor Agonism
+Aop:234	Event:1426	KeyEvent	Release of G Proteins
+Aop:234	Event:1429	KeyEvent	Inhibition of N-type Ca ion channels
+Aop:234	Event:1430	KeyEvent	Inhibition of neurotransmitter vesicle release
+Aop:234	Event:1428	AdverseOutcome	Analgesia
+Aop:235	Event:1431	MolecularInitiatingEvent	Serotonin 1A Receptor Agonism
+Aop:235	Event:1426	KeyEvent	Release of G Proteins
+Aop:235	Event:1432	AdverseOutcome	Anti-depressant Activity
+Aop:235	Event:1427	KeyEvent	Opening of G protein gated inward rectifying K channels
+Aop:235	Event:763	KeyEvent	hyperpolarisation, neuron
+Aop:236	Event:1431	MolecularInitiatingEvent	Serotonin 1A Receptor Agonism
+Aop:236	Event:1426	KeyEvent	Release of G Proteins
+Aop:236	Event:1429	KeyEvent	Inhibition of N-type Ca ion channels
+Aop:236	Event:1430	KeyEvent	Inhibition of neurotransmitter vesicle release
+Aop:236	Event:1432	AdverseOutcome	Anti-depressant Activity
+Aop:237	Event:1437	MolecularInitiatingEvent	Sensing of the stressor by pulmonary cells
+Aop:237	Event:1438	KeyEvent	Increased production of pulmonary, pro-inflammatory cytokines
+Aop:237	Event:1439	KeyEvent	Increased production of pulmonary SAA
+Aop:237	Event:1440	KeyEvent	Formation of HDL-SAA
+Aop:237	Event:1441	KeyEvent	Increased systemic total cholesterol pool
+Aop:237	Event:1442	KeyEvent	Foam cell formation
+Aop:237	Event:1443	AdverseOutcome	Plaque progression in arteries
+Aop:238	Event:1445	KeyEvent	Increase, Lipid peroxidation
+Aop:238	Event:1446	KeyEvent	Increase, Uncoupling of oxidative phosphorylation
+Aop:238	Event:40	KeyEvent	Decrease, Mitochondrial ATP production
+Aop:238	Event:1366	KeyEvent	Decrease, Oogenesis
+Aop:238	Event:488	KeyEvent	Decrease, Ovulation
+Aop:238	Event:330	AdverseOutcome	Decrease, Fertility
+Aop:238	Event:257	MolecularInitiatingEvent	Increase, Reactive oxygen species production
+Aop:241	Event:1456	KeyEvent	Increase, Differentiation of fibroblasts
+Aop:241	Event:1457	KeyEvent	Induction, Epithelial Mesenchymal Transition
+Aop:241	Event:68	KeyEvent	Accumulation, Collagen
+Aop:241	Event:1458	AdverseOutcome	Pulmonary fibrosis
+Aop:241	Event:1468	MolecularInitiatingEvent	Activation, Latent Transforming Growth Factor Beta 1
+Aop:241	Event:1469	KeyEvent	Activation, Transforming Growth Factor beta pathway
+Aop:242	Event:1462	MolecularInitiatingEvent	Thiol group of chemicals interact with sulfuhydryl groups of proteins to form thiol adducts
+Aop:242	Event:1463	KeyEvent	Inhibition of lysyl oxidase
+Aop:242	Event:1464	KeyEvent	Reduction of collagen crosslinking
+Aop:242	Event:1465	KeyEvent	Weak collagen matrix
+Aop:242	Event:1466	KeyEvent	Notochord distortion or malformations
+Aop:242	Event:1005	KeyEvent	Reduced, Swimming performance
+Aop:242	Event:1467	AdverseOutcome	Growth, reduction
+Aop:242	Event:636	AdverseOutcome	Decreased, survival

@@ -41,9 +41,11 @@ V(AOPg)$name<-keID$KE
 V(AOPg)$KE_EID<-KEdata[match(V(AOPg)$KE_name,KEdata[,2]),1] # adds event ID number
 V(AOPg)$AOP_ID<-KEPdata[match(V(AOPg)$KE_EID,KEPdata[,3]),1] # finds AOPID to add to V(AOPg) data
 
+V(AOPg)$KE_EID
+
 ## Set default plotting background color to black 
 ##!! Evaluate as either T or F or plots will not display properly
-set.bg.black(T)
+set.bg.black(F)
 
 
 ## Identifies which KEs are included in KERs, but are not themselves included in the KE event listings.
@@ -63,11 +65,11 @@ sort(table(V(AOPg)$AOP_ID))
 
 ## Highlight a given AOP for identification by using size on the network plot
 V(AOPg)$exsize<-2
-V(AOPg)[which(V(AOPg)$AOP_ID==130)]$exsize<-5 #Note: must specify V(AOPg)$exsize as vertex.size in plot for this to work
+V(AOPg)[which(V(AOPg)$AOP_ID==130)]$exsize<-3 #Note: must specify V(AOPg)$exsize as vertex.size in plot for this to work
 
 ## Plot
 set.seed(1)
-plot(AOPg,layout=layout.fruchterman.reingold(AOPg), vertex.color=V(AOPg)$acol,vertex.label=NA, vertex.size=2, edge.arrow.size=.08)
+plot(AOPg,layout=layout.fruchterman.reingold(AOPg), vertex.color=V(AOPg)$acol,vertex.label=NA, vertex.size=V(AOPg)$exsize, edge.arrow.size=.08)
 
 ## Calculates number of KE per unique AOP ID
 AOP_freqs<-table(V(AOPg)$AOP_ID)
@@ -155,6 +157,11 @@ V(AOPg)$scc<-scomps$membership # assign the attribute scc to nodes based on thei
 for(i in 1:length(ntcomps)){
   print(V(AOPg)[which(V(AOPg)$scc==ntcomps[i])]$AOP_ID)
 }
+for(i in 1:length(ntcomps)){
+  print(V(AOPg)[which(V(AOPg)$scc==ntcomps[i])]$name)
+}
+
+
 
 ####~ CENTRALITY MEASURES FOR THE AOPWIKI ####
 
@@ -253,7 +260,7 @@ set.seed(1)
 plot(AOPg, vertex.size=3000*betweenness(AOPg,normalized=TRUE,directed=T), vertex.color=V(AOPg)$bet_col, edge.arrow.size=.1, vertex.label=NA, edge.color="gray",edge.width=1)
 
 ## Betweenness histogram
-hist(log10(betweenness(AOPg)),breaks=20,col=b2upal(20), col.axis=plotlabcol, col.lab=plotlabcol, xlab=expression(paste("Log"[10],"(Betweeness)","")), main="")
+hist(log10(betweenness(AOPg)),breaks=20,col=b2upal(20), col.axis=plotlabcol, col.lab=plotlabcol, xlab=expression(paste("Log"[10],"(Betweeness"["dir"],")","")), main="")
 ## Barplot of betweenness totals with 20 bins
 barplot(table(as.numeric(cut(betweenness(AOPg),breaks = 20))),col=b2upal(20),col.axis=plotlabcol, col.lab=plotlabcol)
 
@@ -285,63 +292,104 @@ barplot(table(as.numeric(cut(betweenness(AOPg,directed=F),breaks = 30))),col=b2u
 ####~~ Closeness Analysis ####
 ## Prints the top-ten key event names by closeness value
 sort(closeness(AOPg,mode="all"))
-rev(as.integer(tail(sort(closeness(AOPg,mode="all")),10)))
-rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(closeness(AOPg,mode="all")),10))),V(AOPg)$name)])
+mostclsallval<-round(rev((tail(sort(closeness(AOPg,mode="all")*10^6),5))),5)
+mostclsall<-rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(closeness(AOPg,mode="all")),5))),V(AOPg)$name)])
+
+clsall<-paste(mostclsall," (",mostclsallval,")",sep="")
+print(clsall)
+#name file to output to and create R variable for it
+output<-file("results/cls_all_results.txt")
+#tell what to write into R variable
+writeLines(clsall, output)
+#Stop close file being edited
+close(output)
 
 ## Colors nodes based on cloesness values
 b2mpal=colorRampPalette(clscol)
-V(AOPg)$close_col<-b2mpal(1000)[as.numeric(cut(closeness(AOPg,mode="all",norm=TRUE),breaks = 1000))]
+V(AOPg)$close_col<-b2mpal(1500)[as.numeric(cut(closeness(AOPg,mode="all",norm=T),breaks = 1500))]
 
 ## Plots color and nodes sized by closeness
 set.seed(1)
-plot(AOPg, vertex.size=1000*closeness(AOPg,normalized=TRUE,mode="all"), vertex.color=V(AOPg)$close_col, edge.arrow.size=.1, vertex.label=NA)#, vertex.color="orange",edge.color="gray")
+plot(AOPg, vertex.size=1500*closeness(AOPg,normalized=T,mode="all"), vertex.color=V(AOPg)$close_col, edge.arrow.size=.1, vertex.label=NA)#, vertex.color="orange",edge.color="gray")
 
 ## Histogram of closeness (including a change of units)
 hist(closeness(AOPg,mode="all")*10^6,breaks=20,col=b2mpal(20))
 ## Scatterplot of closeness values
-plot(closeness(AOPg,mode="all"), xlab="Key Event", col.axis=plotlabcol, col.lab=plotlabcol, xaxt='n', ylab="Closeness Value",main="KE Closeness in AOPwiki",col=V(AOPg)$close_col)
+plot(closeness(AOPg,mode="all"), xlab="Key Event", col.axis=plotlabcol, col.lab=plotlabcol, xaxt='n', ylab="Closeness Value",main="KE Total Closeness in AOPwiki",col=V(AOPg)$close_col)
 
 ####~~~In-path Closeness ####
 
 clsmode="in"
 ## Prints the top-ten key event names by closeness value
 sort(closeness(AOPg,mode=clsmode))
-rev(as.integer(tail(sort(closeness(AOPg,mode=clsmode)),10)))
-rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(closeness(AOPg,mode=clsmode)),10))),V(AOPg)$name)])
+mostclsinval<-round(rev(tail(sort(closeness(AOPg,mode=clsmode)*10^6),5)),5)
+mostclsin<-rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(closeness(AOPg,mode=clsmode)),5))),V(AOPg)$name)])
+
+clsin<-paste(mostclsin," (",mostclsinval,")",sep="")
+print(clsin)
+#name file to output to and create R variable for it
+output<-file("results/cls_in_results.txt")
+#tell what to write into R variable
+writeLines(clsin, output)
+#Stop close file being edited
+close(output)
+
 
 ## Colors nodes based on cloesness values
 b2mpal=colorRampPalette(clscol)
-V(AOPg)$close_col<-b2mpal(1000)[as.numeric(cut(closeness(AOPg,mode=clsmode,norm=TRUE),breaks = 1000))]
+V(AOPg)$close_col<-b2mpal(1500)[as.numeric(cut(closeness(AOPg,mode=clsmode,norm=TRUE),breaks = 1500))]
 
 ## Plots color and nodes sized by closeness
 set.seed(1)
-plot(AOPg, vertex.size=2000*closeness(AOPg,normalized=TRUE,mode=clsmode), vertex.color=V(AOPg)$close_col, edge.arrow.size=.1, vertex.label=NA)#, vertex.color="orange",edge.color="gray")
+plot(AOPg, vertex.size=1500*closeness(AOPg,normalized=TRUE,mode=clsmode), vertex.color=V(AOPg)$close_col, edge.arrow.size=.1, vertex.label=NA)#, vertex.color="orange",edge.color="gray")
 
 ## Histogram of closeness (including a change of units)
-hist(closeness(AOPg,mode=clsmode)*10^6,breaks=20,col=b2mpal(20),col.axis=plotlabcol, col.lab=plotlabcol,)
+hist(closeness(AOPg,mode=clsmode)*10^6,breaks=20,col=b2mpal(20),col.axis=plotlabcol, col.lab=plotlabcol)
 ## Scatterplot of closeness values
-plot(closeness(AOPg,mode=clsmode), xlab="Key Event", col.axis=plotlabcol, col.lab=plotlabcol, xaxt='n', ylab="Closeness Value",main="KE Closeness in AOPwiki",col=V(AOPg)$close_col)
+plot(closeness(AOPg,mode=clsmode), xlab="Key Event", col.axis=plotlabcol, col.lab=plotlabcol, xaxt='n', ylab="Closeness Value",main="KE In-Closeness in AOPwiki",col=V(AOPg)$close_col)
 
 ####~~~Out-path Closeness ####
 
 clsmode="out"
 ## Prints the top-ten key event names by closeness value
 sort(closeness(AOPg,mode=clsmode))
-rev(as.integer(tail(sort(closeness(AOPg,mode=clsmode)),10)))
-rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(closeness(AOPg,mode=clsmode)),10))),V(AOPg)$name)])
+mostclsoutval<-round(rev(tail(sort(closeness(AOPg,mode=clsmode)*10^6),5)),5)
+mostclsout<-rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(closeness(AOPg,mode=clsmode)),5))),V(AOPg)$name)])
+
+clsout<-paste(mostclsout," (",mostclsoutval,")",sep="")
+print(clsout)
+#name file to output to and create R variable for it
+output<-file("results/cls_out_results.txt")
+#tell what to write into R variable
+writeLines(clsout, output)
+#Stop close file being edited
+close(output)
 
 ## Colors nodes based on cloesness values
 b2mpal=colorRampPalette(clscol)
-V(AOPg)$close_col<-b2mpal(1000)[as.numeric(cut(closeness(AOPg,mode=clsmode,norm=TRUE),breaks = 1000))]
+V(AOPg)$close_col<-b2mpal(1500)[as.numeric(cut(closeness(AOPg,mode=clsmode,norm=T),breaks = 1500))]
 
 ## Plots color and nodes sized by closeness
 set.seed(1)
-plot(AOPg, vertex.size=2000*closeness(AOPg,normalized=TRUE,mode=clsmode), vertex.color=V(AOPg)$close_col, edge.arrow.size=.1, vertex.label=NA)#, vertex.color="orange",edge.color="gray")
+plot(AOPg, vertex.size=1500*closeness(AOPg,normalized=T,mode=clsmode), vertex.color=V(AOPg)$close_col, edge.arrow.size=.1, vertex.label=NA)#, vertex.color="orange",edge.color="gray")
 
 ## Histogram of closeness (including a change of units)
-hist(closeness(AOPg,mode=clsmode)*10^6,breaks=20,col=b2mpal(20),col.axis=plotlabcol, col.lab=plotlabcol,)
+hist(closeness(AOPg,mode=clsmode)*10^6,breaks=20,col=b2mpal(20),col.axis=plotlabcol, col.lab=plotlabcol)
 ## Scatterplot of closeness values
-plot(closeness(AOPg,mode=clsmode), xlab="Key Event", col.axis=plotlabcol, col.lab=plotlabcol, xaxt='n', ylab="Closeness Value",main="KE Closeness in AOPwiki",col=V(AOPg)$close_col)
+plot(closeness(AOPg,mode=clsmode), xlab="Key Event", col.axis=plotlabcol, col.lab=plotlabcol, xaxt='n', ylab="Closeness Value",main="KE Out-Closeness in AOPwiki",col=V(AOPg)$close_col)
+
+## Summary File ##
+
+cls<-paste(mostclsall," (",mostclsallval,") & ",mostclsin," (",mostclsinval,") & ",mostclsout," (",mostclsoutval,")",sep="")
+print(cls)
+#name file to output to and create R variable for it
+output<-file("results/cls_results.txt")
+#tell what to write into R variable
+writeLines(cls, output)
+#Stop close file being edited
+close(output)
+
+
 
 ####~~ Eccentricity ####
 
@@ -353,8 +401,17 @@ V(AOPg)$ecc<-eccentricity(AOPg,mode =eccmode)
 
 ## Prints the top-ten key event names by eccentricity value
 sort(eccentricity(AOPg,mode =eccmode))
-rev(as.integer(tail(sort(eccentricity(AOPg,mode=eccmode)),10)))
-rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(eccentricity(AOPg,mode=eccmode)),10))),V(AOPg)$name)])
+mosteccallval<-rev(as.integer(tail(sort(eccentricity(AOPg,mode=eccmode)),10)))
+mosteccall<-rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(eccentricity(AOPg,mode=eccmode)),10))),V(AOPg)$name)])
+eccall<-paste(mosteccall," (",mosteccallval,")",sep="")
+print(eccall)
+#name file to output to and create R variable for it
+output<-file("results/ecc_all_results.txt")
+#tell what to write into R variable
+writeLines(eccall, output)
+#Stop close file being edited
+close(output)
+
 
 ## Assigns color based on eccentricity value
 b2cpal=colorRampPalette(ecccol)
@@ -365,7 +422,7 @@ set.seed(1)
 plot(AOPg, vertex.size=4*(V(AOPg)$ecc/max(V(AOPg)$ecc)), vertex.color=V(AOPg)$ecc_col, edge.arrow.size=.1, vertex.label=NA, edge.color="gray",edge.width=1)
 
 ## Histogram of eccentricity values
-barplot(table(eccentricity(AOPg,mode=eccmode)), xlab="Eccentricity", ylab="Frequency",col.axis=plotlabcol, col.lab=plotlabcol,col=b2cpal(max(eccentricity(AOPg,mode =eccmode))))
+barplot(table(eccentricity(AOPg,mode=eccmode)), xlab="Total Eccentricity", ylab="Frequency",col.axis=plotlabcol, col.lab=plotlabcol,col=b2cpal(max(eccentricity(AOPg,mode =eccmode))))
 legend('topright',legend=rev(seq(min(eccentricity(AOPg,mode =eccmode)),max(eccentricity(AOPg,mode =eccmode)),3)), pch=22,
        col="#777777", xjust=1,yjust=1, pt.bg=rev(b2cpal(length(rev(seq(min(eccentricity(AOPg,mode =eccmode)),max(eccentricity(AOPg,mode =eccmode)),3))))), pt.cex=2, cex=.8, bty="n", ncol=1, y.intersp=.5, box.col="white", text.col=plotlabcol)
 
@@ -377,8 +434,17 @@ V(AOPg)$ecc<-eccentricity(AOPg,mode =eccmode)
 
 ## Prints the top-ten key event names by eccentricity value
 sort(eccentricity(AOPg,mode =eccmode))
-rev(as.integer(tail(sort(eccentricity(AOPg,mode=eccmode)),10)))
-rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(eccentricity(AOPg,mode=eccmode)),10))),V(AOPg)$name)])
+mosteccinval<-rev(as.integer(tail(sort(eccentricity(AOPg,mode=eccmode)),10)))
+mosteccin<-rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(eccentricity(AOPg,mode=eccmode)),10))),V(AOPg)$name)])
+eccin<-paste(mosteccin," (",mosteccinval,")",sep="")
+print(eccin)
+
+#name file to output to and create R variable for it
+output<-file("results/ecc_in_results.txt")
+#tell what to write into R variable
+writeLines(eccin, output)
+#Stop close file being edited
+close(output)
 
 ## Assigns color based on eccentricity value
 b2cpal=colorRampPalette(ecccol)
@@ -389,9 +455,9 @@ set.seed(1)
 plot(AOPg, vertex.size=4*(V(AOPg)$ecc/max(V(AOPg)$ecc)), vertex.color=V(AOPg)$ecc_col, edge.arrow.size=.1, vertex.label=NA, edge.color="gray",edge.width=1)
 
 ## Histogram of eccentricity values
-barplot(table(eccentricity(AOPg,mode=eccmode)), xlab="Eccentricity", ylab="Frequency",col.axis=plotlabcol, col.lab=plotlabcol,col=b2cpal(max(eccentricity(AOPg,mode =eccmode))))
-legend('topright',legend=rev(seq(min(eccentricity(AOPg,mode =eccmode)),max(eccentricity(AOPg,mode =eccmode)),3)), pch=22,
-       col="#777777", xjust=1,yjust=1, pt.bg=rev(b2cpal(length(rev(seq(min(eccentricity(AOPg,mode =eccmode)),max(eccentricity(AOPg,mode =eccmode)),3))))), pt.cex=2, cex=.8, bty="n", ncol=1, y.intersp=.5, box.col="white", text.col=plotlabcol)
+barplot(table(eccentricity(AOPg,mode=eccmode)), xlab="In-Eccentricity", ylab="Frequency",col.axis=plotlabcol, col.lab=plotlabcol,col=b2cpal(max(eccentricity(AOPg,mode =eccmode)+1)))
+legend('topright',legend=rev(seq(min(eccentricity(AOPg,mode =eccmode)),max(eccentricity(AOPg,mode =eccmode))+1,3)), pch=22,
+       col="#777777", xjust=1,yjust=1, pt.bg=rev(b2cpal(length(rev(seq(min(eccentricity(AOPg,mode =eccmode)),max(eccentricity(AOPg,mode =eccmode)+1),3))))), pt.cex=2, cex=.8, bty="n", ncol=1, y.intersp=.5, box.col="white", text.col=plotlabcol)
 
 ####~~~ Out-Eccentricity ####
 
@@ -401,9 +467,17 @@ V(AOPg)$ecc<-eccentricity(AOPg,mode =eccmode)
 
 ## Prints the top-ten key event names by eccentricity value
 sort(eccentricity(AOPg,mode =eccmode))
-rev(as.integer(tail(sort(eccentricity(AOPg,mode=eccmode)),10)))
-rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(eccentricity(AOPg,mode=eccmode)),10))),V(AOPg)$name)])
+mosteccoutval<-rev(as.integer(tail(sort(eccentricity(AOPg,mode=eccmode)),10)))
+mosteccout<-rev(V(AOPg)$KE_name[match(as.integer(names(tail(sort(eccentricity(AOPg,mode=eccmode)),10))),V(AOPg)$name)])
+eccout<-paste(mosteccout," (",mosteccoutval,")",sep="")
+print(eccout)
 
+#name file to output to and create R variable for it
+output<-file("results/ecc_out_results.txt")
+#tell what to write into R variable
+writeLines(eccout, output)
+#Stop close file being edited
+close(output)
 ## Assigns color based on eccentricity value
 b2cpal=colorRampPalette(ecccol)
 V(AOPg)$ecc_col<-b2cpal(max(V(AOPg)$ecc)+1)[V(AOPg)$ecc+1]
@@ -413,13 +487,70 @@ set.seed(1)
 plot(AOPg, vertex.size=4*(V(AOPg)$ecc/max(V(AOPg)$ecc)), vertex.color=V(AOPg)$ecc_col, edge.arrow.size=.1, vertex.label=NA, edge.color="gray",edge.width=1)
 
 ## Histogram of eccentricity values
-barplot(table(eccentricity(AOPg,mode=eccmode)), xlab="Eccentricity", ylab="Frequency",col.axis=plotlabcol, col.lab=plotlabcol,col=b2cpal(max(eccentricity(AOPg,mode =eccmode))+1))
+barplot(table(eccentricity(AOPg,mode=eccmode)), xlab="Out-Eccentricity", ylab="Frequency",col.axis=plotlabcol, col.lab=plotlabcol,col=b2cpal(max(eccentricity(AOPg,mode =eccmode))+1))
 legend('topright',legend=rev(seq(min(eccentricity(AOPg,mode =eccmode)),max(eccentricity(AOPg,mode =eccmode)),3)), pch=22,
        col="#777777", xjust=1,yjust=1, pt.bg=rev(b2cpal(length(rev(seq(min(eccentricity(AOPg,mode =eccmode)),max(eccentricity(AOPg,mode =eccmode)),3))))), pt.cex=2, cex=.8, bty="n", ncol=1, y.intersp=.5, box.col="white", text.col=plotlabcol)
 
+## Summary File ##
+ecc<-paste(mosteccall," (",mosteccallval,") & ",mosteccin," (",mosteccinval,") & ",mosteccout," (",mosteccoutval,")",sep="")
+print(ecc)
+
+#name file to output to and create R variable for it
+output<-file("results/ecc_results.txt")
+#tell what to write into R variable
+writeLines(ecc, output)
+#Stop close file being edited
+close(output)
 
 
 ####~~ ADDITIONAL ANALYSES ####
+
+####~~~ Reciprocity ####
+# The measure of reciprocity defines the proportion 
+#of mutual connections, in a directed graph. 
+#It is most commonly defined as the probability that the 
+#opposite counterpart of a directed edge is also included 
+#in the graph. Or in adjacency matrix notation: 
+#sum(i, j, (A.*A')ij) / sum(i, j, Aij), where A.*A' 
+#is the element-wise product of matrix A and its transpose. 
+#This measure is calculated if the mode argument is default.
+#In the AOP framework this will identify the proportion of nodes with
+#KE to KE pair feedbacks.
+
+r<-reciprocity(AOPg)
+## Gives number of 2-cycles in the graph
+length(E(AOPg))*reciprocity(AOPg)/2
+## This can be used to find which nodes are involved in the 2cycles.
+AA<-as_adjacency_matrix(AOPg)
+A<-as.matrix(AA)
+At<-t(A)
+which(At*A!=0, arr.ind=T)
+# rho is a modification of reciprocity presented by 
+# Garlaschelli and Loffredo, 2004 to improve on standard 
+# reciprocity calculations, -1<rho<1 rho=1=> perfectly reciprocal
+# rho=0=>areciprocal, rho=-1=> perfectly antireciprocal
+L<-length(which(A!=0))
+N<-length(V(AOPg))
+ab<-L/(N*(N-1))
+rho<-(r-ab)/(1-ab)
+rho
+
+####~~~~ Edge Connectivity ####
+# The edge connectivity of a pair of vertices (source and target) 
+# is the minimum number of edges needed to remove to eliminate 
+# all (directed) paths from source to target.
+
+str(V(AOPg))
+# edge_connectivity doesn't work on a full network unless it is connected
+edge_connectivity(AOPg, source = NULL, target = NULL, checks = TRUE)
+
+#In order to run this analysis, the graph can be decomposed
+dg<-decompose.graph(AOPg)
+edge_connectivity(dg[[3]],source=NULL, target=NULL, checks=TRUE)
+
+wcc1<-induced_subgraph(AOPg,subcomponent(AOPg,1))
+edge_connectivity(wcc1,checks=TRUE)
+
 
 ####~~~~ Graph condensation ####
 # 

@@ -1,0 +1,5 @@
+Increase, Oxidative Stress (5.12976) & Alterations, Food-web structures (2.09087) & Suppression, Constitutive androstane receptor, NR1l3 (2.16153)
+Increase, Pericardial edema (5.12781) & Increased, Alterations of food-web structures (2.09087) & Activation, NRF2 (2.13677)
+Altered, Cardiovascular development/function (5.12676) & Alteration, Food-web structures (2.0876) & Activation, NR1H4 (2.13393)
+Up Regulation, CYP1A1 (5.12437) & Decline, Population (2.08482) & Activation, AHR (2.13098)
+Altered regulation, AHR nuclear translocator (ARNT)-dependent pathways (5.12432) & Reproductive failure (2.0362) & Activation, PPAR? (2.1243)

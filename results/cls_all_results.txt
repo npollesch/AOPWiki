@@ -1,0 +1,5 @@
+Increase, Oxidative Stress (5.12976)
+Increase, Pericardial edema (5.12781)
+Altered, Cardiovascular development/function (5.12676)
+Up Regulation, CYP1A1 (5.12437)
+Altered regulation, AHR nuclear translocator (ARNT)-dependent pathways (5.12432)

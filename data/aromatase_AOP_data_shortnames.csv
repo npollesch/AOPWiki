@@ -1,0 +1,52 @@
+SUID,AverageShortestPathLength,BetweennessCentrality,ClosenessCentrality,ClusteringCoefficient,Eccentricity,EdgeCount,Event Type,Indegree,IsSingleNode,name,NeighborhoodConnectivity,Outdegree,PartnerOfMultiEdgedNodePairs,selected,SelfLoops,shared name,Stress
+1441,3.44444444,0,0.29032258,0,6,1,MIE,0,FALSE,"Inhb, Aromatase",6,1,0,FALSE,0,"""Inhibition, Aromatase""",0
+1442,2.75,0.04152824,0.36363636,0.03333333,5,6,KE,5,FALSE,"Rdctn, 17beta-estradiol synthesis by ovarian granulosa cells",2.5,1,0,FALSE,0,"""Reduction, 17beta-estradiol synthesis by ovarian granulosa cells""",75
+1443,2,0.03986711,0.5,0.08333333,4,4,KE,1,FALSE,"Rdctn, Plasma 17beta-estradiol concentrations",3.75,3,0,FALSE,0,"""Reduction, Plasma 17beta-estradiol concentrations""",72
+1444,2.5,0.00442968,0.4,0.08333333,4,4,KE,3,FALSE,"Rdctn, Vitellogenin synthesis in liver",3,1,0,FALSE,0,"""Reduction, Vitellogenin synthesis in liver""",8
+1445,1,0.00885936,1,0,1,2,AO,1,FALSE,"Rdctn, Cumulative fecundity and spawning",3,1,0,FALSE,0,"""Reduction, Cumulative fecundity and spawning""",16
+1446,0,0,0,0,0,4,AO,4,FALSE,"Decr, Population trajectory",2.5,0,0,FALSE,0,"""Decrease, Population trajectory""",0
+1447,1.5,0.0166113,0.66666667,0,2,2,KE,1,FALSE,"Rdctn, Vitellogenin accumulation into oocytes and oocyte growth/development",2.5,1,0,FALSE,0,"""Reduction, Vitellogenin accumulation into oocytes and oocyte growth/development""",30
+1448,2,0.02325581,0.5,0.16666667,3,3,KE,2,FALSE,"Rdctn, Plasma vitellogenin concentrations",3.333333333,1,0,FALSE,0,"""Reduction, Plasma vitellogenin concentrations""",42
+1449,1,0.00664452,1,0,1,2,KE,1,FALSE,"Irrgl, ovarian cycle",2.5,1,0,FALSE,0,"""irregularities, ovarian cycle""",12
+1450,0,0,0,0,0,1,AO,1,FALSE,"Imprd, Fertility",2,0,0,FALSE,0,"""impaired, Fertility""",0
+1451,3.44444444,0,0.29032258,0,6,1,MIE,0,FALSE,"Rdctn in ovarian granulosa cells, Aromatase (Cyp19a1)",6,1,0,FALSE,0,"""reduction in ovarian granulosa cells, Aromatase (Cyp19a1)""",0
+1452,2.45454545,0,0.40740741,0.16666667,5,4,MIE,0,FALSE,"Agnsm, Androgen receptor",3.75,4,0,FALSE,0,"""Agonism, Androgen receptor""",0
+1453,4.1,0,0.24390244,0.5,7,2,KE,1,FALSE,"Rdctn, Gonadotropins, circulating concentrations",3.5,1,0,FALSE,0,"""Reduction, Gonadotropins, circulating concentrations""",0
+1454,3.44444444,0.00498339,0.29032258,0.33333333,6,3,KE,2,FALSE,"Rdctn, Testosterone synthesis by ovarian theca cells",4,1,0,FALSE,0,"""Reduction, Testosterone synthesis by ovarian theca cells""",9
+1455,4.72727273,0,0.21153846,0,8,1,MIE,0,FALSE,"Inhb, Prolyl hydroxylases",3,1,0,FALSE,0,"""Inhibition, Prolyl hydroxylases""",0
+1456,4.1,0.0166113,0.24390244,0,7,3,KE,2,FALSE,"Incr, HIF-1 heterodimer",1.666666667,1,0,FALSE,0,"""Increased, HIF-1 heterodimer""",30
+1457,3.44444444,0.01993355,0.29032258,0,6,2,KE,1,FALSE,"Decr, Aromatase (Cyp19a1) mRNA",4.5,1,0,FALSE,0,"""Decreased, Aromatase (Cyp19a1) mRNA""",36
+1458,5.33333333,0,0.1875,0,9,1,KE,0,FALSE,"Modultn, Unknown",2,1,0,FALSE,0,"""modulation, Unknown""",0
+1459,4.72727273,0.00609081,0.21153846,0,8,2,KE,1,FALSE,"Incr, HIF-1 alpha transcription",2,1,0,FALSE,0,"""Increased, HIF-1 alpha transcription""",11
+1460,3,0,0.33333333,0,5,1,MIE,0,FALSE,"Antagnsm, Estrogen receptor",4,1,0,FALSE,0,"""Antagonism, Estrogen receptor""",0
+1461,2,0,0.5,0,4,3,MIE,0,FALSE,"Agnsm, Estrogen receptor",1.333333333,3,0,FALSE,0,"""Agonism, Estrogen receptor""",0
+1462,0,0,0,0,0,1,KE,1,FALSE,"Imprd development of, Reproductive organs",3,0,0,FALSE,0,"""Impaired development of, Reproductive organs""",0
+1463,1,0.1,1,0,1,2,KE,1,FALSE,"Incr, Renal pathology due to VTG deposition",1.5,1,0,FALSE,0,"""Increase, Renal pathology due to VTG deposition""",3
+1464,0,0,0,0,0,1,KE,1,FALSE,"Altrd, Larval development",2,0,0,FALSE,0,"""Altered, Larval development""",0
+1465,2,0.1,0.5,0,3,2,KE,1,FALSE,"Incr, Vitellogenin synthesis in liver",2.5,1,0,FALSE,0,"""Increase, Vitellogenin synthesis in liver""",3
+1466,1.5,0.13333333,0.66666667,0,2,2,KE,1,FALSE,"Incr, Plasma vitellogenin concentrations",2,1,0,FALSE,0,"""Increase, Plasma vitellogenin concentrations""",4
+1467,0,0,0,0,0,1,KE,1,FALSE,"Altrd, Reproductive behaviour",3,0,0,FALSE,0,"""Altered, Reproductive behaviour""",0
+1468,3.5,0,0.28571429,0,6,1,MIE,0,FALSE,"Inhb, Cyclooxygenase activity",2,1,0,FALSE,0,"""Inhibition, Cyclooxygenase activity""",0
+1469,3,0.00276855,0.33333333,0,5,2,KE,1,FALSE,"Rdctn, Prostaglandin F2alpha synthesis, ovary",1.5,1,0,FALSE,0,"""Reduced, Prostaglandin F2alpha synthesis, ovary""",5
+1470,2.5,0.00442968,0.4,0,4,2,KE,1,FALSE,"Rdctn, Prostaglandin F2alpha concentration, plasma",2,1,0,FALSE,0,"""Reduced, Prostaglandin F2alpha concentration, plasma""",8
+1471,2,0.00498339,0.5,0,3,2,KE,1,FALSE,"Rdctn, Spawning behavior",2,1,0,FALSE,0,"""Reduced, Spawning behavior""",9
+1472,1.5,0.00442968,0.66666667,0,2,2,KE,1,FALSE,"Rdctn, Ability to attract spawning mates",2,1,0,FALSE,0,"""Reduced, Ability to attract spawning mates""",8
+1473,1,0.00276855,1,0,1,2,AO,1,FALSE,"Rdctn, Reproductive Success",3,1,0,FALSE,0,"""Reduced, Reproductive Success""",5
+1474,1.71428571,0,0.58333333,0.5,3,3,MIE,0,FALSE,"Inhb, Deiodinase 2",5.666666667,3,0,FALSE,0,"""Inhibition, Deiodinase 2""",0
+1475,1.83333333,0,0.54545455,0.41666667,3,4,KE,2,FALSE,"Decr, Triiodothyronine (T3) in serum",4.75,2,0,FALSE,0,"""Decreased, Triiodothyronine (T3) in serum""",0
+1476,1.4,0.00415282,0.71428571,0.23333333,2,6,KE,3,FALSE,"Rdctn, Posterior swim bladder inflation",4,3,0,FALSE,0,"""Reduced, Posterior swim bladder inflation""",9
+1477,1.5,0.00221484,0.66666667,0.33333333,2,3,KE,2,FALSE,"Rdctn, Swimming performance",5.666666667,1,0,FALSE,0,"""Reduced, Swimming performance""",8
+1478,1,0.0055371,1,0.08333333,1,4,AO,3,FALSE,"Rdctn, Young of year survival",3.75,1,0,FALSE,0,"""Reduced, Young of year survival""",14
+1479,1.75,0.00968992,0.57142857,0.14285714,3,7,KE,5,FALSE,"Rdctn, Anterior swim bladder inflation",3.428571429,2,0,FALSE,0,"""Reduced, Anterior swim bladder inflation""",25
+1480,1.5,0.00221484,0.66666667,0,2,2,KE,1,FALSE,"Rdctn, Hearing",5.5,1,0,FALSE,0,"""Reduced, Hearing""",8
+1481,1.71428571,0,0.58333333,0.5,3,3,MIE,0,FALSE,"Inhb, Deiodinase 1",5.666666667,3,0,FALSE,0,"""Inhibition, Deiodinase 1""",0
+1482,2.4,0.0055371,0.41666667,0.16666667,4,3,KE,2,FALSE,"T4 in serum, Decr",3.666666667,1,0,FALSE,0,"""T4 in serum, Decreased""",14
+1483,2.71428571,0,0.36842105,0.5,5,2,MIE,0,FALSE,"Thyroperoxidase, Inhb",2.5,2,0,FALSE,0,"""Thyroperoxidase, Inhibition""",0
+1484,3,0,0.33333333,0.5,5,2,KE,1,FALSE,"TH synthesis, Decr",2.5,1,0,FALSE,0,"""TH synthesis, Decreased""",0
+1485,4,0,0.25,0,7,1,KE,0,FALSE,Excessive ROS formation,2,1,0,FALSE,0,Excessive ROS formation,0
+1486,3.5,0.00332226,0.28571429,0,6,2,KE,1,FALSE,"Incr, Oxidative Stress",1.5,1,0,FALSE,0,"""Increase, Oxidative Stress""",6
+1487,3,0.0055371,0.33333333,0,5,2,KE,1,FALSE,"Incr, DNA Damage",2,1,0,FALSE,0,"""Increased, DNA Damage""",10
+1488,2.5,0.00664452,0.4,0,4,2,KE,1,FALSE,"Incr, Apoptosis",2,1,0,FALSE,0,"""Increase, Apoptosis""",12
+1489,2,0.00664452,0.5,0,3,2,KE,1,FALSE,"Decr, Oogenesis",2,1,0,FALSE,0,"""Decrease, Oogenesis""",12
+1490,1.5,0.0055371,0.66666667,0,2,2,KE,1,FALSE,"Decr, Ovulation",2,1,0,FALSE,0,"""Decrease, Ovulation""",10
+1491,1,0.00332226,1,0,1,2,KE,1,FALSE,"Decr, Fertility",3,1,0,FALSE,0,"""Decreased, Fertility""",6
