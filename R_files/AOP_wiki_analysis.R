@@ -3,30 +3,34 @@
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
 ## Needs igraph package
-#localLibDir<-"C:\\NatesDir"  #Nate's local library directory
-localLibDir<-"C:\\Program Files\\R\\R-3.2.0\\library\\"  #Jason's local library directory
-library(igraph, lib.loc = localLibDir)
+library(igraph)
+#localLibDir<-"C:\\Program Files\\R\\R-3.2.0\\library\\"  #Jason's local library directory
+#library(igraph, lib.loc = localLibDir)
 
 ##  Set working directory
-#workingDir<-"C://Users/NPollesc/Desktop/GitHub/AOPwiki/" ## Nate's EPA working directory
+workingDir<-"C://Users/NPollesc/Desktop/GitHub/AOPwiki/" ## Nate's EPA working directory
 #workingDir<-"C://Users/Nathan Pollesch/Documents/GitHub/AOPWiki/" ## Nate's personal comp working directory
-workingDir<-"C:\\Users\\obrienja\\Documents\\GitHub\\AOPWiki\\"
+# workingDir<-"C:\\Users\\obrienja\\Documents\\GitHub\\AOPWiki\\" 
 setwd(workingDir)
 
 ## Identifies location of data files
 KERimport <- "data/all-KERs.txt"
 KEimport <- "data/all-KEs.txt"
 KEplus <- "data/all_KEs_plus.txt" # Additional ontology information file
+KEked <- "data/all-KEs-KED.txt" # Additional ontology information file
 
 ## source() imports custom functions from associated file
 source(paste(workingDir,"R_files/AOP_net_functions.R",sep="")) #imports custom functions
 KERdata<-read.table(paste(workingDir, KERimport, sep=""), sep="\t", stringsAsFactors=FALSE, header=TRUE)
 KEdata<-read.table(paste(workingDir, KEimport, sep=""), sep="\t", stringsAsFactors=FALSE, header=TRUE)
 KEPdata<-read.table(paste(workingDir, KEplus, sep=""), sep="\t", stringsAsFactors=FALSE, header=TRUE)
+KEKdata<-read.table(paste(workingDir, KEked, sep=""), sep="\t", stringsAsFactors=FALSE, header=F)
 
 ## Format KEPdata for easier handling later
 KEPdata[,1]<-as.numeric(substring(KEPdata[,1],5)) #strips the characters Aop: from AOPID column and turns the result numeric
 KEPdata[,3]<-as.numeric(substring(KEPdata[,3],7)) #strips the characters Event: from the Event ID column and turns the result numeric
+KEKdata[,2]<-as.numeric(substring(KEKdata[,2],7)) #strips the characters Event: from the Event ID column and turns the result numeric
+
 
 ## Identify all unique KEs
 allKEs<-c(KERdata[,2],KERdata[,4])
@@ -40,8 +44,11 @@ V(AOPg)$KE_name<-as.character(keID$KE)
 V(AOPg)$name<-keID$KE
 V(AOPg)$KE_EID<-KEdata[match(V(AOPg)$KE_name,KEdata[,2]),1] # adds event ID number
 V(AOPg)$AOP_ID<-KEPdata[match(V(AOPg)$KE_EID,KEPdata[,3]),1] # finds AOPID to add to V(AOPg) data
+V(AOPg)$KE_KED<-KEKdata[match(V(AOPg)$KE_EID,KEKdata[,2]),4] # finds KED (Key Event Designator) to add to V(AOPg) data
 
-V(AOPg)$KE_EID
+V(AOPg)$KE_KED[which(is.na(V(AOPg)$KE_KED))]<-"KE" # ALL KEs without KED (NA values from file) are assigned as generic KE
+
+V(AOPg)$KE_name
 
 ## Set default plotting background color to black 
 ##!! Evaluate as either T or F or plots will not display properly
@@ -535,7 +542,48 @@ ab<-L/(N*(N-1))
 rho<-(r-ab)/(1-ab)
 rho
 
-####~~~~ Edge Connectivity ####
+#### ~~ MIE to AO Analyses ####
+
+
+#### ~~~ MIE to AO coloring ####
+
+V(AOPg)$ked_color<-"Yellow"
+V(AOPg)$ked_color[which(V(AOPg)$KE_KED=="MIE")]<-"Green"
+V(AOPg)$ked_color[which(V(AOPg)$KE_KED=="AO")]<-"Red"
+
+#### ~~~ AOP edge connectivity ####
+# This extends the graph wide edge connectivity calculation to
+# only consider paths between MIE and AO as designated by V(graph)$KE_KED
+ecl<-aop.edge.connectivity(AOPg,names=F,kelist=V(AOPg)$KE_KED)
+
+ecl_sort<-ecl[order(ecl[,3],decreasing=T),]
+
+## Prints the top-ten MIE to AO edge connectivity value pairs
+ecl_sort_names<-ecl_sort
+for(i in 1:10){
+      ecl_sort_names[[i,1]]<-V(AOPg)$KE_name[V(AOPg)$name==ecl_sort[[i,1]]]
+      ecl_sort_names[[i,2]]<-V(AOPg)$KE_name[V(AOPg)$name==ecl_sort[[i,2]]]
+}
+ecl_ten<-head(ecl_sort_names,10)
+eclout<-paste(ecl_ten[,1]," -> to -> ",ecl_ten[,2],", ECL: ",ecl_ten[,3],sep="")
+print(eclout)
+#name file to output to and create R variable for it
+output<-file("results/ecl_results.txt")
+#tell what to write into R variable
+writeLines(eclout, output)
+#Stop close file being edited
+close(output)
+
+#### ~~~~ SIMPLE PATH COLORING ####
+## This part of the code can be used to identify all simple paths between
+# a specified node-node pair.  These node-node pairs are usually MIE to AO
+# as found in the aop.edge.connectivity analysis 
+E(AOPg)$asp_clr<-"gray"
+E(AOPg)$asp_clr[simple.path.coloring(AOPg,57,677)]<-"purple"
+
+plot(AOPg ,vertex.size=2, edge.color=E(AOPg)$asp_clr, edge.arrow.size=.1, vertex.label=NA, vertex.color=V(AOPg)$ked_color)
+
+####~~~~ Full Network Edge Connectivity ####
 # The edge connectivity of a pair of vertices (source and target) 
 # is the minimum number of edges needed to remove to eliminate 
 # all (directed) paths from source to target.

@@ -1,0 +1,10 @@
+Activation, PXR/SXR -> to -> Reduction, Angiogenic sprouting, ECL: 7
+Direct mitochondrial inhibition -> to -> Inhibition, Na+/I- symporter (NIS), ECL: 7
+Abnormal, Roll change within caste -> to -> Reduction, Angiogenic sprouting, ECL: 5
+Declining, Population trajectory -> to -> Reduced, survival, ECL: 5
+Abnormal, Morphogenesis -> to -> Activation, Stellate cells, ECL: 4
+Abnormal, Roll change within caste -> to -> Reduction, Abdominal muscle contraction, ECL: 4
+Altered regulation, Alpha hemoglobin -> to -> Reduction, Angiogenic sprouting, ECL: 4
+Decreased, Triiodothyronine (T3) in serum -> to -> Decreased, serum T4/T3, ECL: 4
+Decreased, Triiodothyronine (T3) in serum -> to -> Reduction, Ca and HCO3 transport to shell gland, ECL: 4
+Direct mitochondrial inhibition -> to -> Inhibition, Nuclear factor kappa B (NF-kB), ECL: 4

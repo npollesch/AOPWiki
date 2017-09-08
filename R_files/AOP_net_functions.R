@@ -139,7 +139,7 @@ aop.paths= function(gr,normalized=FALSE,kelist = V(gr)$ked){ #kelist is a list o
   }
 }
 
-aop.edge.connectivity= function(gr,kelist = V(gr)$ked,names=F){ #kelist is a list of key event designation characters (MIE,KE, or AO) corresponding to nodes in the graph gr
+aop.edge.connectivity= function(gr,kelist = V(gr)$ked,names=F,nameslist=name){ #kelist is a list of key event designation characters (MIE,KE, or AO) corresponding to nodes in the graph gr
   if(is.null(kelist)){print("Error: No key event designation list supplied")} 
   #is.character(V(sg.cond)$ked)
   else{
@@ -153,7 +153,7 @@ aop.edge.connectivity= function(gr,kelist = V(gr)$ked,names=F){ #kelist is a lis
         i=i+1
         x<- edge.connectivity(gr,source=fromnode,target=tonode)
         ec.list[[i]]<-c(fromnode,tonode,x)
-        ec.listn[[i]]<-c(V(gr)$name[fromnode],V(gr)$name[tonode],x)
+        ec.listn[[i]]<-c(V(gr)$nameslist[fromnode],V(gr)$namelist[tonode],x)
       }
     }
     if(names==F){return(matrix(unlist(ec.list),ncol=3,byrow=T))}
