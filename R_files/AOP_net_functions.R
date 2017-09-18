@@ -139,26 +139,22 @@ aop.paths= function(gr,normalized=FALSE,kelist = V(gr)$ked){ #kelist is a list o
   }
 }
 
-aop.edge.connectivity= function(gr,kelist = V(gr)$ked,names=F,nameslist=name){ #kelist is a list of key event designation characters (MIE,KE, or AO) corresponding to nodes in the graph gr
+aop.edge.connectivity= function(gr,kelist = V(gr)$ked){ #kelist is a list of key event designation characters (MIE,KE, or AO) corresponding to nodes in the graph gr
   if(is.null(kelist)){print("Error: No key event designation list supplied")} 
   #is.character(V(sg.cond)$ked)
   else{
     mie.list<-which(kelist=="MIE")
     ao.list<-which(kelist=="AO")
      ec.list<-list()
-     ec.listn<-list()
     i=0;
     for(fromnode in mie.list){
       for(tonode in ao.list){
         i=i+1
         x<- edge.connectivity(gr,source=fromnode,target=tonode)
         ec.list[[i]]<-c(fromnode,tonode,x)
-        ec.listn[[i]]<-c(V(gr)$nameslist[fromnode],V(gr)$namelist[tonode],x)
       }
     }
-    if(names==F){return(matrix(unlist(ec.list),ncol=3,byrow=T))}
-    else{return(matrix(unlist(ec.listn),ncol=3,byrow=T))
-    }
+    return(matrix(unlist(ec.list),ncol=3,byrow=T))
 }
 }
 # This function colors all simple paths between the 'fromnode' node to the 
@@ -181,6 +177,25 @@ else{
 }
   }
 }
+
+simple.path.size<-function(gr,fromnode,tonode,loc=T,size=2){
+  paths<-all_simple_paths(gr,fromnode,to=tonode)
+  if(length(paths)==0){return("No simple paths between nodes")}
+  else{
+    if(loc){
+      for(i in 1:length(paths)){
+        E(gr,path=paths[[i]],dir=T)$sizes<-size}
+      return(which(!is.na(E(gr)$sizes)))
+    }
+    else{
+      E(gr)$clrs<-"gray"
+      for(i in 1:length(paths)){
+        E(gr,path=paths[[i]],dir=T)$sizes<-size}
+      return(E(gr)$sizes)
+    }
+  }
+}
+
 # SIMPLE PATH (NODE) REDUNDANCY
 # Calculates the difference between the longest and shortest simple path
 # between nodes.  This inidcates the number of nodes that can be removed
@@ -192,7 +207,48 @@ simple.path.redundancy<-function(gr,fromnode,tonode){
   allpathnodes<-unique(as.vector(unlist(paths)))
   allspathnodes<-as.vector(unlist(spaths))
   return(length(allpathnodes)-length(allspathnodes))
+}
+
+# This function colors all simple paths between the 'fromnode' node to the 
+# 'tonode' node using the color specificed by 'clr' stored as the asp_color 
+# attribute of the edges
+shortest.path.coloring<-function(gr,fromnode,tonode,loc=T,clr="purple",weight=NA,all=T){
+  paths<-all_shortest_paths(gr,from=fromnode,to=tonode,mode="out",weights=weight)
+  if(all){
+  if(length(paths)==0){return("No simple paths between nodes")}
+  else{
+    if(loc){
+      for(i in 1:length(paths[[1]])){
+        E(gr,path=paths[[1]][[i]],dir=T)$clrs<-clr}
+      return(which(!is.na(E(gr)$clrs)))}
+    else{
+      E(gr)$clrs<-"gray"
+      for(i in 1:length(paths[[1]])){
+        E(gr,path=paths[[1]][[i]],dir=T)$clrs<-clr}
+      return(E(gr)$clrs)}
   }
+    }
+  else{
+    if(length(paths)==0){return("No simple paths between nodes")}
+    else{
+      if(loc){
+        for(i in 1:1){
+          E(gr,path=paths[[1]][[i]],dir=T)$clrs<-clr}
+        return(which(!is.na(E(gr)$clrs)))}
+      else{
+        E(gr)$clrs<-"gray"
+        for(i in 1:1){
+          E(gr,path=paths[[1]][[i]],dir=T)$clrs<-clr}
+        return(E(gr)$clrs)}
+    }
+  }
+  }
+
+
+
+
+
+
 # deg.col.grad() provides an option for coloring nodes based on degree and specified gradient colors
 deg.col.grad<-function(gr,dmode="all",gradcols){
   gd<-degree(gr,mode=dmode)
@@ -211,6 +267,8 @@ deg.col.heat<-function(gr,dmode="all"){
   return(gdcols)
 }
 
+
+
 # set.bg.black takes an arguement of true or false and will set the plotting background black and adjust colors for barplot visualizations.
 set.bg.black<-function(x){
   if(x==T){
@@ -221,6 +279,7 @@ set.bg.black<-function(x){
     betcol<<-c("gray30","blue")
     clscol<<-c("gray30","magenta")
     ecccol<<-c("gray30","cyan")
+    bg_col<<-"black"
     return(par(bg="black"))}
   else{
     plotlabcol<<-"black"
@@ -230,5 +289,23 @@ set.bg.black<-function(x){
   betcol<<-c("black","blue")
   clscol<<-c("black","magenta")
   ecccol<<-c("black","cyan")
+  bg_col<<-"white"
   return(par(bg="white"))}
+}
+
+## function to export network plots quickly
+## plotcmd should be the full plot command, "plot(graph,....)" 
+## seedval is used for set.seed() if desired
+jpeg.netplot<-function(plotcmd,filename,seedval=NA,maii=c(0,0,0,0)){
+  jpeg(file = paste("images/",filename,".jpeg",sep=""),
+       width=800, height=800, bg =bg_col, quality=100)
+  par(mai=maii) #specify a "0" inch margin
+  if(is.na(seedval)){
+  plotcmd
+    }
+  else{
+    set.seed(seedval)
+    plotcmd
+  }
+  dev.off()
 }

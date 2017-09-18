@@ -1,10 +1,11 @@
-Activation, PXR/SXR -> to -> Reduction, Angiogenic sprouting, ECL: 7
-Direct mitochondrial inhibition -> to -> Inhibition, Na+/I- symporter (NIS), ECL: 7
-Abnormal, Roll change within caste -> to -> Reduction, Angiogenic sprouting, ECL: 5
-Declining, Population trajectory -> to -> Reduced, survival, ECL: 5
-Abnormal, Morphogenesis -> to -> Activation, Stellate cells, ECL: 4
-Abnormal, Roll change within caste -> to -> Reduction, Abdominal muscle contraction, ECL: 4
-Altered regulation, Alpha hemoglobin -> to -> Reduction, Angiogenic sprouting, ECL: 4
-Decreased, Triiodothyronine (T3) in serum -> to -> Decreased, serum T4/T3, ECL: 4
-Decreased, Triiodothyronine (T3) in serum -> to -> Reduction, Ca and HCO3 transport to shell gland, ECL: 4
-Direct mitochondrial inhibition -> to -> Inhibition, Nuclear factor kappa B (NF-kB), ECL: 4
+"MIE"	"AO"	"ECL"
+"Activation, LXR"	"Increased, Liver Steatosis"	"7"
+"Inhibition, 5-hydroxytryptamine transporter (5-HTT; SERT)"	"Decreased, Reproductive Success"	"7"
+"Activation, AHR"	"Increased, Liver Steatosis"	"5"
+"Formation, Pro-mutagenic DNA Adducts"	"Tumorigenesis, Hepatocellular carcinoma"	"5"
+"Inhibition, Acetylcholinesterase (AchE)"	"Increased, Mortality"	"4"
+"Activation, AHR"	"Accumulation, Liver lipid"	"4"
+"Activation, PPAR?"	"Increased, Liver Steatosis"	"4"
+"Activation, Nicotinic acetylcholine receptor"	"Decrease, Number of worker bees"	"4"
+"Activation, Nicotinic acetylcholine receptor"	"Death/Failure, Colony"	"4"
+"Inhibition, 5-hydroxytryptamine transporter (5-HTT; SERT)"	"Increase, predation"	"4"

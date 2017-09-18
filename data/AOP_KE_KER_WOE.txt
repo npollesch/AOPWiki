@@ -1,0 +1,1172 @@
+AOP_ID	FROM_KE	TO_KE	KER_ID	DIRECT_INDIRECT	EVIDENCE	QUANTITATIVE_UNDERSTANDING
+Aop:1	Event:294	Event:57	Relationship:324	directly leads to	2	
+Aop:1	Event:57	Event:142	Relationship:69	directly leads to	2	
+Aop:1	Event:142	Event:334	Relationship:158	directly leads to	1	
+Aop:3	Event:177	Event:889	Relationship:904	directly leads to	2	3
+Aop:3	Event:889	Event:890	Relationship:905	directly leads to	1	2
+Aop:3	Event:188	Event:890	Relationship:906	directly leads to	2	2
+Aop:3	Event:890	Event:188	Relationship:907	directly leads to	2	2
+Aop:3	Event:177	Event:890	Relationship:908	indirectly leads to	2	3
+Aop:3	Event:890	Event:896	Relationship:910	directly leads to	1	1
+Aop:3	Event:888	Event:887	Relationship:933	directly leads to	1	3
+Aop:3	Event:887	Event:177	Relationship:934	directly leads to	1	2
+Aop:4	Event:103	Event:1264	Relationship:1343	directly leads to	1	3
+Aop:4	Event:1264	Event:1265	Relationship:1344	directly leads to	1	3
+Aop:4	Event:1265	Event:988	Relationship:1345	directly leads to	2	3
+Aop:4	Event:988	Event:1266	Relationship:1346	directly leads to	2	3
+Aop:4	Event:1266	Event:1267	Relationship:1347	directly leads to	2	3
+Aop:4	Event:1267	Event:1268	Relationship:1348	directly leads to	2	3
+Aop:4	Event:1268	Event:993	Relationship:1349	directly leads to	2	3
+Aop:4	Event:993	Event:990	Relationship:1010	directly leads to	2	3
+Aop:4	Event:990	Event:351	Relationship:1190	directly leads to	1	1
+Aop:6	Event:858	Event:859	Relationship:878	directly leads to	1	1
+Aop:6	Event:858	Event:860	Relationship:879	directly leads to	1	1
+Aop:6	Event:858	Event:861	Relationship:880	directly leads to	2	2
+Aop:6	Event:859	Event:860	Relationship:881	indirectly leads to	2	2
+Aop:6	Event:860	Event:861	Relationship:882	directly leads to	1	2
+Aop:6	Event:861	Event:862	Relationship:883	directly leads to	1	2
+Aop:6	Event:862	Event:863	Relationship:884	indirectly leads to	2	3
+Aop:6	Event:863	Event:864	Relationship:885	directly leads to	1	1
+Aop:6	Event:998	Event:1000	Relationship:1023	indirectly leads to	1	2
+Aop:6	Event:1000	Event:858	Relationship:1024	directly leads to	1	2
+Aop:7	Event:219	Event:405	Relationship:392	directly leads to	1	
+Aop:7	Event:3	Event:219	Relationship:5	directly leads to	1	
+Aop:7	Event:405	Event:406	Relationship:394	indirectly leads to	2	
+Aop:7	Event:408	Event:3	Relationship:396	directly leads to	2	
+Aop:8	Event:283	Event:284	Relationship:313	indirectly leads to	3	
+Aop:8	Event:284	Event:267	Relationship:314	directly leads to	3	
+Aop:8	Event:267	Event:319	Relationship:297	directly leads to	2	
+Aop:8	Event:239	Event:136	Relationship:264	directly leads to	2	
+Aop:8	Event:136	Event:135	Relationship:149	indirectly leads to	2	
+Aop:8	Event:259	Event:283	Relationship:285	directly leads to	2	3
+Aop:8	Event:239	Event:295	Relationship:265	directly leads to	1	3
+Aop:8	Event:71	Event:295	Relationship:85	directly leads to	2	3
+Aop:8	Event:295	Event:259	Relationship:381	indirectly leads to	1	3
+Aop:8	Event:401	Event:259	Relationship:382	directly leads to	2	3
+Aop:8	Event:295	Event:401	Relationship:1060	directly leads to	2	
+Aop:10	Event:667	Event:64	Relationship:666	directly leads to	1	1
+Aop:10	Event:64	Event:669	Relationship:667	directly leads to	1	1
+Aop:10	Event:616	Event:613	Relationship:630	directly leads to	1	2
+Aop:10	Event:669	Event:682	Relationship:683	directly leads to	1	2
+Aop:10	Event:682	Event:616	Relationship:684	directly leads to	2	2
+Aop:12	Event:201	Event:195	Relationship:229	directly leads to	1	
+Aop:12	Event:195	Event:52	Relationship:213	directly leads to	1	
+Aop:12	Event:52	Event:381	Relationship:347	directly leads to	1	
+Aop:12	Event:381	Event:55	Relationship:353	directly leads to	1	
+Aop:12	Event:55	Event:188	Relationship:365	directly leads to	2	
+Aop:12	Event:188	Event:352	Relationship:208	directly leads to	2	
+Aop:12	Event:352	Event:341	Relationship:1069	directly leads to	1	
+Aop:12	Event:352	Event:188	Relationship:207	directly leads to	2	
+Aop:13	Event:201	Event:195	Relationship:229	directly leads to	1	
+Aop:13	Event:195	Event:52	Relationship:213	directly leads to	2	
+Aop:13	Event:52	Event:381	Relationship:347	indirectly leads to	3	
+Aop:13	Event:381	Event:382	Relationship:348	indirectly leads to	3	
+Aop:13	Event:381	Event:383	Relationship:354	indirectly leads to	3	
+Aop:13	Event:55	Event:385	Relationship:355	indirectly leads to	3	
+Aop:13	Event:382	Event:385	Relationship:356	indirectly leads to	3	
+Aop:13	Event:385	Event:386	Relationship:358	directly leads to	3	
+Aop:13	Event:386	Event:341	Relationship:359	indirectly leads to	3	
+Aop:13	Event:381	Event:55	Relationship:353	indirectly leads to	3	
+Aop:13	Event:383	Event:385	Relationship:357	indirectly leads to	3	
+Aop:14	Event:122	Event:145	Relationship:385	directly leads to		
+Aop:14	Event:145	Event:202	Relationship:386	directly leads to		
+Aop:14	Event:202	Event:152	Relationship:387	directly leads to		
+Aop:14	Event:152	Event:168	Relationship:388	directly leads to		
+Aop:14	Event:168	Event:403	Relationship:390	directly leads to		
+Aop:15	Event:97	Event:155	Relationship:24	directly leads to	1	2
+Aop:15	Event:155	Event:185	Relationship:164	directly leads to	1	2
+Aop:15	Event:97	Event:185	Relationship:25	indirectly leads to	1	2
+Aop:15	Event:97	Event:336	Relationship:23	indirectly leads to	1	2
+Aop:15	Event:185	Event:336	Relationship:202	directly leads to	1	2
+Aop:16	Event:12	Event:10	Relationship:11	directly leads to	1	2
+Aop:16	Event:351	Event:442	Relationship:428	directly leads to	2	2
+Aop:16	Event:444	Event:351	Relationship:432	directly leads to	3	3
+Aop:16	Event:445	Event:351	Relationship:433	directly leads to	3	3
+Aop:16	Event:12	Event:445	Relationship:450	indirectly leads to	2	3
+Aop:16	Event:12	Event:351	Relationship:452	indirectly leads to	1	2
+Aop:16	Event:12	Event:442	Relationship:453	indirectly leads to	3	3
+Aop:16	Event:10	Event:444	Relationship:454	directly leads to	1	2
+Aop:16	Event:12	Event:444	Relationship:449	indirectly leads to	1	3
+Aop:16	Event:39	Event:445	Relationship:457	directly leads to	2	3
+Aop:16	Event:10	Event:39	Relationship:456	directly leads to	1	3
+Aop:17	Event:261	Event:158	Relationship:287	directly leads to	1	
+Aop:17	Event:158	Event:130	Relationship:168	directly leads to	2	
+Aop:17	Event:130	Event:210	Relationship:144	indirectly leads to	1	
+Aop:17	Event:210	Event:191	Relationship:239	directly leads to	2	2
+Aop:17	Event:191	Event:188	Relationship:210	directly leads to	1	2
+Aop:17	Event:188	Event:352	Relationship:208	directly leads to	1	3
+Aop:17	Event:352	Event:188	Relationship:207	directly leads to	1	3
+Aop:18	Event:266	Event:447	Relationship:436	directly leads to	2	
+Aop:18	Event:447	Event:413	Relationship:438	directly leads to	2	
+Aop:18	Event:413	Event:446	Relationship:439	directly leads to	1	
+Aop:18	Event:227	Event:266	Relationship:369	indirectly leads to	2	
+Aop:18	Event:289	Event:447	Relationship:437	directly leads to	3	
+Aop:18	Event:227	Event:289	Relationship:370	indirectly leads to	3	
+Aop:18	Event:348	Event:406	Relationship:405	directly leads to	1	
+Aop:18	Event:446	Event:348	Relationship:608	indirectly leads to	1	
+Aop:19	Event:27	Event:310	Relationship:35	directly leads to		
+Aop:19	Event:27	Event:286	Relationship:33	directly leads to		
+Aop:19	Event:286	Event:310	Relationship:317	directly leads to		
+Aop:19	Event:286	Event:240	Relationship:316	directly leads to		
+Aop:19	Event:310	Event:240	Relationship:338	directly leads to		
+Aop:19	Event:240	Event:337	Relationship:266	directly leads to		
+Aop:21	Event:18	Event:944	Relationship:972	directly leads to	1	3
+Aop:21	Event:944	Event:1269	Relationship:1350	directly leads to	1	2
+Aop:21	Event:1269	Event:317	Relationship:1351	directly leads to	2	2
+Aop:21	Event:317	Event:351	Relationship:1490	directly leads to	2	2
+Aop:21	Event:18	Event:351	Relationship:1492	indirectly leads to	1	1
+Aop:21	Event:351	Event:442	Relationship:428	directly leads to	2	3
+Aop:23	Event:25	Event:129	Relationship:31	directly leads to	3	3
+Aop:23	Event:129	Event:274	Relationship:143	directly leads to	1	3
+Aop:23	Event:274	Event:3	Relationship:302	directly leads to	1	3
+Aop:23	Event:3	Event:219	Relationship:5	directly leads to	1	3
+Aop:23	Event:219	Event:285	Relationship:252	directly leads to	1	2
+Aop:23	Event:285	Event:221	Relationship:315	directly leads to	1	2
+Aop:23	Event:221	Event:309	Relationship:255	directly leads to	2	3
+Aop:23	Event:309	Event:78	Relationship:337	directly leads to	2	2
+Aop:23	Event:78	Event:360	Relationship:94	directly leads to	2	2
+Aop:23	Event:25	Event:274	Relationship:32	indirectly leads to	2	3
+Aop:23	Event:25	Event:3	Relationship:1384	indirectly leads to	2	3
+Aop:23	Event:25	Event:285	Relationship:1385	indirectly leads to	1	3
+Aop:23	Event:219	Event:221	Relationship:1386	indirectly leads to	1	2
+Aop:25	Event:36	Event:3	Relationship:45	directly leads to	1	2
+Aop:25	Event:3	Event:219	Relationship:5	directly leads to	1	2
+Aop:25	Event:219	Event:285	Relationship:252	directly leads to	1	2
+Aop:25	Event:78	Event:360	Relationship:94	directly leads to	2	2
+Aop:25	Event:309	Event:78	Relationship:337	directly leads to	2	2
+Aop:25	Event:221	Event:309	Relationship:255	directly leads to	2	3
+Aop:25	Event:285	Event:221	Relationship:315	directly leads to	1	2
+Aop:25	Event:219	Event:221	Relationship:1386	indirectly leads to	1	2
+Aop:26	Event:51	Event:50	Relationship:61	directly leads to	1	
+Aop:26	Event:50	Event:178	Relationship:60	directly leads to	2	
+Aop:26	Event:178	Event:40	Relationship:188	directly leads to	2	
+Aop:26	Event:178	Event:257	Relationship:189	directly leads to	2	
+Aop:26	Event:193	Event:166	Relationship:212	directly leads to	2	
+Aop:26	Event:257	Event:193	Relationship:282	directly leads to	3	
+Aop:26	Event:257	Event:356	Relationship:283	directly leads to	1	
+Aop:27	Event:214	Event:288	Relationship:248	directly leads to	1	
+Aop:27	Event:288	Event:357	Relationship:319	directly leads to	1	
+Aop:27	Event:87	Event:149	Relationship:108	directly leads to	1	
+Aop:27	Event:249	Event:209	Relationship:276	directly leads to	1	
+Aop:27	Event:41	Event:214	Relationship:927	directly leads to	1	
+Aop:27	Event:214	Event:87	Relationship:928	directly leads to	1	
+Aop:27	Event:149	Event:357	Relationship:929	directly leads to	2	
+Aop:27	Event:214	Event:249	Relationship:930	directly leads to	1	
+Aop:27	Event:209	Event:357	Relationship:932	directly leads to	2	
+Aop:28	Event:79	Event:243	Relationship:95	directly leads to	2	
+Aop:28	Event:243	Event:119	Relationship:268	directly leads to	5	
+Aop:28	Event:119	Event:49	Relationship:136	directly leads to	5	
+Aop:28	Event:49	Event:106	Relationship:59	directly leads to	2	
+Aop:28	Event:106	Event:253	Relationship:123	directly leads to	1	
+Aop:29	Event:111	Event:364	Relationship:127	directly leads to	1	
+Aop:29	Event:252	Event:339	Relationship:280	directly leads to	1	
+Aop:29	Event:111	Event:307	Relationship:128	directly leads to	1	
+Aop:29	Event:220	Event:252	Relationship:254	directly leads to	1	
+Aop:29	Event:111	Event:363	Relationship:126	directly leads to	1	
+Aop:29	Event:307	Event:220	Relationship:336	directly leads to	1	
+Aop:30	Event:112	Event:285	Relationship:129	directly leads to	1	3
+Aop:30	Event:285	Event:221	Relationship:315	directly leads to	1	2
+Aop:30	Event:221	Event:309	Relationship:255	directly leads to	2	3
+Aop:30	Event:309	Event:78	Relationship:337	directly leads to	2	2
+Aop:30	Event:78	Event:360	Relationship:94	directly leads to	2	2
+Aop:31	Event:213	Event:211	Relationship:244	directly leads to	2	
+Aop:31	Event:213	Event:250	Relationship:245	directly leads to	1	
+Aop:31	Event:213	Event:118	Relationship:243	directly leads to	1	
+Aop:31	Event:250	Event:246	Relationship:279	directly leads to	2	
+Aop:31	Event:250	Event:173	Relationship:278	directly leads to	1	
+Aop:31	Event:250	Event:161	Relationship:277	directly leads to	1	
+Aop:31	Event:211	Event:131	Relationship:240	directly leads to	3	
+Aop:31	Event:213	Event:21	Relationship:242	indirectly leads to	3	
+Aop:31	Event:173	Event:321	Relationship:182	directly leads to	1	
+Aop:31	Event:246	Event:173	Relationship:272	directly leads to	2	
+Aop:31	Event:211	Event:250	Relationship:241	directly leads to	1	
+Aop:31	Event:161	Event:173	Relationship:169	directly leads to	2	
+Aop:32	Event:77	Event:164	Relationship:93	directly leads to	1	
+Aop:32	Event:164	Event:147	Relationship:170	directly leads to	1	
+Aop:32	Event:147	Event:270	Relationship:159	directly leads to	1	
+Aop:32	Event:270	Event:269	Relationship:299	directly leads to	1	
+Aop:32	Event:269	Event:347	Relationship:298	directly leads to	1	
+Aop:33	Event:9	Event:294	Relationship:750	indirectly leads to	3	3
+Aop:33	Event:294	Event:759	Relationship:751	indirectly leads to	3	3
+Aop:34	Event:167	Event:54	Relationship:173	directly leads to	5	
+Aop:34	Event:54	Event:115	Relationship:66	directly leads to	5	
+Aop:34	Event:167	Event:66	Relationship:174	directly leads to	5	
+Aop:34	Event:167	Event:264	Relationship:177	directly leads to	5	
+Aop:34	Event:167	Event:116	Relationship:175	directly leads to	5	
+Aop:34	Event:167	Event:258	Relationship:176	directly leads to	5	
+Aop:34	Event:258	Event:89	Relationship:284	directly leads to	5	
+Aop:34	Event:66	Event:89	Relationship:77	directly leads to	5	
+Aop:34	Event:264	Event:89	Relationship:294	directly leads to	5	
+Aop:34	Event:116	Event:89	Relationship:133	directly leads to	5	
+Aop:34	Event:89	Event:291	Relationship:110	directly leads to	5	
+Aop:34	Event:115	Event:291	Relationship:132	directly leads to	5	
+Aop:34	Event:291	Event:176	Relationship:321	directly leads to	5	
+Aop:34	Event:228	Event:54	Relationship:411	directly leads to	2	
+Aop:36	Event:327	Event:346	Relationship:134	directly leads to	1	
+Aop:36	Event:231	Event:140	Relationship:257	directly leads to	2	
+Aop:36	Event:179	Event:327	Relationship:190	directly leads to	1	
+Aop:36	Event:8	Event:179	Relationship:9	directly leads to	1	
+Aop:36	Event:140	Event:8	Relationship:154	directly leads to	1	
+Aop:36	Event:232	Event:140	Relationship:259	directly leads to	2	
+Aop:36	Event:233	Event:140	Relationship:260	directly leads to	2	
+Aop:37	Event:1170	Event:716	Relationship:1230	directly leads to	1	2
+Aop:37	Event:1171	Event:719	Relationship:1232	directly leads to	1	2
+Aop:37	Event:716	Event:1171	Relationship:1239	directly leads to	1	2
+Aop:37	Event:227	Event:1170	Relationship:1229	indirectly leads to	1	2
+Aop:38	Event:244	Event:55	Relationship:269	directly leads to	2	
+Aop:38	Event:55	Event:134	Relationship:67	directly leads to	1	
+Aop:38	Event:55	Event:265	Relationship:68	indirectly leads to	1	
+Aop:38	Event:134	Event:276	Relationship:147	directly leads to	1	
+Aop:38	Event:276	Event:265	Relationship:304	directly leads to	1	
+Aop:38	Event:265	Event:68	Relationship:295	directly leads to	1	
+Aop:38	Event:68	Event:344	Relationship:82	directly leads to	1	
+Aop:39	Event:75	Event:151	Relationship:88	directly leads to	2	3
+Aop:40	Event:396	Event:826	Relationship:833	directly leads to	1	
+Aop:40	Event:396	Event:398	Relationship:377	directly leads to	1	
+Aop:40	Event:826	Event:398	Relationship:834	directly leads to	2	
+Aop:40	Event:398	Event:272	Relationship:379	directly leads to	1	
+Aop:40	Event:272	Event:827	Relationship:835	directly leads to	1	
+Aop:41	Event:165	Event:853	Relationship:874	directly leads to	1	1
+Aop:41	Event:165	Event:139	Relationship:172	indirectly leads to	1	1
+Aop:41	Event:165	Event:854	Relationship:875	indirectly leads to	1	1
+Aop:41	Event:165	Event:856	Relationship:876	indirectly leads to	1	1
+Aop:41	Event:853	Event:139	Relationship:995	directly leads to		
+Aop:41	Event:139	Event:854	Relationship:996	directly leads to		
+Aop:41	Event:854	Event:856	Relationship:997	directly leads to		
+Aop:42	Event:279	Event:277	Relationship:309	directly leads to	1	3
+Aop:42	Event:277	Event:281	Relationship:305	directly leads to	1	2
+Aop:42	Event:279	Event:281	Relationship:366	indirectly leads to	1	2
+Aop:42	Event:281	Event:280	Relationship:312	directly leads to	2	3
+Aop:42	Event:280	Event:756	Relationship:746	directly leads to	2	3
+Aop:42	Event:756	Event:757	Relationship:747	directly leads to	2	3
+Aop:42	Event:757	Event:758	Relationship:749	directly leads to	2	3
+Aop:42	Event:758	Event:402	Relationship:748	directly leads to	1	2
+Aop:42	Event:281	Event:756	Relationship:1387	indirectly leads to	1	3
+Aop:42	Event:281	Event:757	Relationship:1388	indirectly leads to	1	3
+Aop:42	Event:281	Event:758	Relationship:1389	indirectly leads to	2	3
+Aop:42	Event:281	Event:402	Relationship:403	indirectly leads to	1	2
+Aop:43	Event:305	Event:28	Relationship:335	directly leads to	1	1
+Aop:43	Event:28	Event:110	Relationship:36	directly leads to	1	2
+Aop:43	Event:110	Event:298	Relationship:125	indirectly leads to	2	3
+Aop:43	Event:298	Event:1001	Relationship:1036	indirectly leads to	1	2
+Aop:46	Event:376	Event:378	Relationship:346	indirectly leads to	2	3
+Aop:46	Event:376	Event:491	Relationship:549	directly leads to	2	2
+Aop:46	Event:491	Event:378	Relationship:550	directly leads to	2	2
+Aop:46	Event:493	Event:376	Relationship:547	directly leads to	2	
+Aop:46	Event:373	Event:491	Relationship:551	indirectly leads to	1	1
+Aop:46	Event:373	Event:378	Relationship:345	indirectly leads to	2	2
+Aop:46	Event:409	Event:373	Relationship:402	directly leads to	1	
+Aop:46	Event:373	Event:493	Relationship:548	directly leads to		
+Aop:48	Event:389	Event:177	Relationship:362	indirectly leads to	1	
+Aop:48	Event:388	Event:389	Relationship:361	directly leads to	2	
+Aop:48	Event:177	Event:55	Relationship:363	indirectly leads to	2	
+Aop:48	Event:55	Event:352	Relationship:364	directly leads to	2	
+Aop:48	Event:55	Event:188	Relationship:365	indirectly leads to	3	
+Aop:48	Event:188	Event:352	Relationship:208	directly leads to	2	
+Aop:48	Event:352	Event:188	Relationship:207	directly leads to	2	
+Aop:48	Event:618	Event:341	Relationship:634	indirectly leads to	2	3
+Aop:48	Event:352	Event:618	Relationship:647	indirectly leads to	3	
+Aop:48	Event:875	Event:388	Relationship:919	directly leads to	1	
+Aop:51	Event:416	Event:415	Relationship:398	directly leads to	2	
+Aop:51	Event:413	Event:446	Relationship:439	directly leads to	1	
+Aop:51	Event:447	Event:413	Relationship:438	directly leads to	2	
+Aop:51	Event:446	Event:414	Relationship:460	indirectly leads to	2	
+Aop:51	Event:414	Event:416	Relationship:461	indirectly leads to	2	
+Aop:51	Event:415	Event:406	Relationship:462	indirectly leads to	2	
+Aop:54	Event:381	Event:385	Relationship:448	indirectly leads to	2	3
+Aop:54	Event:381	Event:851	Relationship:870	indirectly leads to	2	3
+Aop:54	Event:851	Event:385	Relationship:871	directly leads to	1	3
+Aop:54	Event:385	Event:386	Relationship:358	directly leads to	3	3
+Aop:54	Event:386	Event:341	Relationship:359	directly leads to	1	3
+Aop:54	Event:280	Event:381	Relationship:444	directly leads to	3	3
+Aop:54	Event:424	Event:425	Relationship:442	directly leads to	1	1
+Aop:54	Event:281	Event:280	Relationship:312	directly leads to	1	3
+Aop:54	Event:425	Event:277	Relationship:872	directly leads to	1	1
+Aop:54	Event:277	Event:281	Relationship:305	directly leads to	1	1
+Aop:57	Event:450	Event:455	Relationship:471	directly leads to	1	1
+Aop:57	Event:18	Event:451	Relationship:473	indirectly leads to	2	2
+Aop:57	Event:291	Event:455	Relationship:474	directly leads to	1	1
+Aop:57	Event:451	Event:327	Relationship:475	directly leads to	1	1
+Aop:57	Event:18	Event:54	Relationship:495	directly leads to	1	1
+Aop:57	Event:18	Event:464	Relationship:497	directly leads to	2	
+Aop:57	Event:18	Event:216	Relationship:499	directly leads to	1	1
+Aop:57	Event:464	Event:291	Relationship:500	directly leads to	1	
+Aop:57	Event:54	Event:465	Relationship:501	directly leads to	1	
+Aop:57	Event:327	Event:455	Relationship:502	directly leads to	1	1
+Aop:57	Event:216	Event:327	Relationship:503	indirectly leads to		
+Aop:57	Event:465	Event:327	Relationship:505	directly leads to		
+Aop:57	Event:18	Event:466	Relationship:506	directly leads to	1	
+Aop:57	Event:466	Event:467	Relationship:507	directly leads to		
+Aop:57	Event:467	Event:327	Relationship:508	directly leads to		
+Aop:57	Event:18	Event:450	Relationship:509	indirectly leads to		
+Aop:57	Event:18	Event:80	Relationship:19	directly leads to	1	
+Aop:58	Event:456	Event:167	Relationship:476	directly leads to	1	1
+Aop:58	Event:456	Event:228	Relationship:477	directly leads to	1	1
+Aop:58	Event:167	Event:457	Relationship:479	directly leads to	1	1
+Aop:58	Event:167	Event:66	Relationship:174	directly leads to	1	1
+Aop:58	Event:66	Event:458	Relationship:483	directly leads to	1	1
+Aop:58	Event:454	Event:459	Relationship:486	directly leads to	1	1
+Aop:58	Event:228	Event:457	Relationship:487	directly leads to	2	2
+Aop:58	Event:228	Event:460	Relationship:488	directly leads to	2	2
+Aop:58	Event:457	Event:462	Relationship:489	directly leads to	1	1
+Aop:58	Event:167	Event:54	Relationship:173	directly leads to	1	1
+Aop:58	Event:167	Event:463	Relationship:490	directly leads to	1	1
+Aop:58	Event:167	Event:462	Relationship:491	directly leads to	1	1
+Aop:58	Event:463	Event:458	Relationship:492	directly leads to	1	1
+Aop:58	Event:462	Event:454	Relationship:493	directly leads to	1	1
+Aop:58	Event:54	Event:460	Relationship:494	directly leads to	1	1
+Aop:58	Event:167	Event:468	Relationship:510	indirectly leads to		
+Aop:58	Event:468	Event:451	Relationship:511	directly leads to	1	
+Aop:58	Event:458	Event:327	Relationship:512	directly leads to	1	
+Aop:58	Event:460	Event:327	Relationship:513	directly leads to	1	
+Aop:58	Event:327	Event:454	Relationship:514	directly leads to		
+Aop:58	Event:327	Event:459	Relationship:515	directly leads to		
+Aop:58	Event:451	Event:327	Relationship:475	directly leads to		
+Aop:58	Event:167	Event:470	Relationship:516	directly leads to	1	
+Aop:58	Event:470	Event:458	Relationship:517	indirectly leads to	1	
+Aop:60	Event:462	Event:475	Relationship:527	directly leads to	1	
+Aop:60	Event:475	Event:459	Relationship:528	directly leads to	1	
+Aop:60	Event:54	Event:465	Relationship:501	directly leads to	1	
+Aop:60	Event:465	Event:475	Relationship:530	indirectly leads to	1	
+Aop:60	Event:465	Event:476	Relationship:531	directly leads to	1	
+Aop:60	Event:179	Event:476	Relationship:521	directly leads to	1	
+Aop:60	Event:474	Event:477	Relationship:524	directly leads to	1	
+Aop:60	Event:245	Event:471	Relationship:518	directly leads to	1	
+Aop:60	Event:472	Event:179	Relationship:520	directly leads to	1	
+Aop:60	Event:245	Event:54	Relationship:529	directly leads to	3	
+Aop:60	Event:245	Event:462	Relationship:526	directly leads to	3	
+Aop:60	Event:477	Event:476	Relationship:525	indirectly leads to	2	
+Aop:60	Event:471	Event:474	Relationship:523	directly leads to	1	
+Aop:60	Event:476	Event:459	Relationship:522	directly leads to	1	
+Aop:60	Event:471	Event:472	Relationship:519	directly leads to	1	
+Aop:61	Event:478	Event:479	Relationship:532	directly leads to		
+Aop:61	Event:479	Event:480	Relationship:533	directly leads to		
+Aop:61	Event:479	Event:227	Relationship:534	directly leads to		
+Aop:61	Event:227	Event:483	Relationship:535	directly leads to		
+Aop:61	Event:483	Event:458	Relationship:536	directly leads to		
+Aop:61	Event:458	Event:459	Relationship:480	indirectly leads to		
+Aop:61	Event:482	Event:451	Relationship:537	directly leads to		
+Aop:61	Event:451	Event:459	Relationship:538	directly leads to		
+Aop:61	Event:480	Event:878	Relationship:896	directly leads to		
+Aop:62	Event:484	Event:485	Relationship:539	indirectly leads to		
+Aop:62	Event:485	Event:459	Relationship:540	indirectly leads to		
+Aop:62	Event:486	Event:484	Relationship:541	indirectly leads to		
+Aop:63	Event:685	Event:488	Relationship:685	directly leads to	2	3
+Aop:63	Event:488	Event:675	Relationship:687	directly leads to	1	2
+Aop:63	Event:675	Event:686	Relationship:688	directly leads to	1	1
+Aop:63	Event:79	Event:685	Relationship:686	directly leads to		
+Aop:65	Event:424	Event:277	Relationship:552	directly leads to	1	2
+Aop:65	Event:277	Event:281	Relationship:305	directly leads to	1	2
+Aop:65	Event:281	Event:280	Relationship:312	directly leads to	2	3
+Aop:65	Event:281	Event:402	Relationship:403	indirectly leads to	1	2
+Aop:65	Event:186	Event:192	Relationship:203	directly leads to	2	3
+Aop:65	Event:192	Event:402	Relationship:384	directly leads to	2	3
+Aop:77	Event:559	Event:177	Relationship:581	directly leads to		
+Aop:77	Event:341	Event:560	Relationship:583	directly leads to		
+Aop:77	Event:560	Event:1107	Relationship:1144	directly leads to		
+Aop:77	Event:1107	Event:563	Relationship:1145	directly leads to		
+Aop:77	Event:559	Event:341	Relationship:1146	indirectly leads to		
+Aop:77	Event:177	Event:1243	Relationship:1311	directly leads to		
+Aop:77	Event:1243	Event:341	Relationship:1310	directly leads to		
+Aop:78	Event:559	Event:177	Relationship:581	directly leads to		
+Aop:78	Event:177	Event:386	Relationship:582	directly leads to		
+Aop:78	Event:386	Event:341	Relationship:359	directly leads to		
+Aop:78	Event:341	Event:564	Relationship:564	directly leads to		
+Aop:78	Event:564	Event:565	Relationship:565	directly leads to		
+Aop:78	Event:565	Event:566	Relationship:566	directly leads to		
+Aop:78	Event:566	Event:563	Relationship:563	directly leads to		
+Aop:79	Event:559	Event:177	Relationship:581	directly leads to		
+Aop:79	Event:177	Event:568	Relationship:1152	directly leads to		
+Aop:79	Event:568	Event:1107	Relationship:1153	directly leads to		
+Aop:79	Event:1107	Event:563	Relationship:1145	directly leads to		
+Aop:80	Event:559	Event:177	Relationship:581	directly leads to		
+Aop:80	Event:177	Event:664	Relationship:660	directly leads to		
+Aop:80	Event:664	Event:570	Relationship:661	directly leads to		
+Aop:80	Event:570	Event:571	Relationship:662	directly leads to		
+Aop:80	Event:571	Event:572	Relationship:663	directly leads to		
+Aop:80	Event:572	Event:568	Relationship:573	directly leads to		
+Aop:80	Event:568	Event:563	Relationship:574	directly leads to		
+Aop:81	Event:573	Event:574	Relationship:567	directly leads to		
+Aop:81	Event:574	Event:560	Relationship:568	directly leads to		
+Aop:81	Event:560	Event:572	Relationship:569	directly leads to		
+Aop:81	Event:572	Event:563	Relationship:559	directly leads to		
+Aop:82	Event:564	Event:565	Relationship:565	directly leads to		
+Aop:82	Event:565	Event:566	Relationship:566	directly leads to		
+Aop:82	Event:566	Event:563	Relationship:563	directly leads to		
+Aop:84	Event:403	Event:576	Relationship:570	directly leads to		
+Aop:84	Event:576	Event:577	Relationship:571	directly leads to		
+Aop:84	Event:577	Event:572	Relationship:572	directly leads to		
+Aop:84	Event:572	Event:568	Relationship:573	directly leads to		
+Aop:84	Event:568	Event:563	Relationship:574	directly leads to		
+Aop:85	Event:403	Event:576	Relationship:570	directly leads to		
+Aop:85	Event:576	Event:560	Relationship:575	directly leads to		
+Aop:85	Event:560	Event:572	Relationship:569	directly leads to		
+Aop:85	Event:572	Event:563	Relationship:559	directly leads to		
+Aop:86	Event:578	Event:579	Relationship:576	directly leads to		
+Aop:86	Event:579	Event:580	Relationship:577	directly leads to		
+Aop:86	Event:580	Event:564	Relationship:578	directly leads to		
+Aop:86	Event:564	Event:561	Relationship:579	directly leads to		
+Aop:86	Event:561	Event:566	Relationship:562	directly leads to		
+Aop:86	Event:566	Event:563	Relationship:563	directly leads to		
+Aop:87	Event:559	Event:177	Relationship:581	directly leads to		
+Aop:87	Event:341	Event:560	Relationship:583	directly leads to		
+Aop:87	Event:1107	Event:563	Relationship:1145	directly leads to		
+Aop:87	Event:559	Event:341	Relationship:1146	indirectly leads to		
+Aop:87	Event:560	Event:1108	Relationship:1150	directly leads to		
+Aop:87	Event:1108	Event:1107	Relationship:1151	directly leads to		
+Aop:87	Event:177	Event:1243	Relationship:1311	directly leads to		
+Aop:87	Event:1243	Event:341	Relationship:1310	directly leads to		
+Aop:88	Event:559	Event:663	Relationship:658	directly leads to		
+Aop:88	Event:341	Event:560	Relationship:583	directly leads to		
+Aop:88	Event:560	Event:1107	Relationship:1144	directly leads to		
+Aop:88	Event:1107	Event:563	Relationship:1145	directly leads to		
+Aop:88	Event:559	Event:341	Relationship:1146	indirectly leads to		
+Aop:88	Event:663	Event:1243	Relationship:1309	directly leads to		
+Aop:88	Event:1243	Event:341	Relationship:1310	directly leads to		
+Aop:89	Event:559	Event:663	Relationship:658	directly leads to		
+Aop:89	Event:341	Event:560	Relationship:583	directly leads to		
+Aop:89	Event:560	Event:1108	Relationship:1150	directly leads to		
+Aop:89	Event:1108	Event:1107	Relationship:1151	directly leads to		
+Aop:89	Event:1107	Event:563	Relationship:1145	directly leads to		
+Aop:89	Event:559	Event:341	Relationship:1146	indirectly leads to		
+Aop:89	Event:663	Event:1243	Relationship:1309	directly leads to		
+Aop:89	Event:1243	Event:341	Relationship:1310	directly leads to		
+Aop:90	Event:559	Event:663	Relationship:658	directly leads to		
+Aop:90	Event:663	Event:386	Relationship:659	directly leads to		
+Aop:90	Event:386	Event:341	Relationship:359	directly leads to		
+Aop:90	Event:341	Event:564	Relationship:564	directly leads to		
+Aop:90	Event:564	Event:565	Relationship:565	directly leads to		
+Aop:90	Event:565	Event:566	Relationship:566	directly leads to		
+Aop:90	Event:566	Event:563	Relationship:563	directly leads to		
+Aop:91	Event:584	Event:585	Relationship:585	directly leads to	1	
+Aop:91	Event:585	Event:586	Relationship:586	indirectly leads to	2	
+Aop:91	Event:586	Event:587	Relationship:587	directly leads to		
+Aop:91	Event:586	Event:588	Relationship:588	directly leads to		
+Aop:91	Event:587	Event:588	Relationship:589	indirectly leads to		
+Aop:91	Event:588	Event:592	Relationship:595	directly leads to		
+Aop:91	Event:587	Event:592	Relationship:596	indirectly leads to		
+Aop:93	Event:584	Event:585	Relationship:585	directly leads to	1	
+Aop:93	Event:585	Event:586	Relationship:586	indirectly leads to	2	
+Aop:93	Event:586	Event:588	Relationship:588	indirectly leads to	2	
+Aop:94	Event:444	Event:445	Relationship:591	directly leads to	2	
+Aop:94	Event:445	Event:590	Relationship:592	directly leads to		
+Aop:94	Event:590	Event:591	Relationship:593	indirectly leads to	2	
+Aop:94	Event:584	Event:585	Relationship:585	directly leads to	1	
+Aop:94	Event:585	Event:444	Relationship:594	directly leads to	2	
+Aop:95	Event:585	Event:586	Relationship:586	indirectly leads to	3	
+Aop:95	Event:586	Event:587	Relationship:587	indirectly leads to		
+Aop:95	Event:586	Event:588	Relationship:588	indirectly leads to		
+Aop:95	Event:587	Event:588	Relationship:589	indirectly leads to		
+Aop:95	Event:588	Event:592	Relationship:595	directly leads to	1	
+Aop:95	Event:593	Event:585	Relationship:597	directly leads to	1	
+Aop:96	Event:598	Event:599	Relationship:603	directly leads to		
+Aop:96	Event:599	Event:600	Relationship:604	directly leads to		
+Aop:96	Event:600	Event:601	Relationship:605	indirectly leads to		
+Aop:96	Event:601	Event:602	Relationship:606	directly leads to		
+Aop:96	Event:602	Event:351	Relationship:607	directly leads to		
+Aop:97	Event:1143	Event:623	Relationship:1185	directly leads to		
+Aop:97	Event:622	Event:623	Relationship:638	directly leads to		
+Aop:97	Event:1139	Event:1142	Relationship:1223	directly leads to	2	
+Aop:97	Event:1142	Event:623	Relationship:1227	directly leads to		
+Aop:97	Event:619	Event:625	Relationship:1316	indirectly leads to		
+Aop:97	Event:619	Event:1142	Relationship:1317	indirectly leads to		
+Aop:97	Event:1142	Event:1139	Relationship:1174	directly leads to		
+Aop:97	Event:625	Event:624	Relationship:642	directly leads to		
+Aop:97	Event:1139	Event:624	Relationship:1175	directly leads to		
+Aop:97	Event:625	Event:622	Relationship:641	directly leads to		
+Aop:97	Event:1142	Event:1143	Relationship:1173	directly leads to		
+Aop:97	Event:622	Event:1143	Relationship:1177	directly leads to		
+Aop:97	Event:623	Event:361	Relationship:1184	directly leads to		
+Aop:97	Event:624	Event:1143	Relationship:1176	directly leads to		
+Aop:97	Event:626	Event:1142	Relationship:1327	directly leads to		
+Aop:97	Event:619	Event:626	Relationship:643	directly leads to		
+Aop:97	Event:626	Event:625	Relationship:1332	directly leads to		
+Aop:98	Event:619	Event:626	Relationship:643	directly leads to		
+Aop:98	Event:626	Event:627	Relationship:644	indirectly leads to		
+Aop:98	Event:627	Event:629	Relationship:645	indirectly leads to		
+Aop:98	Event:629	Event:588	Relationship:646	indirectly leads to		
+Aop:99	Event:633	Event:634	Relationship:649	indirectly leads to		
+Aop:99	Event:634	Event:635	Relationship:650	indirectly leads to		
+Aop:99	Event:635	Event:588	Relationship:651	indirectly leads to		
+Aop:99	Event:633	Event:637	Relationship:652	indirectly leads to		
+Aop:99	Event:637	Event:635	Relationship:653	indirectly leads to		
+Aop:99	Event:588	Event:636	Relationship:654	directly leads to		
+Aop:99	Event:638	Event:633	Relationship:1061	directly leads to		
+Aop:100	Event:79	Event:672	Relationship:670	directly leads to	3	3
+Aop:100	Event:671	Event:673	Relationship:672	directly leads to	1	3
+Aop:100	Event:674	Event:675	Relationship:674	directly leads to	2	3
+Aop:100	Event:675	Event:360	Relationship:675	directly leads to	1	1
+Aop:100	Event:673	Event:674	Relationship:673	directly leads to	2	3
+Aop:100	Event:672	Event:671	Relationship:671	directly leads to	2	3
+Aop:101	Event:678	Event:674	Relationship:679	directly leads to	2	3
+Aop:101	Event:674	Event:675	Relationship:674	directly leads to	1	2
+Aop:101	Event:675	Event:679	Relationship:680	directly leads to	1	1
+Aop:101	Event:79	Event:681	Relationship:681	directly leads to	3	3
+Aop:101	Event:681	Event:671	Relationship:682	directly leads to	1	3
+Aop:101	Event:671	Event:678	Relationship:678	directly leads to	1	3
+Aop:102	Event:79	Event:687	Relationship:689	directly leads to	2	3
+Aop:102	Event:687	Event:689	Relationship:690	directly leads to	1	3
+Aop:102	Event:689	Event:690	Relationship:691	directly leads to	1	2
+Aop:102	Event:690	Event:691	Relationship:692	directly leads to	1	3
+Aop:102	Event:691	Event:692	Relationship:693	directly leads to	1	3
+Aop:102	Event:692	Event:693	Relationship:694	directly leads to	2	3
+Aop:102	Event:693	Event:694	Relationship:696	directly leads to	1	3
+Aop:102	Event:694	Event:675	Relationship:697	directly leads to	1	3
+Aop:102	Event:675	Event:679	Relationship:680	directly leads to	1	1
+Aop:103	Event:79	Event:687	Relationship:689	directly leads to	2	3
+Aop:103	Event:687	Event:689	Relationship:690	directly leads to	1	3
+Aop:103	Event:689	Event:690	Relationship:691	directly leads to	1	2
+Aop:103	Event:690	Event:691	Relationship:692	directly leads to	1	3
+Aop:103	Event:691	Event:692	Relationship:693	directly leads to	1	3
+Aop:103	Event:692	Event:695	Relationship:698	directly leads to	3	3
+Aop:103	Event:695	Event:696	Relationship:699	directly leads to	2	3
+Aop:103	Event:696	Event:675	Relationship:700	directly leads to	1	2
+Aop:103	Event:675	Event:686	Relationship:688	directly leads to	1	1
+Aop:104	Event:697	Event:698	Relationship:701	directly leads to		
+Aop:104	Event:698	Event:699	Relationship:702	directly leads to		
+Aop:104	Event:699	Event:351	Relationship:703	directly leads to		
+Aop:105	Event:714	Event:708	Relationship:706	directly leads to		
+Aop:105	Event:708	Event:709	Relationship:707	directly leads to		
+Aop:105	Event:709	Event:710	Relationship:708	directly leads to		
+Aop:105	Event:710	Event:767	Relationship:760	directly leads to		
+Aop:105	Event:767	Event:713	Relationship:761	directly leads to		
+Aop:106	Event:718	Event:720	Relationship:714	directly leads to	1	
+Aop:106	Event:720	Event:721	Relationship:715	directly leads to	2	
+Aop:106	Event:723	Event:728	Relationship:723	directly leads to	1	
+Aop:106	Event:718	Event:723	Relationship:724	indirectly leads to	1	
+Aop:106	Event:721	Event:752	Relationship:737	directly leads to	2	
+Aop:106	Event:752	Event:723	Relationship:738	directly leads to	3	
+Aop:107	Event:715	Event:1214	Relationship:1268	directly leads to	1	2
+Aop:107	Event:1214	Event:716	Relationship:1269	directly leads to	1	2
+Aop:107	Event:716	Event:774	Relationship:773	directly leads to	1	1
+Aop:107	Event:774	Event:719	Relationship:774	directly leads to	1	1
+Aop:108	Event:724	Event:726	Relationship:716	directly leads to		
+Aop:108	Event:726	Event:769	Relationship:762	directly leads to		
+Aop:108	Event:769	Event:209	Relationship:763	directly leads to		
+Aop:108	Event:209	Event:768	Relationship:765	directly leads to		
+Aop:108	Event:768	Event:719	Relationship:766	directly leads to		
+Aop:109	Event:733	Event:734	Relationship:726	directly leads to		
+Aop:109	Event:734	Event:735	Relationship:727	directly leads to		
+Aop:109	Event:735	Event:736	Relationship:728	directly leads to		
+Aop:109	Event:770	Event:733	Relationship:767	directly leads to		
+Aop:110	Event:753	Event:739	Relationship:741	directly leads to		
+Aop:110	Event:739	Event:740	Relationship:742	directly leads to		
+Aop:110	Event:740	Event:741	Relationship:743	directly leads to		
+Aop:110	Event:737	Event:771	Relationship:768	directly leads to		
+Aop:110	Event:771	Event:753	Relationship:769	directly leads to		
+Aop:111	Event:742	Event:743	Relationship:729	directly leads to		
+Aop:111	Event:744	Event:745	Relationship:731	directly leads to		
+Aop:111	Event:743	Event:754	Relationship:744	directly leads to		
+Aop:111	Event:754	Event:744	Relationship:745	directly leads to		
+Aop:112	Event:746	Event:747	Relationship:732	directly leads to		
+Aop:112	Event:747	Event:748	Relationship:733	directly leads to		
+Aop:112	Event:748	Event:749	Relationship:734	directly leads to		
+Aop:112	Event:772	Event:773	Relationship:771	directly leads to		
+Aop:112	Event:749	Event:772	Relationship:772	directly leads to		
+Aop:113	Event:760	Event:761	Relationship:752	directly leads to		
+Aop:113	Event:763	Event:764	Relationship:755	indirectly leads to		
+Aop:113	Event:351	Event:765	Relationship:756	directly leads to		
+Aop:113	Event:764	Event:351	Relationship:757	indirectly leads to		
+Aop:113	Event:761	Event:763	Relationship:758	directly leads to		
+Aop:114	Event:766	Event:775	Relationship:775	directly leads to		
+Aop:114	Event:775	Event:776	Relationship:776	directly leads to		
+Aop:114	Event:776	Event:777	Relationship:777	directly leads to		
+Aop:114	Event:777	Event:778	Relationship:778	directly leads to		
+Aop:114	Event:778	Event:779	Relationship:779	directly leads to		
+Aop:115	Event:780	Event:149	Relationship:780	directly leads to		
+Aop:115	Event:149	Event:781	Relationship:781	directly leads to		
+Aop:115	Event:781	Event:782	Relationship:782	directly leads to		
+Aop:115	Event:782	Event:779	Relationship:783	directly leads to		
+Aop:116	Event:783	Event:710	Relationship:784	directly leads to		
+Aop:116	Event:710	Event:784	Relationship:785	directly leads to		
+Aop:116	Event:784	Event:713	Relationship:786	directly leads to		
+Aop:117	Event:785	Event:716	Relationship:787	directly leads to		
+Aop:117	Event:716	Event:774	Relationship:773	directly leads to		
+Aop:117	Event:774	Event:719	Relationship:774	directly leads to		
+Aop:118	Event:786	Event:787	Relationship:788	directly leads to		
+Aop:118	Event:787	Event:774	Relationship:789	directly leads to		
+Aop:118	Event:774	Event:719	Relationship:774	directly leads to		
+Aop:119	Event:279	Event:788	Relationship:790	directly leads to		
+Aop:119	Event:788	Event:771	Relationship:791	directly leads to		
+Aop:119	Event:771	Event:753	Relationship:769	directly leads to		
+Aop:119	Event:753	Event:739	Relationship:741	directly leads to		
+Aop:119	Event:739	Event:740	Relationship:742	directly leads to		
+Aop:119	Event:740	Event:741	Relationship:743	directly leads to		
+Aop:120	Event:790	Event:792	Relationship:792	directly leads to		
+Aop:120	Event:792	Event:791	Relationship:793	directly leads to		
+Aop:120	Event:791	Event:744	Relationship:794	directly leads to		
+Aop:120	Event:744	Event:745	Relationship:731	directly leads to		
+Aop:121	Event:793	Event:794	Relationship:795	directly leads to		
+Aop:121	Event:794	Event:795	Relationship:796	directly leads to		
+Aop:121	Event:795	Event:796	Relationship:797	directly leads to		
+Aop:121	Event:796	Event:797	Relationship:798	directly leads to		
+Aop:122	Event:798	Event:799	Relationship:799	directly leads to	1	3
+Aop:122	Event:799	Event:800	Relationship:800	directly leads to	2	3
+Aop:122	Event:800	Event:3	Relationship:801	directly leads to	1	2
+Aop:122	Event:3	Event:219	Relationship:5	directly leads to	1	2
+Aop:122	Event:219	Event:285	Relationship:252	directly leads to	1	2
+Aop:122	Event:285	Event:221	Relationship:315	directly leads to	1	1
+Aop:122	Event:221	Event:309	Relationship:255	directly leads to	2	
+Aop:122	Event:309	Event:78	Relationship:337	directly leads to		
+Aop:122	Event:78	Event:360	Relationship:94	directly leads to		
+Aop:123	Event:801	Event:802	Relationship:802	directly leads to		
+Aop:123	Event:802	Event:799	Relationship:803	directly leads to	3	3
+Aop:123	Event:799	Event:800	Relationship:800	directly leads to	3	
+Aop:123	Event:800	Event:3	Relationship:801	directly leads to		
+Aop:123	Event:3	Event:219	Relationship:5	directly leads to		
+Aop:123	Event:219	Event:285	Relationship:252	directly leads to		
+Aop:123	Event:285	Event:221	Relationship:315	directly leads to		
+Aop:123	Event:221	Event:309	Relationship:255	directly leads to		
+Aop:123	Event:309	Event:78	Relationship:337	directly leads to		
+Aop:123	Event:78	Event:360	Relationship:94	directly leads to		
+Aop:124	Event:804	Event:805	Relationship:804	directly leads to	1	
+Aop:124	Event:805	Event:807	Relationship:805	directly leads to		
+Aop:124	Event:807	Event:808	Relationship:806	indirectly leads to		
+Aop:124	Event:808	Event:809	Relationship:807	indirectly leads to		
+Aop:124	Event:809	Event:330	Relationship:808	directly leads to		
+Aop:128	Event:277	Event:426	Relationship:809	directly leads to	1	
+Aop:128	Event:277	Event:813	Relationship:810	directly leads to	1	
+Aop:128	Event:426	Event:818	Relationship:811	directly leads to	3	
+Aop:128	Event:426	Event:823	Relationship:812	directly leads to	3	
+Aop:128	Event:813	Event:818	Relationship:813	directly leads to	3	
+Aop:128	Event:813	Event:823	Relationship:814	directly leads to	3	
+Aop:128	Event:426	Event:824	Relationship:815	directly leads to	3	
+Aop:128	Event:813	Event:824	Relationship:816	directly leads to	3	
+Aop:128	Event:818	Event:819	Relationship:817	indirectly leads to	3	
+Aop:128	Event:818	Event:820	Relationship:818	indirectly leads to	3	
+Aop:128	Event:818	Event:821	Relationship:819	indirectly leads to	3	
+Aop:128	Event:818	Event:825	Relationship:820	indirectly leads to	3	
+Aop:128	Event:823	Event:819	Relationship:821	indirectly leads to	3	
+Aop:128	Event:823	Event:820	Relationship:822	indirectly leads to	3	
+Aop:128	Event:823	Event:821	Relationship:823	indirectly leads to	3	
+Aop:128	Event:823	Event:825	Relationship:824	indirectly leads to	3	
+Aop:128	Event:824	Event:819	Relationship:825	indirectly leads to	3	
+Aop:128	Event:824	Event:820	Relationship:826	indirectly leads to	3	
+Aop:128	Event:824	Event:821	Relationship:827	indirectly leads to	3	
+Aop:128	Event:824	Event:825	Relationship:828	indirectly leads to	3	
+Aop:128	Event:819	Event:814	Relationship:829	directly leads to	1	
+Aop:128	Event:820	Event:814	Relationship:830	directly leads to	1	
+Aop:128	Event:821	Event:814	Relationship:831	directly leads to	1	
+Aop:128	Event:825	Event:814	Relationship:832	directly leads to	1	
+Aop:130	Event:828	Event:829	Relationship:836	directly leads to	1	
+Aop:130	Event:828	Event:831	Relationship:837	directly leads to	1	
+Aop:130	Event:828	Event:832	Relationship:838	directly leads to	1	
+Aop:130	Event:829	Event:833	Relationship:839	directly leads to	3	
+Aop:130	Event:829	Event:835	Relationship:840	directly leads to	3	
+Aop:130	Event:829	Event:836	Relationship:841	directly leads to	3	
+Aop:130	Event:829	Event:837	Relationship:842	directly leads to	3	
+Aop:130	Event:831	Event:833	Relationship:843	directly leads to	3	
+Aop:130	Event:831	Event:835	Relationship:844	directly leads to	3	
+Aop:130	Event:831	Event:836	Relationship:845	directly leads to	3	
+Aop:130	Event:831	Event:837	Relationship:846	directly leads to	3	
+Aop:130	Event:832	Event:833	Relationship:847	directly leads to	3	
+Aop:130	Event:832	Event:835	Relationship:848	directly leads to	3	
+Aop:130	Event:832	Event:836	Relationship:849	directly leads to	3	
+Aop:130	Event:832	Event:837	Relationship:850	directly leads to	3	
+Aop:130	Event:833	Event:838	Relationship:851	directly leads to	3	
+Aop:130	Event:833	Event:839	Relationship:852	directly leads to	3	
+Aop:130	Event:835	Event:838	Relationship:853	directly leads to	3	
+Aop:130	Event:835	Event:839	Relationship:854	directly leads to	3	
+Aop:130	Event:836	Event:838	Relationship:855	directly leads to	3	
+Aop:130	Event:836	Event:839	Relationship:856	directly leads to	3	
+Aop:130	Event:837	Event:838	Relationship:857	directly leads to	3	
+Aop:130	Event:837	Event:839	Relationship:858	directly leads to	3	
+Aop:130	Event:838	Event:840	Relationship:859	directly leads to	1	
+Aop:130	Event:839	Event:840	Relationship:860	directly leads to	1	
+Aop:131	Event:18	Event:850	Relationship:869	directly leads to	1	1
+Aop:131	Event:850	Event:844	Relationship:868	directly leads to	2	3
+Aop:131	Event:844	Event:845	Relationship:865	directly leads to	2	3
+Aop:131	Event:845	Event:846	Relationship:1070	directly leads to	2	2
+Aop:131	Event:846	Event:369	Relationship:866	directly leads to	1	1
+Aop:134	Event:424	Event:425	Relationship:442	directly leads to	1	1
+Aop:134	Event:425	Event:277	Relationship:872	directly leads to	1	1
+Aop:134	Event:277	Event:281	Relationship:305	directly leads to	1	1
+Aop:134	Event:281	Event:280	Relationship:312	directly leads to	1	3
+Aop:134	Event:280	Event:756	Relationship:746	directly leads to	2	3
+Aop:134	Event:756	Event:757	Relationship:747	directly leads to	2	3
+Aop:134	Event:757	Event:758	Relationship:749	directly leads to	2	3
+Aop:134	Event:758	Event:402	Relationship:748	directly leads to	2	3
+Aop:134	Event:281	Event:402	Relationship:403	indirectly leads to	1	3
+Aop:136	Event:867	Event:768	Relationship:886	directly leads to	2	1
+Aop:136	Event:768	Event:868	Relationship:887	directly leads to	2	2
+Aop:136	Event:868	Event:869	Relationship:888	directly leads to	2	2
+Aop:136	Event:869	Event:870	Relationship:889	directly leads to	2	2
+Aop:136	Event:870	Event:876	Relationship:893	indirectly leads to	1	3
+Aop:136	Event:876	Event:872	Relationship:894	directly leads to	1	2
+Aop:136	Event:870	Event:872	Relationship:895	indirectly leads to	1	1
+Aop:138	Event:877	Event:1096	Relationship:1131	directly leads to	1	1
+Aop:138	Event:1096	Event:1102	Relationship:1132	directly leads to	1	1
+Aop:138	Event:1102	Event:1097	Relationship:1133	indirectly leads to	2	
+Aop:138	Event:1097	Event:1098	Relationship:1134	directly leads to	2	
+Aop:138	Event:1098	Event:1106	Relationship:1140	directly leads to		
+Aop:138	Event:1106	Event:351	Relationship:1141	directly leads to		
+Aop:138	Event:1097	Event:1096	Relationship:1156	directly leads to		
+Aop:138	Event:1096	Event:1088	Relationship:1158	indirectly leads to		
+Aop:138	Event:1088	Event:1097	Relationship:1160	indirectly leads to		
+Aop:139	Event:97	Event:155	Relationship:24	directly leads to	1	2
+Aop:139	Event:155	Event:185	Relationship:164	indirectly leads to	1	2
+Aop:139	Event:185	Event:885	Relationship:899	indirectly leads to	2	3
+Aop:139	Event:97	Event:185	Relationship:25	indirectly leads to	1	2
+Aop:139	Event:97	Event:885	Relationship:901	indirectly leads to	2	3
+Aop:141	Event:155	Event:185	Relationship:164	directly leads to	1	2
+Aop:141	Event:185	Event:885	Relationship:899	indirectly leads to	2	3
+Aop:144	Event:209	Event:177	Relationship:922	directly leads to	1	3
+Aop:144	Event:177	Event:55	Relationship:363	directly leads to	1	3
+Aop:144	Event:55	Event:87	Relationship:924	directly leads to	1	3
+Aop:144	Event:898	Event:209	Relationship:921	directly leads to	2	3
+Aop:144	Event:898	Event:177	Relationship:993	directly leads to	1	3
+Aop:144	Event:87	Event:901	Relationship:994	directly leads to	1	2
+Aop:144	Event:901	Event:902	Relationship:916	directly leads to	1	
+Aop:148	Event:919	Event:920	Relationship:943	directly leads to	1	3
+Aop:148	Event:923	Event:921	Relationship:944	directly leads to	1	3
+Aop:148	Event:941	Event:962	Relationship:986	indirectly leads to	1	1
+Aop:148	Event:924	Event:962	Relationship:987	directly leads to	1	1
+Aop:148	Event:914	Event:919	Relationship:961	directly leads to	2	3
+Aop:148	Event:941	Event:914	Relationship:962	directly leads to	2	3
+Aop:148	Event:941	Event:924	Relationship:964	directly leads to	1	3
+Aop:148	Event:941	Event:919	Relationship:965	directly leads to	2	2
+Aop:148	Event:941	Event:923	Relationship:970	directly leads to	2	3
+Aop:148	Event:921	Event:962	Relationship:1312	directly leads to	2	3
+Aop:148	Event:920	Event:962	Relationship:1313	directly leads to	3	3
+Aop:148	Event:1251	Event:1250	Relationship:1314	directly leads to	1	2
+Aop:148	Event:962	Event:1251	Relationship:1315	directly leads to	1	2
+Aop:149	Event:209	Event:926	Relationship:948	directly leads to	1	2
+Aop:149	Event:209	Event:935	Relationship:980	directly leads to	2	3
+Aop:149	Event:926	Event:927	Relationship:954	directly leads to	1	2
+Aop:149	Event:927	Event:932	Relationship:955	directly leads to	1	2
+Aop:149	Event:935	Event:934	Relationship:952	directly leads to	1	1
+Aop:149	Event:934	Event:932	Relationship:953	directly leads to	1	1
+Aop:149	Event:932	Event:933	Relationship:956	directly leads to	1	1
+Aop:149	Event:933	Event:937	Relationship:958	directly leads to	1	2
+Aop:149	Event:937	Event:951	Relationship:982	directly leads to	1	3
+Aop:149	Event:951	Event:952	Relationship:983	directly leads to	1	2
+Aop:149	Event:973	Event:933	Relationship:988	directly leads to	1	1
+Aop:149	Event:209	Event:973	Relationship:992	directly leads to	1	2
+Aop:150	Event:18	Event:944	Relationship:972	directly leads to	1	1
+Aop:150	Event:945	Event:948	Relationship:974	directly leads to	1	2
+Aop:150	Event:948	Event:110	Relationship:975	directly leads to	1	3
+Aop:150	Event:110	Event:317	Relationship:976	directly leads to	2	3
+Aop:150	Event:317	Event:358	Relationship:977	directly leads to	2	3
+Aop:150	Event:358	Event:947	Relationship:978	directly leads to	2	3
+Aop:150	Event:18	Event:947	Relationship:984	indirectly leads to	1	2
+Aop:150	Event:944	Event:945	Relationship:973	directly leads to	2	3
+Aop:154	Event:1201	Event:980	Relationship:1253	directly leads to	1	
+Aop:154	Event:980	Event:1202	Relationship:1254	directly leads to	1	
+Aop:154	Event:1202	Event:979	Relationship:1255	directly leads to	1	
+Aop:154	Event:979	Event:981	Relationship:1017	directly leads to	1	
+Aop:154	Event:981	Event:1203	Relationship:1256	directly leads to	1	
+Aop:154	Event:981	Event:1204	Relationship:1257	indirectly leads to	2	
+Aop:154	Event:981	Event:985	Relationship:1021	indirectly leads to	2	
+Aop:154	Event:1203	Event:984	Relationship:1258	directly leads to	1	
+Aop:154	Event:1204	Event:986	Relationship:1259	indirectly leads to	2	
+Aop:154	Event:981	Event:986	Relationship:1022	indirectly leads to	2	
+Aop:154	Event:1203	Event:986	Relationship:1260	indirectly leads to	2	
+Aop:155	Event:1002	Event:1003	Relationship:1026	directly leads to		
+Aop:155	Event:1003	Event:1004	Relationship:1027	directly leads to		
+Aop:155	Event:1004	Event:1005	Relationship:1028	directly leads to		
+Aop:155	Event:1005	Event:1006	Relationship:1029	directly leads to		
+Aop:155	Event:1006	Event:360	Relationship:1030	directly leads to		
+Aop:155	Event:1004	Event:1007	Relationship:1031	directly leads to		
+Aop:155	Event:1007	Event:1008	Relationship:1032	directly leads to		
+Aop:155	Event:1008	Event:1006	Relationship:1033	directly leads to		
+Aop:155	Event:1007	Event:1005	Relationship:1034	directly leads to		
+Aop:155	Event:1004	Event:1006	Relationship:1041	indirectly leads to	1	3
+Aop:155	Event:1002	Event:1004	Relationship:1042	indirectly leads to		
+Aop:156	Event:1003	Event:1007	Relationship:1035	directly leads to		
+Aop:156	Event:1002	Event:1003	Relationship:1026	directly leads to		
+Aop:156	Event:1007	Event:1008	Relationship:1032	directly leads to		
+Aop:156	Event:1008	Event:1006	Relationship:1033	directly leads to		
+Aop:156	Event:1007	Event:1005	Relationship:1034	directly leads to		
+Aop:156	Event:1005	Event:1006	Relationship:1029	directly leads to		
+Aop:156	Event:1006	Event:360	Relationship:1030	directly leads to		
+Aop:156	Event:1002	Event:1007	Relationship:1043	indirectly leads to		
+Aop:157	Event:1009	Event:1003	Relationship:1037	directly leads to		
+Aop:157	Event:1003	Event:1004	Relationship:1027	directly leads to		
+Aop:157	Event:1004	Event:1005	Relationship:1028	directly leads to		
+Aop:157	Event:1005	Event:1006	Relationship:1029	directly leads to		
+Aop:157	Event:1006	Event:360	Relationship:1030	directly leads to		
+Aop:157	Event:1004	Event:1007	Relationship:1031	directly leads to		
+Aop:157	Event:1007	Event:1008	Relationship:1032	directly leads to		
+Aop:157	Event:1008	Event:1006	Relationship:1033	directly leads to		
+Aop:157	Event:1007	Event:1005	Relationship:1034	directly leads to		
+Aop:157	Event:1009	Event:1004	Relationship:1044	indirectly leads to		
+Aop:157	Event:1004	Event:1006	Relationship:1041	indirectly leads to	1	3
+Aop:158	Event:1009	Event:1003	Relationship:1037	directly leads to		
+Aop:158	Event:1003	Event:1007	Relationship:1035	directly leads to		
+Aop:158	Event:1007	Event:1008	Relationship:1032	directly leads to		
+Aop:158	Event:1008	Event:1006	Relationship:1033	directly leads to		
+Aop:158	Event:1006	Event:360	Relationship:1030	directly leads to		
+Aop:158	Event:1007	Event:1005	Relationship:1034	directly leads to		
+Aop:158	Event:1005	Event:1006	Relationship:1029	directly leads to		
+Aop:158	Event:1009	Event:1007	Relationship:1045	indirectly leads to		
+Aop:159	Event:1007	Event:1008	Relationship:1032	directly leads to		
+Aop:159	Event:1008	Event:1006	Relationship:1033	directly leads to		
+Aop:159	Event:281	Event:1007	Relationship:1039	directly leads to		
+Aop:159	Event:1006	Event:360	Relationship:1030	directly leads to		
+Aop:159	Event:1007	Event:1005	Relationship:1034	directly leads to		
+Aop:159	Event:1005	Event:1006	Relationship:1029	directly leads to		
+Aop:159	Event:279	Event:277	Relationship:309	directly leads to		
+Aop:159	Event:277	Event:281	Relationship:305	directly leads to		
+Aop:159	Event:279	Event:281	Relationship:366	indirectly leads to		
+Aop:160	Event:1014	Event:351	Relationship:1050	directly leads to		
+Aop:160	Event:762	Event:761	Relationship:1051	directly leads to		
+Aop:160	Event:761	Event:1015	Relationship:1052	directly leads to		
+Aop:160	Event:1015	Event:1012	Relationship:1053	directly leads to		
+Aop:160	Event:1012	Event:1014	Relationship:1054	directly leads to		
+Aop:160	Event:1014	Event:1016	Relationship:1055	directly leads to		
+Aop:160	Event:1016	Event:351	Relationship:1056	directly leads to		
+Aop:161	Event:1015	Event:1012	Relationship:1053	directly leads to		
+Aop:161	Event:1016	Event:351	Relationship:1056	directly leads to		
+Aop:161	Event:1018	Event:761	Relationship:1057	directly leads to		
+Aop:161	Event:761	Event:1015	Relationship:1052	directly leads to		
+Aop:161	Event:1012	Event:1019	Relationship:1058	directly leads to		
+Aop:161	Event:1019	Event:1016	Relationship:1059	directly leads to		
+Aop:162	Event:1020	Event:1021	Relationship:1063	indirectly leads to	1	
+Aop:162	Event:1021	Event:1022	Relationship:1064	directly leads to	1	
+Aop:162	Event:1022	Event:1023	Relationship:1065	directly leads to	1	
+Aop:162	Event:1023	Event:1024	Relationship:1066	directly leads to	1	
+Aop:162	Event:1024	Event:1025	Relationship:1067	directly leads to	1	
+Aop:162	Event:1025	Event:1026	Relationship:1068	indirectly leads to	1	
+Aop:163	Event:1028	Event:1029	Relationship:1071	indirectly leads to	1	
+Aop:163	Event:1028	Event:1032	Relationship:1072	indirectly leads to	2	
+Aop:163	Event:1029	Event:1032	Relationship:1073	directly leads to	1	
+Aop:163	Event:1032	Event:1033	Relationship:1074	directly leads to	1	
+Aop:163	Event:1032	Event:1034	Relationship:1075	directly leads to	1	
+Aop:163	Event:1033	Event:1035	Relationship:1076	directly leads to	1	
+Aop:163	Event:1033	Event:1036	Relationship:1077	directly leads to	1	
+Aop:163	Event:1033	Event:1037	Relationship:1078	directly leads to	1	
+Aop:164	Event:1038	Event:1039	Relationship:1079	directly leads to	1	
+Aop:164	Event:1039	Event:1040	Relationship:1080	directly leads to	1	
+Aop:164	Event:1040	Event:1042	Relationship:1081	indirectly leads to	1	
+Aop:164	Event:1042	Event:1043	Relationship:1082	directly leads to	1	
+Aop:164	Event:1043	Event:1044	Relationship:1083	indirectly leads to	1	
+Aop:165	Event:1045	Event:1056	Relationship:1085	directly leads to	1	
+Aop:165	Event:1046	Event:1056	Relationship:1086	indirectly leads to	1	
+Aop:165	Event:1056	Event:1047	Relationship:1087	directly leads to	1	
+Aop:165	Event:1047	Event:1049	Relationship:1088	directly leads to	1	
+Aop:165	Event:1047	Event:1050	Relationship:1089	directly leads to	1	
+Aop:165	Event:1049	Event:1051	Relationship:1090	indirectly leads to	2	
+Aop:165	Event:1049	Event:1052	Relationship:1091	indirectly leads to	2	
+Aop:165	Event:1050	Event:1051	Relationship:1092	indirectly leads to	1	
+Aop:165	Event:1052	Event:1053	Relationship:1093	indirectly leads to	1	
+Aop:165	Event:1051	Event:1054	Relationship:1094	indirectly leads to	1	
+Aop:166	Event:1057	Event:1058	Relationship:1095	indirectly leads to	2	
+Aop:166	Event:1057	Event:1059	Relationship:1096	indirectly leads to	2	
+Aop:166	Event:1057	Event:1060	Relationship:1097	indirectly leads to	3	
+Aop:166	Event:1061	Event:1062	Relationship:1098	directly leads to	1	
+Aop:166	Event:1062	Event:1063	Relationship:1099	indirectly leads to	1	
+Aop:166	Event:1059	Event:1061	Relationship:1100	indirectly leads to		
+Aop:166	Event:1058	Event:1059	Relationship:1101	directly leads to		
+Aop:167	Event:1064	Event:1065	Relationship:1102	directly leads to	1	
+Aop:167	Event:1065	Event:1066	Relationship:1103	indirectly leads to	1	
+Aop:167	Event:1066	Event:1067	Relationship:1104	directly leads to	1	
+Aop:167	Event:1067	Event:1068	Relationship:1105	directly leads to	1	
+Aop:167	Event:1068	Event:1069	Relationship:1106	directly leads to	1	
+Aop:167	Event:1069	Event:1070	Relationship:1107	indirectly leads to	1	
+Aop:168	Event:1071	Event:1072	Relationship:1108	directly leads to	1	
+Aop:168	Event:1072	Event:1074	Relationship:1109	directly leads to	1	
+Aop:168	Event:1072	Event:1075	Relationship:1110	indirectly leads to	1	
+Aop:168	Event:1075	Event:1076	Relationship:1111	directly leads to	1	
+Aop:168	Event:1075	Event:1077	Relationship:1112	directly leads to	2	
+Aop:168	Event:1076	Event:1078	Relationship:1113	indirectly leads to	1	
+Aop:168	Event:1077	Event:1078	Relationship:1114	directly leads to	1	
+Aop:168	Event:1078	Event:1080	Relationship:1115	indirectly leads to	1	
+Aop:168	Event:1078	Event:1079	Relationship:1116	indirectly leads to	1	
+Aop:168	Event:1080	Event:1079	Relationship:1117	indirectly leads to	2	
+Aop:169	Event:1071	Event:1072	Relationship:1108	directly leads to	1	
+Aop:169	Event:1072	Event:1075	Relationship:1110	indirectly leads to	1	
+Aop:169	Event:1072	Event:1074	Relationship:1109	directly leads to	1	
+Aop:169	Event:1075	Event:1076	Relationship:1111	directly leads to	1	
+Aop:169	Event:1074	Event:1076	Relationship:1118	indirectly leads to	1	
+Aop:169	Event:1076	Event:1081	Relationship:1119	directly leads to	1	
+Aop:169	Event:1081	Event:1082	Relationship:1120	indirectly leads to	1	
+Aop:170	Event:1083	Event:1084	Relationship:1121	indirectly leads to	1	
+Aop:170	Event:1084	Event:1085	Relationship:1122	directly leads to	1	
+Aop:170	Event:1085	Event:1080	Relationship:1123	indirectly leads to	2	
+Aop:170	Event:1085	Event:1079	Relationship:1124	indirectly leads to	2	
+Aop:170	Event:1080	Event:1079	Relationship:1117	indirectly leads to	2	
+Aop:171	Event:1086	Event:1087	Relationship:1125	directly leads to	1	
+Aop:171	Event:1086	Event:1088	Relationship:1126	directly leads to	1	
+Aop:171	Event:1087	Event:1032	Relationship:1127	indirectly leads to	2	
+Aop:171	Event:1088	Event:1032	Relationship:1128	indirectly leads to	2	
+Aop:171	Event:1032	Event:1089	Relationship:1129	directly leads to	1	
+Aop:171	Event:1089	Event:1090	Relationship:1130	indirectly leads to	1	
+Aop:175	Event:281	Event:1093	Relationship:1143	directly leads to	2	3
+Aop:175	Event:1093	Event:1116	Relationship:1163	directly leads to	1	3
+Aop:175	Event:1116	Event:1101	Relationship:1164	directly leads to	1	3
+Aop:177	Event:1104	Event:1105	Relationship:1138	directly leads to	5	
+Aop:177	Event:1097	Event:1098	Relationship:1134	directly leads to	1	
+Aop:177	Event:1103	Event:1104	Relationship:1137	directly leads to		
+Aop:177	Event:1098	Event:1106	Relationship:1140	directly leads to		
+Aop:177	Event:1106	Event:351	Relationship:1141	directly leads to		
+Aop:177	Event:1105	Event:1088	Relationship:1159	directly leads to		
+Aop:177	Event:1088	Event:1097	Relationship:1160	directly leads to		
+Aop:177	Event:1097	Event:1096	Relationship:1156	directly leads to	1	
+Aop:177	Event:1096	Event:1102	Relationship:1132	directly leads to	1	
+Aop:177	Event:1102	Event:1097	Relationship:1133	directly leads to		
+Aop:177	Event:1096	Event:1088	Relationship:1158	directly leads to		
+Aop:178	Event:177	Event:1107	Relationship:1154	directly leads to		
+Aop:178	Event:1107	Event:563	Relationship:1145	directly leads to		
+Aop:179	Event:1109	Event:1107	Relationship:1155	directly leads to		
+Aop:179	Event:1107	Event:563	Relationship:1145	directly leads to		
+Aop:180	Event:560	Event:1107	Relationship:1144	directly leads to		
+Aop:180	Event:1107	Event:563	Relationship:1145	directly leads to		
+Aop:181	Event:1107	Event:563	Relationship:1145	directly leads to		
+Aop:182	Event:560	Event:1107	Relationship:1144	directly leads to		
+Aop:182	Event:1107	Event:563	Relationship:1145	directly leads to		
+Aop:183	Event:1110	Event:560	Relationship:1157	directly leads to		
+Aop:183	Event:560	Event:1107	Relationship:1144	directly leads to		
+Aop:183	Event:1107	Event:563	Relationship:1145	directly leads to		
+Aop:184	Event:1108	Event:1107	Relationship:1151	directly leads to		
+Aop:184	Event:1107	Event:563	Relationship:1145	directly leads to		
+Aop:185	Event:1107	Event:563	Relationship:1145	directly leads to		
+Aop:186	Event:1114	Event:1115	Relationship:1161	directly leads to		
+Aop:186	Event:1115	Event:1088	Relationship:1162	directly leads to		
+Aop:186	Event:1088	Event:1097	Relationship:1160	indirectly leads to		
+Aop:186	Event:1097	Event:1098	Relationship:1134	directly leads to		
+Aop:186	Event:1098	Event:1106	Relationship:1140	directly leads to		
+Aop:186	Event:1106	Event:351	Relationship:1141	directly leads to		
+Aop:187	Event:1131	Event:1133	Relationship:1165	indirectly leads to	1	1
+Aop:187	Event:1133	Event:1122	Relationship:1166	directly leads to	1	1
+Aop:187	Event:1134	Event:1131	Relationship:1167	directly leads to	1	1
+Aop:187	Event:1122	Event:1130	Relationship:1168	directly leads to	1	1
+Aop:187	Event:1130	Event:1132	Relationship:1169	directly leads to	1	1
+Aop:187	Event:1132	Event:1135	Relationship:1170	indirectly leads to	2	1
+Aop:187	Event:1135	Event:1136	Relationship:1171	indirectly leads to	3	3
+Aop:188	Event:1152	Event:425	Relationship:1197	directly leads to	3	3
+Aop:189	Event:1009	Event:1116	Relationship:1198	directly leads to	2	3
+Aop:189	Event:1116	Event:1101	Relationship:1164	directly leads to	1	2
+Aop:190	Event:1002	Event:1116	Relationship:1199	directly leads to	2	3
+Aop:190	Event:1116	Event:1101	Relationship:1164	directly leads to	1	2
+Aop:191	Event:1153	Event:1154	Relationship:1200	directly leads to	3	3
+Aop:191	Event:1154	Event:1101	Relationship:1201	directly leads to	2	3
+Aop:192	Event:1155	Event:277	Relationship:1202	directly leads to	3	3
+Aop:193	Event:1156	Event:277	Relationship:1203	directly leads to	2	3
+Aop:194	Event:1157	Event:1158	Relationship:1204	directly leads to	2	3
+Aop:194	Event:1157	Event:295	Relationship:1205	directly leads to	2	3
+Aop:194	Event:1158	Event:401	Relationship:1206	indirectly leads to	3	3
+Aop:195	Event:626	Event:1161	Relationship:1212	directly leads to		
+Aop:195	Event:1163	Event:1164	Relationship:1215	directly leads to		
+Aop:195	Event:619	Event:626	Relationship:643	directly leads to		
+Aop:195	Event:626	Event:1142	Relationship:1327	directly leads to		
+Aop:195	Event:1161	Event:1255	Relationship:1328	directly leads to		
+Aop:195	Event:1142	Event:1255	Relationship:1320	directly leads to		
+Aop:195	Event:1162	Event:1255	Relationship:1329	directly leads to		
+Aop:195	Event:1255	Event:1163	Relationship:1325	directly leads to		
+Aop:195	Event:619	Event:621	Relationship:1318	indirectly leads to		
+Aop:195	Event:621	Event:1255	Relationship:1321	directly leads to		
+Aop:195	Event:626	Event:621	Relationship:1333	directly leads to		
+Aop:195	Event:619	Event:1161	Relationship:1337	indirectly leads to		
+Aop:196	Event:1215	Event:1218	Relationship:1271	directly leads to	1	1
+Aop:196	Event:1218	Event:1220	Relationship:1274	directly leads to	1	1
+Aop:196	Event:1220	Event:1223	Relationship:1276	directly leads to	1	1
+Aop:196	Event:1224	Event:1225	Relationship:1277	directly leads to	1	1
+Aop:196	Event:1225	Event:1226	Relationship:1278	directly leads to	1	2
+Aop:196	Event:1222	Event:1224	Relationship:1279	directly leads to	2	2
+Aop:196	Event:1218	Event:1222	Relationship:1280	directly leads to	1	1
+Aop:196	Event:1230	Event:1218	Relationship:1281	directly leads to	1	1
+Aop:196	Event:1234	Event:1222	Relationship:1283	directly leads to	1	2
+Aop:196	Event:1215	Event:1235	Relationship:1284	directly leads to	2	2
+Aop:196	Event:1235	Event:1218	Relationship:1287	indirectly leads to		
+Aop:196	Event:1224	Event:1218	Relationship:1288	indirectly leads to	2	2
+Aop:196	Event:1236	Event:1237	Relationship:1289	directly leads to	1	3
+Aop:196	Event:1225	Event:1237	Relationship:1290	indirectly leads to	1	3
+Aop:196	Event:1238	Event:1236	Relationship:1291	directly leads to	1	3
+Aop:196	Event:1238	Event:1215	Relationship:1292	directly leads to	1	3
+Aop:196	Event:1238	Event:1234	Relationship:1293	indirectly leads to	2	2
+Aop:197	Event:584	Event:1176	Relationship:1242	directly leads to		
+Aop:197	Event:1176	Event:1179	Relationship:1244	directly leads to		
+Aop:200	Event:1181	Event:1187	Relationship:1246	directly leads to	1	1
+Aop:200	Event:1182	Event:1192	Relationship:1247	directly leads to	1	1
+Aop:200	Event:1183	Event:1192	Relationship:1248	directly leads to	1	1
+Aop:200	Event:1181	Event:1188	Relationship:1249	directly leads to	1	1
+Aop:200	Event:1187	Event:1182	Relationship:1250	directly leads to	1	1
+Aop:200	Event:1188	Event:1182	Relationship:1251	directly leads to	1	1
+Aop:200	Event:1192	Event:1193	Relationship:1252	directly leads to	1	1
+Aop:200	Event:1189	Event:1213	Relationship:1266	directly leads to	1	1
+Aop:200	Event:1190	Event:1213	Relationship:1267	directly leads to	1	1
+Aop:200	Event:1181	Event:1191	Relationship:1294	directly leads to	2	1
+Aop:200	Event:1191	Event:1188	Relationship:1295	directly leads to	1	1
+Aop:200	Event:1187	Event:1239	Relationship:1296	directly leads to	1	1
+Aop:200	Event:1188	Event:1239	Relationship:1297	directly leads to	1	1
+Aop:200	Event:1239	Event:1240	Relationship:1298	directly leads to	1	1
+Aop:200	Event:1240	Event:1088	Relationship:1299	directly leads to	1	1
+Aop:200	Event:1088	Event:1194	Relationship:1300	directly leads to	1	1
+Aop:200	Event:1194	Event:1239	Relationship:1301	directly leads to	1	1
+Aop:200	Event:1191	Event:1239	Relationship:1302	directly leads to	1	1
+Aop:200	Event:1240	Event:1189	Relationship:1303	directly leads to	1	1
+Aop:200	Event:1240	Event:1183	Relationship:1304	directly leads to	1	1
+Aop:200	Event:1240	Event:1241	Relationship:1305	directly leads to	2	2
+Aop:200	Event:1241	Event:1196	Relationship:1306	directly leads to	2	2
+Aop:200	Event:1181	Event:1242	Relationship:1307	directly leads to	2	2
+Aop:200	Event:1242	Event:1191	Relationship:1308	directly leads to	2	2
+Aop:201	Event:1205	Event:1206	Relationship:1261	directly leads to		
+Aop:201	Event:1206	Event:1209	Relationship:1262	directly leads to		
+Aop:201	Event:1209	Event:1208	Relationship:1263	directly leads to		
+Aop:201	Event:1208	Event:361	Relationship:1264	directly leads to		
+Aop:201	Event:361	Event:1210	Relationship:1265	indirectly leads to		
+Aop:202	Event:1252	Event:1253	Relationship:1330	directly leads to	1	5
+Aop:202	Event:1253	Event:1254	Relationship:1331	directly leads to	1	5
+Aop:203	Event:619	Event:1142	Relationship:1317	indirectly leads to		
+Aop:203	Event:619	Event:621	Relationship:1318	indirectly leads to		
+Aop:203	Event:619	Event:1256	Relationship:1319	indirectly leads to		
+Aop:203	Event:1256	Event:1257	Relationship:1322	directly leads to		
+Aop:203	Event:1257	Event:1141	Relationship:1323	directly leads to		
+Aop:203	Event:1141	Event:361	Relationship:1180	directly leads to		
+Aop:203	Event:1142	Event:1257	Relationship:1334	directly leads to		
+Aop:203	Event:621	Event:1257	Relationship:1335	directly leads to		
+Aop:203	Event:626	Event:1142	Relationship:1327	directly leads to		
+Aop:203	Event:626	Event:621	Relationship:1333	directly leads to		
+Aop:203	Event:626	Event:1256	Relationship:1336	directly leads to		
+Aop:203	Event:619	Event:626	Relationship:643	directly leads to		
+Aop:204	Event:619	Event:1142	Relationship:1317	indirectly leads to		
+Aop:204	Event:619	Event:621	Relationship:1318	indirectly leads to		
+Aop:204	Event:619	Event:1256	Relationship:1319	indirectly leads to		
+Aop:204	Event:1256	Event:1257	Relationship:1322	directly leads to		
+Aop:204	Event:1163	Event:1164	Relationship:1215	directly leads to		
+Aop:204	Event:1257	Event:1163	Relationship:1326	directly leads to		
+Aop:204	Event:619	Event:626	Relationship:643	directly leads to		
+Aop:204	Event:626	Event:1142	Relationship:1327	directly leads to		
+Aop:204	Event:1142	Event:1257	Relationship:1334	directly leads to		
+Aop:204	Event:621	Event:1257	Relationship:1335	directly leads to		
+Aop:204	Event:626	Event:1256	Relationship:1336	directly leads to		
+Aop:204	Event:626	Event:621	Relationship:1333	directly leads to		
+Aop:205	Event:1258	Event:1261	Relationship:1338	indirectly leads to	2	5
+Aop:205	Event:1260	Event:1261	Relationship:1339	directly leads to	1	5
+Aop:205	Event:1259	Event:1261	Relationship:1340	indirectly leads to	2	5
+Aop:205	Event:1261	Event:1262	Relationship:1341	directly leads to	1	5
+Aop:205	Event:1261	Event:1263	Relationship:1342	indirectly leads to	1	5
+Aop:206	Event:1270	Event:1271	Relationship:1353	directly leads to		
+Aop:206	Event:1271	Event:1272	Relationship:1354	directly leads to		
+Aop:206	Event:1271	Event:1273	Relationship:1355	directly leads to		
+Aop:206	Event:1272	Event:1274	Relationship:1356	directly leads to		
+Aop:206	Event:1273	Event:1275	Relationship:1357	directly leads to		
+Aop:206	Event:1274	Event:1276	Relationship:1358	directly leads to		
+Aop:206	Event:1275	Event:1276	Relationship:1359	directly leads to		
+Aop:207	Event:1174	Event:1278	Relationship:1360	directly leads to	1	
+Aop:207	Event:1278	Event:1279	Relationship:1361	directly leads to	1	
+Aop:207	Event:1279	Event:1281	Relationship:1362	directly leads to	1	
+Aop:207	Event:1279	Event:176	Relationship:1363	directly leads to	1	
+Aop:207	Event:1279	Event:1280	Relationship:1364	directly leads to	1	
+Aop:207	Event:1280	Event:1262	Relationship:1365	directly leads to	1	
+Aop:207	Event:1281	Event:1262	Relationship:1366	directly leads to	1	
+Aop:207	Event:176	Event:1262	Relationship:1367	directly leads to	1	
+Aop:207	Event:1262	Event:1277	Relationship:1368	directly leads to	1	
+Aop:208	Event:1282	Event:1283	Relationship:1369	directly leads to		
+Aop:208	Event:1283	Event:1277	Relationship:1370	directly leads to		
+Aop:209	Event:1284	Event:1285	Relationship:1371	directly leads to		
+Aop:209	Event:1285	Event:1289	Relationship:1372	directly leads to		
+Aop:209	Event:1286	Event:1287	Relationship:1373	directly leads to		
+Aop:209	Event:1287	Event:1288	Relationship:1374	directly leads to		
+Aop:209	Event:1288	Event:1289	Relationship:1375	directly leads to		
+Aop:209	Event:1286	Event:1290	Relationship:1376	directly leads to		
+Aop:209	Event:1289	Event:1291	Relationship:1377	directly leads to		
+Aop:209	Event:1290	Event:1291	Relationship:1378	directly leads to		
+Aop:210	Event:209	Event:1292	Relationship:1379	directly leads to		
+Aop:210	Event:1292	Event:1293	Relationship:1380	directly leads to		
+Aop:210	Event:1293	Event:1294	Relationship:1381	directly leads to		
+Aop:210	Event:1294	Event:1295	Relationship:1382	directly leads to		
+Aop:210	Event:1295	Event:1277	Relationship:1383	directly leads to		
+Aop:213	Event:1296	Event:1297	Relationship:1390	directly leads to		
+Aop:213	Event:1297	Event:1298	Relationship:1391	directly leads to		
+Aop:213	Event:1298	Event:1299	Relationship:1392	directly leads to		
+Aop:213	Event:1299	Event:1300	Relationship:1398	directly leads to		
+Aop:213	Event:1300	Event:1301	Relationship:1399	directly leads to		
+Aop:213	Event:1299	Event:1302	Relationship:1400	directly leads to		
+Aop:213	Event:1302	Event:1305	Relationship:1401	directly leads to		
+Aop:213	Event:228	Event:1301	Relationship:1402	directly leads to		
+Aop:213	Event:1301	Event:258	Relationship:1403	directly leads to		
+Aop:213	Event:258	Event:1306	Relationship:1404	directly leads to		
+Aop:213	Event:1306	Event:1305	Relationship:1405	directly leads to		
+Aop:213	Event:478	Event:1304	Relationship:1406	directly leads to		
+Aop:213	Event:1304	Event:480	Relationship:1407	directly leads to		
+Aop:213	Event:1304	Event:227	Relationship:1408	directly leads to		
+Aop:213	Event:480	Event:227	Relationship:1409	directly leads to		
+Aop:213	Event:227	Event:1303	Relationship:1410	directly leads to		
+Aop:213	Event:480	Event:1307	Relationship:1412	directly leads to		
+Aop:213	Event:480	Event:1308	Relationship:1414	directly leads to		
+Aop:213	Event:1303	Event:1312	Relationship:1415	directly leads to		
+Aop:213	Event:1312	Event:1311	Relationship:1416	directly leads to		
+Aop:213	Event:1312	Event:1313	Relationship:1417	directly leads to		
+Aop:213	Event:1310	Event:1299	Relationship:1418	directly leads to		
+Aop:213	Event:1310	Event:1302	Relationship:1419	directly leads to		
+Aop:213	Event:1310	Event:1309	Relationship:1420	directly leads to		
+Aop:213	Event:1309	Event:1301	Relationship:1421	directly leads to		
+Aop:213	Event:116	Event:1306	Relationship:1422	directly leads to		
+Aop:213	Event:1302	Event:228	Relationship:1423	directly leads to		
+Aop:213	Event:228	Event:116	Relationship:1424	directly leads to		
+Aop:213	Event:167	Event:468	Relationship:510	directly leads to		
+Aop:213	Event:167	Event:116	Relationship:175	directly leads to		
+Aop:213	Event:1314	Event:116	Relationship:1425	directly leads to		
+Aop:214	Event:1317	Event:1321	Relationship:1426	directly leads to		
+Aop:214	Event:1317	Event:1322	Relationship:1427	directly leads to		
+Aop:214	Event:1317	Event:1318	Relationship:1428	directly leads to		
+Aop:214	Event:1317	Event:1319	Relationship:1429	directly leads to		
+Aop:214	Event:1317	Event:1320	Relationship:1430	directly leads to		
+Aop:214	Event:1317	Event:1323	Relationship:1431	directly leads to		
+Aop:214	Event:1323	Event:1324	Relationship:1432	directly leads to		
+Aop:214	Event:1324	Event:1325	Relationship:1433	directly leads to		
+Aop:214	Event:1325	Event:1347	Relationship:1434	directly leads to		
+Aop:214	Event:1347	Event:1326	Relationship:1435	directly leads to		
+Aop:214	Event:1347	Event:1328	Relationship:1436	directly leads to		
+Aop:214	Event:1347	Event:1336	Relationship:1437	directly leads to		
+Aop:214	Event:1336	Event:1337	Relationship:1438	directly leads to		
+Aop:214	Event:1337	Event:1338	Relationship:1439	directly leads to		
+Aop:214	Event:1338	Event:1339	Relationship:1440	directly leads to		
+Aop:214	Event:1339	Event:1340	Relationship:1441	directly leads to		
+Aop:214	Event:1340	Event:1341	Relationship:1442	directly leads to		
+Aop:214	Event:1341	Event:1342	Relationship:1443	directly leads to		
+Aop:214	Event:1342	Event:1343	Relationship:1444	directly leads to		
+Aop:214	Event:1326	Event:1344	Relationship:1445	directly leads to		
+Aop:214	Event:1328	Event:1329	Relationship:1446	directly leads to		
+Aop:214	Event:1329	Event:1330	Relationship:1447	directly leads to		
+Aop:214	Event:1330	Event:1345	Relationship:1448	directly leads to		
+Aop:214	Event:1330	Event:1346	Relationship:1449	directly leads to		
+Aop:214	Event:1334	Event:122	Relationship:1450	directly leads to		
+Aop:214	Event:122	Event:1335	Relationship:1451	directly leads to		
+Aop:215	Event:1349	Event:1350	Relationship:1452	directly leads to		
+Aop:215	Event:1350	Event:1351	Relationship:1453	directly leads to		
+Aop:215	Event:1351	Event:1321	Relationship:1454	directly leads to		
+Aop:215	Event:1321	Event:1352	Relationship:1455	directly leads to		
+Aop:215	Event:1354	Event:1353	Relationship:1456	directly leads to		
+Aop:215	Event:1352	Event:1355	Relationship:1457	directly leads to		
+Aop:215	Event:1355	Event:1362	Relationship:1458	directly leads to		
+Aop:215	Event:1362	Event:1348	Relationship:1459	directly leads to		
+Aop:215	Event:1348	Event:1363	Relationship:1460	directly leads to		
+Aop:215	Event:1360	Event:1361	Relationship:1461	directly leads to		
+Aop:215	Event:1361	Event:1359	Relationship:1462	directly leads to		
+Aop:215	Event:1357	Event:1359	Relationship:1463	directly leads to		
+Aop:215	Event:1359	Event:1322	Relationship:1464	directly leads to		
+Aop:215	Event:1322	Event:1356	Relationship:1465	directly leads to		
+Aop:216	Event:1364	Event:209	Relationship:1466	directly leads to	1	1
+Aop:216	Event:209	Event:1194	Relationship:1467	directly leads to	1	2
+Aop:216	Event:1194	Event:1365	Relationship:1468	directly leads to	1	2
+Aop:216	Event:1365	Event:1366	Relationship:1469	directly leads to	3	3
+Aop:216	Event:1366	Event:488	Relationship:1470	directly leads to	2	3
+Aop:216	Event:488	Event:330	Relationship:1471	directly leads to	1	1
+Aop:216	Event:330	Event:360	Relationship:1472	directly leads to	2	3
+Aop:217	Event:1376	Event:1367	Relationship:1473	directly leads to		
+Aop:217	Event:1375	Event:1367	Relationship:1474	directly leads to		
+Aop:217	Event:1380	Event:1367	Relationship:1475	directly leads to		
+Aop:217	Event:1379	Event:1385	Relationship:1476	directly leads to		
+Aop:217	Event:1378	Event:1379	Relationship:1477	directly leads to		
+Aop:217	Event:1370	Event:1377	Relationship:1478	directly leads to		
+Aop:217	Event:1370	Event:1376	Relationship:1479	directly leads to		
+Aop:217	Event:1369	Event:1375	Relationship:1480	directly leads to		
+Aop:217	Event:1369	Event:1374	Relationship:1481	directly leads to		
+Aop:217	Event:1369	Event:1373	Relationship:1482	directly leads to		
+Aop:217	Event:1369	Event:1372	Relationship:1483	directly leads to		
+Aop:217	Event:1372	Event:1380	Relationship:1484	directly leads to		
+Aop:217	Event:1373	Event:1380	Relationship:1485	directly leads to		
+Aop:217	Event:1374	Event:1380	Relationship:1486	directly leads to		
+Aop:217	Event:1384	Event:1382	Relationship:1487	directly leads to		
+Aop:217	Event:1383	Event:1382	Relationship:1488	directly leads to		
+Aop:217	Event:1381	Event:1380	Relationship:1489	directly leads to		
+Aop:218	Event:1386	Event:1387	Relationship:1493	directly leads to	1	
+Aop:218	Event:1386	Event:1389	Relationship:1494	indirectly leads to		
+Aop:218	Event:1387	Event:1389	Relationship:1495	indirectly leads to		
+Aop:218	Event:1387	Event:1388	Relationship:1496	directly leads to		
+Aop:218	Event:1388	Event:1389	Relationship:1497	directly leads to		
+Aop:219	Event:1386	Event:1387	Relationship:1493	directly leads to		
+Aop:219	Event:1387	Event:1390	Relationship:1498	indirectly leads to		
+Aop:219	Event:1387	Event:1388	Relationship:1496	directly leads to		

@@ -1,7 +1,7 @@
 Tumorigenesis, Hepatocellular carcinoma (13)
 Clonal Expansion/Cell Proliferation, to form Altered Hepatic Foci (AHF) (13)
 Increased, Clonal Expansion / Cell Proliferatin to form Pre-Neoplastic Altered Hepatic Foci (13)
-Increased, Proliferation/Clonal Expansion of Mutant Cells (Pre-Neoplastic Lesions/Altered H (13)
+Activation, EcR (13)
 Reproductive failure (12)
 N/A, Hypertension (12)
 Increase, Site of Contact Nasal Tumors (12)
