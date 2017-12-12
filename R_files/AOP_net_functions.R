@@ -27,7 +27,6 @@ color.comps<-function(gr, ccmode="strong"){ #function to color all non-trivial s
 
 # cycle.color() function can be used to color SCC edges and vertices for visualization
 # The output is a list of vertex colors[[1]] and node colors[[2]]
-
 cycle.color = function(gr){
   gsccs<-components(gr, mode="strong")
   if(gsccs$no<length(V(gr))){ # is graph already acyclic?
@@ -105,13 +104,15 @@ lobo.layout<-function(gr,lobos=lobo_list){ #assumes lobo data is stored as V(gr)
   return(lobo_locs)
 }
 
-# aop.paths() function computes path counts for nodes involved in simple paths between MIEs and AOs.  
-aop.paths= function(gr,normalized=FALSE,kelist = V(gr)$ked){ #kelist is a list of key event designation characters (MIE,KE, or AO) corresponding to nodes in the graph gr
+# aop.paths() function computes path counts for nodes involved in simple paths between MIEs and AOs. 
+# this function can also be used to calculate the number of simple paths between MIEs and AOs in a specified graph
+aop.paths= function(gr,totalsimplepaths=F,normalized=F,kelist = V(gr)$KE_KED){ #kelist is a list of key event designation characters (MIE,KE, or AO) corresponding to nodes in the graph gr
   if(is.null(kelist)){print("Error: No key event designation list supplied")} 
   #is.character(V(sg.cond)$ked)
   else{
     path.counts<-data.frame(n=1:length(V(gr)),count=0) #creates a dataframe to store path counts
     # Creates node number list of MIEs to create a 'from list' for the paths
+    totalpaths<-0
     path.counts$name<-V(gr)$name
     mie.list<-which(kelist=="MIE")
     ao.list<-which(kelist=="AO")
@@ -122,7 +123,11 @@ aop.paths= function(gr,normalized=FALSE,kelist = V(gr)$ked){ #kelist is a list o
         #assign(paste("from",fromnode,"to",tonode,sep="."), x)  #Can uncomment to create lists of paths
         for(i in 1:length(x)){
           path.counts$count[as.integer(x[[i]])]<-path.counts$count[as.integer(x[[i]])]+1}}
+          totalpaths<-totalpaths+length(x)
       } 
+    }
+    if(totalsimplepaths){
+      return(totalpaths)
     }
     if(normalized==FALSE){
       a<-paste(deparse(substitute(gr)),"aop","path","cts", sep = ".") # creates name for output from function input
@@ -139,7 +144,51 @@ aop.paths= function(gr,normalized=FALSE,kelist = V(gr)$ked){ #kelist is a list o
   }
 }
 
-aop.edge.connectivity= function(gr,kelist = V(gr)$ked){ #kelist is a list of key event designation characters (MIE,KE, or AO) corresponding to nodes in the graph gr
+# in.aop.paths() calculates the simple paths between MIEs 
+# and AOs within a specified AOP.  Node attributes of aop ids need to be stored
+# as V(graph)$AOP_ID, key event designators need to be stored as V(graph)$KE_KED
+in.aop.paths<-function(gr,id){
+  isg<-induced.subgraph(gr,V(gr)[which(V(gr)$AOP_ID==id)])
+  mie.list<-V(isg)[which(V(isg)$KE_KED=="MIE")]
+  mie.list
+  ao.list<-V(isg)[which(V(isg)$KE_KED=="AO")]
+  ao.list
+  asp.list<-list()
+  if(length(mie.list)>0 && length(ao.list)>0){
+    for(i in 1:length(mie.list)){
+      for(j in 1:length(ao.list)){
+        asp_temp<-all_simple_paths(isg,from=as.numeric(mie.list[i]),to=as.numeric(ao.list[j]),mode="out")
+        if(length(asp_temp)>0){
+          x<-(i*length(ao.list)-(length(ao.list)-j))
+          asp.list[[x]]<-asp_temp
+        }
+      }
+    }}
+  return(asp.list)
+}
+
+
+## in.aop.paths.all() uses the in.aop.paths function over an entire graph, without the use
+## an AOP ID.  It can either produce all the within aop paths 'paths=T' or
+## give a count of all within aop simple paths (default)
+in.aop.paths.all<-function(gr,paths=F){
+aoplist<-sort(unique(V(gr)$AOP_ID))
+aoplist<-aoplist[!is.na(aoplist)]
+all.paths<-list()
+total.paths<-0
+for(i in aoplist){
+  all.paths[[i]]<-in.aop.paths(gr,i)
+  total.paths<-total.paths+length(all.paths[[i]])
+}
+if(paths){return(all.paths)}
+else{return(total.paths)}
+}
+
+
+
+# aop.edge.connectivity() calculates the edge connectivity of every MIE to AO pair
+# in the graph ('gr') provided with respect to the key event designator list ('kelist')
+aop.edge.connectivity= function(gr,kelist = V(gr)$KE_KED){ #kelist is a list of key event designation characters (MIE,KE, or AO) corresponding to nodes in the graph gr
   if(is.null(kelist)){print("Error: No key event designation list supplied")} 
   #is.character(V(sg.cond)$ked)
   else{
@@ -157,7 +206,11 @@ aop.edge.connectivity= function(gr,kelist = V(gr)$ked){ #kelist is a list of key
     return(matrix(unlist(ec.list),ncol=3,byrow=T))
 }
 }
-# This function colors all simple paths between the 'fromnode' node to the 
+
+
+
+
+# simple.path.coloring() colors all simple paths between the 'fromnode' node to the 
 # 'tonode' node using the color specificed by 'clr' stored as the asp_color 
 # attribute of the edges
 simple.path.coloring<-function(gr,fromnode,tonode,loc=T,clr="purple"){
@@ -178,7 +231,13 @@ else{
   }
 }
 
-simple.path.size<-function(gr,fromnode,tonode,loc=T,size=2){
+## simple.path.sizing() accompanies simple.path.color by allowing specifying 
+## sizes for edges within a given simple path.  If loc=T, the ouptut
+## is a list of edges in the path that have been assigned size 'size' (default is 'size=2')
+## otherwise, the output can be used directly in a plotting function by
+## by setting 'loc=F' as an argument and setting 'size=#' to whatever
+## size is desired.
+simple.path.sizing<-function(gr,fromnode,tonode,loc=T,size=2){
   paths<-all_simple_paths(gr,fromnode,to=tonode)
   if(length(paths)==0){return("No simple paths between nodes")}
   else{
@@ -195,6 +254,7 @@ simple.path.size<-function(gr,fromnode,tonode,loc=T,size=2){
     }
   }
 }
+
 
 # SIMPLE PATH (NODE) REDUNDANCY
 # Calculates the difference between the longest and shortest simple path

@@ -4,6 +4,7 @@
 
 ## Needs igraph package
 library(igraph)
+
 #localLibDir<-"C:\\Program Files\\R\\R-3.2.0\\library\\"  #Jason's local library directory
 #library(igraph, lib.loc = localLibDir)
 
@@ -32,7 +33,7 @@ KEPdata[,1]<-as.numeric(substring(KEPdata[,1],5)) #strips the characters Aop: fr
 KEPdata[,3]<-as.numeric(substring(KEPdata[,3],7)) #strips the characters Event: from the Event ID column and turns the result numeric
 KEKdata[,2]<-as.numeric(substring(KEKdata[,2],7)) #strips the characters Event: from the Event ID column and turns the result numeric
 
-## Identify all unique KEs
+## Identify all unique KEs by looking at all names involved in KERs
 allKEs<-c(KERdata[,2],KERdata[,4])
 #fullKEs<-c(KERdata[,2],KERdata[,4],KERdata[,1])
 #length(allKEs)
@@ -53,6 +54,7 @@ V(AOPg)$name<-V(AOPg)$KE_EID
 
 ## Add key event designation data
 V(AOPg)$KE_KED<-KEKdata[match(V(AOPg)$KE_EID,KEKdata[,2]),4] # finds KED (Key Event Designator) to add to V(AOPg) data
+length(V(AOPg)$KE_KED[which(is.na(V(AOPg)$KE_KED))]) #The number of KEs without KEDs
 V(AOPg)$KE_KED[which(is.na(V(AOPg)$KE_KED))]<-"KE" # ALL KEs without KED (NA values from file) are assigned as generic KE
 
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~##
@@ -80,6 +82,7 @@ V(AOPws)$name<-as.integer(V(AOPws)$name)
 
 ## Add KED data for MIE to AO analysis using weighted edges
 V(AOPws)$KE_KED<-KEKdata[match(V(AOPws)$name,KEKdata[,2]),4] # finds KED (Key Event Designator) to add to V(AOPg) data
+length(V(AOPws)$KE_KED[which(is.na(V(AOPws)$KE_KED))]) #The number of KEs without KEDs
 V(AOPws)$KE_KED[which(is.na(V(AOPws)$KE_KED))]<-"KE" # ALL KEs without KED (NA values from file) are assigned as generic KE
 
 ## Adds KED coloring to AOPws
@@ -110,6 +113,7 @@ E(AOPg)$quant[is.na(E(AOPg)$quant)]<-3
 
 ### AOP ID from AOPws 
 V(AOPws)$KE_KED<-KEKdata[match(V(AOPws)$name,KEKdata[,2]),4] # finds KED (Key Event Designator) to add to V(AOPg) data
+length(V(AOPws)$KE_KED[which(is.na(V(AOPws)$KE_KED))]) # The number of KEs without KEDs
 V(AOPws)$KE_KED[which(is.na(V(AOPws)$KE_KED))]<-"KE" # ALL KEs without KED (NA values from file) are assigned as generic KE
 
 KEKdata[,1]<-as.numeric(substring(KEKdata[,1],5))
@@ -125,6 +129,41 @@ set.bg.black(T)
 
 ## Identifies which KEs are included in KERs, but are not themselves included in the KE event listings.
 # V(AOPg)$KE_name[which(is.na(V(AOPg)$KE_EID))]
+
+####~ AOPWIKI NETWORK QUALITY CONTROL ####
+
+## All the nodes without event ID Numbers
+as.numeric(V(AOPg)[is.na(V(AOPg)$KE_EID)])
+
+## KED is unique in that if an actual designation doesn't exist in the WIKI, we can
+## simply apply the generic "KE" label, however it is useful to know how
+## many KEs do not have KEDs from the wiki 
+## NOTE: This code is used in buliding the network above
+V(AOPg)$KE_KED<-KEKdata[match(V(AOPg)$KE_EID,KEKdata[,2]),4] # finds KED (Key Event Designator) to add to V(AOPg) data
+length(V(AOPg)$KE_KED[which(is.na(V(AOPg)$KE_KED))]) #The number of KEs without KEDs
+V(AOPg)$KE_KED[which(is.na(V(AOPg)$KE_KED))]<-"KE" # ALL KEs without KED (NA values from file) are assigned as generic KE
+
+
+### A look at the MIEs and AOs specified in the network and their relationships
+### to AOP ids to determine within AOP simple path potentials
+mies<-V(AOPg)[which(V(AOPg)$KE_KED=="MIE")]
+length(mies)
+aos<-V(AOPg)[which(V(AOPg)$KE_KED=="AO")]
+length(aos)
+## This identifies the set of AOP_IDs that have both an MIE and AO in them 
+intersect(mies$AOP_ID,aos$AOP_ID)
+## The number of AOPs have the potential for an MIE to AO path, however
+## this does not guarantee that there are KEs connecting them.  
+length(intersect(mies$AOP_ID,aos$AOP_ID))
+
+## This looks at all AOP IDs assigned to nodes in the network
+aops<-V(AOPg)$AOP_ID
+aops<-aops[!is.na(aops)]
+#The number of nodes with AOP IDs assigned
+length(aops)
+#The number of nodes without AOP IDs assigned
+length(V(AOPg))-length(aops)
+
 
 
 
@@ -142,7 +181,7 @@ sort(table(V(AOPg)$AOP_ID))
 
 ## Highlight a given AOP for identification by using size on the network plot
 V(AOPg)$exsize<-2
-V(AOPg)[which(V(AOPg)$AOP_ID==130)]$exsize<-3 #Note: must specify V(AOPg)$exsize as vertex.size in plot for this to work
+V(AOPg)[which(V(AOPg)$AOP_ID==7)]$exsize<-3 #Note: must specify V(AOPg)$exsize as vertex.size in plot for this to work
 
 ## Plot
 set.seed(1)
@@ -205,12 +244,11 @@ V(AOPg)$ked_color[which(V(AOPg)$KE_KED=="AO")]<-"Red"
 #### ~~ AOP edge connectivity ####
 # This extends the graph wide edge connectivity calculation to
 # only consider paths between MIE and AO as designated by V(graph)$KE_KED
+
+edge.connectivity(AOPg,source=V(AOPg)[which(V(AOPg)$name==408)],target=V(AOPg)[which(V(AOPg)$name==406)])
+
+
 ecl<-aop.edge.connectivity(AOPg,kelist=V(AOPg)$KE_KED)
-
-ecl
-
-# How many simple paths are there between MIEs and AOs in the wiki? The length of ECL tells how many MIE to AO pairs exist.
-length(ecl)
 
 ecl_sort<-ecl[order(ecl[,3],decreasing=T),]
 colnames(ecl_sort)<-c("MIE","AO","ECL")
@@ -226,119 +264,97 @@ write.table(ecl_short_name, output,col.names=T, sep="\t", row.names=F)
 ecl_short
 ecl_short_name
 
-#### ~~~ MIE to AO Paths ####
+#### ~~~ MIE to AO Paths Visualization####
 
-## This part of the code can be used to identify all simple paths between
-# a specified node-node pair.  These node-node pairs are usually MIE to AO
-# as found in the aop.edge.connectivity analysis 
+## This part of the code can be used to visualize in the graph, all 
+## simple paths between a specified node-node pair.  
+
+## Specify from and to nodes by vertex number (not name/KE_ID)
+from<-57
+to<-677
+
 ## Assign color to simple paths
-E(AOPg)$asp_clr<-"gray"
-E(AOPg)$asp_clr[simple.path.coloring(AOPg,57,677)]<-"purple"
+E(AOPg)$asp_clr<-"gray"# Set color for all edges
+E(AOPg)$asp_clr[simple.path.coloring(AOPg,from,to)]<-"purple" #set color for edges in simple paths
+
 ## Assign sizes to simple paths
-E(AOPg)$asp_size<-1
-E(AOPg)$asp_size[simple.path.size(AOPg,57,677)]<-2
+E(AOPg)$asp_size<-1 #set size for all edges
+E(AOPg)$asp_size[simple.path.sizing(AOPg,from,to)]<-2 #set size for edges in simple paths
+
 ## Plot full network with simple paths between MIE and AO highlighted
 set.seed(1)
 plot(AOPg ,vertex.size=2, edge.width=E(AOPg)$asp_size, edge.color=E(AOPg)$asp_clr, edge.arrow.size=.1, vertex.label=NA, vertex.color=V(AOPg)$ked_color)
 ## Export network plot
-jpeg.netplot(plot(AOPg ,vertex.size=2, edge.width=E(AOPg)$asp_size, edge.color=E(AOPg)$asp_clr, edge.arrow.size=.3, vertex.label=NA, vertex.color=V(AOPg)$ked_color),"f57t677",seedval=1)
+jpeg.netplot(plot(AOPg ,vertex.size=2, edge.width=E(AOPg)$asp_size, edge.color=E(AOPg)$asp_clr, edge.arrow.size=.3, vertex.label=NA, vertex.color=V(AOPg)$ked_color),paste(from," to ",to,sep=""),seedval=1)
 
-E(AOPg)$asp_clr<-"gray"
-E(AOPg)$asp_clr[simple.path.coloring(AOPg,233,535)]<-"yellow"
-## Assign sizes to simple paths
-E(AOPg)$asp_size<-1
-E(AOPg)$asp_size[simple.path.size(AOPg,233,535)]<-2
-## Plot full network with simple paths between MIE and AO highlighted
-set.seed(1)
-plot(AOPg ,vertex.size=2, edge.width=E(AOPg)$asp_size, edge.color=E(AOPg)$asp_clr, edge.arrow.size=.1, vertex.label=NA, vertex.color=V(AOPg)$ked_color)
-## Export network plot
-jpeg.netplot(plot(AOPg ,vertex.size=2, edge.width=E(AOPg)$asp_size, edge.color=E(AOPg)$asp_clr, edge.arrow.size=.3, vertex.label=NA, vertex.color=V(AOPg)$ked_color)
-             ,"f233t535",seedval=1)
-
-E(AOPg)$asp_clr<-"gray"
-E(AOPg)$asp_clr[simple.path.coloring(AOPg,5,677)]<-"blue"
-## Assign sizes to simple paths
-E(AOPg)$asp_size<-1
-E(AOPg)$asp_size[simple.path.size(AOPg,5,677)]<-2
-## Plot full network with simple paths between MIE and AO highlighted
-set.seed(1)
-plot(AOPg ,vertex.size=2, edge.width=E(AOPg)$asp_size, edge.color=E(AOPg)$asp_clr, edge.arrow.size=.1, vertex.label=NA, vertex.color=V(AOPg)$ked_color)
-## Export network plot
-
-E(AOPg)$asp_clr[simple.path.coloring(AOPg,128,670)]<-"orange"
-E(AOPg)$asp_size[simple.path.size(AOPg,128,670)]<-2
-E(AOPg)$asp_clr[simple.path.coloring(AOPg,3,63)]<-"cyan"
-E(AOPg)$asp_size[simple.path.size(AOPg,3,63)]<-2
-
-
-jpeg.netplot(plot(AOPg ,vertex.size=2, edge.width=E(AOPg)$asp_size, edge.color=E(AOPg)$asp_clr, edge.arrow.size=.3, vertex.label=NA, vertex.color=V(AOPg)$ked_color)
-             ,"AOP_ecl_top5",seedval=1)
+# E(AOPg)$asp_clr<-"gray"
+# E(AOPg)$asp_clr[simple.path.coloring(AOPg,233,535)]<-"yellow"
+# ## Assign sizes to simple paths
+# E(AOPg)$asp_size<-1
+# E(AOPg)$asp_size[simple.path.sizing(AOPg,233,535)]<-2
+# ## Plot full network with simple paths between MIE and AO highlighted
+# set.seed(1)
+# plot(AOPg ,vertex.size=2, edge.width=E(AOPg)$asp_size, edge.color=E(AOPg)$asp_clr, edge.arrow.size=.1, vertex.label=NA, vertex.color=V(AOPg)$ked_color)
+# ## Export network plot
+# jpeg.netplot(plot(AOPg ,vertex.size=2, edge.width=E(AOPg)$asp_size, edge.color=E(AOPg)$asp_clr, edge.arrow.size=.3, vertex.label=NA, vertex.color=V(AOPg)$ked_color)
+#              ,"f233t535",seedval=1)
+# 
+# E(AOPg)$asp_clr<-"gray"
+# E(AOPg)$asp_clr[simple.path.coloring(AOPg,5,677)]<-"blue"
+# ## Assign sizes to simple paths
+# E(AOPg)$asp_size<-1
+# E(AOPg)$asp_size[simple.path.sizing(AOPg,5,677)]<-2
+# ## Plot full network with simple paths between MIE and AO highlighted
+# set.seed(1)
+# plot(AOPg ,vertex.size=2, edge.width=E(AOPg)$asp_size, edge.color=E(AOPg)$asp_clr, edge.arrow.size=.1, vertex.label=NA, vertex.color=V(AOPg)$ked_color)
+# ## Export network plot
+# 
+# E(AOPg)$asp_clr[simple.path.coloring(AOPg,128,670)]<-"orange"
+# E(AOPg)$asp_size[simple.path.sizing(AOPg,128,670)]<-2
+# E(AOPg)$asp_clr[simple.path.coloring(AOPg,3,63)]<-"cyan"
+# E(AOPg)$asp_size[simple.path.sizing(AOPg,3,63)]<-2
+# 
+# 
+# jpeg.netplot(plot(AOPg ,vertex.size=2, edge.width=E(AOPg)$asp_size, edge.color=E(AOPg)$asp_clr, edge.arrow.size=.3, vertex.label=NA, vertex.color=V(AOPg)$ked_color)
+#              ,"AOP_ecl_top5",seedval=1)
 
 #### ~~~ Within AOP MIE to AO Simple Paths ####
-no.paths<-0
-for(aop in unique(V(AOPg)$AOP_ID)){
-  kelist=V(AOPg)$KE_KED[which(V(AOPg)$AOP_ID==aop)]
-mie.list<-which(kelist=="MIE")
-ao.list<-which(kelist=="AO")
-ec.list<-list()
-i=0;
-for(fromnode in mie.list){
-  for(tonode in ao.list){
-    i=i+1
-    x<- all_simple_paths(AOPg,from=fromnode,to=tonode,mode="out")
-    ec.list[[i]]<-c(fromnode,tonode,x)
-  }
-}
-for(j in 1:length(ec.list[[i]])){
-  no.paths=no.paths+length(ec.list[[j]])
-}
-}
+## A couple of functions were created to find all paths within a user specified 
+## AOP.  These are given below.
 
-length(ec.list)
-length(ecs.list)
+## Create lists of all MIEs and all AOs, find the AOPs that have both in them
+length(V(AOPg))
 
-if(V(AOPg)$AOP_ID[fromnode]==V(AOPg)$AOP_ID[tonode] && !is.na(V(AOPg)[fromnode]$AOP_ID==V(AOPg)[tonode]$AOP_ID)){test<-"YA"}
+mies<-V(AOPg)[which(V(AOPg)$KE_KED=="MIE")]
+length(mies)
+aos<-V(AOPg)[which(V(AOPg)$KE_KED=="AO")]
+length(aos)
+## This identifies the set of AOP_IDs that have both an MIE and AO in them 
+intersect(mies$AOP_ID,aos$AOP_ID)
+## The number of AOPs have the potential for an MIE to AO path, however
+## this does not guarantee that there are KEs connecting them.  
+length(intersect(mies$AOP_ID,aos$AOP_ID))
 
-no.paths<-0
-for(i in 1:length(ec.list)){
-no.paths=no.paths+length(ec.list[[i]])
-}
-
-ec.list[[1]]
+## This looks at all AOP IDs assigned to nodes in the network
+aops<-V(AOPg)$AOP_ID
+aops<-aops[!is.na(aops)]
+#The number of nodes with AOP IDs assigned
+length(aops)
+#The number of nodes without AOP IDs assigned
+length(V(AOPg))-length(aops)
 
 
+## All simple paths within a specified AOP (by AOP ID)
+## example is AOP_ID=1
+in.aop.paths(AOPg,1)
 
-### CHANGE $ked to $KE_KED!!!
-length(unique(V(AOPg)$AOP_ID))
-mie.list<-which(kelist[which(V(AOPg)$AOP_ID==7)]=="MIE")
-mie.list
-ao.list<-which(kelist[which(V(AOPg)$AOP_ID==7)]=="AO")
-ao.list
-totsp=0
-for(fromnode in mie.list){
-    x<- all_simple_paths(AOPg,from=fromnode,to=ao.list,mode="out")
-    nosp<-length(x)
-    totsp<<-totsp+nosp
-}
-asp<-all_simple_paths(AOPg,from=57,to=677,mode="out")
+## All simple paths within the entire AOP wiki.  This function loops
+## over all unique AOP IDs within the AOP wiki and sums the number of paths
+in.aop.paths.all(AOPg)
 
-length(asp)
-table(V(AOPg)$AOP_ID)
-
-totsp=0;
-for(aop in unique(V(AOPg)$AOP_ID)){
-kelist=V(AOPg)$KE_KED
-mie.list<-which(kelist[which(V(AOPg)$AOP_ID==aop)]=="MIE")
-ao.list<-which(kelist[which(V(AOPg)$AOP_ID==aop)]=="AO")
-for(fromnode in mie.list){
-  #for(tonode in ao.list){
-    x<- all_simple_paths(AOPg,from=fromnode,to=ao.list, mode="out")
-    nosp<-length(x)
-    totsp<<-totsp+nosp
-  #}
-}
-}
-
+## This option of the in.aop.paths.all() function provides the paths instead
+## of the total number of paths.
+in.aop.paths.all(AOPg,paths=T)
 
 
 #### ~~~~ MIE to AO Simple Path Subgraph ####
@@ -434,6 +450,8 @@ V(AOPg)$po_col<-wbpal[V(AOPg)$aopp+1]
 
 set.seed(1)
 plot(AOPg ,vertex.size=2, edge.color=E(AOPg)$asp_clr, edge.arrow.size=.05, vertex.label=NA, vertex.color=V(AOPg)$po_col)
+
+aop.paths(AOPg,kelist=V(AOPg)$KE_KED)
 
 ####~ CONNECTED COMPONENTS ANALYSIS####
 
