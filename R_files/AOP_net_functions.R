@@ -6,7 +6,7 @@ color.comps<-function(gr, ccmode="strong"){ #function to color all non-trivial s
   E(gr)$color<-"gray"
   comps<-components(gr, mode=ccmode)
   ntcomps<-which(comps$csize>1) #non-trivial ccs (i.e. with more than 1 node)
-  cols=rainbow(length(ntcomps))
+  cols=cm.colors(length(ntcomps))
   V(gr)$cc<-comps$membership
   for(i in 1:length(ntcomps)){
     V(gr)[which(V(gr)$cc==ntcomps[i])]$color<-cols[i]
@@ -82,7 +82,7 @@ condense.graph = function(gr,map){
 }
 
 # topo.layout() function computes a topological ordering layout for visualizaiton of an igraph object
-topo.layout = function(gr){
+topo.layout <- function(gr){
   tsort<-topo_sort(gr, mode = c("out"))
   tpos<-match(V(gr)$name,tsort$name) # finds position of node names in topoloigcal ordering
   tlay<-cbind(tpos,tpos) #define a plot layout that orders accoring to topological order
@@ -106,7 +106,7 @@ lobo.layout<-function(gr,lobos=lobo_list){ #assumes lobo data is stored as V(gr)
 
 # aop.paths() function computes path counts for nodes involved in simple paths between MIEs and AOs. 
 # this function can also be used to calculate the number of simple paths between MIEs and AOs in a specified graph
-aop.paths= function(gr,totalsimplepaths=F,normalized=F,kelist = V(gr)$KE_KED){ #kelist is a list of key event designation characters (MIE,KE, or AO) corresponding to nodes in the graph gr
+aop.paths<-function(gr,totalsimplepaths=F,normalized=F,mieaopairs=F,kelist = V(gr)$KE_KED){ #kelist is a list of key event designation characters (MIE,KE, or AO) corresponding to nodes in the graph gr
   if(is.null(kelist)){print("Error: No key event designation list supplied")} 
   #is.character(V(sg.cond)$ked)
   else{
@@ -116,18 +116,35 @@ aop.paths= function(gr,totalsimplepaths=F,normalized=F,kelist = V(gr)$KE_KED){ #
     path.counts$name<-V(gr)$name
     mie.list<-which(kelist=="MIE")
     ao.list<-which(kelist=="AO")
-    for(fromnode in mie.list){
-      for(tonode in ao.list){
-        x<- all_simple_paths(gr,fromnode, to = tonode, mode="out")
+    aops<-list(paths=c(),mieid=c(),mieind=c(),aoid=c(),aoind=c())
+    if(length(mie.list)>0){
+      if(length(ao.list)>0){
+    
+    for(fromnode in 1:length(mie.list)){
+      for(tonode in 1:length(ao.list)){
+        x<- all_simple_paths(gr,mie.list[fromnode], to = ao.list[tonode], mode="out")
+        pind<-fromnode*length(ao.list)-(length(ao.list)-tonode)
+        aops$mieid[[pind]]<-V(gr)[mie.list[fromnode]]$KE_EID
+        aops$mieind[[pind]]<-mie.list[fromnode]
+        aops$aoid[[pind]]<-V(gr)[ao.list[tonode]]$KE_EID
+        aops$aoind[[pind]]<-ao.list[tonode]
         if(length(x)>0){
         #assign(paste("from",fromnode,"to",tonode,sep="."), x)  #Can uncomment to create lists of paths
-        for(i in 1:length(x)){
-          path.counts$count[as.integer(x[[i]])]<-path.counts$count[as.integer(x[[i]])]+1}}
-          totalpaths<-totalpaths+length(x)
-      } 
-    }
-    if(totalsimplepaths){
+          for(i in 1:length(x)){
+          path.counts$count[as.integer(x[[i]])]<-path.counts$count[as.integer(x[[i]])]+1}
+          aops$paths[[pind]]<-length(x)
+          totalpaths<-totalpaths+length(x)}
+      else{
+        aops$paths[[pind]]<-0
+      totalpaths<-totalpaths+length(x)}
+    }}
+      }}
+    else{return(0)}
+        if(totalsimplepaths){
       return(totalpaths)
+    }
+    if(mieaopairs){
+      return(aops)
     }
     if(normalized==FALSE){
       a<-paste(deparse(substitute(gr)),"aop","path","cts", sep = ".") # creates name for output from function input
@@ -148,7 +165,7 @@ aop.paths= function(gr,totalsimplepaths=F,normalized=F,kelist = V(gr)$KE_KED){ #
 # and AOs within a specified AOP.  Node attributes of aop ids need to be stored
 # as V(graph)$AOP_ID, key event designators need to be stored as V(graph)$KE_KED
 in.aop.paths<-function(gr,id){
-  isg<-induced.subgraph(gr,V(gr)[which(V(gr)$AOP_ID==id)])
+  isg<-induced.subgraph(gr,as.numeric(V(gr)[which(unlist(lapply(V(gr)$AOP_ID, function(x) is.element(id,x))))]))
   mie.list<-V(isg)[which(V(isg)$KE_KED=="MIE")]
   mie.list
   ao.list<-V(isg)[which(V(isg)$KE_KED=="AO")]
@@ -172,8 +189,7 @@ in.aop.paths<-function(gr,id){
 ## an AOP ID.  It can either produce all the within aop paths 'paths=T' or
 ## give a count of all within aop simple paths (default)
 in.aop.paths.all<-function(gr,paths=F){
-aoplist<-sort(unique(V(gr)$AOP_ID))
-aoplist<-aoplist[!is.na(aoplist)]
+aoplist<-sort(unique(unlist(V(gr)$AOP_ID)))
 all.paths<-list()
 total.paths<-0
 for(i in aoplist){
@@ -207,9 +223,6 @@ aop.edge.connectivity= function(gr,kelist = V(gr)$KE_KED){ #kelist is a list of 
 }
 }
 
-
-
-
 # simple.path.coloring() colors all simple paths between the 'fromnode' node to the 
 # 'tonode' node using the color specificed by 'clr' stored as the asp_color 
 # attribute of the edges
@@ -230,7 +243,6 @@ else{
 }
   }
 }
-
 ## simple.path.sizing() accompanies simple.path.color by allowing specifying 
 ## sizes for edges within a given simple path.  If loc=T, the ouptut
 ## is a list of edges in the path that have been assigned size 'size' (default is 'size=2')
@@ -356,7 +368,7 @@ set.bg.black<-function(x){
 ## function to export network plots quickly
 ## plotcmd should be the full plot command, "plot(graph,....)" 
 ## seedval is used for set.seed() if desired
-jpeg.netplot<-function(plotcmd,filename,seedval=NA,maii=c(0,0,0,0)){
+jpeg.netplot<-function(plotcmd,filename,seedval=1,maii=c(0,0,0,0)){
   jpeg(file = paste("images/",filename,".jpeg",sep=""),
        width=800, height=800, bg =bg_col, quality=100)
   par(mai=maii) #specify a "0" inch margin
@@ -368,4 +380,14 @@ jpeg.netplot<-function(plotcmd,filename,seedval=NA,maii=c(0,0,0,0)){
     plotcmd
   }
   dev.off()
+}
+##quick return of graph node number for a given node name
+node<-function(gr,nodename){
+  return(as.numeric(V(gr)[which(V(gr)$name==nodename)]))
+}
+
+## quick plotting function with plot attributes for visualizing AOP wiki network
+aplot<-function(gr,vsize=1,seedval=1,ecol="gray",vcol="orange"){
+  set.seed(seedval)
+  plot(gr,vertex.label=NA, edge.color=ecol, edge.arrow.size=.08,vertex.size=vsize,vertex.color=vcol)
 }
