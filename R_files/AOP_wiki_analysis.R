@@ -58,7 +58,7 @@ else{V(AOPg)[i]$AOP_ID<-NA}
 
 ## Add key event designation data
 V(AOPg)$KE_KED<-KEKdata[match(V(AOPg)$KE_EID,KEKdata[,2]),4] # finds KED (Key Event Designator) to add to V(AOPg) data
-length(V(AOPg)$KE_KED[which(is.na(V(AOPg)$KE_KED))]) #The number of KEs without KEDs
+length(V(AOPg)$KE_KED[which(is.na(V(AOPg)$KE_KED))]) #The number of KEs without KE_KED
 V(AOPg)$KE_KED[which(is.na(V(AOPg)$KE_KED))]<-"KE" # ALL KEs without KED (NA values from file) are assigned as generic KE
 
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~##
@@ -247,6 +247,34 @@ text(x=xx, y=10, label=lobo_freqs, cex=.75)
 legend('topright',c("Molecular","Cellular","Tissue","Organ","Individual","Population","Not Specified"), pch=22,
        col="#777777", xjust=1,yjust=1, pt.bg=tcols, pt.cex=2, cex=.8, bty="n", ncol=1, y.intersp=.75, box.col="white", text.col="black")
 
+#### INDIRECT KER CULLING ####
+length(V(AOPg))
+vd2<-V(AOPg)[which(degree(AOPg,mode="in")>1)]
+as.numeric(vd2[3])
+
+in.paths<-list()
+o.paths<-list()
+#for(i in 1:length(vd2)){
+#in.paths[i]<-all_simple_paths(AOPg,vd2[i],mode="in")
+#}
+in.paths[[1]]<-all_simple_paths(AOPg,vd2[1],mode="in")
+in.paths[[2]]<-all_simple_paths(AOPg,vd2[2],mode="in")
+
+
+## mode "in" shows paths into specified from node, therefore 
+## paths are not true paths and need to be reformatted to mode
+## the intial node to the final node
+c(in.paths[[1]][[1]][-1], in.paths[[1]][[1]][1])
+
+## Color path and node to visualize
+E(AOPg)$clr<-"gray"
+E(AOPg,path=c(in.paths[[1]][[1]][-1], in.paths[[1]][[1]][1]),dir=T)$clr<-"red"
+V(AOPg)$clr<-"gray"
+V(AOPg)[vd2[1]]$clr<-"red"
+aplot(AOPg,ecol=E(AOPg)$clr,vcol=V(AOPg)$clr)
+
+
+
 #### MIE TO AO ANALYSES ####
 ##~~~~~~~~~~~~~~~~~~~~~~~~##
 
@@ -278,7 +306,6 @@ dev.off()
 plot(m2apths$paths)
 
 ####~~~ Simple Path Subgraph ####
-
 ## Create a subgraph for the MIE AO pair with the most simple paths between them
 sg<-induced_subgraph(AOPg,unique(unlist(all_simple_paths(AOPg, from=160, to=678, mode="out"))))
 
@@ -1358,6 +1385,46 @@ close(output)
 
 #### ADDITIONAL ANALYSES ####
 ##~~~~~~~~~~~~~~~~~~~~~~~~~##
+####~~ AOP ID VERTEX SUBGRAPH ####
+urb_ids<-c(112,163,167,200,206,29,30,34,36,52,53,58,72,205,3,165)
+ca_ids<-c(58,112,167,200,29,30,52,53,163,206,34,36,72,165,11,60,8)
+
+urb_kes<-c()
+for(j in 1:length(V(AOPg))){
+  for(k in 1:length(urb_ids)){
+  if(urb_ids[k] %in% unlist(V(AOPg)[j]$AOP_ID))
+    urb_kes<-append(urb_kes,j)
+}}
+ca_kes<-c()
+for(j in 1:length(V(AOPg))){
+  for(k in 1:length(ca_ids)){
+    if(ca_ids[k] %in% unlist(V(AOPg)[j]$AOP_ID))
+      ca_kes<-append(ca_kes,j)
+  }}
+
+ca.urb_kes<-intersect(ca_kes,urb_kes)
+ca.urb.u_kes<-union(ca_kes,urb_kes)
+
+ca.urb.kes<-data.frame(V(AOPg)[ca.urb_kes]$KE_EID,V(AOPg)[ca.urb_kes]$KE_name)
+ca.kes<-data.frame(V(AOPg)[ca_kes]$KE_EID,V(AOPg)[ca_kes]$KE_name)
+urb.kes<-data.frame(V(AOPg)[urb_kes]$KE_EID,V(AOPg)[urb_kes]$KE_name)
+
+write.csv(urb.kes,file="urb.kes.csv")
+
+V(AOPg)[ca.urb_kes]$col<-"orange"
+V(AOPg)[ca_kes]$col<-"green"
+V(AOPg)[urb_kes]$col<-"blue"
+
+ca.urb.u<-subgraph(AOPg,ca.urb.u_kes)
+
+set.seed(1)
+plot(ca.urb.u,main="AOP Network from Urban and Crop+Ag Associated AOPs",vertex.label=NA, vertex.color=V(ca.urb.u)$col, edge.color="gray", edge.arrow.size=.08,vertex.size=2)
+legend(c(-1,0),c(-2,-1),cex=1,box.lty=0,legend=c("KEs in Urban & Crop+Ag AOPs","KEs in Urban AOPs","KEs in Crop+Ag AOPs"),pch=16,col=c("orange","blue","green"))
+-
+
+
+
+
 ####~~ Reciprocity ####
 # The measure of reciprocity defines the proportion 
 #of mutual connections, in a directed graph. 
@@ -1409,13 +1476,66 @@ rho
 
 
 ####~~ Graph condensation ####
-# 
-# condense.map(AOPg)
-# condense.graph(AOPg,condense.map(AOPg))
-# plot(AOPg.cond,vertex.size=1, edge.arrow.size=.1, vertex.label=NA)
-# 
-# is.dag(AOPg)
-# is.dag(AOPg.cond)
-# 
+
+ condense.map(AOPg)
+ condense.graph(AOPg,condense.map(AOPg))
+ 
+ is.dag(AOPg)
+ is.dag(AOPg.cond)
+ 
+ plot(AOPg,vertex.size=1, edge.arrow.size=.1, vertex.label=NA)
+ plot(AOPg.cond,vertex.size=1, edge.arrow.size=.1, vertex.label=NA)
+ 
+##Locate the superKEs
+V(AOPg.cond)$KE_KED[which(grepl(",",V(AOPg.cond)$KE_KED)==T)]
+
+## Create a function to rename the KED attribute in the condensed network
+cond.KED<-function(gr){
+  superkes<-V(gr)[which(grepl(",",V(gr)$KE_KED)==T)]
+  newKEDs<-c()
+  for(i in 1:length(superkes)){
+    if(grepl("AO",V(gr)[superkes[i]]$KE_KED) && grepl("MIE",V(gr)[superkes[i]]$KE_KED)){
+      newKEDs[i]<-"AOP"}
+    else if(grepl("AO",V(gr)[superkes[i]]$KE_KED)){
+      newKEDs[i]<-"AO"}
+    else if(grepl("MIE",V(gr)[superkes[i]]$KE_KED)){
+      newKEDs[i]<-"MIE"}
+    else(newKEDs[i]<-"KE")}
+    return(newKEDs)
+}
+
+## Use the function to rename the KEDs for the condensed network
+V(AOPg.cond)[which(grepl(",",V(AOPg.cond)$KE_KED)==T)]$KE_KED<-cond.KED(AOPg.cond)
+## Check results visually
+V(AOPg.cond)$KE_KED
+## Should not return any entries
+V(AOPg.cond)$KE_KED[which(grepl(",",V(AOPg.cond)$KE_KED)==T)]
+
+### UNIQUE LINEAR PATHS AND AOP OCCURRENCE ###
+## Total Simple Paths between MIEs and AOs
+aop.paths(AOPg.cond,tot=T)
+#result: 43252
+
+V(AOPg.cond)$aopp<-aop.paths(AOPg.cond,kelist=V(AOPg.cond)$KE_KED)
+heatgrad=rev(heat.colors(n=max(V(AOPg.cond)$aopp)))
+heatgrad<-append(heatgrad, "#FFFFFF", after=0) #in the instance that a KE is not included in paths between MIE and AO...
+
+head(sort(V(AOPg.cond)$aopp,decr=T))
+which(V(AOPg.cond)$aopp==max(V(AOPg.cond)$aopp))
+V(AOPg.cond)[205]$KE_name
+mean(V(AOPg.cond)$aopp)
+plot(table(V(AOPg.cond)$aopp))
+median(V(AOPg.cond)$aopp)
+wbpal=colorRampPalette(c("white","blue"))(n=max(V(AOPg.cond)$aopp)+1)
+
+V(AOPg.cond)$po_col<-wbpal[V(AOPg.cond)$aopp+1]
+V(AOPg.cond)$po_size<-(V(AOPg.cond)$aopp/max(V(AOPg.cond)$aopp))*7
+set.seed(1)
+jpeg("images/AOPwiki_po.jpeg",height=800,wid=800,qual=100)
+set.seed(1)
+plot(AOPg.cond ,vertex.size=V(AOPg.cond)$po_size, edge.color="gray", edge.arrow.size=.05, vertex.label=NA, vertex.color=V(AOPg.cond)$po_col)
+dev.off()
+
+
 # #Attempt a topological sorting of the entire AOPwiki (Hint, it is unreadable :) )
 # plot(AOPg.cond,vertex.size=2, edge.arrow.size=.1,layout=topo.layout(AOPg.cond))
