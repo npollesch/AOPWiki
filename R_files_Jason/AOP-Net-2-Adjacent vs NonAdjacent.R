@@ -13,7 +13,6 @@ source(paste(workingDir,"AOP-Net-functions-JOB.R",sep="")) #imports JASON custom
 ### This script uses several objects that are created from AOP-Net-AOPWiki.R script:
 ### ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ###     "AOPg" igraph object
-###     "laops_AOPg" pathList of linear AOPs (can be created based on MIE/AO pairs or origin/terminus pairs)
 ###     "KERWdata" data frame that contains KER info
 
 
@@ -51,55 +50,27 @@ sum(!allDir)
 
 
 
-### Algorithm Based Identification of Adj vs NonAdj
+### Algorithm Based Identification of Adj vs NonAdj using add_KER_adjacency() function
 
-# extract list of paths that contain only adjacent KERs (adjPaths)
-adjPaths_AOPg<-remove.nonAdj(laops_AOPg)
+AOPg<-add_KER_adjacency(AOPg) #takes about 4 mins
 
-# combine adjacent paths into an igraph object
-AOPg_adj<-graph_from_pathList(adjPaths_AOPg)
 
-#Map vertex attributes from AOpg to AOPg_adj
-mapCoords<-match(V(AOPg_adj)$name,V(AOPg)$name)
-V(AOPg_adj)$KE_KED<-V(AOPg)$KE_KED[mapCoords]
-V(AOPg_adj)$KE_PD<-V(AOPg)$KE_PD[mapCoords]  #if used
-V(AOPg_adj)$col<-V(AOPg)$col[mapCoords]
-V(AOPg_adj)$plotX<-V(AOPg)$plotX[mapCoords]
-V(AOPg_adj)$plotY<-V(AOPg)$plotY[mapCoords]
-V(AOPg_adj)$AOP_ID<-V(AOPg)$AOP_ID[mapCoords]
-E(AOPg_adj)$col<-"grey"
-
-# compare edges to original graph to identify the "removed" ones (ie the non adjacent KERs)
-non.adj.KERs<-edge_difference(AOPg_adj, AOPg)
-nrow(non.adj.KERs)
-# 156 KERs identified as "non-adjacent"
-
-# summary of KERs
-KER_Summary<-as.data.frame(as_edgelist(AOPg))
-colnames(KER_Summary)<-c("KEup","KEdown")
-KER_Summary$adj<-"adjacent"
-KER_Summary$adj[row.match(non.adj.KERs,KER_Summary[,1:2])]<-"NON ADJACENT"
-sum(KER_Summary$adj=="adjacent")
-# 762 adjacent edges between MIE and AO paths (902 when based on origin and terminus paths)
-sum(KER_Summary$adj=="NON ADJACENT")
-# 296 adjacent edges between MIE and AO paths (156 when based on origin and terminus paths)
-
-# add adjacency as an edge attribute to original AOPg
-eCoords<-as.character(as.vector(t(KER_Summary[,1:2])))
-E(AOPg, P=eCoords)$adjacency<-KER_Summary$adj
+# add edge colours and width
 E(AOPg)$col<-"grey"
-E(AOPg)$col[E(AOPg)$adjacency=="NON ADJACENT"]<-"orange"
+E(AOPg)$col[E(AOPg)$adjacency=="non-adjacent"]<-"orange"
 E(AOPg)$width<-1
-E(AOPg)$width[E(AOPg)$adjacency=="NON ADJACENT"]<-1.5
+E(AOPg)$width[E(AOPg)$adjacency=="non-adjacent"]<-1.5
 
-
-# Plot
-# all edges (non adjacent are thick and orange)
+# Plot: non adjacent are thick and orange
 plotLay<-cbind(V(AOPg)$plotX,V(AOPg)$plotY) 
 par(mar=c(0,0,0,0))
 plot(AOPg, vertex.size=2.5, vertex.color=V(AOPg)$col, vertex.label=NA, edge.width=E(AOPg)$width, edge.arrow.size=0.2,edge.curved=0, edge.color=E(AOPg)$col, layout=plotLay)
 
-# only adjacent edges
+
+# Subgraph with only adjacent edges
+AOPg_adj<-subgraph.edges(AOPg, eids=E(AOPg)[E(AOPg)$adjacency=="adjacent"] )
+
+# Plot: only adjacent edges
 plotLay<-cbind(V(AOPg_adj)$plotX,V(AOPg_adj)$plotY)
 par(mar=c(0,0,0,0))
 plot(AOPg_adj, vertex.size=2.5, vertex.color=V(AOPg_adj)$col, edge.width=1, edge.arrow.size=0.2, vertex.label=NA, layout=plotLay)
@@ -109,14 +80,14 @@ plot(AOPg_adj, vertex.size=2.5, vertex.color=V(AOPg_adj)$col, edge.width=1, edge
 ### linear AOP analysis of adjacent-only graph
 
 #number of linear AOPs
-laops_AOPg_adj<-linear.AOPs(AOPg_adj, use_KE_PD=TRUE)
+laops_AOPg_adj<-linear.AOPs(AOPg_adj)
 sum(sapply(laops_AOPg_adj,length))
-# 4654 linear AOPs when only adjacent MIE to AO paths are considered (5361 for origin/terminus paths)
+# 4654 linear AOPs when only adjacent MIE to AO paths are considered
 
 # MIE pair with largest number of simple paths
 m<-max(sapply(laops_AOPg_adj,length))
 m
-# 1887
+# 102
 names(laops_AOPg_adj)[sapply(laops_AOPg_adj,length)==m]
 # MIE   AO   simplePaths
 # 201  563           102
@@ -127,13 +98,13 @@ names(laops_AOPg_adj)[sapply(laops_AOPg_adj,length)==m]
 
 # weak components
 AOPg_adj_wComps<-components(AOPg_adj, mode="weak")
-# 26 weak components when adjacent MIE to AO paths are considered
+# 34 weak components when adjacent KERs
 
 # strong components- AOPg_adj
 AOPg_adj_sComps<-components(AOPg_adj, mode="strong")
 ntcomps_adj<-which(AOPg_adj_sComps$csize>1) # non-trivial ccs (i.e. with more than 1 node)
 length(ntcomps_adj)
-#4 strong comps when adjacent MIE to AO paths are considered
+#7 strong comps when only adjacent KERs are considered
 
 # assign attribute scc to nodes based on their membership 
 V(AOPg_adj)$scc<-AOPg_adj_sComps$membership 
@@ -165,7 +136,7 @@ plot(AOPg_adj.con, vertex.size=V(AOPg_adj.con)$size, vertex.color=V(AOPg_adj.con
 # linear AOPs in contracted network (AOPg_adj.con)
 laops_AOPg_adj.con<-linear.AOPs(AOPg_adj.con)
 sum(sapply(laops_AOPg_adj.con,length))
-# 3087 linear AOPs in contracted network (almost halved!)
+# 3163 linear AOPs in contracted network
 
 # MIE pair with largest number of simple paths
 m<-max(sapply(laops_AOPg_adj.con,length))
