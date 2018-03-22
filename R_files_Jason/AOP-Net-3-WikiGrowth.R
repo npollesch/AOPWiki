@@ -73,19 +73,13 @@ for(i in 1:length(IDs)){
   laops<-linear.AOPs(subG, use_KE_PD=FALSE)
   laopC<-c(laopC, sum(sapply(laops,length)))
   
-  #identify adjacent KERs and build adj only graph
-  adjPaths<-remove.nonAdj(laops)
-  subG_adj<-graph_from_pathList(adjPaths)
+  #identify and count adjacent and non-adjacent KERs
+  subG<-add_KER_adjacency(subG)
+  adjC<-c(adjC, sum(E(subG)$adjacency=="adjacent"))
+  nonC<-c(nonC, sum(E(subG)$adjacency=="non-adjacent"))
   
-  #Map vertex attributes from subG to subG_adj and add new KE_PD
-  mapCoords<-match(V(subG_adj)$name,V(subG)$name)
-  V(subG_adj)$KE_KED<-V(subG)$KE_KED[mapCoords]
-  subG_adj<-add_KE_PD(subG_adj)
-  
-  #identify non adj KERs
-  non.adj.Es<-edge_difference(subG_adj, subG)
-  adjC<-c(adjC, ecount(subG_adj))
-  nonC<-c(nonC,nrow(non.adj.Es))
+  # create subgraph of only adjacent edges
+  subG_adj<-subgraph.edges(subG, eids=E(subG)[E(subG)$adjacency=="adjacent"])
   
   #adj only linear AOPs
   laops_adj<-linear.AOPs(subG_adj, use_KE_PD=FALSE)
@@ -112,7 +106,7 @@ wikiGrowth<-data.frame(
   LAOPS=laopC,
   ADJ_LAOPS=laopC_adj)
 
-#write.table(wikiGrowth, paste(workingDir,"results\\wikiGrowth_by_AOP.txt", sep=""), sep="\t", row.names=FALSE)
+write.table(wikiGrowth, paste(workingDir,"results\\wikiGrowth_by_AOP.txt", sep=""), sep="\t", row.names=FALSE)
 
 
 
