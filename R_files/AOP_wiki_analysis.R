@@ -1386,6 +1386,9 @@ close(output)
 #### ADDITIONAL ANALYSES ####
 ##~~~~~~~~~~~~~~~~~~~~~~~~~##
 ####~~ AOP ID VERTEX SUBGRAPH ####
+## THIS SECTION WAS CREATED TO EXTRACT SUBNETWORKS BASED ON A LIST
+## OF AOP IDS PROVIDED.
+
 urb_ids<-c(112,163,167,200,206,29,30,34,36,52,53,58,72,205,3,165)
 ca_ids<-c(58,112,167,200,29,30,52,53,163,206,34,36,72,165,11,60,8)
 
@@ -1402,28 +1405,38 @@ for(j in 1:length(V(AOPg))){
       ca_kes<-append(ca_kes,j)
   }}
 
-ca.urb_kes<-intersect(ca_kes,urb_kes)
+#KES in Crop+AG but not Urban
+ca.not.urb<-setdiff(ca_kes,urb_kes)
+cnu<-data.frame(V(AOPg)$KE_EID[ca.not.urb],V(AOPg)$KE_name[ca.not.urb])
+write.csv(cnu,file="ca.not.urb.kes.csv")
+
+#KES in Urban but not Crop+AG
+urb.not.ca<-setdiff(urb_kes,ca_kes)
+unc<-data.frame(V(AOPg)$KE_EID[urb.not.ca],V(AOPg)$KE_name[urb.not.ca])
+write.csv(unc,file="urb.not.ca.kes.csv")
+
+#KEs in Crop+AG or Urban
 ca.urb.u_kes<-union(ca_kes,urb_kes)
+#Create subgraph
+ca.urb.i<-subgraph(AOPg,ca.urb_kes)
+V(ca.urb.i)$name<-V(ca.urb.i)$KE_EID
+write.csv(as_edgelist(ca.urb.i,names=T),file="ca.and.urb.kers.csv")
 
-ca.urb.kes<-data.frame(V(AOPg)[ca.urb_kes]$KE_EID,V(AOPg)[ca.urb_kes]$KE_name)
-ca.kes<-data.frame(V(AOPg)[ca_kes]$KE_EID,V(AOPg)[ca_kes]$KE_name)
-urb.kes<-data.frame(V(AOPg)[urb_kes]$KE_EID,V(AOPg)[urb_kes]$KE_name)
-
-write.csv(urb.kes,file="urb.kes.csv")
-
+#KEs in both Crop+AG and Urban
+ca.urb_kes<-intersect(ca_kes,urb_kes)
+#KE coloring for plot
 V(AOPg)[ca.urb_kes]$col<-"orange"
 V(AOPg)[ca_kes]$col<-"green"
 V(AOPg)[urb_kes]$col<-"blue"
-
+#Create subgraph
 ca.urb.u<-subgraph(AOPg,ca.urb.u_kes)
+V(ca.urb.u)$name<-V(ca.urb.u)$KE_EID
+write.csv(as_edgelist(ca.urb.u,names=T),file="ca.urb.kers.csv")
+
 
 set.seed(1)
 plot(ca.urb.u,main="AOP Network from Urban and Crop+Ag Associated AOPs",vertex.label=NA, vertex.color=V(ca.urb.u)$col, edge.color="gray", edge.arrow.size=.08,vertex.size=2)
 legend(c(-1,0),c(-2,-1),cex=1,box.lty=0,legend=c("KEs in Urban & Crop+Ag AOPs","KEs in Urban AOPs","KEs in Crop+Ag AOPs"),pch=16,col=c("orange","blue","green"))
--
-
-
-
 
 ####~~ Reciprocity ####
 # The measure of reciprocity defines the proportion 
